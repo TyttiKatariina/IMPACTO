@@ -1,0 +1,352 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/#> .
+@prefix dpia: (ex) <http://w3.org/impacto#> .
+
+# Ontology Metadata
+dpia:IMPACTOontology;
+    dct:title "IMPACTO Ontology"@en ;
+    dct:description "Ontology for representing high-risk processing activities requiring DPIAs across EU/EEA countries"@en ;
+    dct:created "2025-01-08"  xsd:date ;
+
+# Main Classes
+dpia:Jurisdiction a rdfs:Class ; 
+    rdfs:label "Jurisdiction"@en ;
+    rdfs:comment "A legal jurisdiction (country or regulatory body)"@en .
+
+dpia:HighRiskProcessingActivity a rdfs:Class ;
+    rdfs:label "High Risk Activity"@en ;
+    rdfs:comment "A data processing activity considered high risk"@en .
+
+dpia:LegalRequirement a rdfs:Class ;
+    rdfs:label "Legal Requirement"@en ;
+    rdfs:comment "A legal basis requiring DPIA for high-risk processing activities"@en .
+
+dpia:LegalReference a rdfs:Class ;
+    rdfs:label "Legal Reference"@en ;
+    rdfs:comment "A specific legal article or section reference"@en .
+
+# Properties
+dpia:requiresDPIA a rdf:Property ;
+    rdfs:label "Requires DPIA"@en ;
+    rdfs:domain dpia:HighRiskProcessingActivity ;
+    rdfs:range xsd:boolean .
+
+dpia:hasJurisdiction a rdf:Property ;
+    rdfs:label "Has Jurisdiction"@en ;
+    rdfs:domain dpia:HighRiskProcessingActivity ;
+    rdfs:range dpia:Jurisdiction .
+
+dpia:hasLegalBasis a rdf:Property ;
+    rdfs:label "Has Legal Basis"@en ;
+    rdfs:domain dpia:HighRiskProcessingActivity ;
+    rdfs:range dpia:LegalRequirement .
+
+dpia:hasLegalReference a rdf:Property ;
+    rdfs:label "Has Legal Reference"@en ;
+    rdfs:domain dpia:HighRiskActivity ;
+    rdfs:range dpia:LegalReference .
+
+dpia:articleNumber a rdf:Property ;
+    rdfs:label "Article Number"@en ;
+    rdfs:domain dpia:LegalReference ;
+    rdfs:range xsd:string .
+
+dpia:paragraphNumber a rdf:Property ;
+    rdfs:label "Paragraph Number"@en ;
+    rdfs:domain dpia:LegalReference ;
+    rdfs:range xsd:string .
+
+dpia:RecitalNumber a rdf:Property ;
+    rdfs:label "Recital Number"@en ;
+    rdfs:domain dpia:LegalReference ;
+    rdfs:range xsd:string .
+
+# This ontology uses unique identifiers (e.g. C1, C3, C74) to classify high-risk activities and refer back to the analysis that has been done. The analysis can be found at: https://tyttikatariina.github.io/High-Risk-Categorisations-in-GDPR-vs-AI-Act/ .  
+
+# Legal Requirements Instances
+dpia:GDPR a dpia:LegalRequirement ;
+    rdfs:label "General Data Protection Regulation"@en ;
+    skos:prefLabel "GDPR"@en .
+
+dpia:EDPBGuidelines a dpia:LegalRequirement ;
+    rdfs:label "EDPB Guidelines on DPIAs"@en ;
+    skos:prefLabel "EDPB Guidelines"@en .
+
+dpia:DPAGuidelines a dpia:LegalRequirement ;
+    rdfs:label "National Data Protection Authorities Guidelines on DPIAs"@en ;
+    skos:prefLabel "DPA Guidelines"@en .
+
+# Jurisdictions (EU/EEA Countries)
+dpia:Austria a dpia:Jurisdiction ;
+    skos:prefLabel "AT"@en ;
+    dct:isPartOf dpia:EuropeanUnion .
+
+dpia:Belgium a dpia:Jurisdiction ;
+    skos:prefLabel "BE"@en ;
+    dct:isPartOf dpia:EuropeanUnion .
+
+dpia:Bulgaria a dpia:Jurisdiction ;
+    skos:prefLabel "BG"@en ;
+    dct:isPartOf dpia:EuropeanUnion .
+
+dpia:Croatia a dpia:Jurisdiction ;
+    skos:prefLabel "HR"@en ;
+    dct:isPartOf dpia:EuropeanUnion .
+
+dpia:Cyprus a dpia:Jurisdiction ;
+    skos:prefLabel "CY"@en ;
+    dct:isPartOf dpia:EuropeanUnion .
+
+dpia:CzechRepublic a dpia:Jurisdiction ;
+    skos:prefLabel "CZ"@en ;
+    dct:isPartOf dpia:EuropeanUnion .
+
+dpia:Denmark a dpia:Jurisdiction ;
+    skos:prefLabel "DK"@en ;
+    dct:isPartOf dpia:EuropeanUnion .
+
+dpia:Estonia a dpia:Jurisdiction ;
+    skos:prefLabel "EE"@en ;
+    dct:isPartOf dpia:EuropeanUnion .
+
+dpia:Finland a dpia:Jurisdiction ;
+    skos:prefLabel "FI"@en ;
+    dct:isPartOf dpia:EuropeanUnion .
+
+dpia:France a dpia:Jurisdiction ;
+    skos:prefLabel "FR"@en ;
+    dct:isPartOf dpia:EuropeanUnion .
+
+dpia:Germany a dpia:Jurisdiction ;
+    skos:prefLabel "DE"@en ;
+    dct:isPartOf dpia:EuropeanUnion .
+
+dpia:Greece a dpia:Jurisdiction ;
+    skos:prefLabel "GR"@en ;
+    dct:isPartOf dpia:EuropeanUnion .
+
+dpia:Hungary a dpia:Jurisdiction ;
+    skos:prefLabel "HU"@en ;
+    dct:isPartOf dpia:EuropeanUnion .
+
+dpia:Ireland a dpia:Jurisdiction ;
+    skos:prefLabel "IE"@en ;
+    dct:isPartOf dpia:EuropeanUnion .
+
+dpia:Italy a dpia:Jurisdiction ;
+    skos:prefLabel "IT"@en ;
+    dct:isPartOf dpia:EuropeanUnion .
+
+dpia:Latvia a dpia:Jurisdiction ;
+    skos:prefLabel "LV"@en ;
+    dct:isPartOf dpia:EuropeanUnion .
+
+dpia:Lithuania a dpia:Jurisdiction ;
+    skos:prefLabel "LT"@en ;
+    dct:isPartOf dpia:EuropeanUnion .
+
+dpia:Luxembourg a dpia:Jurisdiction ;
+    skos:prefLabel "LU"@en ;
+    dct:isPartOf dpia:EuropeanUnion .
+
+dpia:Malta a dpia:Jurisdiction ;
+    skos:prefLabel "MT"@en ;
+    dct:isPartOf dpia:EuropeanUnion .
+
+dpia:Netherlands a dpia:Jurisdiction ;
+    skos:prefLabel "NL"@en ;
+    dct:isPartOf dpia:EuropeanUnion .
+
+dpia:Poland a dpia:Jurisdiction ;
+    skos:prefLabel "PL"@en ;
+    dct:isPartOf dpia:EuropeanUnion .
+
+dpia:Portugal a dpia:Jurisdiction ;
+    skos:prefLabel "PT"@en ;
+    dct:isPartOf dpia:EuropeanUnion .
+
+dpia:Romania a dpia:Jurisdiction ;
+    skos:prefLabel "RO"@en ;
+    dct:isPartOf dpia:EuropeanUnion .
+
+dpia:Slovakia a dpia:Jurisdiction ;
+    skos:prefLabel "SK"@en ;
+    dct:isPartOf dpia:EuropeanUnion .
+
+dpia:Slovenia a dpia:Jurisdiction ;
+    skos:prefLabel "SI"@en ;
+    dct:isPartOf dpia:EuropeanUnion .
+
+dpia:Spain a dpia:Jurisdiction ;
+    skos:prefLabel "ES"@en ;
+    dct:isPartOf dpia:EuropeanUnion .
+
+dpia:Sweden a dpia:Jurisdiction ;
+    skos:prefLabel "SE"@en ;
+    dct:isPartOf dpia:EuropeanUnion .
+
+dpia:Iceland a dpia:Jurisdiction ;
+    skos:prefLabel "IS"@en ;
+    dct:isPartOf dpia:EuropeanEconomicArea .
+
+dpia:Liechtenstein a dpia:Jurisdiction ;
+    skos:prefLabel "LI"@en ;
+    dct:isPartOf dpia:EuropeanEconomicArea .
+
+dpia:Norway a dpia:Jurisdiction ;
+    skos:prefLabel "NO"@en ;
+    dct:isPartOf dpia:EuropeanEconomicArea .
+
+# GDPR High Risk Activities
+
+dpia:LargeScaleSpecialCategories a dpia:HighRiskActivity ;
+    skos:prefLabel "Large scale processing of special categories of data"@en ;
+    dpia:requiresDPIA "true"^^xsd:boolean ;
+    dpia:hasLegalBasis dpia:GDPR ;
+    dpia:ArticleNumber "35" ;
+    dpia:ParagraphNumber "3b" ;
+    skos:definition "Large Scale Processing of Special Category of personal data"@en ;
+    skos:prefLabel "C1".
+
+dpia:SpecialCategoriesDecisionMaking a dpia:HighRiskActivity ;
+    skos:prefLabel "Processing of Special Category of personal data for decision making"@en ;
+    dpia:requiresDPIA "true"^^xsd:boolean ;
+    dpia:hasLegalBasis dpia:GDPR ;
+    dpia:ArticleNumber "35" ;
+    dpia:ParagraphNumber "3b" ;
+    skos:definition "Processing of Special Category of personal data for decision making"@en ;
+    skos:prefLabel "C2".
+
+dpia:LargeScalePurposes a dpia:HighRiskActivity ;
+    skos:prefLabel "Large scale processing purposes (Recital 91)"@en ;
+    dpia:requiresDPIA "true"^^xsd:boolean ;
+    dpia:hasLegalBasis dpi:GDPR ;
+    dpia:RecitalNumber "91" ;
+    skos:definition "Processing for Large scale purposes"@en ;
+    skos:prefLabel "C3".
+
+dpia:ProfilingVulnerablePersons a dpia:HighRiskActivity ;
+    skos:prefLabel "Profiling of vulnerable persons data "@en ;
+    dpia:requiresDPIA "true"^^xsd:boolean ;
+    dpia:hasLegalBasis dpia:GDPR ;
+    dpia:ArticleNumber "35" ;
+    dpia:ParagraphNumber "3b" ;
+    skos:definition "Profiling of vulnerable persons data"@en ;
+    skos:prefLabel "C4" .
+
+dpia:ProcessingVulnerablePersons a dpia:HighRiskActivity ;
+    skos:prefLabel "Processing of vulnerable persons data "@en ;
+    dpia:requiresDPIA "true"^^xsd:boolean ;
+    dpia:hasLegalBasis dpia:GDPR ;
+    dpia:ArticleNumber "35" ;
+    dpia:ParagraphNumber "3b" ;
+    skos:definition "Processing of vulnerable persons data"@en ;
+    skos:prefLabel "C4" .
+
+dpia:LargeScaleMonitoring a dpia:HighRiskActivity ;
+    skos:prefLabel "Large scale systematic monitoring of a publicly accessible area"@en ;
+    dpia:requiresDPIA "true"^^xsd:boolean ;
+    dpia:hasLegalBasis dpia:GDPR ;
+    dpia:ArticleNumber "35" ;
+    dpia:ParagraphNumber "3c" ;
+    skos:definition "Large scale systematic monitoring of a publicly accessible area"@en ;
+    skos:prefLabel "C5" .
+
+dpia:ProcessingLegalEffects a dpia:HighRiskActivity ;
+    skos:prefLabel "Processing resulting in legal effects"@en ;
+    dpia:requiresDPIA "true"^^xsd:boolean ;
+    dpia:hasLegalBasis dpia:GDPR ;
+    dpia:ArticleNumber "35" ;
+    dpia:ParagraphNumber "3a" ;
+    skos:definition "Processing resulting in legal effects"@en ;
+    skos:prefLabel "C6" .
+
+dpia:LargeScaleProfiling a dpia:HighRiskActivity ;
+    skos:prefLabel "(Large scale) profiling"@en ;
+    dpia:requiresDPIA "true"^^xsd:boolean ;
+    dpia:hasLegalBasis dpia:GDPR ;
+    dpia:ArticleNumber "35" ;
+    dpia:ParagraphNumber "3a" ;
+    skos:definition "(Large scale) profiling"@en ;
+    skos:prefLabel "C7" .
+
+dpia:AutomatedDecisionMaking a dpia:HighRiskActivity ;
+    skos:prefLabel "Automated decision making and/or automated processing with legal or similar effect"@en ;
+    dpia:requiresDPIA "true"^^xsd:boolean ;
+    dpia:hasLegalBasis dpia:GDPR ;
+    dpia:ArticleNumber "35" ;
+    dpia:ParagraphNumber "3a" ;
+    skos:definition "Automated decision making and/or automated processing with legal or similar effect"@en ;
+    skos:prefLabel "C8" .
+
+dpia:InnovativeTechnology a dpia:HighRiskActivity ;
+    skos:prefLabel "Innovative technology or novel application"@en ;
+    dpia:requiresDPIA "true"^^xsd:boolean ;
+    dpia:hasLegalBasis dpia:GDPR ;
+    skos:definition "Use of innovative technologies or novel applications of existing technologies"@en ;
+    skos:prefLabel "C9" .
+
+dpia:CriminalDataProcessing a dpia:HighRiskActivity ;
+    skos:prefLabel "Large scale processing of personal data relating to criminal offences or unlawful or bad conduct"@en ;
+    dpia:requiresDPIA "true"^^xsd:boolean ;
+    dpia:hasLegalBasis dpia:GDPR ;
+    dpia:ArticleNumber "35" ;
+    dpia:ParagraphNumber "3b" ;
+    skos:definition "Large scale processing of personal data relating to criminal offences or unlawful or bad conduct"@en ;
+    skos:prefLabel "C10" .
+
+
+# EDPB High Risk Activities
+
+dpia:EvaluationofIndividuals a dpia:HighRiskActivity ;
+    skos:prefLabel "Evaluation or scoring of individuals (including profiling or predicting)"@en ;
+    dpia:requiresDPIA "true"^^xsd:boolean ;
+    dpia:hasLegalBasis dpia:EDPBGuidelines ;
+    skos:definition "Evaluation or scoring of individuals (including profiling or predicting)"@en ;
+    skos:prefLabel "C14" .
+
+dpia:ScoringofIndividuals a dpia:HighRiskActivity ;
+    skos:prefLabel "Evaluation or scoring of individuals (including profiling or predicting)"@en ;
+    dpia:requiresDPIA "true"^^xsd:boolean ;
+    dpia:hasLegalBasis dpia:EDPBGuidelines ;
+    skos:definition "Evaluation or scoring of individuals (including profiling or predicting)"@en ;
+    skos:prefLabel "C14" .
+
+dpia:MatchingorCombiningSeparateDataSets a dpia:HighRiskActivity ;
+    skos:prefLabel "Matching or Combining separate data sets/ registers"@en ;
+    dpia:requiresDPIA "true"^^xsd:boolean ;
+    dpia:hasLegalBasis dpia:EDPBGuidelines ;
+    skos:definition "Matching or Combining separate data sets/ registers"@en ;
+    skos:prefLabel "C15" .
+
+dpia:ProcessingPreventingRight a dpia:HighRiskActivity ;
+    skos:prefLabel "Processing preventing a data subject from exercising a right"@en ;
+    dpia:requiresDPIA "true"^^xsd:boolean ;
+    dpia:hasLegalBasis dpia:EDPBGuidelines ;
+    skos:definition "Processing preventing a data subject from exercising a right"@en ;
+    skos:prefLabel "C19" .
+
+# Country-Specific High Risk Activities
+
+dpia:ProcessingBiometricData a dpia:HighRiskActivity ;
+    skos:prefLabel "Processing of Biometric data"@en ;
+    dpia:requiresDPIA "true"^^xsd:boolean ;
+    dpia:hasJurisdiction dpia:Austria, dpia:Belgium, dpia:Bulgaria, dpia:Croatia, dpia:CzechRepublic, dpia:Denmark, dpia:Estonia, dpia:Finland, dpia:France, dpia:Germany, dpia:Greece, dpia:Hungary, dpia:Iceland, dpia:Ireland, dpia:Luxembourg, dpia:Lithuania, dpia:Latvia, dpia:Liechenstein, dpia:Malta, dpia:Netherlands, dpia:Norway, dpia:Poland, dpia: Portugal, dpia:Slovakia, dpia:Slovenia, dpia:Spain;
+    skos:definition "Processing of Biometric data"@en ;
+    skos:prefLabel "C11" .
+
+dpia:ProcessingGeneticData a dpia:HighRiskActivity ;
+    skos:prefLabel "Processing of Genetic data"@en ;
+    dpia:requiresDPIA "true"^^xsd:boolean ;
+    dpia:hasJurisdiction dpia:Bulgaria, dpia:Croatia, dpia:Cyprus, dpia:CzechRepublic, dpia:Denmark, dpia:Estonia, dpia:Finland, dpia:France, dpia:Germany, dpia:Greece, dpia:Hungary, dpia:Iceland, dpia:Ireland, dpia:Luxembourg, dpia:Lithuania, dpia:Latvia, dpia:Liechenstein, dpia:Malta, dpia:Netherlands, dpia:Norway, dpia:Poland, dpia: Portugal, dpia:Slovakia, dpia:Slovenia, dpia:Spain;
+    skos:definition "Processing of Genetic data"@en ;
+    skos:prefLabel "C12" .
+
+dpia:ProcessingCommunicationandLocationData a dpia:HighRiskActivity ;
+    skos:prefLabel "(Large-scale) Processing of communication and location data"@en ;
+    dpia:requiresDPIA "true"^^xsd:boolean ;
+    dpia:hasJurisdiction dpia:Austria, dpia:Belgium, dpia:Bulgaria, dpia:Croatia, dpia:CzechRepublic, dpia:Estonia, dpia:Finland, dpia:France, dpia:Germany, dpia:Greece, dpia:Hungary, dpia:Ireland, dpia:Luxembourg, dpia:Lithuania, dpia:Latvia, dpia:Netherlands, dpia:Norway, dpia:Poland, dpia: Portugal, dpia:Romania, dpia:Slovakia, dpia:Slovenia ;
+    skos:definition "(Large-scale) Processing of communication and location data"@en ;
+    skos:prefLabel "C13" .
