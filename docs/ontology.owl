@@ -1,0 +1,3711 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://tyttikatariina.github.io/IMPACTO/"
+     xml:base="https://tyttikatariina.github.io/IMPACTO/"
+     xmlns:dpv="https://w3id.org/dpv#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://tyttikatariina.github.io/IMPACTO/">
+        <owl:versionIRI rdf:resource="https://tyttikatariina.github.io/IMPACTO/1.0"/>
+        <terms:bibliographicCitation xml:lang="en">Tytti Rintamäki, Harshvardhan J. Pandit. IMPACTO: An ontology for representing Impact Assessment requirements and processes based on the GDPR and EU AI ACT.</terms:bibliographicCitation>
+        <terms:contributor>Harshvardhan J. Pandit</terms:contributor>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-05-25</terms:created>
+        <terms:creator>Tytti Rintamäki</terms:creator>
+        <terms:description xml:lang="en">IMPACTO represents impact assessments, specifically the DPIA and FRIA.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-05-25</terms:issued>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-05-25</terms:modified>
+        <terms:publisher>ADAPT Centre, Dublin City University</terms:publisher>
+        <terms:source xml:lang="en"> AT, BE, BG, CY, CZ, DE, DK, EE, ES, FI, FR, GR, HR, HU, IE, IS, IT, LI, LT, LU, LV, MT, NL, NO, PL, PT, RO, SE, SI, SK</terms:source>
+        <terms:source xml:lang="en">EU AI Act</terms:source>
+        <terms:source xml:lang="en">GDPR</terms:source>
+        <terms:title xml:lang="en">IMPACTO</terms:title>
+        <rdfs:label xml:lang="en">Impact Assessment Ontology</rdfs:label>
+        <owl:versionInfo>1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#notation"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#scopeNote -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/dpv#hasAutomationLevel -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dpv#hasAutomationLevel"/>
+    
+
+
+    <!-- https://w3id.org/dpv#hasConsequence -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dpv#hasConsequence"/>
+    
+
+
+    <!-- https://w3id.org/dpv#hasContext -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dpv#hasContext"/>
+    
+
+
+    <!-- https://w3id.org/dpv#hasData -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dpv#hasData"/>
+    
+
+
+    <!-- https://w3id.org/dpv#hasDataSource -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dpv#hasDataSource"/>
+    
+
+
+    <!-- https://w3id.org/dpv#hasDataSubject -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dpv#hasDataSubject"/>
+    
+
+
+    <!-- https://w3id.org/dpv#hasDataVolume -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dpv#hasDataVolume"/>
+    
+
+
+    <!-- https://w3id.org/dpv#hasHumanSubject -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dpv#hasHumanSubject"/>
+    
+
+
+    <!-- https://w3id.org/dpv#hasJurisdiction -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dpv#hasJurisdiction"/>
+    
+
+
+    <!-- https://w3id.org/dpv#hasLegalBasis -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dpv#hasLegalBasis"/>
+    
+
+
+    <!-- https://w3id.org/dpv#hasLocation -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dpv#hasLocation"/>
+    
+
+
+    <!-- https://w3id.org/dpv#hasOrganisation -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dpv#hasOrganisation"/>
+    
+
+
+    <!-- https://w3id.org/dpv#hasPersonalData -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dpv#hasPersonalData"/>
+    
+
+
+    <!-- https://w3id.org/dpv#hasProcessing -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dpv#hasProcessing"/>
+    
+
+
+    <!-- https://w3id.org/dpv#hasProcessingScale -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dpv#hasProcessingScale"/>
+    
+
+
+    <!-- https://w3id.org/dpv#hasPurpose -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dpv#hasPurpose"/>
+    
+
+
+    <!-- https://w3id.org/dpv#hasRisk -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dpv#hasRisk"/>
+    
+
+
+    <!-- https://w3id.org/dpv#hasSensitivePersonalData -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dpv#hasSensitivePersonalData"/>
+    
+
+
+    <!-- https://w3id.org/dpv#hasService -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dpv#hasService"/>
+    
+
+
+    <!-- https://w3id.org/dpv#hasSource -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dpv#hasSource"/>
+    
+
+
+    <!-- https://w3id.org/dpv#hasTechnicalOrganisationalMeasure -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dpv#hasTechnicalOrganisationalMeasure"/>
+    
+
+
+    <!-- https://w3id.org/dpv/ai#hasCapability -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dpv/ai#hasCapability"/>
+    
+
+
+    <!-- https://w3id.org/dpv/tech#hasComponent -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dpv/tech#hasComponent"/>
+    
+
+
+    <!-- https://w3id.org/dpv/tech#hasDevice -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dpv/tech#hasDevice"/>
+    
+
+
+    <!-- https://w3id.org/dpv/tech#hasInput -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dpv/tech#hasInput"/>
+    
+
+
+    <!-- https://w3id.org/dpv/tech#hasIntendedUse -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/dpv/tech#hasIntendedUse"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Collection -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Collection"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#ServiceRelatedConsequence -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#ServiceRelatedConsequence">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv#Impact"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#ai-AutomaticObjectRecognition -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#ai-AutomaticObjectRecognition">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/ai#Capability"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#ai-FacialRecognition -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#ai-FacialRecognition">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/ai#Capability"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#ai-ObjectIsolation -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#ai-ObjectIsolation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/ai#Capability"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#ai-UseOfAI -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#ai-UseOfAI">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv#Use"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-Automated -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-Automated">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv#ProcessingContext"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-CentralisedLocation -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-CentralisedLocation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv#LocationFixture"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-ClassificationOfIndividuals -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-ClassificationOfIndividuals">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv#ProcessingContext"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-HistoricResearch -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-HistoricResearch">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv#ResearchAndDevelopment"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-Inspection -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-Inspection">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv#ProcessingContext"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-LabourBrokeringService -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-LabourBrokeringService">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv#HumanResourceManagement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-Monitoring -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-Monitoring">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv#Purpose"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-MonitoringIndividuals -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-MonitoringIndividuals">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv#ProcessingContext"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-NonDataSubjectDataSource -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-NonDataSubjectDataSource">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv#DataSource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-Predict -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-Predict">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv#Infer"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-PreventativeProtectionOfPersons -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-PreventativeProtectionOfPersons">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv#EnforceSecurity"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-PreventativeProtectionOfProperty -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-PreventativeProtectionOfProperty">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv#EnforceSecurity"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-PrivateUtilityProvider -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-PrivateUtilityProvider">
+        <rdfs:subClassOf rdf:resource="https://tyttikatariina.github.io/IMPACTO/#dpv-UtilityProvider"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-PublicUtilityProvider -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-PublicUtilityProvider">
+        <rdfs:subClassOf rdf:resource="https://tyttikatariina.github.io/IMPACTO/#dpv-UtilityProvider"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-Tracking -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-Tracking">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv#Use"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-UnknownDataSource -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-UnknownDataSource">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv#DataSource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-UtilityProvider -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-UtilityProvider">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv#Organisation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-WhistleblowerManagement -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-WhistleblowerManagement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv#HumanResourceManagement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FacialRecognitionTechnology -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FacialRecognitionTechnology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/tech#Capability"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-DPIANotRequiredProcess -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-DPIANotRequiredProcess">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-DPIARequiredProcess -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-DPIARequiredProcess">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-NonSystematic -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-NonSystematic">
+        <rdfs:subClassOf rdf:resource="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-Systematicity"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-SignificantEffect -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-SignificantEffect">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv#Impact"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-Systematic -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-Systematic">
+        <rdfs:subClassOf rdf:resource="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-Systematicity"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-Systematicity -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-Systematicity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv#ProcessingContext"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#loc-EducationalInstitution -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#loc-EducationalInstitution">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv#LocationLocality"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#loc-Healthcare -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#loc-Healthcare">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv#LocationLocality"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#loc-InPublicTransport -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#loc-InPublicTransport">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv#PubliclyAccessibleSpace"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#loc-OnPublicRoad -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#loc-OnPublicRoad">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv#PubliclyAccessibleSpace"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#loc-PersonalSpace -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#loc-PersonalSpace">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv#LocationLocality"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#loc-PreSchool -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#loc-PreSchool">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#loc-Prison -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#loc-Prison">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv#LocationLocality"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#loc-School -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#loc-School">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#loc-SocialCare -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#loc-SocialCare">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv#LocationLocality"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#loc-Workplace -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#loc-Workplace">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv#LocationLocality"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#loc-WorshipLocation -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#loc-WorshipLocation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#pd-AssessmentOutcome -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-AssessmentOutcome">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/pd#External"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#pd-BadConduct -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-BadConduct">
+        <rdfs:subClassOf rdf:resource="https://tyttikatariina.github.io/IMPACTO/#pd-Conduct"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#pd-Career -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-Career">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/pd#Professional"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#pd-Competency -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-Competency">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/pd#External"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#pd-Conduct -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-Conduct">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/pd#External"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#pd-DigitalTwin -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-DigitalTwin">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/pd#External"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#pd-ElectronicHealthCard -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-ElectronicHealthCard">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/pd#HealthRecord"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#pd-ElectronicHealthRecord -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-ElectronicHealthRecord">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/pd#HealthRecord"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#pd-GoodConduct -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-GoodConduct">
+        <rdfs:subClassOf rdf:resource="https://tyttikatariina.github.io/IMPACTO/#pd-Conduct"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#pd-LocationDisplacement -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-LocationDisplacement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/pd#External"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#pd-LocationRoute -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-LocationRoute">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/pd#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#pd-Skill -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-Skill">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/pd#External"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#pd-Trustworthiness -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-Trustworthiness">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/pd#External"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#pd-UnlawfulActivity -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-UnlawfulActivity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/pd#Social"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#risk-ContractExclusion -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#risk-ContractExclusion">
+        <rdfs:subClassOf rdf:resource="https://tyttikatariina.github.io/IMPACTO/#risk-ImpactOnContract"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#risk-ContractRefused -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#risk-ContractRefused">
+        <rdfs:subClassOf rdf:resource="https://tyttikatariina.github.io/IMPACTO/#risk-ImpactOnContract"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#risk-ContractSuspension -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#risk-ContractSuspension">
+        <rdfs:subClassOf rdf:resource="https://tyttikatariina.github.io/IMPACTO/#risk-ImpactOnContract"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#risk-ContractTerminated -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#risk-ContractTerminated">
+        <rdfs:subClassOf rdf:resource="https://tyttikatariina.github.io/IMPACTO/#risk-ImpactOnContract"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#risk-ImpactOnCareer -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#risk-ImpactOnCareer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv#Impact"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#risk-ImpactOnContract -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#risk-ImpactOnContract">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv#Impact"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#risk-LegalEffect -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#risk-LegalEffect">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv#Risk"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#risk-PropertyLoss -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#risk-PropertyLoss">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/risk#FinancialLoss"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#risk-RightsExercisePrevented -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#risk-RightsExercisePrevented">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv#Impact"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#risk-ServiceAccessAllowed -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#risk-ServiceAccessAllowed">
+        <rdfs:subClassOf rdf:resource="https://tyttikatariina.github.io/IMPACTO/#ServiceRelatedConsequence"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#risk-ServiceAccessDenied -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#risk-ServiceAccessDenied">
+        <rdfs:subClassOf rdf:resource="https://tyttikatariina.github.io/IMPACTO/#ServiceRelatedConsequence"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#sector-finance-SolvencyEvaluation -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#sector-finance-SolvencyEvaluation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/sector/finance#FinancialServiceManagement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#sector-health-MedicalSupportServiceProvision -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#sector-health-MedicalSupportServiceProvision">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/sector/health#ServiceProvision"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-IntroducingEGovernmentServices -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-IntroducingEGovernmentServices">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/sector/publicservices#PublicServiceProvision"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-MonitoringEGovernmentServices -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-MonitoringEGovernmentServices">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/sector/publicservices#PublicServiceProvision"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-OrganisingEGovernmentServices -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-OrganisingEGovernmentServices">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/sector/publicservices#PublicServiceProvision"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-ProvidingEGovernmentServices -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-ProvidingEGovernmentServices">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/sector/publicservices#PublicServiceProvision"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-PublicSafetyAlertManagement -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-PublicSafetyAlertManagement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv#PublicBenefit"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-SocialHousingManagement -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-SocialHousingManagement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/sector/publicservices#SocialWelfareProvision"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#tech-ElectronicPrescriptionSystem -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#tech-ElectronicPrescriptionSystem">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/tech#System"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#tech-IdentityManagementService -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#tech-IdentityManagementService">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/tech#Service"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#tech-Neurotechnology -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#tech-Neurotechnology">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv#Technology"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#tech-Sensor -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#tech-Sensor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/tech#Component"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#tech-SmartMeter -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#tech-SmartMeter">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/tech#Device"/>
+    </owl:Class>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#tech-TrustService -->
+
+
+    <owl:Class rdf:about="https://tyttikatariina.github.io/IMPACTO/#tech-TrustService">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/dpv/tech#Service"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/dpv#DataSource -->
+
+
+    <owl:Class rdf:about="https://w3id.org/dpv#DataSource"/>
+    
+
+
+    <!-- https://w3id.org/dpv#EnforceSecurity -->
+
+
+    <owl:Class rdf:about="https://w3id.org/dpv#EnforceSecurity"/>
+    
+
+
+    <!-- https://w3id.org/dpv#HumanResourceManagement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/dpv#HumanResourceManagement"/>
+    
+
+
+    <!-- https://w3id.org/dpv#Impact -->
+
+
+    <owl:Class rdf:about="https://w3id.org/dpv#Impact"/>
+    
+
+
+    <!-- https://w3id.org/dpv#Infer -->
+
+
+    <owl:Class rdf:about="https://w3id.org/dpv#Infer"/>
+    
+
+
+    <!-- https://w3id.org/dpv#Location -->
+
+
+    <owl:Class rdf:about="https://w3id.org/dpv#Location"/>
+    
+
+
+    <!-- https://w3id.org/dpv#LocationFixture -->
+
+
+    <owl:Class rdf:about="https://w3id.org/dpv#LocationFixture"/>
+    
+
+
+    <!-- https://w3id.org/dpv#LocationLocality -->
+
+
+    <owl:Class rdf:about="https://w3id.org/dpv#LocationLocality"/>
+    
+
+
+    <!-- https://w3id.org/dpv#Organisation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/dpv#Organisation"/>
+    
+
+
+    <!-- https://w3id.org/dpv#Process -->
+
+
+    <owl:Class rdf:about="https://w3id.org/dpv#Process"/>
+    
+
+
+    <!-- https://w3id.org/dpv#ProcessingContext -->
+
+
+    <owl:Class rdf:about="https://w3id.org/dpv#ProcessingContext"/>
+    
+
+
+    <!-- https://w3id.org/dpv#PublicBenefit -->
+
+
+    <owl:Class rdf:about="https://w3id.org/dpv#PublicBenefit"/>
+    
+
+
+    <!-- https://w3id.org/dpv#PubliclyAccessibleSpace -->
+
+
+    <owl:Class rdf:about="https://w3id.org/dpv#PubliclyAccessibleSpace"/>
+    
+
+
+    <!-- https://w3id.org/dpv#Purpose -->
+
+
+    <owl:Class rdf:about="https://w3id.org/dpv#Purpose"/>
+    
+
+
+    <!-- https://w3id.org/dpv#ResearchAndDevelopment -->
+
+
+    <owl:Class rdf:about="https://w3id.org/dpv#ResearchAndDevelopment"/>
+    
+
+
+    <!-- https://w3id.org/dpv#Risk -->
+
+
+    <owl:Class rdf:about="https://w3id.org/dpv#Risk"/>
+    
+
+
+    <!-- https://w3id.org/dpv#Technology -->
+
+
+    <owl:Class rdf:about="https://w3id.org/dpv#Technology"/>
+    
+
+
+    <!-- https://w3id.org/dpv#Use -->
+
+
+    <owl:Class rdf:about="https://w3id.org/dpv#Use"/>
+    
+
+
+    <!-- https://w3id.org/dpv/ai#Capability -->
+
+
+    <owl:Class rdf:about="https://w3id.org/dpv/ai#Capability"/>
+    
+
+
+    <!-- https://w3id.org/dpv/pd#External -->
+
+
+    <owl:Class rdf:about="https://w3id.org/dpv/pd#External"/>
+    
+
+
+    <!-- https://w3id.org/dpv/pd#HealthRecord -->
+
+
+    <owl:Class rdf:about="https://w3id.org/dpv/pd#HealthRecord"/>
+    
+
+
+    <!-- https://w3id.org/dpv/pd#Location -->
+
+
+    <owl:Class rdf:about="https://w3id.org/dpv/pd#Location"/>
+    
+
+
+    <!-- https://w3id.org/dpv/pd#Professional -->
+
+
+    <owl:Class rdf:about="https://w3id.org/dpv/pd#Professional"/>
+    
+
+
+    <!-- https://w3id.org/dpv/pd#Social -->
+
+
+    <owl:Class rdf:about="https://w3id.org/dpv/pd#Social"/>
+    
+
+
+    <!-- https://w3id.org/dpv/risk#FinancialLoss -->
+
+
+    <owl:Class rdf:about="https://w3id.org/dpv/risk#FinancialLoss"/>
+    
+
+
+    <!-- https://w3id.org/dpv/sector/finance#FinancialServiceManagement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/dpv/sector/finance#FinancialServiceManagement"/>
+    
+
+
+    <!-- https://w3id.org/dpv/sector/health#ServiceProvision -->
+
+
+    <owl:Class rdf:about="https://w3id.org/dpv/sector/health#ServiceProvision"/>
+    
+
+
+    <!-- https://w3id.org/dpv/sector/publicservices#PublicServiceProvision -->
+
+
+    <owl:Class rdf:about="https://w3id.org/dpv/sector/publicservices#PublicServiceProvision"/>
+    
+
+
+    <!-- https://w3id.org/dpv/sector/publicservices#SocialWelfareProvision -->
+
+
+    <owl:Class rdf:about="https://w3id.org/dpv/sector/publicservices#SocialWelfareProvision"/>
+    
+
+
+    <!-- https://w3id.org/dpv/tech#Capability -->
+
+
+    <owl:Class rdf:about="https://w3id.org/dpv/tech#Capability"/>
+    
+
+
+    <!-- https://w3id.org/dpv/tech#Component -->
+
+
+    <owl:Class rdf:about="https://w3id.org/dpv/tech#Component"/>
+    
+
+
+    <!-- https://w3id.org/dpv/tech#Device -->
+
+
+    <owl:Class rdf:about="https://w3id.org/dpv/tech#Device"/>
+    
+
+
+    <!-- https://w3id.org/dpv/tech#Service -->
+
+
+    <owl:Class rdf:about="https://w3id.org/dpv/tech#Service"/>
+    
+
+
+    <!-- https://w3id.org/dpv/tech#System -->
+
+
+    <owl:Class rdf:about="https://w3id.org/dpv/tech#System"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#ServiceRelatedConsequence -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#ServiceRelatedConsequence">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#SourceAT -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#SourceAT">
+        <skos:prefLabel xml:lang="en">Austria (AT)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#SourceAll -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#SourceAll">
+        <skos:prefLabel xml:lang="en">All EU/EEA Jurisdictions</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#SourceBE -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#SourceBE">
+        <skos:prefLabel xml:lang="en">Belgium (BE)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#SourceBG -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#SourceBG">
+        <skos:prefLabel xml:lang="en">Bulgaria (BG)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#SourceCY -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#SourceCY">
+        <skos:prefLabel xml:lang="en">Cyprus (CY)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#SourceCZ -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#SourceCZ">
+        <skos:prefLabel xml:lang="en">Czech Republic (CZ)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#SourceDE -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#SourceDE">
+        <skos:prefLabel xml:lang="en">Germany (DE)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#SourceDK -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#SourceDK">
+        <skos:prefLabel xml:lang="en">Denmark (DK)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#SourceEDPB -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#SourceEDPB">
+        <skos:prefLabel xml:lang="en">EDPB</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#SourceEE -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#SourceEE">
+        <skos:prefLabel xml:lang="en">Estonia (EE)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#SourceES -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#SourceES">
+        <skos:prefLabel xml:lang="en">Spain (ES)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#SourceFI -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#SourceFI">
+        <skos:prefLabel xml:lang="en">Finland (FI)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#SourceFR -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#SourceFR">
+        <skos:prefLabel xml:lang="en">France (FR)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#SourceGDPR -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#SourceGDPR">
+        <skos:prefLabel xml:lang="en">GDPR</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#SourceGR -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#SourceGR">
+        <skos:prefLabel xml:lang="en">Greece (GR)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#SourceHR -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#SourceHR">
+        <skos:prefLabel xml:lang="en">Croatia (HR)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#SourceHU -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#SourceHU">
+        <skos:prefLabel xml:lang="en">Hungary (HU)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#SourceIE -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#SourceIE">
+        <skos:prefLabel xml:lang="en">Ireland (IE)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#SourceIS -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#SourceIS">
+        <skos:prefLabel xml:lang="en">Iceland (IS)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#SourceIT -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#SourceIT">
+        <skos:prefLabel xml:lang="en">Italy (IT)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#SourceLI -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#SourceLI">
+        <skos:prefLabel xml:lang="en">Liechtenstein (LI)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#SourceLT -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#SourceLT">
+        <skos:prefLabel xml:lang="en">Lithuania (LT)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#SourceLU -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#SourceLU">
+        <skos:prefLabel xml:lang="en">Luxembourg (LU)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#SourceLV -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#SourceLV">
+        <skos:prefLabel xml:lang="en">Latvia (LV)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#SourceMT -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#SourceMT">
+        <skos:prefLabel xml:lang="en">Malta (MT)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#SourceNL -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#SourceNL">
+        <skos:prefLabel xml:lang="en">Netherlands (NL)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#SourceNO -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#SourceNO">
+        <skos:prefLabel xml:lang="en">Norway (NO)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#SourcePL -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#SourcePL">
+        <skos:prefLabel xml:lang="en">Poland (PL)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#SourcePT -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#SourcePT">
+        <skos:prefLabel xml:lang="en">Portugal (PT)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#SourceRO -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#SourceRO">
+        <skos:prefLabel xml:lang="en">Romania (RO)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#SourceSE -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#SourceSE">
+        <skos:prefLabel xml:lang="en">Sweden (SE)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#SourceSI -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#SourceSI">
+        <skos:prefLabel xml:lang="en">Slovenia (SI)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#SourceSK -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#SourceSK">
+        <skos:prefLabel xml:lang="en">Slovakia (SK)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#ai-AutomaticObjectRecognition -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#ai-AutomaticObjectRecognition">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#ai-FacialRecognition -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#ai-FacialRecognition">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#ai-ObjectIsolation -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#ai-ObjectIsolation">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#ai-UseOfAI -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#ai-UseOfAI">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-Automated -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-Automated">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-CentralisedLocation -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-CentralisedLocation">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-ClassificationOfIndividuals -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-ClassificationOfIndividuals">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-HistoricResearch -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-HistoricResearch">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-Inspection -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-Inspection">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-LabourBrokeringService -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-LabourBrokeringService">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-Monitoring -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-Monitoring">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-MonitoringIndividuals -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-MonitoringIndividuals">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-NonDataSubjectDataSource -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-NonDataSubjectDataSource">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-Predict -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-Predict">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-PreventativeProtectionOfPersons -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-PreventativeProtectionOfPersons">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-PreventativeProtectionOfProperty -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-PreventativeProtectionOfProperty">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-PrivateUtilityProvider -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-PrivateUtilityProvider">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-PublicUtilityProvider -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-PublicUtilityProvider">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-Tracking -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-Tracking">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-UnknownDataSource -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-UnknownDataSource">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-UtilityProvider -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-UtilityProvider">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-WhistleblowerManagement -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-WhistleblowerManagement">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FacialRecognitionTechnology -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FacialRecognitionTechnology">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-DPIANotRequiredProcess -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-DPIANotRequiredProcess">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-DPIARequiredProcess -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-DPIARequiredProcess">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-NonSystematic -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-NonSystematic">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-SignificantEffect -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-SignificantEffect">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-Systematic -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-Systematic">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-Systematicity -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-Systematicity">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#loc-EducationalInstitution -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#loc-EducationalInstitution">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#loc-Healthcare -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#loc-Healthcare">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#loc-InPublicTransport -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#loc-InPublicTransport">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#loc-OnPublicRoad -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#loc-OnPublicRoad">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#loc-PersonalSpace -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#loc-PersonalSpace">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#loc-PreSchool -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#loc-PreSchool">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#loc-Prison -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#loc-Prison">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#loc-School -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#loc-School">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#loc-SocialCare -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#loc-SocialCare">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#loc-Workplace -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#loc-Workplace">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#loc-WorshipLocation -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#loc-WorshipLocation">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#pd-AssessmentOutcome -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-AssessmentOutcome">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#pd-BadConduct -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-BadConduct">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#pd-Career -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-Career">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#pd-Competency -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-Competency">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#pd-Conduct -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-Conduct">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#pd-DigitalTwin -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-DigitalTwin">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#pd-ElectronicHealthCard -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-ElectronicHealthCard">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#pd-ElectronicHealthRecord -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-ElectronicHealthRecord">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#pd-GoodConduct -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-GoodConduct">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#pd-LocationDisplacement -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-LocationDisplacement">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#pd-LocationRoute -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-LocationRoute">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#pd-Skill -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-Skill">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#pd-Trustworthiness -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-Trustworthiness">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#pd-UnlawfulActivity -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-UnlawfulActivity">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#risk-ContractExclusion -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#risk-ContractExclusion">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#risk-ContractRefused -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#risk-ContractRefused">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#risk-ContractSuspension -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#risk-ContractSuspension">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#risk-ContractTerminated -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#risk-ContractTerminated">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#risk-ImpactOnCareer -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#risk-ImpactOnCareer">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#risk-ImpactOnContract -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#risk-ImpactOnContract">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#risk-LegalEffect -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#risk-LegalEffect">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#risk-PropertyLoss -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#risk-PropertyLoss">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#risk-RightsExercisePrevented -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#risk-RightsExercisePrevented">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#risk-ServiceAccessAllowed -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#risk-ServiceAccessAllowed">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#risk-ServiceAccessDenied -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#risk-ServiceAccessDenied">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#sector-finance-SolvencyEvaluation -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#sector-finance-SolvencyEvaluation">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#sector-health-MedicalSupportServiceProvision -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#sector-health-MedicalSupportServiceProvision">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-IntroducingEGovernmentServices -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-IntroducingEGovernmentServices">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-MonitoringEGovernmentServices -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-MonitoringEGovernmentServices">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-OrganisingEGovernmentServices -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-OrganisingEGovernmentServices">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-ProvidingEGovernmentServices -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-ProvidingEGovernmentServices">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-PublicSafetyAlertManagement -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-PublicSafetyAlertManagement">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-SocialHousingManagement -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-SocialHousingManagement">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#tech-ElectronicPrescriptionSystem -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#tech-ElectronicPrescriptionSystem">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#tech-IdentityManagementService -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#tech-IdentityManagementService">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#tech-Neurotechnology -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#tech-Neurotechnology">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#tech-Sensor -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#tech-Sensor">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#tech-SmartMeter -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#tech-SmartMeter">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#tech-TrustService -->
+
+
+    <owl:NamedIndividual rdf:about="https://tyttikatariina.github.io/IMPACTO/#tech-TrustService">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dpv/legal/eu/gdpr#DPIARequiredList -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/legal/eu/gdpr#DPIARequiredList">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <dpv:hasJurisdiction rdf:resource="https://w3id.org/dpv/loc#EU"/>
+        <skos:prefLabel xml:lang="en">GDPR DPIA Required Process List</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dpv/legal/eu/gdpr/at#DPIARequiredList -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/legal/eu/gdpr/at#DPIARequiredList">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <dpv:hasJurisdiction rdf:resource="https://w3id.org/dpv/loc#AT"/>
+        <skos:definition xml:lang="en">The list of processing activities requiring a DPIA as published by the Austrian Data Protection Authority</skos:definition>
+        <skos:prefLabel xml:lang="en">Austria DPIA Required Process List</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dpv/legal/eu/gdpr/be#DPIARequiredList -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/legal/eu/gdpr/be#DPIARequiredList">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <dpv:hasJurisdiction rdf:resource="https://w3id.org/dpv/loc#BE"/>
+        <skos:definition xml:lang="en">The list of processing activities requiring a DPIA as published by the Belgian Data Protection Authority</skos:definition>
+        <skos:prefLabel xml:lang="en">Belgium DPIA Required Process List</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dpv/legal/eu/gdpr/bg#DPIARequiredList -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/legal/eu/gdpr/bg#DPIARequiredList">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <dpv:hasJurisdiction rdf:resource="https://w3id.org/dpv/loc#BG"/>
+        <skos:definition xml:lang="en">The list of processing activities requiring a DPIA as published by the Bulgarian Data Protection Authority</skos:definition>
+        <skos:prefLabel xml:lang="en">Bulgaria DPIA Required Process List</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dpv/legal/eu/gdpr/cy#DPIARequiredList -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/legal/eu/gdpr/cy#DPIARequiredList">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <dpv:hasJurisdiction rdf:resource="https://w3id.org/dpv/loc#CY"/>
+        <skos:definition xml:lang="en">The list of processing activities requiring a DPIA as published by the Cypriot Data Protection Authority</skos:definition>
+        <skos:prefLabel xml:lang="en">Cyprus DPIA Required Process List</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dpv/legal/eu/gdpr/cz#DPIARequiredList -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/legal/eu/gdpr/cz#DPIARequiredList">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <dpv:hasJurisdiction rdf:resource="https://w3id.org/dpv/loc#CZ"/>
+        <skos:definition xml:lang="en">The list of processing activities requiring a DPIA as published by the Czech Data Protection Authority</skos:definition>
+        <skos:prefLabel xml:lang="en">Czech Republic DPIA Required Process List</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dpv/legal/eu/gdpr/de#DPIARequiredList -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/legal/eu/gdpr/de#DPIARequiredList">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <dpv:hasJurisdiction rdf:resource="https://w3id.org/dpv/loc#DE"/>
+        <skos:definition xml:lang="en">The list of processing activities requiring a DPIA as published by the German Data Protection Authorities</skos:definition>
+        <skos:prefLabel xml:lang="en">Germany DPIA Required Process List</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dpv/legal/eu/gdpr/dk#DPIARequiredList -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/legal/eu/gdpr/dk#DPIARequiredList">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <dpv:hasJurisdiction rdf:resource="https://w3id.org/dpv/loc#DK"/>
+        <skos:definition xml:lang="en">The list of processing activities requiring a DPIA as published by the Danish Data Protection Authority</skos:definition>
+        <skos:prefLabel xml:lang="en">Denmark DPIA Required Process List</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dpv/legal/eu/gdpr/ee#DPIARequiredList -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/legal/eu/gdpr/ee#DPIARequiredList">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <dpv:hasJurisdiction rdf:resource="https://w3id.org/dpv/loc#EE"/>
+        <skos:definition xml:lang="en">The list of processing activities requiring a DPIA as published by the Estonian Data Protection Authority</skos:definition>
+        <skos:prefLabel xml:lang="en">Estonia DPIA Required Process List</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dpv/legal/eu/gdpr/es#DPIARequiredList -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/legal/eu/gdpr/es#DPIARequiredList">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <dpv:hasJurisdiction rdf:resource="https://w3id.org/dpv/loc#ES"/>
+        <skos:definition xml:lang="en">The list of processing activities requiring a DPIA as published by the Spanish Data Protection Authority (AEPD)</skos:definition>
+        <skos:prefLabel xml:lang="en">Spain DPIA Required Process List</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dpv/legal/eu/gdpr/fi#DPIARequiredList -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/legal/eu/gdpr/fi#DPIARequiredList">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <dpv:hasJurisdiction rdf:resource="https://w3id.org/dpv/loc#FI"/>
+        <skos:definition xml:lang="en">The list of processing activities requiring a DPIA as published by the Finnish Data Protection Authority</skos:definition>
+        <skos:prefLabel xml:lang="en">Finland DPIA Required Process List</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dpv/legal/eu/gdpr/fr#DPIARequiredList -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/legal/eu/gdpr/fr#DPIARequiredList">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <dpv:hasJurisdiction rdf:resource="https://w3id.org/dpv/loc#FR"/>
+        <skos:definition xml:lang="en">The list of processing activities requiring a DPIA as published by the French Data Protection Authority (CNIL)</skos:definition>
+        <skos:prefLabel xml:lang="en">France DPIA Required Process List</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dpv/legal/eu/gdpr/gr#DPIARequiredList -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/legal/eu/gdpr/gr#DPIARequiredList">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <dpv:hasJurisdiction rdf:resource="https://w3id.org/dpv/loc#GR"/>
+        <skos:definition xml:lang="en">The list of processing activities requiring a DPIA as published by the Greek Data Protection Authority</skos:definition>
+        <skos:prefLabel xml:lang="en">Greece DPIA Required Process List</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dpv/legal/eu/gdpr/hr#DPIARequiredList -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/legal/eu/gdpr/hr#DPIARequiredList">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <dpv:hasJurisdiction rdf:resource="https://w3id.org/dpv/loc#HR"/>
+        <skos:definition xml:lang="en">The list of processing activities requiring a DPIA as published by the Croatian Data Protection Authority</skos:definition>
+        <skos:prefLabel xml:lang="en">Croatia DPIA Required Process List</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dpv/legal/eu/gdpr/hu#DPIARequiredList -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/legal/eu/gdpr/hu#DPIARequiredList">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <dpv:hasJurisdiction rdf:resource="https://w3id.org/dpv/loc#HU"/>
+        <skos:definition xml:lang="en">The list of processing activities requiring a DPIA as published by the Hungarian Data Protection Authority</skos:definition>
+        <skos:prefLabel xml:lang="en">Hungary DPIA Required Process List</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dpv/legal/eu/gdpr/ie#DPIARequiredList -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/legal/eu/gdpr/ie#DPIARequiredList">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <dpv:hasJurisdiction rdf:resource="https://w3id.org/dpv/loc#IE"/>
+        <skos:definition xml:lang="en">The list of processing activities requiring a DPIA as published by the Irish Data Protection Commission</skos:definition>
+        <skos:prefLabel xml:lang="en">Ireland DPIA Required Process List</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dpv/legal/eu/gdpr/is#DPIARequiredList -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/legal/eu/gdpr/is#DPIARequiredList">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <dpv:hasJurisdiction rdf:resource="https://w3id.org/dpv/loc#IS"/>
+        <skos:definition xml:lang="en">The list of processing activities requiring a DPIA as published by the Icelandic Data Protection Authority</skos:definition>
+        <skos:prefLabel xml:lang="en">Iceland DPIA Required Process List</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dpv/legal/eu/gdpr/it#DPIARequiredList -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/legal/eu/gdpr/it#DPIARequiredList">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <dpv:hasJurisdiction rdf:resource="https://w3id.org/dpv/loc#IT"/>
+        <skos:definition xml:lang="en">The list of processing activities requiring a DPIA as published by the Italian Data Protection Authority (Garante)</skos:definition>
+        <skos:prefLabel xml:lang="en">Italy DPIA Required Process List</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dpv/legal/eu/gdpr/li#DPIARequiredList -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/legal/eu/gdpr/li#DPIARequiredList">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <dpv:hasJurisdiction rdf:resource="https://w3id.org/dpv/loc#LI"/>
+        <skos:definition xml:lang="en">The list of processing activities requiring a DPIA as published by the Liechtenstein Data Protection Authority</skos:definition>
+        <skos:prefLabel xml:lang="en">Liechtenstein DPIA Required Process List</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dpv/legal/eu/gdpr/lt#DPIARequiredList -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/legal/eu/gdpr/lt#DPIARequiredList">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <dpv:hasJurisdiction rdf:resource="https://w3id.org/dpv/loc#LT"/>
+        <skos:definition xml:lang="en">The list of processing activities requiring a DPIA as published by the Lithuanian Data Protection Authority</skos:definition>
+        <skos:prefLabel xml:lang="en">Lithuania DPIA Required Process List</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dpv/legal/eu/gdpr/lu#DPIARequiredList -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/legal/eu/gdpr/lu#DPIARequiredList">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <dpv:hasJurisdiction rdf:resource="https://w3id.org/dpv/loc#LU"/>
+        <skos:definition xml:lang="en">The list of processing activities requiring a DPIA as published by the Luxembourg Data Protection Authority (CNPD)</skos:definition>
+        <skos:prefLabel xml:lang="en">Luxembourg DPIA Required Process List</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dpv/legal/eu/gdpr/lv#DPIARequiredList -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/legal/eu/gdpr/lv#DPIARequiredList">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <dpv:hasJurisdiction rdf:resource="https://w3id.org/dpv/loc#LV"/>
+        <skos:definition xml:lang="en">The list of processing activities requiring a DPIA as published by the Latvian Data Protection Authority</skos:definition>
+        <skos:prefLabel xml:lang="en">Latvia DPIA Required Process List</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dpv/legal/eu/gdpr/mt#DPIARequiredList -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/legal/eu/gdpr/mt#DPIARequiredList">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <dpv:hasJurisdiction rdf:resource="https://w3id.org/dpv/loc#MT"/>
+        <skos:definition xml:lang="en">The list of processing activities requiring a DPIA as published by the Maltese Data Protection Authority</skos:definition>
+        <skos:prefLabel xml:lang="en">Malta DPIA Required Process List</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dpv/legal/eu/gdpr/nl#DPIARequiredList -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/legal/eu/gdpr/nl#DPIARequiredList">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <dpv:hasJurisdiction rdf:resource="https://w3id.org/dpv/loc#NL"/>
+        <skos:definition xml:lang="en">The list of processing activities requiring a DPIA as published by the Dutch Data Protection Authority (Autoriteit Persoonsgegevens)</skos:definition>
+        <skos:prefLabel xml:lang="en">Netherlands DPIA Required Process List</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dpv/legal/eu/gdpr/no#DPIARequiredList -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/legal/eu/gdpr/no#DPIARequiredList">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <dpv:hasJurisdiction rdf:resource="https://w3id.org/dpv/loc#NO"/>
+        <skos:definition xml:lang="en">The list of processing activities requiring a DPIA as published by the Norwegian Data Protection Authority (Datatilsynet)</skos:definition>
+        <skos:prefLabel xml:lang="en">Norway DPIA Required Process List</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dpv/legal/eu/gdpr/pl#DPIARequiredList -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/legal/eu/gdpr/pl#DPIARequiredList">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <dpv:hasJurisdiction rdf:resource="https://w3id.org/dpv/loc#PL"/>
+        <skos:definition xml:lang="en">The list of processing activities requiring a DPIA as published by the Polish Data Protection Authority (UODO)</skos:definition>
+        <skos:prefLabel xml:lang="en">Poland DPIA Required Process List</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dpv/legal/eu/gdpr/pt#DPIARequiredList -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/legal/eu/gdpr/pt#DPIARequiredList">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <dpv:hasJurisdiction rdf:resource="https://w3id.org/dpv/loc#PT"/>
+        <skos:definition xml:lang="en">The list of processing activities requiring a DPIA as published by the Portuguese Data Protection Authority (CNPD)</skos:definition>
+        <skos:prefLabel xml:lang="en">Portugal DPIA Required Process List</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dpv/legal/eu/gdpr/ro#DPIARequiredList -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/legal/eu/gdpr/ro#DPIARequiredList">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <dpv:hasJurisdiction rdf:resource="https://w3id.org/dpv/loc#RO"/>
+        <skos:definition xml:lang="en">The list of processing activities requiring a DPIA as published by the Romanian Data Protection Authority (ANSPDCP)</skos:definition>
+        <skos:prefLabel xml:lang="en">Romania DPIA Required Process List</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dpv/legal/eu/gdpr/se#DPIARequiredList -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/legal/eu/gdpr/se#DPIARequiredList">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <dpv:hasJurisdiction rdf:resource="https://w3id.org/dpv/loc#SE"/>
+        <skos:definition xml:lang="en">The list of processing activities requiring a DPIA as published by the Swedish Data Protection Authority (IMY)</skos:definition>
+        <skos:prefLabel xml:lang="en">Sweden DPIA Required Process List</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dpv/legal/eu/gdpr/si#DPIARequiredList -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/legal/eu/gdpr/si#DPIARequiredList">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <dpv:hasJurisdiction rdf:resource="https://w3id.org/dpv/loc#SI"/>
+        <skos:definition xml:lang="en">The list of processing activities requiring a DPIA as published by the Slovenian Data Protection Authority (IP RS)</skos:definition>
+        <skos:prefLabel xml:lang="en">Slovenia DPIA Required Process List</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dpv/legal/eu/gdpr/sk#DPIARequiredList -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/legal/eu/gdpr/sk#DPIARequiredList">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <dpv:hasJurisdiction rdf:resource="https://w3id.org/dpv/loc#SK"/>
+        <skos:definition xml:lang="en">The list of processing activities requiring a DPIA as published by the Slovak Data Protection Authority</skos:definition>
+        <skos:prefLabel xml:lang="en">Slovakia DPIA Required Process List</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/dpv/loc#AT -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/loc#AT"/>
+    
+
+
+    <!-- https://w3id.org/dpv/loc#BE -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/loc#BE"/>
+    
+
+
+    <!-- https://w3id.org/dpv/loc#BG -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/loc#BG"/>
+    
+
+
+    <!-- https://w3id.org/dpv/loc#CY -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/loc#CY"/>
+    
+
+
+    <!-- https://w3id.org/dpv/loc#CZ -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/loc#CZ"/>
+    
+
+
+    <!-- https://w3id.org/dpv/loc#DE -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/loc#DE"/>
+    
+
+
+    <!-- https://w3id.org/dpv/loc#DK -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/loc#DK"/>
+    
+
+
+    <!-- https://w3id.org/dpv/loc#EE -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/loc#EE"/>
+    
+
+
+    <!-- https://w3id.org/dpv/loc#ES -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/loc#ES"/>
+    
+
+
+    <!-- https://w3id.org/dpv/loc#EU -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/loc#EU"/>
+    
+
+
+    <!-- https://w3id.org/dpv/loc#FI -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/loc#FI"/>
+    
+
+
+    <!-- https://w3id.org/dpv/loc#FR -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/loc#FR"/>
+    
+
+
+    <!-- https://w3id.org/dpv/loc#GR -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/loc#GR"/>
+    
+
+
+    <!-- https://w3id.org/dpv/loc#HR -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/loc#HR"/>
+    
+
+
+    <!-- https://w3id.org/dpv/loc#HU -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/loc#HU"/>
+    
+
+
+    <!-- https://w3id.org/dpv/loc#IE -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/loc#IE"/>
+    
+
+
+    <!-- https://w3id.org/dpv/loc#IS -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/loc#IS"/>
+    
+
+
+    <!-- https://w3id.org/dpv/loc#IT -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/loc#IT"/>
+    
+
+
+    <!-- https://w3id.org/dpv/loc#LI -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/loc#LI"/>
+    
+
+
+    <!-- https://w3id.org/dpv/loc#LT -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/loc#LT"/>
+    
+
+
+    <!-- https://w3id.org/dpv/loc#LU -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/loc#LU"/>
+    
+
+
+    <!-- https://w3id.org/dpv/loc#LV -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/loc#LV"/>
+    
+
+
+    <!-- https://w3id.org/dpv/loc#MT -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/loc#MT"/>
+    
+
+
+    <!-- https://w3id.org/dpv/loc#NL -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/loc#NL"/>
+    
+
+
+    <!-- https://w3id.org/dpv/loc#NO -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/loc#NO"/>
+    
+
+
+    <!-- https://w3id.org/dpv/loc#PL -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/loc#PL"/>
+    
+
+
+    <!-- https://w3id.org/dpv/loc#PT -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/loc#PT"/>
+    
+
+
+    <!-- https://w3id.org/dpv/loc#RO -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/loc#RO"/>
+    
+
+
+    <!-- https://w3id.org/dpv/loc#SE -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/loc#SE"/>
+    
+
+
+    <!-- https://w3id.org/dpv/loc#SI -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/loc#SI"/>
+    
+
+
+    <!-- https://w3id.org/dpv/loc#SK -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/dpv/loc#SK"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#ServiceRelatedConsequence">
+        <rdfs:label xml:lang="en">Service Related Consequence</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv#Impact"/>
+        <skos:definition xml:lang="en">A consequence that affects an individual&apos;s or organisation&apos;s access to or participation in a service</skos:definition>
+        <skos:prefLabel xml:lang="en">Service Related Consequence</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">Parent term for service-related consequences</skos:scopeNote>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#ai-AutomaticObjectRecognition">
+        <rdfs:label xml:lang="en">Automatic Object Recognition</rdfs:label>
+        <skos:definition xml:lang="en">The use of an AI system capable of automatic object recognition</skos:definition>
+        <skos:prefLabel xml:lang="en">Automatic Object Recognition</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#ai-FacialRecognition">
+        <rdfs:label xml:lang="en">Facial Recognition</rdfs:label>
+        <skos:definition xml:lang="en">The use of an AI system capable of facial recognition</skos:definition>
+        <skos:prefLabel xml:lang="en">Facial Recognition</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#ai-ObjectIsolation">
+        <rdfs:label xml:lang="en">Object Isolation</rdfs:label>
+        <skos:definition xml:lang="en">The use of an AI system capable of isolating objects</skos:definition>
+        <skos:prefLabel xml:lang="en">Object Isolation</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#ai-UseOfAI">
+        <rdfs:label xml:lang="en">Use Of AI</rdfs:label>
+        <skos:definition xml:lang="en">The use of an AI system in processing of personal data</skos:definition>
+        <skos:prefLabel xml:lang="en">Use Of AI</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-Automated">
+        <rdfs:label xml:lang="en">Automated</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv#ProcessingContext"/>
+        <skos:definition xml:lang="en">Processing context indicating that automation is involved and parent concept for all automation-related processing contexts</skos:definition>
+        <skos:prefLabel xml:lang="en">Automated</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-CentralisedLocation">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceDE"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceSI"/>
+        <rdfs:label xml:lang="en">Centralised Location</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv#LocationFixture"/>
+        <skos:definition xml:lang="en">A physical or digital point where data is collected and aggregated from multiple sources, typically involving centralised sensors or mobile-based systems for large-scale monitoring or control</skos:definition>
+        <skos:notation>C62</skos:notation>
+        <skos:prefLabel xml:lang="en">Centralised Location</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-ClassificationOfIndividuals">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceAT"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceHU"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourcePL"/>
+        <rdfs:label xml:lang="en">Classification Of Individuals</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv#ProcessingContext"/>
+        <skos:definition xml:lang="en">Processing that evaluates, ranks, or categorises natural persons, often based on behavioural, demographic, or personal data</skos:definition>
+        <skos:notation>C48</skos:notation>
+        <skos:prefLabel xml:lang="en">Classification Of Individuals</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">Phrasing follows Article 29 Data Protection Working Party and EDPB guidelines</skos:scopeNote>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-HistoricResearch">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceLT"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceLU"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceLV"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceNO"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourcePT"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceSK"/>
+        <rdfs:label xml:lang="en">Historical Research</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv#ResearchAndDevelopment"/>
+        <skos:definition xml:lang="en">The processing of personal data for scientific or historical research purposes, conducted without the data subject&apos;s consent, and in conjunction with at least one of the legal criteria under the GDPR, such as being necessary for a task carried out in the public interest</skos:definition>
+        <skos:notation>C30</skos:notation>
+        <skos:prefLabel xml:lang="en">Historical Research</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-Inspection">
+        <rdfs:label xml:lang="en">Inspection</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv#ProcessingContext"/>
+        <skos:definition xml:lang="en">A processing context where personal data is used as part of an evaluative or investigative activity or purpose</skos:definition>
+        <skos:prefLabel xml:lang="en">Inspection</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-LabourBrokeringService">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceEE"/>
+        <rdfs:label xml:lang="en">Labour Brokering Service</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv#HumanResourceManagement"/>
+        <skos:definition xml:lang="en">Service that facilitates labour provision through a brokering process, including matching workers with jobs or facilitating labour based on demand</skos:definition>
+        <skos:notation>C105</skos:notation>
+        <skos:prefLabel xml:lang="en">Labour Brokering Service</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-Monitoring">
+        <skos:definition xml:lang="en">A purpose involving the monitoring of individuals</skos:definition>
+        <skos:prefLabel xml:lang="en">Monitoring</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-MonitoringIndividuals">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceAll"/>
+        <rdfs:label xml:lang="en">Monitoring Individuals</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv#ProcessingContext"/>
+        <skos:definition xml:lang="en">Monitoring of humans (as individuals or as groups) which includes a systematic observation or surveillance of behaviour, movements, or activities</skos:definition>
+        <skos:notation>C5, C43, C46, C53, C55, C61, C76, C87, C97</skos:notation>
+        <skos:prefLabel xml:lang="en">Monitoring Individuals</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">Proposed as addition to dpv: — differs from existing dpv:Monitor (which monitors data for criteria) by focusing specifically on monitoring of data subjects themselves</skos:scopeNote>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-NonDataSubjectDataSource">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceAT"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceCZ"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceDE"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceES"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceGR"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceLT"/>
+        <rdfs:label xml:lang="en">Non Data Subject Data Source</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv#DataSource"/>
+        <skos:definition xml:lang="en">Personal data obtained from a third party or another source rather than directly from the individual concerned, especially in cases where informing the data subject would be difficult or impossible, such as in law enforcement, research, or archival processing</skos:definition>
+        <skos:notation>C25</skos:notation>
+        <skos:prefLabel xml:lang="en">Non Data Subject Data Source</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">Existing non-data subject sources in DPV should be moved below this concept</skos:scopeNote>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-Predict">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceEDPB"/>
+        <rdfs:label xml:lang="en">Predict</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv#Infer"/>
+        <skos:definition xml:lang="en">To anticipate or forecast aspects of an individual&apos;s behaviour, characteristics, or future actions</skos:definition>
+        <skos:notation>C14, C37, C73</skos:notation>
+        <skos:prefLabel xml:lang="en">Predict</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-PreventativeProtectionOfPersons">
+        <rdfs:label xml:lang="en">Preventative Protection Of Persons</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv#EnforceSecurity"/>
+        <skos:definition xml:lang="en">Processing carried out for the purpose of preventing harm or protecting individuals before an incident occurs</skos:definition>
+        <skos:prefLabel xml:lang="en">Preventative Protection Of Persons</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-PreventativeProtectionOfProperty">
+        <rdfs:label xml:lang="en">Preventative Protection Of Property</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv#EnforceSecurity"/>
+        <skos:definition xml:lang="en">Processing carried out for the purpose of preventing loss or damage to property before an incident occurs</skos:definition>
+        <skos:prefLabel xml:lang="en">Preventative Protection Of Property</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-PrivateUtilityProvider">
+        <rdfs:label xml:lang="en">Private Utility Provider</rdfs:label>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#dpv-UtilityProvider"/>
+        <skos:definition xml:lang="en">A private organisation providing utilities</skos:definition>
+        <skos:prefLabel xml:lang="en">Private Utility Provider</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-PublicUtilityProvider">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceBE"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceGR"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceHR"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceHU"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceNL"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourcePL"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceRO"/>
+        <rdfs:label xml:lang="en">Public Utility Provider</rdfs:label>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#dpv-UtilityProvider"/>
+        <skos:definition xml:lang="en">A public organisation providing utilities</skos:definition>
+        <skos:notation>C23</skos:notation>
+        <skos:prefLabel xml:lang="en">Public Utility Provider</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-Tracking">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceLI"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceLV"/>
+        <rdfs:label xml:lang="en">Tracking</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv#Use"/>
+        <skos:definition xml:lang="en">The use of data to follow or track something across contexts</skos:definition>
+        <skos:notation>C58</skos:notation>
+        <skos:prefLabel xml:lang="en">Tracking</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">While generalised to enable tracking of activities and events, this also encompasses tracking of individuals across websites, apps, devices, and other forms which can constitute systematic monitoring and surveillance</skos:scopeNote>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-UnknownDataSource">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceIE"/>
+        <rdfs:label xml:lang="en">Unknown Data Source</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv#DataSource"/>
+        <skos:definition xml:lang="en">The origin of personal data cannot be determined or is not known</skos:definition>
+        <skos:notation>C94</skos:notation>
+        <skos:prefLabel xml:lang="en">Unknown Data Source</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-UtilityProvider">
+        <rdfs:label xml:lang="en">Utility Provider</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv#Organisation"/>
+        <skos:definition xml:lang="en">An organisation (public or private) that processes personal data in the provision of utilities</skos:definition>
+        <skos:prefLabel xml:lang="en">Utility Provider</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-WhistleblowerManagement">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceFI"/>
+        <rdfs:label xml:lang="en">Whistleblower Management</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv#HumanResourceManagement"/>
+        <skos:definition xml:lang="en">The management of whistleblower processes, systems, and information through which individuals or groups can report on negative activities such as misconduct, harms, and compliance violations</skos:definition>
+        <skos:notation>C100</skos:notation>
+        <skos:prefLabel xml:lang="en">Whistleblower Management</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FacialRecognitionTechnology">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceCY"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceDK"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceIT"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourcePL"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceRO"/>
+        <rdfs:label xml:lang="en">Facial Recognition Technology</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv/tech#Capability"/>
+        <skos:definition xml:lang="en">A biometric identification system that detects, captures, and compares facial features to identify or verify individuals in real-time or retrospectively, as defined in the EU AI Act</skos:definition>
+        <skos:notation>C36</skos:notation>
+        <skos:prefLabel xml:lang="en">Facial Recognition Technology</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">Proposed as rename/replacement of current tech:FaceRecognition to align with EU AI Act terminology</skos:scopeNote>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-DPIANotRequiredProcess">
+        <terms:source rdf:resource="https://w3id.org/dpv/legal/eu/gdpr/at#DPIANotRequiredList"/>
+        <terms:source rdf:resource="https://w3id.org/dpv/legal/eu/gdpr/cz#DPIANotRequiredList"/>
+        <terms:source rdf:resource="https://w3id.org/dpv/legal/eu/gdpr/es#DPIANotRequiredList"/>
+        <terms:source rdf:resource="https://w3id.org/dpv/legal/eu/gdpr/fr#DPIANotRequiredList"/>
+        <terms:source rdf:resource="https://w3id.org/dpv/legal/eu/gdpr/hr#DPIANotRequiredList"/>
+        <terms:source rdf:resource="https://w3id.org/dpv/legal/eu/gdpr/it#DPIANotRequiredList"/>
+        <terms:source rdf:resource="https://w3id.org/dpv/legal/eu/gdpr/lv#DPIANotRequiredList"/>
+        <terms:source rdf:resource="https://w3id.org/dpv/legal/eu/gdpr/nl#DPIANotRequiredList"/>
+        <rdfs:label xml:lang="en">DPIA Not Required Process</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv#Process"/>
+        <skos:definition xml:lang="en">A personal data processing activity that does not require a DPIA according to the whitelists of processing activities published by Member State Data Protection Authorities</skos:definition>
+        <skos:prefLabel xml:lang="en">DPIA Not Required Process</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">The requirements for whether a DPIA is required for a specific process can be found in GDPR Art 35 and also in specific lists published by Member State Data Protection Authorities</skos:scopeNote>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-DPIARequiredProcess">
+        <terms:source rdf:resource="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679"/>
+        <rdfs:label xml:lang="en">DPIA Required Process</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv#Process"/>
+        <skos:definition xml:lang="en">A personal data processing activity that requires a DPIA according to GDPR Article 35</skos:definition>
+        <skos:prefLabel xml:lang="en">DPIA Required Process</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">The requirements for whether a DPIA is required for a specific process can be found in GDPR Art 35 and also in specific lists published by Member State Data Protection Authorities</skos:scopeNote>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-NonSystematic">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceAll"/>
+        <rdfs:label xml:lang="en">Non-Systematic</rdfs:label>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-Systematicity"/>
+        <skos:definition xml:lang="en">Indication that processing does not meet the definition of systematic</skos:definition>
+        <skos:notation>C29, C39, C45, C51, C50, C55, C82, C89</skos:notation>
+        <skos:prefLabel xml:lang="en">Non-Systematic</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-SignificantEffect">
+        <rdfs:label xml:lang="en">Significant Effect</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv#Impact"/>
+        <skos:definition xml:lang="en">An impact that is distinguished as being significant due to having a legal impact</skos:definition>
+        <skos:prefLabel xml:lang="en">Significant Effect</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">The parent to legaleffect</skos:scopeNote>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-Systematic">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceAll"/>
+        <rdfs:label xml:lang="en">Systematic</rdfs:label>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-Systematicity"/>
+        <skos:definition xml:lang="en">Indication that processing occurs according to a system; is pre-arranged, organised or methodical, and takes place as part of a general plan or is carried out as part of a strategy</skos:definition>
+        <skos:notation>C29, C39, C45, C51, C50, C55, C82, C89</skos:notation>
+        <skos:prefLabel xml:lang="en">Systematic</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">Definition follows ICO UK. Proposed as subclass of eu-gdpr:Systematicity</skos:scopeNote>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-Systematicity">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceBE"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceBG"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceCY"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceFR"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceGR"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceHU"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceIS"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceNL"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceNO"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourcePL"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceSI"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceSK"/>
+        <rdfs:label xml:lang="en">Systematicity</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv#ProcessingContext"/>
+        <skos:definition xml:lang="en">An indication of whether data processing is systematic, i.e. if it is organised and constitutes repeated actions performed according to a plan or method, such as for monitoring, analysis or decision-making</skos:definition>
+        <skos:notation>C29, C39, C45, C51, C50, C55, C82, C89</skos:notation>
+        <skos:prefLabel xml:lang="en">Systematicity</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#loc-EducationalInstitution">
+        <rdfs:label xml:lang="en">Educational Institution</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv#LocationLocality"/>
+        <skos:definition xml:lang="en">A Educational Insitution (including but not limited to school, university etc.)</skos:definition>
+        <skos:prefLabel xml:lang="en">Educational Insitution</skos:prefLabel>
+        <skos:scopeNote xml:lang="en"></skos:scopeNote>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#loc-Healthcare">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceLV"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceNL"/>
+        <rdfs:label xml:lang="en">Healthcare Location</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv#LocationLocality"/>
+        <skos:definition xml:lang="en">A place where healthcare is provided to individuals</skos:definition>
+        <skos:notation>C57</skos:notation>
+        <skos:prefLabel xml:lang="en">Healthcare Location</skos:prefLabel>
+        <skos:scopeNote xml:lang="en"></skos:scopeNote>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#loc-InPublicTransport">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceAT"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceCY"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceFR"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourcePL"/>
+        <rdfs:label xml:lang="en">In Public Transport</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv#PubliclyAccessibleSpace"/>
+        <skos:definition xml:lang="en">Vehicles and infrastructures used for public travel, such as buses, trains, metro, and stations, where individuals are subject to monitoring or data processing</skos:definition>
+        <skos:notation>C43</skos:notation>
+        <skos:prefLabel xml:lang="en">In Public Transport</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#loc-OnPublicRoad">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceAT"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceCY"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceFR"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourcePL"/>
+        <rdfs:label xml:lang="en">On Public Road</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv#PubliclyAccessibleSpace"/>
+        <skos:definition xml:lang="en">Any location accessible to the general public, particularly roads and streets used by public or private transportation, where monitoring or control of individuals is conducted via processing operations such as video surveillance or traffic sensors</skos:definition>
+        <skos:notation>C43</skos:notation>
+        <skos:prefLabel xml:lang="en">On Public Road</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">Proposed as subclass of dpv:PubliclyAccessibleSpace pending group discussion on modelling specific locations</skos:scopeNote>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#loc-PersonalSpace">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceAT"/>
+        <rdfs:label xml:lang="en">Personal Space</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv#LocationLocality"/>
+        <skos:definition xml:lang="en">Refers to private areas such as homes or personal environments, where data processing even with consent may infringe on privacy due to the sensitive nature of the setting</skos:definition>
+        <skos:notation>C90</skos:notation>
+        <skos:prefLabel xml:lang="en">Personal Space</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#loc-PreSchool">
+        <skos:definition xml:lang="en">A location that is a  Preschool</skos:definition>
+        <skos:prefLabel xml:lang="en">PreSchool</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#loc-Prison">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceLV"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceNL"/>
+        <rdfs:label xml:lang="en">Prison</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv#LocationLocality"/>
+        <skos:definition xml:lang="en">A place in which individuals are held due to committing a crime or awaiting trial</skos:definition>
+        <skos:notation>C57</skos:notation>
+        <skos:prefLabel xml:lang="en">Prison</skos:prefLabel>
+        <skos:scopeNote xml:lang="en"></skos:scopeNote>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#loc-School">
+        <skos:definition xml:lang="en">A location that is a school</skos:definition>
+        <skos:prefLabel xml:lang="en">School</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#loc-SocialCare">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceLV"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceNL"/>
+        <rdfs:label xml:lang="en">Socialcare Location</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv#LocationLocality"/>
+        <skos:definition xml:lang="en">A place where social care is provided to individuals</skos:definition>
+        <skos:notation>C57</skos:notation>
+        <skos:prefLabel xml:lang="en">Socialcare Location</skos:prefLabel>
+        <skos:scopeNote xml:lang="en"></skos:scopeNote>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#loc-Workplace">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceLV"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceNL"/>
+        <rdfs:label xml:lang="en">Workplace</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv#LocationLocality"/>
+        <skos:definition xml:lang="en">A professional environment or workplace</skos:definition>
+        <skos:notation>C57</skos:notation>
+        <skos:prefLabel xml:lang="en">Workplace</skos:prefLabel>
+        <skos:scopeNote xml:lang="en"></skos:scopeNote>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#loc-WorshipLocation">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceAT"/>
+        <rdfs:label xml:lang="en">Worship Location</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv#Location"/>
+        <skos:definition xml:lang="en">A religious institution such as a church or house of prayer, where monitoring or data processing may occur for security or organisational purposes</skos:definition>
+        <skos:notation>C68</skos:notation>
+        <skos:prefLabel xml:lang="en">Worship Location</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-AssessmentOutcome">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceIS"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceNO"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourcePL"/>
+        <rdfs:label xml:lang="en">Assessment Outcome</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv/pd#External"/>
+        <skos:definition xml:lang="en">Personal data that captures results or conclusions from standardised assessments, such as exams, evaluations, or diagnostic tests, aimed at determining skills, knowledge, mental health, or developmental status</skos:definition>
+        <skos:notation>C45</skos:notation>
+        <skos:prefLabel xml:lang="en">Assessment Outcome</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-BadConduct">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceAll"/>
+        <rdfs:label xml:lang="en">Bad Conduct</rdfs:label>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#pd-Conduct"/>
+        <skos:definition xml:lang="en">Broader term than criminal offences or unlawful conduct. It can include behaviour that may not be illegal but is still considered ethically or professionally inappropriate, controversial, or reputationally damaging</skos:definition>
+        <skos:notation>C9</skos:notation>
+        <skos:prefLabel xml:lang="en">Bad Conduct</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-Career">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceEE"/>
+        <rdfs:label xml:lang="en">Career</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv/pd#Professional"/>
+        <skos:definition xml:lang="en">Personal data related to an individual&apos;s professional progression, roles held, promotions, or career evaluations that may impact employment opportunities</skos:definition>
+        <skos:notation>C105</skos:notation>
+        <skos:prefLabel xml:lang="en">Career</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-Competency">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceIS"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceNO"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourcePL"/>
+        <rdfs:label xml:lang="en">Competency</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv/pd#External"/>
+        <skos:definition xml:lang="en">Personal data used in the systematic evaluation of an individual&apos;s overall effectiveness in applying knowledge and skills, including professional qualifications, behavioural performance, and domain-specific expertise</skos:definition>
+        <skos:notation>C45</skos:notation>
+        <skos:prefLabel xml:lang="en">Competency</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-Conduct">
+        <rdfs:label xml:lang="en">Conduct</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv/pd#External"/>
+        <skos:definition xml:lang="en">A pattern or instance of individual behaviour, particularly in relation to lawfulness, ethics, professional standards, or social expectations. Conduct can be evaluated as good or bad based on its alignment with normative, legal, or reputational frameworks</skos:definition>
+        <skos:prefLabel xml:lang="en">Conduct</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">The parent for bad conduct and good conduct</skos:scopeNote>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-DigitalTwin">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceDK"/>
+        <rdfs:label xml:lang="en">Digital Twin</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv/pd#External"/>
+        <skos:definition xml:lang="en">A digital representation of a real-world person, where personal data is processed to simulate, predict, or monitor behaviour, performance, or health</skos:definition>
+        <skos:notation>C84</skos:notation>
+        <skos:prefLabel xml:lang="en">Digital Twin</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-ElectronicHealthCard">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceFR"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceGR"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceHU"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceNL"/>
+        <rdfs:label xml:lang="en">Electronic Health Card</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv/pd#HealthRecord"/>
+        <skos:definition xml:lang="en">A digital or physical card used to store or provide access to personal health data, as part of large-scale systematic processing for public health purposes, including integration with electronic prescription and health record systems</skos:definition>
+        <skos:notation>C39</skos:notation>
+        <skos:prefLabel xml:lang="en">Electronic Health Card</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-ElectronicHealthRecord">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceFR"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceGR"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceHU"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceNL"/>
+        <rdfs:label xml:lang="en">Electronic Health Record</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv/pd#HealthRecord"/>
+        <skos:definition xml:lang="en">A digital record of a patient&apos;s medical history, diagnoses, medications, treatment plans, and other health-related information</skos:definition>
+        <skos:notation>C39</skos:notation>
+        <skos:prefLabel xml:lang="en">Electronic Health Record</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-GoodConduct">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceAll"/>
+        <rdfs:label xml:lang="en">Good Conduct</rdfs:label>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#pd-Conduct"/>
+        <skos:definition xml:lang="en">Behaviour that is lawful, ethical, professional, reputation-enhancing or neutral and unlikely to cause social or professional harm</skos:definition>
+        <skos:notation>C9</skos:notation>
+        <skos:prefLabel xml:lang="en">Good Conduct</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-LocationDisplacement">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceBE"/>
+        <rdfs:label xml:lang="en">Location Displacement</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv/pd#External"/>
+        <skos:definition xml:lang="en">Personal data processed to analyse or predict a person&apos;s change in location, movement patterns, or relocation behaviours, often linked to economic or social factors</skos:definition>
+        <skos:notation>C87</skos:notation>
+        <skos:prefLabel xml:lang="en">Location Displacement</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-LocationRoute">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceEE"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceNO"/>
+        <rdfs:label xml:lang="en">Location Route</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv/pd#Location"/>
+        <skos:definition xml:lang="en">Personal data representing an individual&apos;s travel path or movement behaviour, processed to predict interests, routines, or mobility patterns</skos:definition>
+        <skos:notation>C61</skos:notation>
+        <skos:prefLabel xml:lang="en">Location Route</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-Skill">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceIS"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceNO"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourcePL"/>
+        <rdfs:label xml:lang="en">Skill</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv/pd#External"/>
+        <skos:definition xml:lang="en">Personal data processed for the systematic assessment of an individual&apos;s capabilities or expertise, including the evaluation of specific learned abilities, aptitudes, or training outcomes</skos:definition>
+        <skos:notation>C45</skos:notation>
+        <skos:prefLabel xml:lang="en">Skill</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-Trustworthiness">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceEE"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceNO"/>
+        <rdfs:label xml:lang="en">Trustworthiness</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv/pd#External"/>
+        <skos:definition xml:lang="en">Personal data processed to predict or assess an individual&apos;s reliability, integrity, or honesty, often in the context of providing services, financial products, or employment assessments</skos:definition>
+        <skos:notation>C61</skos:notation>
+        <skos:prefLabel xml:lang="en">Trustworthiness</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#pd-UnlawfulActivity">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceAll"/>
+        <rdfs:label xml:lang="en">Unlawful Activity</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv/pd#Social"/>
+        <skos:definition xml:lang="en">Unlawful activity under GDPR refers to any unlawful activity that violates laws and regulations</skos:definition>
+        <skos:notation>C9</skos:notation>
+        <skos:prefLabel xml:lang="en">Unlawful Activity</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#risk-ContractExclusion">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceBE"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceCY"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceES"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceFR"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceGR"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceHR"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceIS"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceIT"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceLI"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceSE"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceSI"/>
+        <rdfs:label xml:lang="en">Contract Exclusion</rdfs:label>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#risk-ImpactOnContract"/>
+        <skos:definition xml:lang="en">Where an individual or an organisation is denied the opportunity to enter into a contract</skos:definition>
+        <skos:notation>C20</skos:notation>
+        <skos:prefLabel xml:lang="en">Contract Exclusion</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#risk-ContractRefused">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceBE"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceHR"/>
+        <rdfs:label xml:lang="en">Contract Refused</rdfs:label>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#risk-ImpactOnContract"/>
+        <skos:definition xml:lang="en">An impact where personal data, often from third parties, is used to inform a decision to deny entry into a service contract with a natural person</skos:definition>
+        <skos:notation>C52</skos:notation>
+        <skos:prefLabel xml:lang="en">Contract Refused</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#risk-ContractSuspension">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceBE"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceCY"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceES"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceFR"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceGR"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceHR"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceIS"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceIT"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceLI"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceSE"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceSI"/>
+        <rdfs:label xml:lang="en">Contract Suspension</rdfs:label>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#risk-ImpactOnContract"/>
+        <skos:definition xml:lang="en">Where an existing contract is temporarily halted or rendered inactive, such as due to suspicion of fraud, violation of terms, or negative behavioural indicators</skos:definition>
+        <skos:notation>C20</skos:notation>
+        <skos:prefLabel xml:lang="en">Contract Suspension</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#risk-ContractTerminated">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceBE"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceCY"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceES"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceFR"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceGR"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceHR"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceIS"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceIT"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceLI"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceSE"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceSI"/>
+        <rdfs:label xml:lang="en">Contract Terminated</rdfs:label>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#risk-ImpactOnContract"/>
+        <skos:definition xml:lang="en">Where an existing contract is cancelled or terminated, such as by revoking a loan, ending a subscription, or dismissing an employee</skos:definition>
+        <skos:notation>C20, C52</skos:notation>
+        <skos:prefLabel xml:lang="en">Contract Terminated</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#risk-ImpactOnCareer">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceEE"/>
+        <rdfs:label xml:lang="en">Impact On Career</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv#Impact"/>
+        <skos:definition xml:lang="en">Where the career of an individual is impacted</skos:definition>
+        <skos:notation>C105</skos:notation>
+        <skos:prefLabel xml:lang="en">Impact On Career</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#risk-ImpactOnContract">
+        <rdfs:label xml:lang="en">Impact On Contract</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv#Impact"/>
+        <skos:definition xml:lang="en">Where there is an effect, positive or negative, on an existing contract, such as suspension, termination, or exclusion</skos:definition>
+        <skos:prefLabel xml:lang="en">Impact On Contract</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">Parent term for contract-related risks. Modelled as impact to align with legal effects on the contractual party</skos:scopeNote>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#risk-LegalEffect">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceGDPR"/>
+        <rdfs:label xml:lang="en">Legal Effect Risk</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv#Risk"/>
+        <skos:definition xml:lang="en">A risk that processing results in legal effects for the data subjects</skos:definition>
+        <skos:prefLabel xml:lang="en">Legal Effect Risk</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">Used to indicate that a processing activity may result in effects equivalent to legal consequences for data subjects, such as denial of service or exclusion from contracts</skos:scopeNote>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#risk-PropertyLoss">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceEE"/>
+        <rdfs:label xml:lang="en">Property Loss</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv/risk#FinancialLoss"/>
+        <skos:definition xml:lang="en">Loss of property</skos:definition>
+        <skos:notation>C101</skos:notation>
+        <skos:prefLabel xml:lang="en">Property Loss</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#risk-RightsExercisePrevented">
+        <rdfs:label xml:lang="en">Rights Exercise Prevented</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv#Impact"/>
+        <skos:definition xml:lang="en">The risk of an activity preventing the ability of data subjects to exercise their rights</skos:definition>
+        <skos:prefLabel xml:lang="en">Rights Exercise Prevented </skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#risk-ServiceAccessAllowed">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceBE"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceES"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceGR"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceHR"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceIS"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceIT"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceLI"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceLV"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceNO"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourcePL"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceSE"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceSI"/>
+        <rdfs:label xml:lang="en">Service Access Allowed</rdfs:label>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#ServiceRelatedConsequence"/>
+        <skos:definition xml:lang="en">Where an individual or an organisation is permitted to use or access a service</skos:definition>
+        <skos:notation>C17</skos:notation>
+        <skos:prefLabel xml:lang="en">Service Access Allowed</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#risk-ServiceAccessDenied">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceBE"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceES"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceGR"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceHR"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceIS"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceIT"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceLI"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceLV"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceNO"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourcePL"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceSE"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceSI"/>
+        <rdfs:label xml:lang="en">Service Access Denied</rdfs:label>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#ServiceRelatedConsequence"/>
+        <skos:definition xml:lang="en">Where an individual or an organisation is prevented from accessing a particular service</skos:definition>
+        <skos:notation>C17</skos:notation>
+        <skos:prefLabel xml:lang="en">Service Access Denied</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#sector-finance-SolvencyEvaluation">
+        <rdfs:label xml:lang="en">Solvency Evaluation</rdfs:label>
+        <skos:definition xml:lang="en">The evaluation and assessment of the solvency of a data subject by way of evaluating financial data and records</skos:definition>
+        <skos:prefLabel xml:lang="en">Solvency Evaluation</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#sector-health-MedicalSupportServiceProvision">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceFR"/>
+        <rdfs:label xml:lang="en">Medical Support Service Provision</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv/sector/health#ServiceProvision"/>
+        <skos:definition xml:lang="en">Service that facilitates providing healthcare and related support, interventions, or assessments</skos:definition>
+        <skos:notation>C76</skos:notation>
+        <skos:prefLabel xml:lang="en">Medical Support Service Provision</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-IntroducingEGovernmentServices">
+        <rdfs:label xml:lang="en">Introducing E Government Services</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv/sector/publicservices#PublicServiceProvision"/>
+        <skos:definition xml:lang="en">The introduction and deployment of electronic government services</skos:definition>
+        <skos:prefLabel xml:lang="en">Introducing E Government Services</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-MonitoringEGovernmentServices">
+        <rdfs:label xml:lang="en">Monitoring E Government Services</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv/sector/publicservices#PublicServiceProvision"/>
+        <skos:definition xml:lang="en">The monitoring and oversight of electronic government services performance and usage</skos:definition>
+        <skos:prefLabel xml:lang="en">Monitoring E Government Services</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-OrganisingEGovernmentServices">
+        <rdfs:label xml:lang="en">Organising E Government Services</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv/sector/publicservices#PublicServiceProvision"/>
+        <skos:definition xml:lang="en">The organising and administration of electronic government services</skos:definition>
+        <skos:prefLabel xml:lang="en">Organising E Government Services</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-ProvidingEGovernmentServices">
+        <rdfs:label xml:lang="en">Providing E Government Services</rdfs:label>
+        <skos:definition xml:lang="en">The provision of electronic government services</skos:definition>
+        <skos:prefLabel xml:lang="en">Providing E Government Services</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-PublicSafetyAlertManagement">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceFR"/>
+        <rdfs:label xml:lang="en">Public Safety Alert Management</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv#PublicBenefit"/>
+        <skos:definition xml:lang="en">Management of health alerts, such as for a patient at risk or for pandemics, through which health professionals and authorities can alert individuals or the public regarding their health</skos:definition>
+        <skos:notation>C91</skos:notation>
+        <skos:prefLabel xml:lang="en">Public Safety Alert Management</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-SocialHousingManagement">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceFR"/>
+        <rdfs:label xml:lang="en">Social Housing Management</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv/sector/publicservices#SocialWelfareProvision"/>
+        <skos:definition xml:lang="en">Processing data for the assessment, approval, and management of social housing applications, typically by public authorities or welfare organisations</skos:definition>
+        <skos:notation>C77</skos:notation>
+        <skos:prefLabel xml:lang="en">Social Housing Management</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#tech-ElectronicPrescriptionSystem">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceFR"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceGR"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceHU"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceNL"/>
+        <rdfs:label xml:lang="en">Electronic Prescription System</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv/tech#System"/>
+        <skos:definition xml:lang="en">A system used by healthcare providers to create, transmit, and manage electronic prescriptions as part of large-scale systematic health data processing</skos:definition>
+        <skos:notation>C39</skos:notation>
+        <skos:prefLabel xml:lang="en">Electronic Prescription System</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#tech-IdentityManagementService">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceEE"/>
+        <rdfs:label xml:lang="en">Identity Management Service</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv/tech#Service"/>
+        <skos:definition xml:lang="en">A technical and administrative system that authenticates and manages digital identities, with risks of identity theft or fraud due to large-scale personal data processing</skos:definition>
+        <skos:notation>C103</skos:notation>
+        <skos:prefLabel xml:lang="en">Identity Management Service</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#tech-Neurotechnology">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceDK"/>
+        <rdfs:label xml:lang="en">Neurotechnology</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv#Technology"/>
+        <skos:definition xml:lang="en">A technology that processes neural or brain-derived data, enabling applications in healthcare, human enhancement, or cognitive monitoring</skos:definition>
+        <skos:notation>C85</skos:notation>
+        <skos:prefLabel xml:lang="en">Neurotechnology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#tech-Sensor">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceDE"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceSI"/>
+        <rdfs:label xml:lang="en">Sensor</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv/tech#Component"/>
+        <skos:definition xml:lang="en">Innovative device or technology used for detecting, collecting, or transmitting data, often as part of mobile or centralised systems, enabling real-time monitoring or measurement of physical conditions, behaviours, or environments</skos:definition>
+        <skos:notation>C62</skos:notation>
+        <skos:prefLabel xml:lang="en">Sensor</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#tech-SmartMeter">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceBE"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceGR"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceHR"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceHU"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceNL"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourcePL"/>
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceRO"/>
+        <rdfs:label xml:lang="en">Smart Meter</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv/tech#Device"/>
+        <skos:definition xml:lang="en">A device installed by utility providers that automatically tracks and transmits consumption data, such as electricity, gas, or water usage</skos:definition>
+        <skos:notation>C23</skos:notation>
+        <skos:prefLabel xml:lang="en">Smart Meter</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://tyttikatariina.github.io/IMPACTO/#tech-TrustService">
+        <terms:source rdf:resource="https://tyttikatariina.github.io/IMPACTO/#SourceEE"/>
+        <rdfs:label xml:lang="en">Trust Service</rdfs:label>
+        <skos:broader rdf:resource="https://w3id.org/dpv/tech#Service"/>
+        <skos:definition xml:lang="en">Services that involve the processing of personal data to authenticate identity, verify electronic transactions, or provide secure communication and document exchange, where the nature of processing may pose a risk of identity theft or fraud</skos:definition>
+        <skos:notation>C103</skos:notation>
+        <skos:prefLabel xml:lang="en">Trust Service</skos:prefLabel>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
