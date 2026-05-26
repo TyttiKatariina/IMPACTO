@@ -1,0 +1,1417 @@
+@prefix : <https://tyttikatariina.github.io/IMPACTO/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <https://w3id.org/dpv#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dcterms:bibliographicCitation a owl:AnnotationProperty .
+
+dcterms:contributor a owl:AnnotationProperty .
+
+dcterms:created a owl:AnnotationProperty .
+
+dcterms:creator a owl:AnnotationProperty .
+
+dcterms:description a owl:AnnotationProperty .
+
+dcterms:issued a owl:AnnotationProperty .
+
+dcterms:license a owl:AnnotationProperty .
+
+dcterms:modified a owl:AnnotationProperty .
+
+dcterms:publisher a owl:AnnotationProperty .
+
+dcterms:source a owl:AnnotationProperty .
+
+dcterms:title a owl:AnnotationProperty .
+
+rdfs:label a owl:AnnotationProperty .
+
+xsd:date a rdfs:Datatype .
+
+skos:broader a owl:AnnotationProperty .
+
+skos:definition a owl:AnnotationProperty .
+
+skos:notation a owl:AnnotationProperty .
+
+skos:prefLabel a owl:AnnotationProperty .
+
+skos:scopeNote a owl:AnnotationProperty .
+
+: a owl:Ontology ;
+    rdfs:label "Impact Assessment Ontology"@en ;
+    dcterms:bibliographicCitation "Tytti Rintamäki, Harshvardhan J. Pandit. IMPACTO: An ontology for representing Impact Assessment requirements and processes based on the GDPR and EU AI ACT."@en ;
+    dcterms:contributor "Harshvardhan J. Pandit" ;
+    dcterms:created "2026-05-25"^^xsd:date ;
+    dcterms:creator "Tytti Rintamäki" ;
+    dcterms:description "IMPACTO represents impact assessments, specifically the DPIA and FRIA."@en ;
+    dcterms:issued "2026-05-25"^^xsd:date ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-05-25"^^xsd:date ;
+    dcterms:publisher "ADAPT Centre, Dublin City University" ;
+    dcterms:source " AT, BE, BG, CY, CZ, DE, DK, EE, ES, FI, FR, GR, HR, HU, IE, IS, IT, LI, LT, LU, LV, MT, NL, NO, PL, PT, RO, SE, SI, SK"@en,
+        "EU AI Act"@en,
+        "GDPR"@en ;
+    dcterms:title "IMPACTO"@en ;
+    owl:versionIRI :1.0 ;
+    owl:versionInfo "1.0" .
+
+<https://tyttikatariina.github.io/IMPACTO/#SourceMT> a owl:NamedIndividual ;
+    skos:prefLabel "Malta (MT)"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#ai-AutomaticObjectRecognition> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Automatic Object Recognition"@en ;
+    rdfs:subClassOf <https://w3id.org/dpv/ai#Capability> ;
+    skos:definition "The use of an AI system capable of automatic object recognition"@en ;
+    skos:prefLabel "Automatic Object Recognition"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#ai-FacialRecognition> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Facial Recognition"@en ;
+    rdfs:subClassOf <https://w3id.org/dpv/ai#Capability> ;
+    skos:definition "The use of an AI system capable of facial recognition"@en ;
+    skos:prefLabel "Facial Recognition"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#ai-ObjectIsolation> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Object Isolation"@en ;
+    rdfs:subClassOf <https://w3id.org/dpv/ai#Capability> ;
+    skos:definition "The use of an AI system capable of isolating objects"@en ;
+    skos:prefLabel "Object Isolation"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#ai-UseOfAI> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Use Of AI"@en ;
+    rdfs:subClassOf ns1:Use ;
+    skos:definition "The use of an AI system in processing of personal data"@en ;
+    skos:prefLabel "Use Of AI"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#dpv-Automated> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Automated"@en ;
+    rdfs:subClassOf ns1:ProcessingContext ;
+    skos:broader ns1:ProcessingContext ;
+    skos:definition "Processing context indicating that automation is involved and parent concept for all automation-related processing contexts"@en ;
+    skos:prefLabel "Automated"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#dpv-CentralisedLocation> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Centralised Location"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceDE>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceSI> ;
+    rdfs:subClassOf ns1:LocationFixture ;
+    skos:broader ns1:LocationFixture ;
+    skos:definition "A physical or digital point where data is collected and aggregated from multiple sources, typically involving centralised sensors or mobile-based systems for large-scale monitoring or control"@en ;
+    skos:notation "C62" ;
+    skos:prefLabel "Centralised Location"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#dpv-ClassificationOfIndividuals> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Classification Of Individuals"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceAT>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceHU>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourcePL> ;
+    rdfs:subClassOf ns1:ProcessingContext ;
+    skos:broader ns1:ProcessingContext ;
+    skos:definition "Processing that evaluates, ranks, or categorises natural persons, often based on behavioural, demographic, or personal data"@en ;
+    skos:notation "C48" ;
+    skos:prefLabel "Classification Of Individuals"@en ;
+    skos:scopeNote "Phrasing follows Article 29 Data Protection Working Party and EDPB guidelines"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#dpv-HistoricResearch> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Historical Research"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceLT>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceLU>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceLV>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceNO>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourcePT>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceSK> ;
+    rdfs:subClassOf ns1:ResearchAndDevelopment ;
+    skos:broader ns1:ResearchAndDevelopment ;
+    skos:definition "The processing of personal data for scientific or historical research purposes, conducted without the data subject's consent, and in conjunction with at least one of the legal criteria under the GDPR, such as being necessary for a task carried out in the public interest"@en ;
+    skos:notation "C30" ;
+    skos:prefLabel "Historical Research"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#dpv-Inspection> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Inspection"@en ;
+    rdfs:subClassOf ns1:ProcessingContext ;
+    skos:broader ns1:ProcessingContext ;
+    skos:definition "A processing context where personal data is used as part of an evaluative or investigative activity or purpose"@en ;
+    skos:prefLabel "Inspection"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#dpv-LabourBrokeringService> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Labour Brokering Service"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceEE> ;
+    rdfs:subClassOf ns1:HumanResourceManagement ;
+    skos:broader ns1:HumanResourceManagement ;
+    skos:definition "Service that facilitates labour provision through a brokering process, including matching workers with jobs or facilitating labour based on demand"@en ;
+    skos:notation "C105" ;
+    skos:prefLabel "Labour Brokering Service"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#dpv-Monitoring> a owl:Class,
+        skos:Concept ;
+    rdfs:subClassOf ns1:Purpose ;
+    skos:definition "A purpose involving the monitoring of individuals"@en ;
+    skos:prefLabel "Monitoring"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#dpv-MonitoringIndividuals> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Monitoring Individuals"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceAll> ;
+    rdfs:subClassOf ns1:ProcessingContext ;
+    skos:broader ns1:ProcessingContext ;
+    skos:definition "Monitoring of humans (as individuals or as groups) which includes a systematic observation or surveillance of behaviour, movements, or activities"@en ;
+    skos:notation "C5, C43, C46, C53, C55, C61, C76, C87, C97" ;
+    skos:prefLabel "Monitoring Individuals"@en ;
+    skos:scopeNote "Proposed as addition to dpv: — differs from existing dpv:Monitor (which monitors data for criteria) by focusing specifically on monitoring of data subjects themselves"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#dpv-NonDataSubjectDataSource> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Non Data Subject Data Source"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceAT>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceCZ>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceDE>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceES>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceGR>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceLT> ;
+    rdfs:subClassOf ns1:DataSource ;
+    skos:broader ns1:DataSource ;
+    skos:definition "Personal data obtained from a third party or another source rather than directly from the individual concerned, especially in cases where informing the data subject would be difficult or impossible, such as in law enforcement, research, or archival processing"@en ;
+    skos:notation "C25" ;
+    skos:prefLabel "Non Data Subject Data Source"@en ;
+    skos:scopeNote "Existing non-data subject sources in DPV should be moved below this concept"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#dpv-Predict> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Predict"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceEDPB> ;
+    rdfs:subClassOf ns1:Infer ;
+    skos:broader ns1:Infer ;
+    skos:definition "To anticipate or forecast aspects of an individual's behaviour, characteristics, or future actions"@en ;
+    skos:notation "C14, C37, C73" ;
+    skos:prefLabel "Predict"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#dpv-PreventativeProtectionOfPersons> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Preventative Protection Of Persons"@en ;
+    rdfs:subClassOf ns1:EnforceSecurity ;
+    skos:broader ns1:EnforceSecurity ;
+    skos:definition "Processing carried out for the purpose of preventing harm or protecting individuals before an incident occurs"@en ;
+    skos:prefLabel "Preventative Protection Of Persons"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#dpv-PreventativeProtectionOfProperty> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Preventative Protection Of Property"@en ;
+    rdfs:subClassOf ns1:EnforceSecurity ;
+    skos:broader ns1:EnforceSecurity ;
+    skos:definition "Processing carried out for the purpose of preventing loss or damage to property before an incident occurs"@en ;
+    skos:prefLabel "Preventative Protection Of Property"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#dpv-PrivateUtilityProvider> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Private Utility Provider"@en ;
+    rdfs:subClassOf <https://tyttikatariina.github.io/IMPACTO/#dpv-UtilityProvider> ;
+    skos:broader <https://tyttikatariina.github.io/IMPACTO/#dpv-UtilityProvider> ;
+    skos:definition "A private organisation providing utilities"@en ;
+    skos:prefLabel "Private Utility Provider"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#dpv-PublicUtilityProvider> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Public Utility Provider"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceBE>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceGR>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceHR>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceHU>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceNL>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourcePL>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceRO> ;
+    rdfs:subClassOf <https://tyttikatariina.github.io/IMPACTO/#dpv-UtilityProvider> ;
+    skos:broader <https://tyttikatariina.github.io/IMPACTO/#dpv-UtilityProvider> ;
+    skos:definition "A public organisation providing utilities"@en ;
+    skos:notation "C23" ;
+    skos:prefLabel "Public Utility Provider"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#dpv-Tracking> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Tracking"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceLI>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceLV> ;
+    rdfs:subClassOf ns1:Use ;
+    skos:broader ns1:Use ;
+    skos:definition "The use of data to follow or track something across contexts"@en ;
+    skos:notation "C58" ;
+    skos:prefLabel "Tracking"@en ;
+    skos:scopeNote "While generalised to enable tracking of activities and events, this also encompasses tracking of individuals across websites, apps, devices, and other forms which can constitute systematic monitoring and surveillance"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#dpv-UnknownDataSource> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Unknown Data Source"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceIE> ;
+    rdfs:subClassOf ns1:DataSource ;
+    skos:broader ns1:DataSource ;
+    skos:definition "The origin of personal data cannot be determined or is not known"@en ;
+    skos:notation "C94" ;
+    skos:prefLabel "Unknown Data Source"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#dpv-WhistleblowerManagement> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Whistleblower Management"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceFI> ;
+    rdfs:subClassOf ns1:HumanResourceManagement ;
+    skos:broader ns1:HumanResourceManagement ;
+    skos:definition "The management of whistleblower processes, systems, and information through which individuals or groups can report on negative activities such as misconduct, harms, and compliance violations"@en ;
+    skos:notation "C100" ;
+    skos:prefLabel "Whistleblower Management"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FacialRecognitionTechnology> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Facial Recognition Technology"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceCY>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceDK>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceIT>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourcePL>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceRO> ;
+    rdfs:subClassOf <https://w3id.org/dpv/tech#Capability> ;
+    skos:broader <https://w3id.org/dpv/tech#Capability> ;
+    skos:definition "A biometric identification system that detects, captures, and compares facial features to identify or verify individuals in real-time or retrospectively, as defined in the EU AI Act"@en ;
+    skos:notation "C36" ;
+    skos:prefLabel "Facial Recognition Technology"@en ;
+    skos:scopeNote "Proposed as rename/replacement of current tech:FaceRecognition to align with EU AI Act terminology"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-DPIANotRequiredProcess> a owl:Class,
+        skos:Concept ;
+    rdfs:label "DPIA Not Required Process"@en ;
+    dcterms:source <https://w3id.org/dpv/legal/eu/gdpr/at#DPIANotRequiredList>,
+        <https://w3id.org/dpv/legal/eu/gdpr/cz#DPIANotRequiredList>,
+        <https://w3id.org/dpv/legal/eu/gdpr/es#DPIANotRequiredList>,
+        <https://w3id.org/dpv/legal/eu/gdpr/fr#DPIANotRequiredList>,
+        <https://w3id.org/dpv/legal/eu/gdpr/hr#DPIANotRequiredList>,
+        <https://w3id.org/dpv/legal/eu/gdpr/it#DPIANotRequiredList>,
+        <https://w3id.org/dpv/legal/eu/gdpr/lv#DPIANotRequiredList>,
+        <https://w3id.org/dpv/legal/eu/gdpr/nl#DPIANotRequiredList> ;
+    rdfs:subClassOf ns1:Process ;
+    skos:broader ns1:Process ;
+    skos:definition "A personal data processing activity that does not require a DPIA according to the whitelists of processing activities published by Member State Data Protection Authorities"@en ;
+    skos:prefLabel "DPIA Not Required Process"@en ;
+    skos:scopeNote "The requirements for whether a DPIA is required for a specific process can be found in GDPR Art 35 and also in specific lists published by Member State Data Protection Authorities"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-DPIARequiredProcess> a owl:Class,
+        skos:Concept ;
+    rdfs:label "DPIA Required Process"@en ;
+    dcterms:source <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679> ;
+    rdfs:subClassOf ns1:Process ;
+    skos:broader ns1:Process ;
+    skos:definition "A personal data processing activity that requires a DPIA according to GDPR Article 35"@en ;
+    skos:prefLabel "DPIA Required Process"@en ;
+    skos:scopeNote "The requirements for whether a DPIA is required for a specific process can be found in GDPR Art 35 and also in specific lists published by Member State Data Protection Authorities"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-NonSystematic> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Non-Systematic"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceAll> ;
+    rdfs:subClassOf <https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-Systematicity> ;
+    skos:broader <https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-Systematicity> ;
+    skos:definition "Indication that processing does not meet the definition of systematic"@en ;
+    skos:notation "C29, C39, C45, C51, C50, C55, C82, C89" ;
+    skos:prefLabel "Non-Systematic"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-SignificantEffect> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Significant Effect"@en ;
+    rdfs:subClassOf ns1:Impact ;
+    skos:broader ns1:Impact ;
+    skos:definition "An impact that is distinguished as being significant due to having a legal impact"@en ;
+    skos:prefLabel "Significant Effect"@en ;
+    skos:scopeNote "The parent to legaleffect"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-Systematic> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Systematic"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceAll> ;
+    rdfs:subClassOf <https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-Systematicity> ;
+    skos:broader <https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-Systematicity> ;
+    skos:definition "Indication that processing occurs according to a system; is pre-arranged, organised or methodical, and takes place as part of a general plan or is carried out as part of a strategy"@en ;
+    skos:notation "C29, C39, C45, C51, C50, C55, C82, C89" ;
+    skos:prefLabel "Systematic"@en ;
+    skos:scopeNote "Definition follows ICO UK. Proposed as subclass of eu-gdpr:Systematicity"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#loc-EducationalInstitution> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Educational Institution"@en ;
+    rdfs:subClassOf ns1:LocationLocality ;
+    skos:broader ns1:LocationLocality ;
+    skos:definition "A Educational Insitution (including but not limited to school, university etc.)"@en ;
+    skos:prefLabel "Educational Insitution"@en ;
+    skos:scopeNote ""@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#loc-Healthcare> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Healthcare Location"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceLV>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceNL> ;
+    rdfs:subClassOf ns1:LocationLocality ;
+    skos:broader ns1:LocationLocality ;
+    skos:definition "A place where healthcare is provided to individuals"@en ;
+    skos:notation "C57" ;
+    skos:prefLabel "Healthcare Location"@en ;
+    skos:scopeNote ""@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#loc-InPublicTransport> a owl:Class,
+        skos:Concept ;
+    rdfs:label "In Public Transport"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceAT>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceCY>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceFR>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourcePL> ;
+    rdfs:subClassOf ns1:PubliclyAccessibleSpace ;
+    skos:broader ns1:PubliclyAccessibleSpace ;
+    skos:definition "Vehicles and infrastructures used for public travel, such as buses, trains, metro, and stations, where individuals are subject to monitoring or data processing"@en ;
+    skos:notation "C43" ;
+    skos:prefLabel "In Public Transport"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#loc-OnPublicRoad> a owl:Class,
+        skos:Concept ;
+    rdfs:label "On Public Road"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceAT>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceCY>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceFR>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourcePL> ;
+    rdfs:subClassOf ns1:PubliclyAccessibleSpace ;
+    skos:broader ns1:PubliclyAccessibleSpace ;
+    skos:definition "Any location accessible to the general public, particularly roads and streets used by public or private transportation, where monitoring or control of individuals is conducted via processing operations such as video surveillance or traffic sensors"@en ;
+    skos:notation "C43" ;
+    skos:prefLabel "On Public Road"@en ;
+    skos:scopeNote "Proposed as subclass of dpv:PubliclyAccessibleSpace pending group discussion on modelling specific locations"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#loc-PersonalSpace> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Personal Space"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceAT> ;
+    rdfs:subClassOf ns1:LocationLocality ;
+    skos:broader ns1:LocationLocality ;
+    skos:definition "Refers to private areas such as homes or personal environments, where data processing even with consent may infringe on privacy due to the sensitive nature of the setting"@en ;
+    skos:notation "C90" ;
+    skos:prefLabel "Personal Space"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#loc-PreSchool> a owl:Class,
+        skos:Concept ;
+    rdfs:subClassOf ns1:Location ;
+    skos:definition "A location that is a  Preschool"@en ;
+    skos:prefLabel "PreSchool"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#loc-Prison> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Prison"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceLV>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceNL> ;
+    rdfs:subClassOf ns1:LocationLocality ;
+    skos:broader ns1:LocationLocality ;
+    skos:definition "A place in which individuals are held due to committing a crime or awaiting trial"@en ;
+    skos:notation "C57" ;
+    skos:prefLabel "Prison"@en ;
+    skos:scopeNote ""@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#loc-School> a owl:Class,
+        skos:Concept ;
+    rdfs:subClassOf ns1:Location ;
+    skos:definition "A location that is a school"@en ;
+    skos:prefLabel "School"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#loc-SocialCare> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Socialcare Location"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceLV>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceNL> ;
+    rdfs:subClassOf ns1:LocationLocality ;
+    skos:broader ns1:LocationLocality ;
+    skos:definition "A place where social care is provided to individuals"@en ;
+    skos:notation "C57" ;
+    skos:prefLabel "Socialcare Location"@en ;
+    skos:scopeNote ""@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#loc-Workplace> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Workplace"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceLV>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceNL> ;
+    rdfs:subClassOf ns1:LocationLocality ;
+    skos:broader ns1:LocationLocality ;
+    skos:definition "A professional environment or workplace"@en ;
+    skos:notation "C57" ;
+    skos:prefLabel "Workplace"@en ;
+    skos:scopeNote ""@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#loc-WorshipLocation> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Worship Location"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceAT> ;
+    rdfs:subClassOf ns1:Location ;
+    skos:broader ns1:Location ;
+    skos:definition "A religious institution such as a church or house of prayer, where monitoring or data processing may occur for security or organisational purposes"@en ;
+    skos:notation "C68" ;
+    skos:prefLabel "Worship Location"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#pd-AssessmentOutcome> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Assessment Outcome"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceIS>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceNO>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourcePL> ;
+    rdfs:subClassOf <https://w3id.org/dpv/pd#External> ;
+    skos:broader <https://w3id.org/dpv/pd#External> ;
+    skos:definition "Personal data that captures results or conclusions from standardised assessments, such as exams, evaluations, or diagnostic tests, aimed at determining skills, knowledge, mental health, or developmental status"@en ;
+    skos:notation "C45" ;
+    skos:prefLabel "Assessment Outcome"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#pd-BadConduct> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Bad Conduct"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceAll> ;
+    rdfs:subClassOf <https://tyttikatariina.github.io/IMPACTO/#pd-Conduct> ;
+    skos:broader <https://tyttikatariina.github.io/IMPACTO/#pd-Conduct> ;
+    skos:definition "Broader term than criminal offences or unlawful conduct. It can include behaviour that may not be illegal but is still considered ethically or professionally inappropriate, controversial, or reputationally damaging"@en ;
+    skos:notation "C9" ;
+    skos:prefLabel "Bad Conduct"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#pd-Career> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Career"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceEE> ;
+    rdfs:subClassOf <https://w3id.org/dpv/pd#Professional> ;
+    skos:broader <https://w3id.org/dpv/pd#Professional> ;
+    skos:definition "Personal data related to an individual's professional progression, roles held, promotions, or career evaluations that may impact employment opportunities"@en ;
+    skos:notation "C105" ;
+    skos:prefLabel "Career"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#pd-Competency> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Competency"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceIS>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceNO>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourcePL> ;
+    rdfs:subClassOf <https://w3id.org/dpv/pd#External> ;
+    skos:broader <https://w3id.org/dpv/pd#External> ;
+    skos:definition "Personal data used in the systematic evaluation of an individual's overall effectiveness in applying knowledge and skills, including professional qualifications, behavioural performance, and domain-specific expertise"@en ;
+    skos:notation "C45" ;
+    skos:prefLabel "Competency"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#pd-DigitalTwin> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Digital Twin"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceDK> ;
+    rdfs:subClassOf <https://w3id.org/dpv/pd#External> ;
+    skos:broader <https://w3id.org/dpv/pd#External> ;
+    skos:definition "A digital representation of a real-world person, where personal data is processed to simulate, predict, or monitor behaviour, performance, or health"@en ;
+    skos:notation "C84" ;
+    skos:prefLabel "Digital Twin"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#pd-ElectronicHealthCard> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Electronic Health Card"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceFR>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceGR>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceHU>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceNL> ;
+    rdfs:subClassOf <https://w3id.org/dpv/pd#HealthRecord> ;
+    skos:broader <https://w3id.org/dpv/pd#HealthRecord> ;
+    skos:definition "A digital or physical card used to store or provide access to personal health data, as part of large-scale systematic processing for public health purposes, including integration with electronic prescription and health record systems"@en ;
+    skos:notation "C39" ;
+    skos:prefLabel "Electronic Health Card"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#pd-ElectronicHealthRecord> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Electronic Health Record"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceFR>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceGR>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceHU>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceNL> ;
+    rdfs:subClassOf <https://w3id.org/dpv/pd#HealthRecord> ;
+    skos:broader <https://w3id.org/dpv/pd#HealthRecord> ;
+    skos:definition "A digital record of a patient's medical history, diagnoses, medications, treatment plans, and other health-related information"@en ;
+    skos:notation "C39" ;
+    skos:prefLabel "Electronic Health Record"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#pd-GoodConduct> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Good Conduct"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceAll> ;
+    rdfs:subClassOf <https://tyttikatariina.github.io/IMPACTO/#pd-Conduct> ;
+    skos:broader <https://tyttikatariina.github.io/IMPACTO/#pd-Conduct> ;
+    skos:definition "Behaviour that is lawful, ethical, professional, reputation-enhancing or neutral and unlikely to cause social or professional harm"@en ;
+    skos:notation "C9" ;
+    skos:prefLabel "Good Conduct"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#pd-LocationDisplacement> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Location Displacement"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceBE> ;
+    rdfs:subClassOf <https://w3id.org/dpv/pd#External> ;
+    skos:broader <https://w3id.org/dpv/pd#External> ;
+    skos:definition "Personal data processed to analyse or predict a person's change in location, movement patterns, or relocation behaviours, often linked to economic or social factors"@en ;
+    skos:notation "C87" ;
+    skos:prefLabel "Location Displacement"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#pd-LocationRoute> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Location Route"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceEE>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceNO> ;
+    rdfs:subClassOf <https://w3id.org/dpv/pd#Location> ;
+    skos:broader <https://w3id.org/dpv/pd#Location> ;
+    skos:definition "Personal data representing an individual's travel path or movement behaviour, processed to predict interests, routines, or mobility patterns"@en ;
+    skos:notation "C61" ;
+    skos:prefLabel "Location Route"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#pd-Skill> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Skill"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceIS>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceNO>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourcePL> ;
+    rdfs:subClassOf <https://w3id.org/dpv/pd#External> ;
+    skos:broader <https://w3id.org/dpv/pd#External> ;
+    skos:definition "Personal data processed for the systematic assessment of an individual's capabilities or expertise, including the evaluation of specific learned abilities, aptitudes, or training outcomes"@en ;
+    skos:notation "C45" ;
+    skos:prefLabel "Skill"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#pd-Trustworthiness> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Trustworthiness"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceEE>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceNO> ;
+    rdfs:subClassOf <https://w3id.org/dpv/pd#External> ;
+    skos:broader <https://w3id.org/dpv/pd#External> ;
+    skos:definition "Personal data processed to predict or assess an individual's reliability, integrity, or honesty, often in the context of providing services, financial products, or employment assessments"@en ;
+    skos:notation "C61" ;
+    skos:prefLabel "Trustworthiness"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#pd-UnlawfulActivity> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Unlawful Activity"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceAll> ;
+    rdfs:subClassOf <https://w3id.org/dpv/pd#Social> ;
+    skos:broader <https://w3id.org/dpv/pd#Social> ;
+    skos:definition "Unlawful activity under GDPR refers to any unlawful activity that violates laws and regulations"@en ;
+    skos:notation "C9" ;
+    skos:prefLabel "Unlawful Activity"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#risk-ContractExclusion> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Contract Exclusion"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceBE>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceCY>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceES>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceFR>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceGR>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceHR>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceIS>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceIT>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceLI>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceSE>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceSI> ;
+    rdfs:subClassOf <https://tyttikatariina.github.io/IMPACTO/#risk-ImpactOnContract> ;
+    skos:broader <https://tyttikatariina.github.io/IMPACTO/#risk-ImpactOnContract> ;
+    skos:definition "Where an individual or an organisation is denied the opportunity to enter into a contract"@en ;
+    skos:notation "C20" ;
+    skos:prefLabel "Contract Exclusion"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#risk-ContractRefused> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Contract Refused"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceBE>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceHR> ;
+    rdfs:subClassOf <https://tyttikatariina.github.io/IMPACTO/#risk-ImpactOnContract> ;
+    skos:broader <https://tyttikatariina.github.io/IMPACTO/#risk-ImpactOnContract> ;
+    skos:definition "An impact where personal data, often from third parties, is used to inform a decision to deny entry into a service contract with a natural person"@en ;
+    skos:notation "C52" ;
+    skos:prefLabel "Contract Refused"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#risk-ContractSuspension> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Contract Suspension"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceBE>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceCY>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceES>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceFR>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceGR>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceHR>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceIS>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceIT>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceLI>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceSE>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceSI> ;
+    rdfs:subClassOf <https://tyttikatariina.github.io/IMPACTO/#risk-ImpactOnContract> ;
+    skos:broader <https://tyttikatariina.github.io/IMPACTO/#risk-ImpactOnContract> ;
+    skos:definition "Where an existing contract is temporarily halted or rendered inactive, such as due to suspicion of fraud, violation of terms, or negative behavioural indicators"@en ;
+    skos:notation "C20" ;
+    skos:prefLabel "Contract Suspension"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#risk-ContractTerminated> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Contract Terminated"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceBE>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceCY>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceES>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceFR>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceGR>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceHR>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceIS>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceIT>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceLI>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceSE>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceSI> ;
+    rdfs:subClassOf <https://tyttikatariina.github.io/IMPACTO/#risk-ImpactOnContract> ;
+    skos:broader <https://tyttikatariina.github.io/IMPACTO/#risk-ImpactOnContract> ;
+    skos:definition "Where an existing contract is cancelled or terminated, such as by revoking a loan, ending a subscription, or dismissing an employee"@en ;
+    skos:notation "C20, C52" ;
+    skos:prefLabel "Contract Terminated"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#risk-ImpactOnCareer> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Impact On Career"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceEE> ;
+    rdfs:subClassOf ns1:Impact ;
+    skos:broader ns1:Impact ;
+    skos:definition "Where the career of an individual is impacted"@en ;
+    skos:notation "C105" ;
+    skos:prefLabel "Impact On Career"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#risk-LegalEffect> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Legal Effect Risk"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceGDPR> ;
+    rdfs:subClassOf ns1:Risk ;
+    skos:broader ns1:Risk ;
+    skos:definition "A risk that processing results in legal effects for the data subjects"@en ;
+    skos:prefLabel "Legal Effect Risk"@en ;
+    skos:scopeNote "Used to indicate that a processing activity may result in effects equivalent to legal consequences for data subjects, such as denial of service or exclusion from contracts"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#risk-PropertyLoss> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Property Loss"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceEE> ;
+    rdfs:subClassOf <https://w3id.org/dpv/risk#FinancialLoss> ;
+    skos:broader <https://w3id.org/dpv/risk#FinancialLoss> ;
+    skos:definition "Loss of property"@en ;
+    skos:notation "C101" ;
+    skos:prefLabel "Property Loss"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#risk-RightsExercisePrevented> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Rights Exercise Prevented"@en ;
+    rdfs:subClassOf ns1:Impact ;
+    skos:broader ns1:Impact ;
+    skos:definition "The risk of an activity preventing the ability of data subjects to exercise their rights"@en ;
+    skos:prefLabel "Rights Exercise Prevented "@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#risk-ServiceAccessAllowed> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Service Access Allowed"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceBE>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceES>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceGR>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceHR>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceIS>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceIT>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceLI>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceLV>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceNO>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourcePL>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceSE>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceSI> ;
+    rdfs:subClassOf <https://tyttikatariina.github.io/IMPACTO/#ServiceRelatedConsequence> ;
+    skos:broader <https://tyttikatariina.github.io/IMPACTO/#ServiceRelatedConsequence> ;
+    skos:definition "Where an individual or an organisation is permitted to use or access a service"@en ;
+    skos:notation "C17" ;
+    skos:prefLabel "Service Access Allowed"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#risk-ServiceAccessDenied> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Service Access Denied"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceBE>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceES>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceGR>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceHR>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceIS>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceIT>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceLI>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceLV>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceNO>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourcePL>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceSE>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceSI> ;
+    rdfs:subClassOf <https://tyttikatariina.github.io/IMPACTO/#ServiceRelatedConsequence> ;
+    skos:broader <https://tyttikatariina.github.io/IMPACTO/#ServiceRelatedConsequence> ;
+    skos:definition "Where an individual or an organisation is prevented from accessing a particular service"@en ;
+    skos:notation "C17" ;
+    skos:prefLabel "Service Access Denied"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#sector-finance-SolvencyEvaluation> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Solvency Evaluation"@en ;
+    rdfs:subClassOf <https://w3id.org/dpv/sector/finance#FinancialServiceManagement> ;
+    skos:definition "The evaluation and assessment of the solvency of a data subject by way of evaluating financial data and records"@en ;
+    skos:prefLabel "Solvency Evaluation"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#sector-health-MedicalSupportServiceProvision> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Medical Support Service Provision"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceFR> ;
+    rdfs:subClassOf <https://w3id.org/dpv/sector/health#ServiceProvision> ;
+    skos:broader <https://w3id.org/dpv/sector/health#ServiceProvision> ;
+    skos:definition "Service that facilitates providing healthcare and related support, interventions, or assessments"@en ;
+    skos:notation "C76" ;
+    skos:prefLabel "Medical Support Service Provision"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-IntroducingEGovernmentServices> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Introducing E Government Services"@en ;
+    rdfs:subClassOf <https://w3id.org/dpv/sector/publicservices#PublicServiceProvision> ;
+    skos:broader <https://w3id.org/dpv/sector/publicservices#PublicServiceProvision> ;
+    skos:definition "The introduction and deployment of electronic government services"@en ;
+    skos:prefLabel "Introducing E Government Services"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-MonitoringEGovernmentServices> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Monitoring E Government Services"@en ;
+    rdfs:subClassOf <https://w3id.org/dpv/sector/publicservices#PublicServiceProvision> ;
+    skos:broader <https://w3id.org/dpv/sector/publicservices#PublicServiceProvision> ;
+    skos:definition "The monitoring and oversight of electronic government services performance and usage"@en ;
+    skos:prefLabel "Monitoring E Government Services"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-OrganisingEGovernmentServices> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Organising E Government Services"@en ;
+    rdfs:subClassOf <https://w3id.org/dpv/sector/publicservices#PublicServiceProvision> ;
+    skos:broader <https://w3id.org/dpv/sector/publicservices#PublicServiceProvision> ;
+    skos:definition "The organising and administration of electronic government services"@en ;
+    skos:prefLabel "Organising E Government Services"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-ProvidingEGovernmentServices> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Providing E Government Services"@en ;
+    rdfs:subClassOf <https://w3id.org/dpv/sector/publicservices#PublicServiceProvision> ;
+    skos:definition "The provision of electronic government services"@en ;
+    skos:prefLabel "Providing E Government Services"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-PublicSafetyAlertManagement> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Public Safety Alert Management"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceFR> ;
+    rdfs:subClassOf ns1:PublicBenefit ;
+    skos:broader ns1:PublicBenefit ;
+    skos:definition "Management of health alerts, such as for a patient at risk or for pandemics, through which health professionals and authorities can alert individuals or the public regarding their health"@en ;
+    skos:notation "C91" ;
+    skos:prefLabel "Public Safety Alert Management"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-SocialHousingManagement> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Social Housing Management"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceFR> ;
+    rdfs:subClassOf <https://w3id.org/dpv/sector/publicservices#SocialWelfareProvision> ;
+    skos:broader <https://w3id.org/dpv/sector/publicservices#SocialWelfareProvision> ;
+    skos:definition "Processing data for the assessment, approval, and management of social housing applications, typically by public authorities or welfare organisations"@en ;
+    skos:notation "C77" ;
+    skos:prefLabel "Social Housing Management"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#tech-ElectronicPrescriptionSystem> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Electronic Prescription System"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceFR>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceGR>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceHU>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceNL> ;
+    rdfs:subClassOf <https://w3id.org/dpv/tech#System> ;
+    skos:broader <https://w3id.org/dpv/tech#System> ;
+    skos:definition "A system used by healthcare providers to create, transmit, and manage electronic prescriptions as part of large-scale systematic health data processing"@en ;
+    skos:notation "C39" ;
+    skos:prefLabel "Electronic Prescription System"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#tech-IdentityManagementService> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Identity Management Service"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceEE> ;
+    rdfs:subClassOf <https://w3id.org/dpv/tech#Service> ;
+    skos:broader <https://w3id.org/dpv/tech#Service> ;
+    skos:definition "A technical and administrative system that authenticates and manages digital identities, with risks of identity theft or fraud due to large-scale personal data processing"@en ;
+    skos:notation "C103" ;
+    skos:prefLabel "Identity Management Service"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#tech-Neurotechnology> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Neurotechnology"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceDK> ;
+    rdfs:subClassOf ns1:Technology ;
+    skos:broader ns1:Technology ;
+    skos:definition "A technology that processes neural or brain-derived data, enabling applications in healthcare, human enhancement, or cognitive monitoring"@en ;
+    skos:notation "C85" ;
+    skos:prefLabel "Neurotechnology"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#tech-Sensor> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Sensor"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceDE>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceSI> ;
+    rdfs:subClassOf <https://w3id.org/dpv/tech#Component> ;
+    skos:broader <https://w3id.org/dpv/tech#Component> ;
+    skos:definition "Innovative device or technology used for detecting, collecting, or transmitting data, often as part of mobile or centralised systems, enabling real-time monitoring or measurement of physical conditions, behaviours, or environments"@en ;
+    skos:notation "C62" ;
+    skos:prefLabel "Sensor"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#tech-SmartMeter> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Smart Meter"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceBE>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceGR>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceHR>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceHU>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceNL>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourcePL>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceRO> ;
+    rdfs:subClassOf <https://w3id.org/dpv/tech#Device> ;
+    skos:broader <https://w3id.org/dpv/tech#Device> ;
+    skos:definition "A device installed by utility providers that automatically tracks and transmits consumption data, such as electricity, gas, or water usage"@en ;
+    skos:notation "C23" ;
+    skos:prefLabel "Smart Meter"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#tech-TrustService> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Trust Service"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceEE> ;
+    rdfs:subClassOf <https://w3id.org/dpv/tech#Service> ;
+    skos:broader <https://w3id.org/dpv/tech#Service> ;
+    skos:definition "Services that involve the processing of personal data to authenticate identity, verify electronic transactions, or provide secure communication and document exchange, where the nature of processing may pose a risk of identity theft or fraud"@en ;
+    skos:notation "C103" ;
+    skos:prefLabel "Trust Service"@en .
+
+ns1:hasAutomationLevel a owl:ObjectProperty .
+
+ns1:hasConsequence a owl:ObjectProperty .
+
+ns1:hasContext a owl:ObjectProperty .
+
+ns1:hasData a owl:ObjectProperty .
+
+ns1:hasDataSource a owl:ObjectProperty .
+
+ns1:hasDataSubject a owl:ObjectProperty .
+
+ns1:hasDataVolume a owl:ObjectProperty .
+
+ns1:hasHumanSubject a owl:ObjectProperty .
+
+ns1:hasJurisdiction a owl:ObjectProperty .
+
+ns1:hasLegalBasis a owl:ObjectProperty .
+
+ns1:hasLocation a owl:ObjectProperty .
+
+ns1:hasOrganisation a owl:ObjectProperty .
+
+ns1:hasPersonalData a owl:ObjectProperty .
+
+ns1:hasProcessing a owl:ObjectProperty .
+
+ns1:hasProcessingScale a owl:ObjectProperty .
+
+ns1:hasPurpose a owl:ObjectProperty .
+
+ns1:hasRisk a owl:ObjectProperty .
+
+ns1:hasSensitivePersonalData a owl:ObjectProperty .
+
+ns1:hasService a owl:ObjectProperty .
+
+ns1:hasSource a owl:ObjectProperty .
+
+ns1:hasTechnicalOrganisationalMeasure a owl:ObjectProperty .
+
+<https://w3id.org/dpv/ai#hasCapability> a owl:ObjectProperty .
+
+<https://w3id.org/dpv/legal/eu/gdpr#DPIARequiredList> a owl:NamedIndividual,
+        skos:Collection ;
+    skos:prefLabel "GDPR DPIA Required Process List"@en ;
+    ns1:hasJurisdiction <https://w3id.org/dpv/loc#EU> .
+
+<https://w3id.org/dpv/legal/eu/gdpr/at#DPIARequiredList> a owl:NamedIndividual,
+        skos:Collection ;
+    skos:definition "The list of processing activities requiring a DPIA as published by the Austrian Data Protection Authority"@en ;
+    skos:prefLabel "Austria DPIA Required Process List"@en ;
+    ns1:hasJurisdiction <https://w3id.org/dpv/loc#AT> .
+
+<https://w3id.org/dpv/legal/eu/gdpr/be#DPIARequiredList> a owl:NamedIndividual,
+        skos:Collection ;
+    skos:definition "The list of processing activities requiring a DPIA as published by the Belgian Data Protection Authority"@en ;
+    skos:prefLabel "Belgium DPIA Required Process List"@en ;
+    ns1:hasJurisdiction <https://w3id.org/dpv/loc#BE> .
+
+<https://w3id.org/dpv/legal/eu/gdpr/bg#DPIARequiredList> a owl:NamedIndividual,
+        skos:Collection ;
+    skos:definition "The list of processing activities requiring a DPIA as published by the Bulgarian Data Protection Authority"@en ;
+    skos:prefLabel "Bulgaria DPIA Required Process List"@en ;
+    ns1:hasJurisdiction <https://w3id.org/dpv/loc#BG> .
+
+<https://w3id.org/dpv/legal/eu/gdpr/cy#DPIARequiredList> a owl:NamedIndividual,
+        skos:Collection ;
+    skos:definition "The list of processing activities requiring a DPIA as published by the Cypriot Data Protection Authority"@en ;
+    skos:prefLabel "Cyprus DPIA Required Process List"@en ;
+    ns1:hasJurisdiction <https://w3id.org/dpv/loc#CY> .
+
+<https://w3id.org/dpv/legal/eu/gdpr/cz#DPIARequiredList> a owl:NamedIndividual,
+        skos:Collection ;
+    skos:definition "The list of processing activities requiring a DPIA as published by the Czech Data Protection Authority"@en ;
+    skos:prefLabel "Czech Republic DPIA Required Process List"@en ;
+    ns1:hasJurisdiction <https://w3id.org/dpv/loc#CZ> .
+
+<https://w3id.org/dpv/legal/eu/gdpr/de#DPIARequiredList> a owl:NamedIndividual,
+        skos:Collection ;
+    skos:definition "The list of processing activities requiring a DPIA as published by the German Data Protection Authorities"@en ;
+    skos:prefLabel "Germany DPIA Required Process List"@en ;
+    ns1:hasJurisdiction <https://w3id.org/dpv/loc#DE> .
+
+<https://w3id.org/dpv/legal/eu/gdpr/dk#DPIARequiredList> a owl:NamedIndividual,
+        skos:Collection ;
+    skos:definition "The list of processing activities requiring a DPIA as published by the Danish Data Protection Authority"@en ;
+    skos:prefLabel "Denmark DPIA Required Process List"@en ;
+    ns1:hasJurisdiction <https://w3id.org/dpv/loc#DK> .
+
+<https://w3id.org/dpv/legal/eu/gdpr/ee#DPIARequiredList> a owl:NamedIndividual,
+        skos:Collection ;
+    skos:definition "The list of processing activities requiring a DPIA as published by the Estonian Data Protection Authority"@en ;
+    skos:prefLabel "Estonia DPIA Required Process List"@en ;
+    ns1:hasJurisdiction <https://w3id.org/dpv/loc#EE> .
+
+<https://w3id.org/dpv/legal/eu/gdpr/es#DPIARequiredList> a owl:NamedIndividual,
+        skos:Collection ;
+    skos:definition "The list of processing activities requiring a DPIA as published by the Spanish Data Protection Authority (AEPD)"@en ;
+    skos:prefLabel "Spain DPIA Required Process List"@en ;
+    ns1:hasJurisdiction <https://w3id.org/dpv/loc#ES> .
+
+<https://w3id.org/dpv/legal/eu/gdpr/fi#DPIARequiredList> a owl:NamedIndividual,
+        skos:Collection ;
+    skos:definition "The list of processing activities requiring a DPIA as published by the Finnish Data Protection Authority"@en ;
+    skos:prefLabel "Finland DPIA Required Process List"@en ;
+    ns1:hasJurisdiction <https://w3id.org/dpv/loc#FI> .
+
+<https://w3id.org/dpv/legal/eu/gdpr/fr#DPIARequiredList> a owl:NamedIndividual,
+        skos:Collection ;
+    skos:definition "The list of processing activities requiring a DPIA as published by the French Data Protection Authority (CNIL)"@en ;
+    skos:prefLabel "France DPIA Required Process List"@en ;
+    ns1:hasJurisdiction <https://w3id.org/dpv/loc#FR> .
+
+<https://w3id.org/dpv/legal/eu/gdpr/gr#DPIARequiredList> a owl:NamedIndividual,
+        skos:Collection ;
+    skos:definition "The list of processing activities requiring a DPIA as published by the Greek Data Protection Authority"@en ;
+    skos:prefLabel "Greece DPIA Required Process List"@en ;
+    ns1:hasJurisdiction <https://w3id.org/dpv/loc#GR> .
+
+<https://w3id.org/dpv/legal/eu/gdpr/hr#DPIARequiredList> a owl:NamedIndividual,
+        skos:Collection ;
+    skos:definition "The list of processing activities requiring a DPIA as published by the Croatian Data Protection Authority"@en ;
+    skos:prefLabel "Croatia DPIA Required Process List"@en ;
+    ns1:hasJurisdiction <https://w3id.org/dpv/loc#HR> .
+
+<https://w3id.org/dpv/legal/eu/gdpr/hu#DPIARequiredList> a owl:NamedIndividual,
+        skos:Collection ;
+    skos:definition "The list of processing activities requiring a DPIA as published by the Hungarian Data Protection Authority"@en ;
+    skos:prefLabel "Hungary DPIA Required Process List"@en ;
+    ns1:hasJurisdiction <https://w3id.org/dpv/loc#HU> .
+
+<https://w3id.org/dpv/legal/eu/gdpr/ie#DPIARequiredList> a owl:NamedIndividual,
+        skos:Collection ;
+    skos:definition "The list of processing activities requiring a DPIA as published by the Irish Data Protection Commission"@en ;
+    skos:prefLabel "Ireland DPIA Required Process List"@en ;
+    ns1:hasJurisdiction <https://w3id.org/dpv/loc#IE> .
+
+<https://w3id.org/dpv/legal/eu/gdpr/is#DPIARequiredList> a owl:NamedIndividual,
+        skos:Collection ;
+    skos:definition "The list of processing activities requiring a DPIA as published by the Icelandic Data Protection Authority"@en ;
+    skos:prefLabel "Iceland DPIA Required Process List"@en ;
+    ns1:hasJurisdiction <https://w3id.org/dpv/loc#IS> .
+
+<https://w3id.org/dpv/legal/eu/gdpr/it#DPIARequiredList> a owl:NamedIndividual,
+        skos:Collection ;
+    skos:definition "The list of processing activities requiring a DPIA as published by the Italian Data Protection Authority (Garante)"@en ;
+    skos:prefLabel "Italy DPIA Required Process List"@en ;
+    ns1:hasJurisdiction <https://w3id.org/dpv/loc#IT> .
+
+<https://w3id.org/dpv/legal/eu/gdpr/li#DPIARequiredList> a owl:NamedIndividual,
+        skos:Collection ;
+    skos:definition "The list of processing activities requiring a DPIA as published by the Liechtenstein Data Protection Authority"@en ;
+    skos:prefLabel "Liechtenstein DPIA Required Process List"@en ;
+    ns1:hasJurisdiction <https://w3id.org/dpv/loc#LI> .
+
+<https://w3id.org/dpv/legal/eu/gdpr/lt#DPIARequiredList> a owl:NamedIndividual,
+        skos:Collection ;
+    skos:definition "The list of processing activities requiring a DPIA as published by the Lithuanian Data Protection Authority"@en ;
+    skos:prefLabel "Lithuania DPIA Required Process List"@en ;
+    ns1:hasJurisdiction <https://w3id.org/dpv/loc#LT> .
+
+<https://w3id.org/dpv/legal/eu/gdpr/lu#DPIARequiredList> a owl:NamedIndividual,
+        skos:Collection ;
+    skos:definition "The list of processing activities requiring a DPIA as published by the Luxembourg Data Protection Authority (CNPD)"@en ;
+    skos:prefLabel "Luxembourg DPIA Required Process List"@en ;
+    ns1:hasJurisdiction <https://w3id.org/dpv/loc#LU> .
+
+<https://w3id.org/dpv/legal/eu/gdpr/lv#DPIARequiredList> a owl:NamedIndividual,
+        skos:Collection ;
+    skos:definition "The list of processing activities requiring a DPIA as published by the Latvian Data Protection Authority"@en ;
+    skos:prefLabel "Latvia DPIA Required Process List"@en ;
+    ns1:hasJurisdiction <https://w3id.org/dpv/loc#LV> .
+
+<https://w3id.org/dpv/legal/eu/gdpr/mt#DPIARequiredList> a owl:NamedIndividual,
+        skos:Collection ;
+    skos:definition "The list of processing activities requiring a DPIA as published by the Maltese Data Protection Authority"@en ;
+    skos:prefLabel "Malta DPIA Required Process List"@en ;
+    ns1:hasJurisdiction <https://w3id.org/dpv/loc#MT> .
+
+<https://w3id.org/dpv/legal/eu/gdpr/nl#DPIARequiredList> a owl:NamedIndividual,
+        skos:Collection ;
+    skos:definition "The list of processing activities requiring a DPIA as published by the Dutch Data Protection Authority (Autoriteit Persoonsgegevens)"@en ;
+    skos:prefLabel "Netherlands DPIA Required Process List"@en ;
+    ns1:hasJurisdiction <https://w3id.org/dpv/loc#NL> .
+
+<https://w3id.org/dpv/legal/eu/gdpr/no#DPIARequiredList> a owl:NamedIndividual,
+        skos:Collection ;
+    skos:definition "The list of processing activities requiring a DPIA as published by the Norwegian Data Protection Authority (Datatilsynet)"@en ;
+    skos:prefLabel "Norway DPIA Required Process List"@en ;
+    ns1:hasJurisdiction <https://w3id.org/dpv/loc#NO> .
+
+<https://w3id.org/dpv/legal/eu/gdpr/pl#DPIARequiredList> a owl:NamedIndividual,
+        skos:Collection ;
+    skos:definition "The list of processing activities requiring a DPIA as published by the Polish Data Protection Authority (UODO)"@en ;
+    skos:prefLabel "Poland DPIA Required Process List"@en ;
+    ns1:hasJurisdiction <https://w3id.org/dpv/loc#PL> .
+
+<https://w3id.org/dpv/legal/eu/gdpr/pt#DPIARequiredList> a owl:NamedIndividual,
+        skos:Collection ;
+    skos:definition "The list of processing activities requiring a DPIA as published by the Portuguese Data Protection Authority (CNPD)"@en ;
+    skos:prefLabel "Portugal DPIA Required Process List"@en ;
+    ns1:hasJurisdiction <https://w3id.org/dpv/loc#PT> .
+
+<https://w3id.org/dpv/legal/eu/gdpr/ro#DPIARequiredList> a owl:NamedIndividual,
+        skos:Collection ;
+    skos:definition "The list of processing activities requiring a DPIA as published by the Romanian Data Protection Authority (ANSPDCP)"@en ;
+    skos:prefLabel "Romania DPIA Required Process List"@en ;
+    ns1:hasJurisdiction <https://w3id.org/dpv/loc#RO> .
+
+<https://w3id.org/dpv/legal/eu/gdpr/se#DPIARequiredList> a owl:NamedIndividual,
+        skos:Collection ;
+    skos:definition "The list of processing activities requiring a DPIA as published by the Swedish Data Protection Authority (IMY)"@en ;
+    skos:prefLabel "Sweden DPIA Required Process List"@en ;
+    ns1:hasJurisdiction <https://w3id.org/dpv/loc#SE> .
+
+<https://w3id.org/dpv/legal/eu/gdpr/si#DPIARequiredList> a owl:NamedIndividual,
+        skos:Collection ;
+    skos:definition "The list of processing activities requiring a DPIA as published by the Slovenian Data Protection Authority (IP RS)"@en ;
+    skos:prefLabel "Slovenia DPIA Required Process List"@en ;
+    ns1:hasJurisdiction <https://w3id.org/dpv/loc#SI> .
+
+<https://w3id.org/dpv/legal/eu/gdpr/sk#DPIARequiredList> a owl:NamedIndividual,
+        skos:Collection ;
+    skos:definition "The list of processing activities requiring a DPIA as published by the Slovak Data Protection Authority"@en ;
+    skos:prefLabel "Slovakia DPIA Required Process List"@en ;
+    ns1:hasJurisdiction <https://w3id.org/dpv/loc#SK> .
+
+<https://w3id.org/dpv/tech#hasComponent> a owl:ObjectProperty .
+
+<https://w3id.org/dpv/tech#hasDevice> a owl:ObjectProperty .
+
+<https://w3id.org/dpv/tech#hasInput> a owl:ObjectProperty .
+
+<https://w3id.org/dpv/tech#hasIntendedUse> a owl:ObjectProperty .
+
+<https://tyttikatariina.github.io/IMPACTO/#SourceBG> a owl:NamedIndividual ;
+    skos:prefLabel "Bulgaria (BG)"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#SourceCZ> a owl:NamedIndividual ;
+    skos:prefLabel "Czech Republic (CZ)"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#SourceEDPB> a owl:NamedIndividual ;
+    skos:prefLabel "EDPB"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#SourceFI> a owl:NamedIndividual ;
+    skos:prefLabel "Finland (FI)"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#SourceGDPR> a owl:NamedIndividual ;
+    skos:prefLabel "GDPR"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#SourceIE> a owl:NamedIndividual ;
+    skos:prefLabel "Ireland (IE)"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#SourceLU> a owl:NamedIndividual ;
+    skos:prefLabel "Luxembourg (LU)"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#SourcePT> a owl:NamedIndividual ;
+    skos:prefLabel "Portugal (PT)"@en .
+
+ns1:Purpose a owl:Class .
+
+<https://w3id.org/dpv/loc#AT> a owl:NamedIndividual .
+
+<https://w3id.org/dpv/loc#BE> a owl:NamedIndividual .
+
+<https://w3id.org/dpv/loc#BG> a owl:NamedIndividual .
+
+<https://w3id.org/dpv/loc#CY> a owl:NamedIndividual .
+
+<https://w3id.org/dpv/loc#CZ> a owl:NamedIndividual .
+
+<https://w3id.org/dpv/loc#DE> a owl:NamedIndividual .
+
+<https://w3id.org/dpv/loc#DK> a owl:NamedIndividual .
+
+<https://w3id.org/dpv/loc#EE> a owl:NamedIndividual .
+
+<https://w3id.org/dpv/loc#ES> a owl:NamedIndividual .
+
+<https://w3id.org/dpv/loc#EU> a owl:NamedIndividual .
+
+<https://w3id.org/dpv/loc#FI> a owl:NamedIndividual .
+
+<https://w3id.org/dpv/loc#FR> a owl:NamedIndividual .
+
+<https://w3id.org/dpv/loc#GR> a owl:NamedIndividual .
+
+<https://w3id.org/dpv/loc#HR> a owl:NamedIndividual .
+
+<https://w3id.org/dpv/loc#HU> a owl:NamedIndividual .
+
+<https://w3id.org/dpv/loc#IE> a owl:NamedIndividual .
+
+<https://w3id.org/dpv/loc#IS> a owl:NamedIndividual .
+
+<https://w3id.org/dpv/loc#IT> a owl:NamedIndividual .
+
+<https://w3id.org/dpv/loc#LI> a owl:NamedIndividual .
+
+<https://w3id.org/dpv/loc#LT> a owl:NamedIndividual .
+
+<https://w3id.org/dpv/loc#LU> a owl:NamedIndividual .
+
+<https://w3id.org/dpv/loc#LV> a owl:NamedIndividual .
+
+<https://w3id.org/dpv/loc#MT> a owl:NamedIndividual .
+
+<https://w3id.org/dpv/loc#NL> a owl:NamedIndividual .
+
+<https://w3id.org/dpv/loc#NO> a owl:NamedIndividual .
+
+<https://w3id.org/dpv/loc#PL> a owl:NamedIndividual .
+
+<https://w3id.org/dpv/loc#PT> a owl:NamedIndividual .
+
+<https://w3id.org/dpv/loc#RO> a owl:NamedIndividual .
+
+<https://w3id.org/dpv/loc#SE> a owl:NamedIndividual .
+
+<https://w3id.org/dpv/loc#SI> a owl:NamedIndividual .
+
+<https://w3id.org/dpv/loc#SK> a owl:NamedIndividual .
+
+<https://w3id.org/dpv/sector/finance#FinancialServiceManagement> a owl:Class .
+
+<https://tyttikatariina.github.io/IMPACTO/#SourceLT> a owl:NamedIndividual ;
+    skos:prefLabel "Lithuania (LT)"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#SourceSK> a owl:NamedIndividual ;
+    skos:prefLabel "Slovakia (SK)"@en .
+
+ns1:Infer a owl:Class .
+
+ns1:LocationFixture a owl:Class .
+
+ns1:Organisation a owl:Class .
+
+ns1:PublicBenefit a owl:Class .
+
+ns1:ResearchAndDevelopment a owl:Class .
+
+ns1:Risk a owl:Class .
+
+ns1:Technology a owl:Class .
+
+<https://w3id.org/dpv/pd#Location> a owl:Class .
+
+<https://w3id.org/dpv/pd#Professional> a owl:Class .
+
+<https://w3id.org/dpv/pd#Social> a owl:Class .
+
+<https://w3id.org/dpv/risk#FinancialLoss> a owl:Class .
+
+<https://w3id.org/dpv/sector/health#ServiceProvision> a owl:Class .
+
+<https://w3id.org/dpv/sector/publicservices#SocialWelfareProvision> a owl:Class .
+
+<https://w3id.org/dpv/tech#Capability> a owl:Class .
+
+<https://w3id.org/dpv/tech#Component> a owl:Class .
+
+<https://w3id.org/dpv/tech#Device> a owl:Class .
+
+<https://w3id.org/dpv/tech#System> a owl:Class .
+
+<https://tyttikatariina.github.io/IMPACTO/#SourceDE> a owl:NamedIndividual ;
+    skos:prefLabel "Germany (DE)"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#SourceDK> a owl:NamedIndividual ;
+    skos:prefLabel "Denmark (DK)"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#SourceRO> a owl:NamedIndividual ;
+    skos:prefLabel "Romania (RO)"@en .
+
+ns1:Use a owl:Class .
+
+<https://w3id.org/dpv/ai#Capability> a owl:Class .
+
+<https://tyttikatariina.github.io/IMPACTO/#ServiceRelatedConsequence> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Service Related Consequence"@en ;
+    rdfs:subClassOf ns1:Impact ;
+    skos:broader ns1:Impact ;
+    skos:definition "A consequence that affects an individual's or organisation's access to or participation in a service"@en ;
+    skos:prefLabel "Service Related Consequence"@en ;
+    skos:scopeNote "Parent term for service-related consequences"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#dpv-UtilityProvider> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Utility Provider"@en ;
+    rdfs:subClassOf ns1:Organisation ;
+    skos:broader ns1:Organisation ;
+    skos:definition "An organisation (public or private) that processes personal data in the provision of utilities"@en ;
+    skos:prefLabel "Utility Provider"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-Systematicity> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Systematicity"@en ;
+    dcterms:source <https://tyttikatariina.github.io/IMPACTO/#SourceBE>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceBG>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceCY>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceFR>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceGR>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceHU>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceIS>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceNL>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceNO>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourcePL>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceSI>,
+        <https://tyttikatariina.github.io/IMPACTO/#SourceSK> ;
+    rdfs:subClassOf ns1:ProcessingContext ;
+    skos:broader ns1:ProcessingContext ;
+    skos:definition "An indication of whether data processing is systematic, i.e. if it is organised and constitutes repeated actions performed according to a plan or method, such as for monitoring, analysis or decision-making"@en ;
+    skos:notation "C29, C39, C45, C51, C50, C55, C82, C89" ;
+    skos:prefLabel "Systematicity"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#pd-Conduct> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Conduct"@en ;
+    rdfs:subClassOf <https://w3id.org/dpv/pd#External> ;
+    skos:broader <https://w3id.org/dpv/pd#External> ;
+    skos:definition "A pattern or instance of individual behaviour, particularly in relation to lawfulness, ethics, professional standards, or social expectations. Conduct can be evaluated as good or bad based on its alignment with normative, legal, or reputational frameworks"@en ;
+    skos:prefLabel "Conduct"@en ;
+    skos:scopeNote "The parent for bad conduct and good conduct"@en .
+
+ns1:DataSource a owl:Class .
+
+ns1:EnforceSecurity a owl:Class .
+
+ns1:HumanResourceManagement a owl:Class .
+
+ns1:Location a owl:Class .
+
+ns1:Process a owl:Class .
+
+ns1:PubliclyAccessibleSpace a owl:Class .
+
+<https://w3id.org/dpv/pd#HealthRecord> a owl:Class .
+
+<https://w3id.org/dpv/tech#Service> a owl:Class .
+
+<https://tyttikatariina.github.io/IMPACTO/#SourceSE> a owl:NamedIndividual ;
+    skos:prefLabel "Sweden (SE)"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#SourceAT> a owl:NamedIndividual ;
+    skos:prefLabel "Austria (AT)"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#SourceAll> a owl:NamedIndividual ;
+    skos:prefLabel "All EU/EEA Jurisdictions"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#SourceES> a owl:NamedIndividual ;
+    skos:prefLabel "Spain (ES)"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#SourceIT> a owl:NamedIndividual ;
+    skos:prefLabel "Italy (IT)"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#SourceLI> a owl:NamedIndividual ;
+    skos:prefLabel "Liechtenstein (LI)"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#SourceCY> a owl:NamedIndividual ;
+    skos:prefLabel "Cyprus (CY)"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#SourceHU> a owl:NamedIndividual ;
+    skos:prefLabel "Hungary (HU)"@en .
+
+<https://w3id.org/dpv/sector/publicservices#PublicServiceProvision> a owl:Class .
+
+<https://tyttikatariina.github.io/IMPACTO/#SourceEE> a owl:NamedIndividual ;
+    skos:prefLabel "Estonia (EE)"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#SourceHR> a owl:NamedIndividual ;
+    skos:prefLabel "Croatia (HR)"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#SourceLV> a owl:NamedIndividual ;
+    skos:prefLabel "Latvia (LV)"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#SourceSI> a owl:NamedIndividual ;
+    skos:prefLabel "Slovenia (SI)"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#risk-ImpactOnContract> a owl:Class,
+        skos:Concept ;
+    rdfs:label "Impact On Contract"@en ;
+    rdfs:subClassOf ns1:Impact ;
+    skos:broader ns1:Impact ;
+    skos:definition "Where there is an effect, positive or negative, on an existing contract, such as suspension, termination, or exclusion"@en ;
+    skos:prefLabel "Impact On Contract"@en ;
+    skos:scopeNote "Parent term for contract-related risks. Modelled as impact to align with legal effects on the contractual party"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#SourceIS> a owl:NamedIndividual ;
+    skos:prefLabel "Iceland (IS)"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#SourceNO> a owl:NamedIndividual ;
+    skos:prefLabel "Norway (NO)"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#SourceBE> a owl:NamedIndividual ;
+    skos:prefLabel "Belgium (BE)"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#SourceNL> a owl:NamedIndividual ;
+    skos:prefLabel "Netherlands (NL)"@en .
+
+ns1:Impact a owl:Class .
+
+ns1:ProcessingContext a owl:Class .
+
+<https://tyttikatariina.github.io/IMPACTO/#SourceFR> a owl:NamedIndividual ;
+    skos:prefLabel "France (FR)"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#SourceGR> a owl:NamedIndividual ;
+    skos:prefLabel "Greece (GR)"@en .
+
+<https://tyttikatariina.github.io/IMPACTO/#SourcePL> a owl:NamedIndividual ;
+    skos:prefLabel "Poland (PL)"@en .
+
+ns1:LocationLocality a owl:Class .
+
+<https://w3id.org/dpv/pd#External> a owl:Class .
+
+skos:Collection a owl:Class .
+
+skos:Concept a owl:Class .
+
