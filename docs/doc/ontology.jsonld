@@ -1,0 +1,3686 @@
+[ {
+  "@id" : "http://purl.org/dc/terms/bibliographicCitation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#Collection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#broader",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#definition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#notation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#scopeNote",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/bibliographicCitation" : [ {
+    "@language" : "en",
+    "@value" : "Tytti Rintamäki, Harshvardhan J. Pandit. IMPACTO: An ontology for representing Impact Assessment requirements and processes based on the GDPR and EU AI ACT."
+  } ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Harshvardhan J. Pandit"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2026-05-25"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Tytti Rintamäki"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "IMPACTO represents impact assessments, specifically the DPIA and FRIA."
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2026-05-25"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2026-05-25"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@value" : "ADAPT Centre, Dublin City University"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@language" : "en",
+    "@value" : " AT, BE, BG, CY, CZ, DE, DK, EE, ES, FI, FR, GR, HR, HU, IE, IS, IT, LI, LT, LU, LV, MT, NL, NO, PL, PT, RO, SE, SI, SK"
+  }, {
+    "@language" : "en",
+    "@value" : "EU AI Act"
+  }, {
+    "@language" : "en",
+    "@value" : "GDPR"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "IMPACTO"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Impact Assessment Ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/1.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#ServiceRelatedConsequence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Service Related Consequence"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv#Impact"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv#Impact"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A consequence that affects an individual's or organisation's access to or participation in a service"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Service Related Consequence"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Parent term for service-related consequences"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceAT",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Austria (AT)"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceAll",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "All EU/EEA Jurisdictions"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceBE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Belgium (BE)"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceBG",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Bulgaria (BG)"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceCY",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Cyprus (CY)"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceCZ",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Czech Republic (CZ)"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceDE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Germany (DE)"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceDK",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Denmark (DK)"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceEDPB",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "EDPB"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceEE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Estonia (EE)"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceES",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Spain (ES)"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceFI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Finland (FI)"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceFR",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "France (FR)"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceGDPR",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "GDPR"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceGR",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Greece (GR)"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceHR",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Croatia (HR)"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceHU",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Hungary (HU)"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceIE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Ireland (IE)"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceIS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Iceland (IS)"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceIT",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Italy (IT)"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceLI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Liechtenstein (LI)"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceLT",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Lithuania (LT)"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceLU",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Luxembourg (LU)"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceLV",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Latvia (LV)"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceMT",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Malta (MT)"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceNL",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Netherlands (NL)"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceNO",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Norway (NO)"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourcePL",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Poland (PL)"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourcePT",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Portugal (PT)"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceRO",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Romania (RO)"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceSE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Sweden (SE)"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceSI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Slovenia (SI)"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceSK",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Slovakia (SK)"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#ai-AutomaticObjectRecognition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Automatic Object Recognition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv/ai#Capability"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The use of an AI system capable of automatic object recognition"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Automatic Object Recognition"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#ai-FacialRecognition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Facial Recognition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv/ai#Capability"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The use of an AI system capable of facial recognition"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Facial Recognition"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#ai-ObjectIsolation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Object Isolation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv/ai#Capability"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The use of an AI system capable of isolating objects"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Object Isolation"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#ai-UseOfAI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Use Of AI"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv#Use"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The use of an AI system in processing of personal data"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Use Of AI"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#dpv-Automated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Automated"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv#ProcessingContext"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv#ProcessingContext"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Processing context indicating that automation is involved and parent concept for all automation-related processing contexts"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Automated"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#dpv-CentralisedLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceDE"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceSI"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Centralised Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv#LocationFixture"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv#LocationFixture"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A physical or digital point where data is collected and aggregated from multiple sources, typically involving centralised sensors or mobile-based systems for large-scale monitoring or control"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C62"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Centralised Location"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#dpv-ClassificationOfIndividuals",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceAT"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceHU"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourcePL"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Classification Of Individuals"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv#ProcessingContext"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv#ProcessingContext"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Processing that evaluates, ranks, or categorises natural persons, often based on behavioural, demographic, or personal data"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C48"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Classification Of Individuals"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Phrasing follows Article 29 Data Protection Working Party and EDPB guidelines"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#dpv-HistoricResearch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceLT"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceLU"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceLV"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceNO"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourcePT"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceSK"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Historical Research"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv#ResearchAndDevelopment"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv#ResearchAndDevelopment"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The processing of personal data for scientific or historical research purposes, conducted without the data subject's consent, and in conjunction with at least one of the legal criteria under the GDPR, such as being necessary for a task carried out in the public interest"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C30"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Historical Research"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#dpv-Inspection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Inspection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv#ProcessingContext"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv#ProcessingContext"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A processing context where personal data is used as part of an evaluative or investigative activity or purpose"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Inspection"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#dpv-LabourBrokeringService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceEE"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Labour Brokering Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv#HumanResourceManagement"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv#HumanResourceManagement"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Service that facilitates labour provision through a brokering process, including matching workers with jobs or facilitating labour based on demand"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C105"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Labour Brokering Service"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#dpv-Monitoring",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv#Purpose"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A purpose involving the monitoring of individuals"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Monitoring"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#dpv-MonitoringIndividuals",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceAll"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Monitoring Individuals"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv#ProcessingContext"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv#ProcessingContext"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Monitoring of humans (as individuals or as groups) which includes a systematic observation or surveillance of behaviour, movements, or activities"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C5, C43, C46, C53, C55, C61, C76, C87, C97"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Monitoring Individuals"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Proposed as addition to dpv: — differs from existing dpv:Monitor (which monitors data for criteria) by focusing specifically on monitoring of data subjects themselves"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#dpv-NonDataSubjectDataSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceAT"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceCZ"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceDE"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceES"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceGR"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceLT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Non Data Subject Data Source"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv#DataSource"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv#DataSource"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Personal data obtained from a third party or another source rather than directly from the individual concerned, especially in cases where informing the data subject would be difficult or impossible, such as in law enforcement, research, or archival processing"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C25"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Non Data Subject Data Source"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Existing non-data subject sources in DPV should be moved below this concept"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#dpv-Predict",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceEDPB"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Predict"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv#Infer"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv#Infer"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "To anticipate or forecast aspects of an individual's behaviour, characteristics, or future actions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C14, C37, C73"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Predict"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#dpv-PreventativeProtectionOfPersons",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Preventative Protection Of Persons"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv#EnforceSecurity"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv#EnforceSecurity"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Processing carried out for the purpose of preventing harm or protecting individuals before an incident occurs"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Preventative Protection Of Persons"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#dpv-PreventativeProtectionOfProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Preventative Protection Of Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv#EnforceSecurity"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv#EnforceSecurity"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Processing carried out for the purpose of preventing loss or damage to property before an incident occurs"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Preventative Protection Of Property"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#dpv-PrivateUtilityProvider",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Private Utility Provider"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#dpv-UtilityProvider"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#dpv-UtilityProvider"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A private organisation providing utilities"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Private Utility Provider"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#dpv-PublicUtilityProvider",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceBE"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceGR"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceHR"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceHU"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceNL"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourcePL"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceRO"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Public Utility Provider"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#dpv-UtilityProvider"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#dpv-UtilityProvider"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A public organisation providing utilities"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C23"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Public Utility Provider"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#dpv-Tracking",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceLI"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceLV"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Tracking"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv#Use"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv#Use"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The use of data to follow or track something across contexts"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C58"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Tracking"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "While generalised to enable tracking of activities and events, this also encompasses tracking of individuals across websites, apps, devices, and other forms which can constitute systematic monitoring and surveillance"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#dpv-UnknownDataSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceIE"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Unknown Data Source"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv#DataSource"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv#DataSource"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The origin of personal data cannot be determined or is not known"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C94"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Unknown Data Source"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#dpv-UtilityProvider",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Utility Provider"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv#Organisation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv#Organisation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "An organisation (public or private) that processes personal data in the provision of utilities"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Utility Provider"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#dpv-WhistleblowerManagement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceFI"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Whistleblower Management"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv#HumanResourceManagement"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv#HumanResourceManagement"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The management of whistleblower processes, systems, and information through which individuals or groups can report on negative activities such as misconduct, harms, and compliance violations"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C100"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Whistleblower Management"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FacialRecognitionTechnology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceCY"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceDK"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceIT"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourcePL"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceRO"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Facial Recognition Technology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv/tech#Capability"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv/tech#Capability"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A biometric identification system that detects, captures, and compares facial features to identify or verify individuals in real-time or retrospectively, as defined in the EU AI Act"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C36"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Facial Recognition Technology"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Proposed as rename/replacement of current tech:FaceRecognition to align with EU AI Act terminology"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-DPIANotRequiredProcess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://w3id.org/dpv/legal/eu/gdpr/at#DPIANotRequiredList"
+  }, {
+    "@id" : "https://w3id.org/dpv/legal/eu/gdpr/cz#DPIANotRequiredList"
+  }, {
+    "@id" : "https://w3id.org/dpv/legal/eu/gdpr/es#DPIANotRequiredList"
+  }, {
+    "@id" : "https://w3id.org/dpv/legal/eu/gdpr/fr#DPIANotRequiredList"
+  }, {
+    "@id" : "https://w3id.org/dpv/legal/eu/gdpr/hr#DPIANotRequiredList"
+  }, {
+    "@id" : "https://w3id.org/dpv/legal/eu/gdpr/it#DPIANotRequiredList"
+  }, {
+    "@id" : "https://w3id.org/dpv/legal/eu/gdpr/lv#DPIANotRequiredList"
+  }, {
+    "@id" : "https://w3id.org/dpv/legal/eu/gdpr/nl#DPIANotRequiredList"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "DPIA Not Required Process"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv#Process"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv#Process"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A personal data processing activity that does not require a DPIA according to the whitelists of processing activities published by Member State Data Protection Authorities"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "DPIA Not Required Process"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "The requirements for whether a DPIA is required for a specific process can be found in GDPR Art 35 and also in specific lists published by Member State Data Protection Authorities"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-DPIARequiredProcess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "DPIA Required Process"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv#Process"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv#Process"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A personal data processing activity that requires a DPIA according to GDPR Article 35"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "DPIA Required Process"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "The requirements for whether a DPIA is required for a specific process can be found in GDPR Art 35 and also in specific lists published by Member State Data Protection Authorities"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-NonSystematic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceAll"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Non-Systematic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-Systematicity"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-Systematicity"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Indication that processing does not meet the definition of systematic"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C29, C39, C45, C51, C50, C55, C82, C89"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Non-Systematic"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-SignificantEffect",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Significant Effect"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv#Impact"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv#Impact"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "An impact that is distinguished as being significant due to having a legal impact"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Significant Effect"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "The parent to legaleffect"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-Systematic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceAll"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Systematic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-Systematicity"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-Systematicity"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Indication that processing occurs according to a system; is pre-arranged, organised or methodical, and takes place as part of a general plan or is carried out as part of a strategy"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C29, C39, C45, C51, C50, C55, C82, C89"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Systematic"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Definition follows ICO UK. Proposed as subclass of eu-gdpr:Systematicity"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-Systematicity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceBE"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceBG"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceCY"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceFR"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceGR"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceHU"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceIS"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceNL"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceNO"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourcePL"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceSI"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceSK"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Systematicity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv#ProcessingContext"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv#ProcessingContext"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "An indication of whether data processing is systematic, i.e. if it is organised and constitutes repeated actions performed according to a plan or method, such as for monitoring, analysis or decision-making"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C29, C39, C45, C51, C50, C55, C82, C89"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Systematicity"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#loc-EducationalInstitution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Educational Institution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv#LocationLocality"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv#LocationLocality"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A Educational Insitution (including but not limited to school, university etc.)"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Educational Insitution"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#loc-Healthcare",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceLV"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceNL"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Healthcare Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv#LocationLocality"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv#LocationLocality"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A place where healthcare is provided to individuals"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C57"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Healthcare Location"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#loc-InPublicTransport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceAT"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceCY"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceFR"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourcePL"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "In Public Transport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv#PubliclyAccessibleSpace"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv#PubliclyAccessibleSpace"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Vehicles and infrastructures used for public travel, such as buses, trains, metro, and stations, where individuals are subject to monitoring or data processing"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C43"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "In Public Transport"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#loc-OnPublicRoad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceAT"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceCY"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceFR"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourcePL"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "On Public Road"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv#PubliclyAccessibleSpace"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv#PubliclyAccessibleSpace"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Any location accessible to the general public, particularly roads and streets used by public or private transportation, where monitoring or control of individuals is conducted via processing operations such as video surveillance or traffic sensors"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C43"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "On Public Road"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Proposed as subclass of dpv:PubliclyAccessibleSpace pending group discussion on modelling specific locations"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#loc-PersonalSpace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceAT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Personal Space"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv#LocationLocality"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv#LocationLocality"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Refers to private areas such as homes or personal environments, where data processing even with consent may infringe on privacy due to the sensitive nature of the setting"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C90"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Personal Space"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#loc-PreSchool",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv#Location"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A location that is a  Preschool"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "PreSchool"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#loc-Prison",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceLV"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceNL"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Prison"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv#LocationLocality"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv#LocationLocality"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A place in which individuals are held due to committing a crime or awaiting trial"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C57"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Prison"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#loc-School",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv#Location"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A location that is a school"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "School"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#loc-SocialCare",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceLV"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceNL"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Socialcare Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv#LocationLocality"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv#LocationLocality"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A place where social care is provided to individuals"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C57"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Socialcare Location"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#loc-Workplace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceLV"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceNL"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Workplace"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv#LocationLocality"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv#LocationLocality"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A professional environment or workplace"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C57"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Workplace"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#loc-WorshipLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceAT"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Worship Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv#Location"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv#Location"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A religious institution such as a church or house of prayer, where monitoring or data processing may occur for security or organisational purposes"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C68"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Worship Location"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#pd-AssessmentOutcome",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceIS"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceNO"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourcePL"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Assessment Outcome"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv/pd#External"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv/pd#External"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Personal data that captures results or conclusions from standardised assessments, such as exams, evaluations, or diagnostic tests, aimed at determining skills, knowledge, mental health, or developmental status"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C45"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Assessment Outcome"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#pd-BadConduct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceAll"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Bad Conduct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#pd-Conduct"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#pd-Conduct"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Broader term than criminal offences or unlawful conduct. It can include behaviour that may not be illegal but is still considered ethically or professionally inappropriate, controversial, or reputationally damaging"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C9"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Bad Conduct"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#pd-Career",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceEE"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Career"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv/pd#Professional"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv/pd#Professional"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Personal data related to an individual's professional progression, roles held, promotions, or career evaluations that may impact employment opportunities"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C105"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Career"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#pd-Competency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceIS"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceNO"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourcePL"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Competency"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv/pd#External"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv/pd#External"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Personal data used in the systematic evaluation of an individual's overall effectiveness in applying knowledge and skills, including professional qualifications, behavioural performance, and domain-specific expertise"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C45"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Competency"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#pd-Conduct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Conduct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv/pd#External"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv/pd#External"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A pattern or instance of individual behaviour, particularly in relation to lawfulness, ethics, professional standards, or social expectations. Conduct can be evaluated as good or bad based on its alignment with normative, legal, or reputational frameworks"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Conduct"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "The parent for bad conduct and good conduct"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#pd-DigitalTwin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceDK"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Digital Twin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv/pd#External"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv/pd#External"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A digital representation of a real-world person, where personal data is processed to simulate, predict, or monitor behaviour, performance, or health"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C84"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Digital Twin"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#pd-ElectronicHealthCard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceFR"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceGR"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceHU"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceNL"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Electronic Health Card"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv/pd#HealthRecord"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv/pd#HealthRecord"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A digital or physical card used to store or provide access to personal health data, as part of large-scale systematic processing for public health purposes, including integration with electronic prescription and health record systems"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C39"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Electronic Health Card"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#pd-ElectronicHealthRecord",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceFR"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceGR"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceHU"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceNL"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Electronic Health Record"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv/pd#HealthRecord"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv/pd#HealthRecord"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A digital record of a patient's medical history, diagnoses, medications, treatment plans, and other health-related information"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C39"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Electronic Health Record"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#pd-GoodConduct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceAll"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Good Conduct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#pd-Conduct"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#pd-Conduct"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Behaviour that is lawful, ethical, professional, reputation-enhancing or neutral and unlikely to cause social or professional harm"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C9"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Good Conduct"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#pd-LocationDisplacement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceBE"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Location Displacement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv/pd#External"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv/pd#External"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Personal data processed to analyse or predict a person's change in location, movement patterns, or relocation behaviours, often linked to economic or social factors"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C87"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Location Displacement"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#pd-LocationRoute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceEE"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceNO"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Location Route"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv/pd#Location"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv/pd#Location"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Personal data representing an individual's travel path or movement behaviour, processed to predict interests, routines, or mobility patterns"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C61"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Location Route"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#pd-Skill",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceIS"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceNO"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourcePL"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Skill"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv/pd#External"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv/pd#External"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Personal data processed for the systematic assessment of an individual's capabilities or expertise, including the evaluation of specific learned abilities, aptitudes, or training outcomes"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C45"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Skill"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#pd-Trustworthiness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceEE"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceNO"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Trustworthiness"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv/pd#External"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv/pd#External"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Personal data processed to predict or assess an individual's reliability, integrity, or honesty, often in the context of providing services, financial products, or employment assessments"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C61"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Trustworthiness"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#pd-UnlawfulActivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceAll"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Unlawful Activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv/pd#Social"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv/pd#Social"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Unlawful activity under GDPR refers to any unlawful activity that violates laws and regulations"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C9"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Unlawful Activity"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#risk-ContractExclusion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceBE"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceCY"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceES"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceFR"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceGR"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceHR"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceIS"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceIT"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceLI"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceSE"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceSI"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Contract Exclusion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#risk-ImpactOnContract"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#risk-ImpactOnContract"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Where an individual or an organisation is denied the opportunity to enter into a contract"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C20"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Contract Exclusion"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#risk-ContractRefused",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceBE"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceHR"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Contract Refused"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#risk-ImpactOnContract"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#risk-ImpactOnContract"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "An impact where personal data, often from third parties, is used to inform a decision to deny entry into a service contract with a natural person"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C52"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Contract Refused"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#risk-ContractSuspension",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceBE"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceCY"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceES"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceFR"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceGR"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceHR"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceIS"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceIT"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceLI"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceSE"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceSI"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Contract Suspension"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#risk-ImpactOnContract"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#risk-ImpactOnContract"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Where an existing contract is temporarily halted or rendered inactive, such as due to suspicion of fraud, violation of terms, or negative behavioural indicators"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C20"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Contract Suspension"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#risk-ContractTerminated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceBE"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceCY"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceES"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceFR"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceGR"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceHR"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceIS"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceIT"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceLI"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceSE"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceSI"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Contract Terminated"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#risk-ImpactOnContract"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#risk-ImpactOnContract"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Where an existing contract is cancelled or terminated, such as by revoking a loan, ending a subscription, or dismissing an employee"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C20, C52"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Contract Terminated"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#risk-ImpactOnCareer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceEE"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Impact On Career"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv#Impact"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv#Impact"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Where the career of an individual is impacted"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C105"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Impact On Career"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#risk-ImpactOnContract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Impact On Contract"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv#Impact"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv#Impact"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Where there is an effect, positive or negative, on an existing contract, such as suspension, termination, or exclusion"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Impact On Contract"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Parent term for contract-related risks. Modelled as impact to align with legal effects on the contractual party"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#risk-LegalEffect",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceGDPR"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Legal Effect Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv#Risk"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv#Risk"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A risk that processing results in legal effects for the data subjects"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Legal Effect Risk"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Used to indicate that a processing activity may result in effects equivalent to legal consequences for data subjects, such as denial of service or exclusion from contracts"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#risk-PropertyLoss",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceEE"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Property Loss"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv/risk#FinancialLoss"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv/risk#FinancialLoss"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Loss of property"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C101"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Property Loss"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#risk-RightsExercisePrevented",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Rights Exercise Prevented"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv#Impact"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv#Impact"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The risk of an activity preventing the ability of data subjects to exercise their rights"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Rights Exercise Prevented "
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#risk-ServiceAccessAllowed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceBE"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceES"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceGR"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceHR"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceIS"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceIT"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceLI"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceLV"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceNO"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourcePL"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceSE"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceSI"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Service Access Allowed"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#ServiceRelatedConsequence"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#ServiceRelatedConsequence"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Where an individual or an organisation is permitted to use or access a service"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C17"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Service Access Allowed"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#risk-ServiceAccessDenied",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceBE"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceES"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceGR"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceHR"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceIS"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceIT"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceLI"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceLV"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceNO"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourcePL"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceSE"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceSI"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Service Access Denied"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#ServiceRelatedConsequence"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#ServiceRelatedConsequence"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Where an individual or an organisation is prevented from accessing a particular service"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C17"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Service Access Denied"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#sector-finance-SolvencyEvaluation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Solvency Evaluation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv/sector/finance#FinancialServiceManagement"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The evaluation and assessment of the solvency of a data subject by way of evaluating financial data and records"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Solvency Evaluation"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#sector-health-MedicalSupportServiceProvision",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceFR"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Medical Support Service Provision"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv/sector/health#ServiceProvision"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv/sector/health#ServiceProvision"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Service that facilitates providing healthcare and related support, interventions, or assessments"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C76"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Medical Support Service Provision"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-IntroducingEGovernmentServices",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Introducing E Government Services"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv/sector/publicservices#PublicServiceProvision"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv/sector/publicservices#PublicServiceProvision"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The introduction and deployment of electronic government services"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Introducing E Government Services"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-MonitoringEGovernmentServices",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Monitoring E Government Services"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv/sector/publicservices#PublicServiceProvision"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv/sector/publicservices#PublicServiceProvision"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The monitoring and oversight of electronic government services performance and usage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Monitoring E Government Services"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-OrganisingEGovernmentServices",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Organising E Government Services"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv/sector/publicservices#PublicServiceProvision"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv/sector/publicservices#PublicServiceProvision"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The organising and administration of electronic government services"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Organising E Government Services"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-ProvidingEGovernmentServices",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Providing E Government Services"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv/sector/publicservices#PublicServiceProvision"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The provision of electronic government services"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Providing E Government Services"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-PublicSafetyAlertManagement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceFR"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Public Safety Alert Management"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv#PublicBenefit"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv#PublicBenefit"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Management of health alerts, such as for a patient at risk or for pandemics, through which health professionals and authorities can alert individuals or the public regarding their health"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C91"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Public Safety Alert Management"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#sector-publicservices-SocialHousingManagement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceFR"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Social Housing Management"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv/sector/publicservices#SocialWelfareProvision"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv/sector/publicservices#SocialWelfareProvision"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Processing data for the assessment, approval, and management of social housing applications, typically by public authorities or welfare organisations"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C77"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Social Housing Management"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#tech-ElectronicPrescriptionSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceFR"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceGR"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceHU"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceNL"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Electronic Prescription System"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv/tech#System"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv/tech#System"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A system used by healthcare providers to create, transmit, and manage electronic prescriptions as part of large-scale systematic health data processing"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C39"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Electronic Prescription System"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#tech-IdentityManagementService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceEE"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Identity Management Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv/tech#Service"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv/tech#Service"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A technical and administrative system that authenticates and manages digital identities, with risks of identity theft or fraud due to large-scale personal data processing"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C103"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Identity Management Service"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#tech-Neurotechnology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceDK"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Neurotechnology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv#Technology"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv#Technology"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A technology that processes neural or brain-derived data, enabling applications in healthcare, human enhancement, or cognitive monitoring"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C85"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Neurotechnology"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#tech-Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceDE"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceSI"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv/tech#Component"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv/tech#Component"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Innovative device or technology used for detecting, collecting, or transmitting data, often as part of mobile or centralised systems, enabling real-time monitoring or measurement of physical conditions, behaviours, or environments"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C62"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Sensor"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#tech-SmartMeter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceBE"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceGR"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceHR"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceHU"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceNL"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourcePL"
+  }, {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceRO"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Smart Meter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv/tech#Device"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv/tech#Device"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A device installed by utility providers that automatically tracks and transmits consumption data, such as electricity, gas, or water usage"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C23"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Smart Meter"
+  } ]
+}, {
+  "@id" : "https://tyttikatariina.github.io/IMPACTO/#tech-TrustService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://tyttikatariina.github.io/IMPACTO/#SourceEE"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Trust Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/dpv/tech#Service"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "https://w3id.org/dpv/tech#Service"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Services that involve the processing of personal data to authenticate identity, verify electronic transactions, or provide secure communication and document exchange, where the nature of processing may pose a risk of identity theft or fraud"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "C103"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Trust Service"
+  } ]
+}, {
+  "@id" : "https://w3id.org/dpv#DataSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv#EnforceSecurity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv#HumanResourceManagement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv#Impact",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv#Infer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv#Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv#LocationFixture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv#LocationLocality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv#Organisation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv#Process",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv#ProcessingContext",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv#PublicBenefit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv#PubliclyAccessibleSpace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv#Purpose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv#ResearchAndDevelopment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv#Risk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv#Technology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv#Use",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv#hasAutomationLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/dpv#hasConsequence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/dpv#hasContext",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/dpv#hasData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/dpv#hasDataSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/dpv#hasDataSubject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/dpv#hasDataVolume",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/dpv#hasHumanSubject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/dpv#hasJurisdiction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/dpv#hasLegalBasis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/dpv#hasLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/dpv#hasOrganisation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/dpv#hasPersonalData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/dpv#hasProcessing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/dpv#hasProcessingScale",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/dpv#hasPurpose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/dpv#hasRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/dpv#hasSensitivePersonalData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/dpv#hasService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/dpv#hasSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/dpv#hasTechnicalOrganisationalMeasure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/dpv/ai#Capability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv/ai#hasCapability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/dpv/legal/eu/gdpr#DPIARequiredList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "GDPR DPIA Required Process List"
+  } ],
+  "https://w3id.org/dpv#hasJurisdiction" : [ {
+    "@id" : "https://w3id.org/dpv/loc#EU"
+  } ]
+}, {
+  "@id" : "https://w3id.org/dpv/legal/eu/gdpr/at#DPIARequiredList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The list of processing activities requiring a DPIA as published by the Austrian Data Protection Authority"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Austria DPIA Required Process List"
+  } ],
+  "https://w3id.org/dpv#hasJurisdiction" : [ {
+    "@id" : "https://w3id.org/dpv/loc#AT"
+  } ]
+}, {
+  "@id" : "https://w3id.org/dpv/legal/eu/gdpr/be#DPIARequiredList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The list of processing activities requiring a DPIA as published by the Belgian Data Protection Authority"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Belgium DPIA Required Process List"
+  } ],
+  "https://w3id.org/dpv#hasJurisdiction" : [ {
+    "@id" : "https://w3id.org/dpv/loc#BE"
+  } ]
+}, {
+  "@id" : "https://w3id.org/dpv/legal/eu/gdpr/bg#DPIARequiredList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The list of processing activities requiring a DPIA as published by the Bulgarian Data Protection Authority"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Bulgaria DPIA Required Process List"
+  } ],
+  "https://w3id.org/dpv#hasJurisdiction" : [ {
+    "@id" : "https://w3id.org/dpv/loc#BG"
+  } ]
+}, {
+  "@id" : "https://w3id.org/dpv/legal/eu/gdpr/cy#DPIARequiredList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The list of processing activities requiring a DPIA as published by the Cypriot Data Protection Authority"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Cyprus DPIA Required Process List"
+  } ],
+  "https://w3id.org/dpv#hasJurisdiction" : [ {
+    "@id" : "https://w3id.org/dpv/loc#CY"
+  } ]
+}, {
+  "@id" : "https://w3id.org/dpv/legal/eu/gdpr/cz#DPIARequiredList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The list of processing activities requiring a DPIA as published by the Czech Data Protection Authority"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Czech Republic DPIA Required Process List"
+  } ],
+  "https://w3id.org/dpv#hasJurisdiction" : [ {
+    "@id" : "https://w3id.org/dpv/loc#CZ"
+  } ]
+}, {
+  "@id" : "https://w3id.org/dpv/legal/eu/gdpr/de#DPIARequiredList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The list of processing activities requiring a DPIA as published by the German Data Protection Authorities"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Germany DPIA Required Process List"
+  } ],
+  "https://w3id.org/dpv#hasJurisdiction" : [ {
+    "@id" : "https://w3id.org/dpv/loc#DE"
+  } ]
+}, {
+  "@id" : "https://w3id.org/dpv/legal/eu/gdpr/dk#DPIARequiredList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The list of processing activities requiring a DPIA as published by the Danish Data Protection Authority"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Denmark DPIA Required Process List"
+  } ],
+  "https://w3id.org/dpv#hasJurisdiction" : [ {
+    "@id" : "https://w3id.org/dpv/loc#DK"
+  } ]
+}, {
+  "@id" : "https://w3id.org/dpv/legal/eu/gdpr/ee#DPIARequiredList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The list of processing activities requiring a DPIA as published by the Estonian Data Protection Authority"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Estonia DPIA Required Process List"
+  } ],
+  "https://w3id.org/dpv#hasJurisdiction" : [ {
+    "@id" : "https://w3id.org/dpv/loc#EE"
+  } ]
+}, {
+  "@id" : "https://w3id.org/dpv/legal/eu/gdpr/es#DPIARequiredList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The list of processing activities requiring a DPIA as published by the Spanish Data Protection Authority (AEPD)"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Spain DPIA Required Process List"
+  } ],
+  "https://w3id.org/dpv#hasJurisdiction" : [ {
+    "@id" : "https://w3id.org/dpv/loc#ES"
+  } ]
+}, {
+  "@id" : "https://w3id.org/dpv/legal/eu/gdpr/fi#DPIARequiredList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The list of processing activities requiring a DPIA as published by the Finnish Data Protection Authority"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Finland DPIA Required Process List"
+  } ],
+  "https://w3id.org/dpv#hasJurisdiction" : [ {
+    "@id" : "https://w3id.org/dpv/loc#FI"
+  } ]
+}, {
+  "@id" : "https://w3id.org/dpv/legal/eu/gdpr/fr#DPIARequiredList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The list of processing activities requiring a DPIA as published by the French Data Protection Authority (CNIL)"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "France DPIA Required Process List"
+  } ],
+  "https://w3id.org/dpv#hasJurisdiction" : [ {
+    "@id" : "https://w3id.org/dpv/loc#FR"
+  } ]
+}, {
+  "@id" : "https://w3id.org/dpv/legal/eu/gdpr/gr#DPIARequiredList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The list of processing activities requiring a DPIA as published by the Greek Data Protection Authority"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Greece DPIA Required Process List"
+  } ],
+  "https://w3id.org/dpv#hasJurisdiction" : [ {
+    "@id" : "https://w3id.org/dpv/loc#GR"
+  } ]
+}, {
+  "@id" : "https://w3id.org/dpv/legal/eu/gdpr/hr#DPIARequiredList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The list of processing activities requiring a DPIA as published by the Croatian Data Protection Authority"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Croatia DPIA Required Process List"
+  } ],
+  "https://w3id.org/dpv#hasJurisdiction" : [ {
+    "@id" : "https://w3id.org/dpv/loc#HR"
+  } ]
+}, {
+  "@id" : "https://w3id.org/dpv/legal/eu/gdpr/hu#DPIARequiredList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The list of processing activities requiring a DPIA as published by the Hungarian Data Protection Authority"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Hungary DPIA Required Process List"
+  } ],
+  "https://w3id.org/dpv#hasJurisdiction" : [ {
+    "@id" : "https://w3id.org/dpv/loc#HU"
+  } ]
+}, {
+  "@id" : "https://w3id.org/dpv/legal/eu/gdpr/ie#DPIARequiredList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The list of processing activities requiring a DPIA as published by the Irish Data Protection Commission"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Ireland DPIA Required Process List"
+  } ],
+  "https://w3id.org/dpv#hasJurisdiction" : [ {
+    "@id" : "https://w3id.org/dpv/loc#IE"
+  } ]
+}, {
+  "@id" : "https://w3id.org/dpv/legal/eu/gdpr/is#DPIARequiredList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The list of processing activities requiring a DPIA as published by the Icelandic Data Protection Authority"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Iceland DPIA Required Process List"
+  } ],
+  "https://w3id.org/dpv#hasJurisdiction" : [ {
+    "@id" : "https://w3id.org/dpv/loc#IS"
+  } ]
+}, {
+  "@id" : "https://w3id.org/dpv/legal/eu/gdpr/it#DPIARequiredList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The list of processing activities requiring a DPIA as published by the Italian Data Protection Authority (Garante)"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Italy DPIA Required Process List"
+  } ],
+  "https://w3id.org/dpv#hasJurisdiction" : [ {
+    "@id" : "https://w3id.org/dpv/loc#IT"
+  } ]
+}, {
+  "@id" : "https://w3id.org/dpv/legal/eu/gdpr/li#DPIARequiredList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The list of processing activities requiring a DPIA as published by the Liechtenstein Data Protection Authority"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Liechtenstein DPIA Required Process List"
+  } ],
+  "https://w3id.org/dpv#hasJurisdiction" : [ {
+    "@id" : "https://w3id.org/dpv/loc#LI"
+  } ]
+}, {
+  "@id" : "https://w3id.org/dpv/legal/eu/gdpr/lt#DPIARequiredList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The list of processing activities requiring a DPIA as published by the Lithuanian Data Protection Authority"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Lithuania DPIA Required Process List"
+  } ],
+  "https://w3id.org/dpv#hasJurisdiction" : [ {
+    "@id" : "https://w3id.org/dpv/loc#LT"
+  } ]
+}, {
+  "@id" : "https://w3id.org/dpv/legal/eu/gdpr/lu#DPIARequiredList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The list of processing activities requiring a DPIA as published by the Luxembourg Data Protection Authority (CNPD)"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Luxembourg DPIA Required Process List"
+  } ],
+  "https://w3id.org/dpv#hasJurisdiction" : [ {
+    "@id" : "https://w3id.org/dpv/loc#LU"
+  } ]
+}, {
+  "@id" : "https://w3id.org/dpv/legal/eu/gdpr/lv#DPIARequiredList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The list of processing activities requiring a DPIA as published by the Latvian Data Protection Authority"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Latvia DPIA Required Process List"
+  } ],
+  "https://w3id.org/dpv#hasJurisdiction" : [ {
+    "@id" : "https://w3id.org/dpv/loc#LV"
+  } ]
+}, {
+  "@id" : "https://w3id.org/dpv/legal/eu/gdpr/mt#DPIARequiredList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The list of processing activities requiring a DPIA as published by the Maltese Data Protection Authority"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Malta DPIA Required Process List"
+  } ],
+  "https://w3id.org/dpv#hasJurisdiction" : [ {
+    "@id" : "https://w3id.org/dpv/loc#MT"
+  } ]
+}, {
+  "@id" : "https://w3id.org/dpv/legal/eu/gdpr/nl#DPIARequiredList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The list of processing activities requiring a DPIA as published by the Dutch Data Protection Authority (Autoriteit Persoonsgegevens)"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Netherlands DPIA Required Process List"
+  } ],
+  "https://w3id.org/dpv#hasJurisdiction" : [ {
+    "@id" : "https://w3id.org/dpv/loc#NL"
+  } ]
+}, {
+  "@id" : "https://w3id.org/dpv/legal/eu/gdpr/no#DPIARequiredList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The list of processing activities requiring a DPIA as published by the Norwegian Data Protection Authority (Datatilsynet)"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Norway DPIA Required Process List"
+  } ],
+  "https://w3id.org/dpv#hasJurisdiction" : [ {
+    "@id" : "https://w3id.org/dpv/loc#NO"
+  } ]
+}, {
+  "@id" : "https://w3id.org/dpv/legal/eu/gdpr/pl#DPIARequiredList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The list of processing activities requiring a DPIA as published by the Polish Data Protection Authority (UODO)"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Poland DPIA Required Process List"
+  } ],
+  "https://w3id.org/dpv#hasJurisdiction" : [ {
+    "@id" : "https://w3id.org/dpv/loc#PL"
+  } ]
+}, {
+  "@id" : "https://w3id.org/dpv/legal/eu/gdpr/pt#DPIARequiredList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The list of processing activities requiring a DPIA as published by the Portuguese Data Protection Authority (CNPD)"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Portugal DPIA Required Process List"
+  } ],
+  "https://w3id.org/dpv#hasJurisdiction" : [ {
+    "@id" : "https://w3id.org/dpv/loc#PT"
+  } ]
+}, {
+  "@id" : "https://w3id.org/dpv/legal/eu/gdpr/ro#DPIARequiredList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The list of processing activities requiring a DPIA as published by the Romanian Data Protection Authority (ANSPDCP)"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Romania DPIA Required Process List"
+  } ],
+  "https://w3id.org/dpv#hasJurisdiction" : [ {
+    "@id" : "https://w3id.org/dpv/loc#RO"
+  } ]
+}, {
+  "@id" : "https://w3id.org/dpv/legal/eu/gdpr/se#DPIARequiredList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The list of processing activities requiring a DPIA as published by the Swedish Data Protection Authority (IMY)"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Sweden DPIA Required Process List"
+  } ],
+  "https://w3id.org/dpv#hasJurisdiction" : [ {
+    "@id" : "https://w3id.org/dpv/loc#SE"
+  } ]
+}, {
+  "@id" : "https://w3id.org/dpv/legal/eu/gdpr/si#DPIARequiredList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The list of processing activities requiring a DPIA as published by the Slovenian Data Protection Authority (IP RS)"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Slovenia DPIA Required Process List"
+  } ],
+  "https://w3id.org/dpv#hasJurisdiction" : [ {
+    "@id" : "https://w3id.org/dpv/loc#SI"
+  } ]
+}, {
+  "@id" : "https://w3id.org/dpv/legal/eu/gdpr/sk#DPIARequiredList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "The list of processing activities requiring a DPIA as published by the Slovak Data Protection Authority"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Slovakia DPIA Required Process List"
+  } ],
+  "https://w3id.org/dpv#hasJurisdiction" : [ {
+    "@id" : "https://w3id.org/dpv/loc#SK"
+  } ]
+}, {
+  "@id" : "https://w3id.org/dpv/loc#AT",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/dpv/loc#BE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/dpv/loc#BG",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/dpv/loc#CY",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/dpv/loc#CZ",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/dpv/loc#DE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/dpv/loc#DK",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/dpv/loc#EE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/dpv/loc#ES",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/dpv/loc#EU",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/dpv/loc#FI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/dpv/loc#FR",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/dpv/loc#GR",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/dpv/loc#HR",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/dpv/loc#HU",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/dpv/loc#IE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/dpv/loc#IS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/dpv/loc#IT",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/dpv/loc#LI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/dpv/loc#LT",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/dpv/loc#LU",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/dpv/loc#LV",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/dpv/loc#MT",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/dpv/loc#NL",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/dpv/loc#NO",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/dpv/loc#PL",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/dpv/loc#PT",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/dpv/loc#RO",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/dpv/loc#SE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/dpv/loc#SI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/dpv/loc#SK",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/dpv/pd#External",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv/pd#HealthRecord",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv/pd#Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv/pd#Professional",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv/pd#Social",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv/risk#FinancialLoss",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv/sector/finance#FinancialServiceManagement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv/sector/health#ServiceProvision",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv/sector/publicservices#PublicServiceProvision",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv/sector/publicservices#SocialWelfareProvision",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv/tech#Capability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv/tech#Component",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv/tech#Device",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv/tech#Service",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv/tech#System",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/dpv/tech#hasComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/dpv/tech#hasDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/dpv/tech#hasInput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/dpv/tech#hasIntendedUse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+} ]
