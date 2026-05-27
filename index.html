@@ -33,7 +33,7 @@
         {
           "name": "Harshvardhan J. Pandit",
           "url": "https://harshp.com/",
-          "company": "ADAPT Centre, Dublin City University",
+          "company": "AI Accountability Lab, Trinity College Dublin",
         },
       ],
 
@@ -47,7 +47,7 @@
             },
             {
               value: "EU AI Act (Regulation EU 2024/1689)",
-              href: "http://data.europa.eu/eli/reg/2024/1689/oj",
+              href: "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
             },
           ],
         },
@@ -79,7 +79,7 @@
   <section id="abstract">
     <p>IMPACTO (Impact Assessment Ontology) is an ontology for representing impact assessment requirements and processes based on the
       <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR</a> and the
-      <a href="http://data.europa.eu/eli/reg/2024/1689/oj">EU AI Act</a>.
+      <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">EU AI Act</a>.
       IMPACTO specifically represents the Data Protection Impact Assessment (DPIA) and the Fundamental Rights Impact Assessment (FRIA),
       assisting stakeholders in determining when assessments are required, structuring assessment processes, and representing
       concepts such as processing contexts, risks, impacts, locations, personal data categories, and AI capabilities relevant
@@ -89,14 +89,14 @@
   <!-- INTRODUCTION -->
   <section id="introduction">
     <h2>Introduction</h2>
-    <p>The GDPR (Art. 35) and the EU AI Act (Art. 9, 27) impose obligations on controllers and providers of high-risk AI systems
-      to conduct systematic impact assessments before commencing processing activities that are likely to result in a high risk
-      to the rights and freedoms of natural persons. These obligations require organisations to identify processing activities
-      requiring an assessment, document risks and consequences, and demonstrate accountability.</p>
+    <p>The GDPR (Art. 35) and the EU AI Act (Art. 27) impose obligations on controllers and providers of high-risk AI systems
+      to conduct impact assessments before beginning processing activities/ deploying AI systems that are likely to result in a high risk
+      to the rights and freedoms of natural persons. These obligations require organisations to identify whether their processing activities
+      or AI systems are high-risk and therefore require an assessment, then to document risks and impacts, and implement technical and organisational measures to mitigate identified risks.</p>
 
     <p>Across EU Member States, Data Protection Authorities (DPAs) have published jurisdiction-specific lists of processing
-      activities that require or do not require a DPIA. Navigating these lists in a consistent, interoperable, and
-      machine-readable way is a significant challenge for organisations operating across multiple jurisdictions. Similarly,
+      activities that require ("blacklists") or do not require a DPIA ("whitelists"). Navigating these lists in a consistent, interoperable, and
+      machine-readable way is a significant challenge for organisations operating across multiple jurisdictions. Especially due to the fact that less than one third are available in English. Similarly,
       the EU AI Act introduces the Fundamental Rights Impact Assessment (FRIA) for deployers of high-risk AI systems used in
       certain public and private sector contexts, adding further complexity to the compliance landscape.</p>
 
@@ -120,62 +120,6 @@
 
     <br><br>
 
-    <div align="center">
-      <table>
-        <caption style="font-size: 15px;">Table 1: Core questions addressed by IMPACTO for impact assessment determination</caption>
-        <tbody>
-          <tr>
-            <th>ID</th>
-            <th>Competency Question</th>
-            <th>Concept</th>
-            <th>Relation</th>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>Does the processing activity <b>require a DPIA</b>?</td>
-            <td><a href="#DPIARequiredProcess"><code>DPIARequiredProcess</code></a></td>
-            <td><code>rdfs:subClassOf dpv:Process</code></td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>What is the <b>purpose</b> of the processing?</td>
-            <td><a href="#dpv-Monitoring"><code>dpv-Monitoring</code></a>, <a href="#dpv-ClassificationOfIndividuals"><code>dpv-ClassificationOfIndividuals</code></a></td>
-            <td><code>dpv:hasPurpose</code></td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>What <b>personal data</b> categories are processed?</td>
-            <td><a href="#pd-Conduct"><code>pd-Conduct</code></a>, <a href="#pd-ElectronicHealthRecord"><code>pd-ElectronicHealthRecord</code></a></td>
-            <td><code>dpv:hasPersonalData</code></td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>What <b>risks and impacts</b> arise from the processing?</td>
-            <td><a href="#risk-LegalEffect"><code>risk-LegalEffect</code></a>, <a href="#risk-ImpactOnContract"><code>risk-ImpactOnContract</code></a></td>
-            <td><code>dpv:hasRisk</code>, <code>dpv:hasConsequence</code></td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>In what <b>location</b> does processing occur?</td>
-            <td><a href="#loc-OnPublicRoad"><code>loc-OnPublicRoad</code></a>, <a href="#loc-Healthcare"><code>loc-Healthcare</code></a></td>
-            <td><code>dpv:hasLocation</code></td>
-          </tr>
-          <tr>
-            <td>6</td>
-            <td>What <b>AI capabilities or technologies</b> are involved?</td>
-            <td><a href="#ai-FacialRecognition"><code>ai-FacialRecognition</code></a>, <a href="#ai-UseOfAI"><code>ai-UseOfAI</code></a></td>
-            <td><code>ai:hasCapability</code></td>
-          </tr>
-          <tr>
-            <td>7</td>
-            <td>Which <b>jurisdiction</b> applies?</td>
-            <td>Member State DPA lists (AT, BE, DE, FR, IE, …)</td>
-            <td><code>dpv:hasJurisdiction</code></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
 
   <!-- OVERVIEW -->
   <section id="overview">
