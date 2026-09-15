@@ -1,7 +1,6 @@
 # IMPACTO
 **Impact Assessment Ontology (IMPACTO)**
-IMPACTO represents the process and requirement of conducting a Data Protection Impact Assessment as per the GDPR and all 30 EU/EEA Member State Data Protection Authorities "blacklists" and "whitelists", as well as the Fundamental Rights Impact Assessment (FRIA) as per the EU AI Act.  
-[https://tyttikatariina.github.io/IMPACTO/](https://tyttikatariina.github.io/IMPACTO/)
+IMPACTO represents the process and requirement of conducting a Data Protection Impact Assessment as per the GDPR and all 30 EU/EEA Member State Data Protection Authorities "blacklists" and "whitelists", as well as the Fundamental Rights Impact Assessment (FRIA) as per the EU AI Act. This work builds on the analysis of all DPIA required and DPIA not required processing activities and that information can be found here: [https://tyttikatariina.github.io/High-Risk-Categorisations-in-GDPR-vs-AI-Act/](https://tyttikatariina.github.io/High-Risk-Categorisations-in-GDPR-vs-AI-Act/). For access to IMPACTO, please follow the following link:  [https://tyttikatariina.github.io/IMPACTO/](https://tyttikatariina.github.io/IMPACTO/). 
 
 
 
