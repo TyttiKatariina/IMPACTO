@@ -9,7 +9,7 @@ This ontology is created and maintained by:
 Tytti Rintamäki
 PhD Candidate
 ADAPT Centre, Dublin City University, Dublin, Ireland
-tytti.rintamakki@adaptcentre.ie
+tytti.rintamaki@adaptcentre.ie
 GitHub: tyttikatariina
 
 [![CC BY 4.0][cc-by-shield]][cc-by]
