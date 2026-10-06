@@ -213,8 +213,6 @@
       <table>
         <thead><tr><th>Concept</th><th>Label</th><th>Parent status</th><th>Group</th></tr></thead>
         <tbody>
-            <tr class="missing-parent"><td><a href="#dpv-DPIAExempt"><code>impacto:dpv-DPIAExempt</code></a></td><td>DPIA Exempt</td><td>Parent not specified</td><td>DPIA Concepts</td></tr>
-            <tr class="missing-parent"><td><a href="#dpv-DPIAExemptC1"><code>impacto:dpv-DPIAExemptC1</code></a></td><td>DPIA Exempt C1</td><td>Parent not specified</td><td>DPIA Concepts</td></tr>
             <tr class="missing-parent"><td><a href="#dpv-DPIAReview"><code>impacto:dpv-DPIAReview</code></a></td><td>DPIA Review</td><td>Parent not specified</td><td>DPIA Concepts</td></tr>
             <tr class="missing-parent"><td><a href="#eu-gdpr-A63-Consistency-Mechanism"><code>impacto:eu-gdpr-A63-Consistency-Mechanism</code></a></td><td>Art 63 Consistency Mechanism</td><td>Parent not specified</td><td>DPIA Concepts</td></tr>
             <tr class="missing-parent"><td><a href="#eu-gdpr-A40-Code-Of-Conduct"><code>impacto:eu-gdpr-A40-Code-Of-Conduct</code></a></td><td>Art 40 Code of Conduct</td><td>Parent not specified</td><td>DPIA Concepts</td></tr>
@@ -294,7 +292,7 @@
             <tr><td>Term</td><td>dpv-ProcessingDescription</td></tr>
             <tr><td>Label</td><td>Processing Description</td></tr>
             <tr><td>Definition</td><td>A systematic description of the envisaged processing operations and the purposes of the processing, including, where applicable, the legitimate interest pursued by the controller, as part of a DPIA. </td></tr>
-            <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv/legal/dpv#Context"><code>dpv:Context</code></a></td></tr>
+            <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv/dpv#Context"><code>dpv:Context</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV (<code>dpv</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR Art. 35(7)(a)</a></td></tr>
           </tbody>
@@ -308,14 +306,14 @@
             <tr><td>Term</td><td>dpv-DPIAExemption</td></tr>
             <tr><td>Label</td><td>DPIA Exemption</td></tr>
             <tr><td>Definition</td><td>The one condition under which specific processing is exempt from the obligation to carry out a DPIA as per GDPR Art. 35(10). </td></tr>
-            <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv/legal/dpv#DPIA"><code>dpv:DPIA</code></a></td></tr>
+            <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv/dpv#DPIA"><code>dpv:DPIA</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV core (<code>dpv</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR Art. 35(10)</a></td></tr>
           </tbody>
         </table>
       </section>
       <section id="dpv-DPIAExemptionA35">
-        <h4>DPIA Exempt C1</h4>
+        <h4>DPIA Exemption A35</h4>
         <table>
           <tbody>
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#dpv-DPIAExemptionA35</code></td></tr>
@@ -348,7 +346,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-RiskChangeCategory</code></td></tr>
             <tr><td>Term</td><td>eu-gdpr-RiskChangeCategory</td></tr>
             <tr><td>Label</td><td>Risk Change Category</td></tr>
-            <tr><td>Definition</td><td>A category describing the type of change in the risk represented by processing operations, used to determine whether a DPIA review is required. </td></tr>
+            <tr><td>Definition</td><td>A categorisation of the change of risk associated with processing operations, requiring a DPIA review. </td></tr>
             <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv#Context"><code>dpv:Context</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV GDPR extension (<code>eu-gdpr</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR Art. 35(11)</a></td></tr>
@@ -362,26 +360,24 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-PredeterminedRiskChange</code></td></tr>
             <tr><td>Term</td><td>eu-gdpr-PredeterminedRiskChange</td></tr>
             <tr><td>Label</td><td>Predetermined Risk Change</td></tr>
-            <tr><td>Definition</td><td>A change in risk that was anticipated and accounted for in the original DPIA. </td></tr>
-            <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv#Context"><code>dpv:Context</code></a></td></tr>
+            <tr><td>Definition</td><td>A change in risk that was anticipated and accounted for in the original DPIA and for which a review was in place/ scheduled for. </td></tr>
+            <tr><td>SubClassOf</td><td><a href="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-RiskChangeCategory"><code>impacto:eu-gdpr-RiskChangeCategory</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV GDPR extension (<code>eu-gdpr</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR Art. 35(11)</a></td></tr>
-            <tr class="review"><td>Review Note</td><td>Listed with parent dpv:Context in the same row as eu-gdpr:RiskChangeCategory; it may be intended as a subclass of eu-gdpr:RiskChangeCategory.</td></tr>
           </tbody>
         </table>
       </section>
       <section id="eu-gdpr-NonpredeterminedRiskChange">
-        <h4>Non-predetermined Risk Change</h4>
+        <h4>Non-Predetermined Risk Change</h4>
         <table>
           <tbody>
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-NonpredeterminedRiskChange</code></td></tr>
             <tr><td>Term</td><td>eu-gdpr-NonpredeterminedRiskChange</td></tr>
             <tr><td>Label</td><td>Non-predetermined Risk Change</td></tr>
-            <tr><td>Definition</td><td>A change in risk that was not anticipated or accounted for in the original DPIA. </td></tr>
-            <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv#Context"><code>dpv:Context</code></a></td></tr>
+            <tr><td>Definition</td><td>A change in risk that was not anticipated or accounted for and requires an immediate review of the original DPIA. </td></tr>
+            <tr><td>SubClassOf</td><td><a href="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-RiskChangeCategory"><code>impacto:eu-gdpr-RiskChangeCategory</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV GDPR extension (<code>eu-gdpr</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR Art. 35(11)</a></td></tr>
-            <tr class="review"><td>Review Note</td><td>Listed with parent dpv:Context in the same row as eu-gdpr:RiskChangeCategory; it may be intended as a subclass of eu-gdpr:RiskChangeCategory.</td></tr>
           </tbody>
         </table>
       </section>
@@ -393,8 +389,8 @@
             <tr><td>Term</td><td>eu-gdpr-A63-Consistency-Mechanism</td></tr>
             <tr><td>Label</td><td>Art 63 Consistency Mechanism</td></tr>
             <tr><td>Definition</td><td>The consistency mechanism under GDPR Article 63, which a supervisory authority applies before adopting DPIA lists that involve cross-border processing or may substantially affect the free movement of personal data. </td></tr>
-            <tr class="missing-parent"><td>SubClassOf</td><td><span class="flag">Parent not specified</span></td></tr>
-            <tr><td>Proposed for</td><td>DPV GDPR extension (<code>eu-gdpr</code>)</td></tr>
+            <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv/#Process"><code>dpv:Process</code></a></td></tr>
+            <tr><td>Proposed for</td><td>DPV core (<code>dpv</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR Art. 35(6), Art. 63</a></td></tr>
           </tbody>
         </table>
@@ -407,8 +403,8 @@
             <tr><td>Term</td><td>eu-gdpr-A40-Code-Of-Conduct</td></tr>
             <tr><td>Label</td><td>Art 40 Code of Conduct</td></tr>
             <tr><td>Definition</td><td>A code of conduct approved under GDPR Article 40, compliance with which is taken into due account when assessing the impact of processing operations in a DPIA. </td></tr>
-            <tr class="missing-parent"><td>SubClassOf</td><td><span class="flag">Parent not specified</span></td></tr>
-            <tr><td>Proposed for</td><td>DPV GDPR extension (<code>eu-gdpr</code>)</td></tr>
+            <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv#Process"><code>dpv:Process</code></a></td></tr>
+            <tr><td>Proposed for</td><td>DPV core (<code>dpv</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR Art. 35(8), Art. 40</a></td></tr>
           </tbody>
         </table>
@@ -1390,7 +1386,7 @@
             <tr><td>Label</td><td>has risk change category</td></tr>
             <tr><td>Definition</td><td>Indicates the category of change in risk associated with processing or with a DPIA. </td></tr>
             <tr><td>Type</td><td><code>rdf:Property</code></td></tr>
-            <tr class="missing-parent"><td>SubPropertyOf</td><td><span class="flag">Parent not specified</span></td></tr>
+            <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv#hasContext"><code>dpv:hasContext</code></a></td></tr>
             <tr><td>Range</td><td><a href="#eu-gdpr-RiskChangeCategory"><code>impacto:eu-gdpr-RiskChangeCategory</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV GDPR extension (<code>eu-gdpr</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR Art. 35(11)</a></td></tr>
@@ -1406,7 +1402,7 @@
             <tr><td>Label</td><td>has change description</td></tr>
             <tr><td>Definition</td><td>Provides a description of a change in the processing or its risk that is relevant to a DPIA review. </td></tr>
             <tr><td>Type</td><td><code>rdf:Property</code></td></tr>
-            <tr class="missing-parent"><td>SubPropertyOf</td><td><span class="flag">Parent not specified</span></td></tr>
+            <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv#hasContext"><code>dpv:hasContext</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV GDPR extension (<code>eu-gdpr</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR Art. 35(11)</a></td></tr>
           </tbody>
