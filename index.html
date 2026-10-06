@@ -111,11 +111,6 @@
       to the rights and freedoms of natural persons. These obligations require organisations to identify whether their processing activities
       or AI systems are high-risk and therefore require an assessment, then to document risks and impacts, and implement technical and organisational measures to mitigate identified risks.</p>
 
-    <p>Across EU Member States, Data Protection Authorities (DPAs) have published jurisdiction-specific lists of processing
-      activities that require ("blacklists") or do not require a DPIA ("whitelists"). Navigating these lists in a consistent, interoperable, and
-      machine-readable way is a significant challenge for organisations operating across multiple jurisdictions, especially as fewer than one third are available in English. Similarly,
-      the EU AI Act introduces the Fundamental Rights Impact Assessment (FRIA) for deployers of high-risk AI systems used in
-      certain public and private sector contexts, adding further complexity to the compliance landscape.</p>
 
     <p>IMPACTO proposes an ontology-based approach to represent the concepts and relations required to support both the DPIA
       and the FRIA processes. It builds on and extends established vocabularies — primarily the
@@ -283,7 +278,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-DPIANotRequired</code></td></tr>
             <tr><td>Term</td><td>eu-gdpr-DPIANotRequired</td></tr>
             <tr><td>Label</td><td>DPIA Not Required</td></tr>
-            <tr><td>Definition</td><td>Status indicating that a DPIA is not required for the processing, for example because it is not likely to result in a high risk or because it appears on a supervisory authority list under GDPR Article 35(5). <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>Status indicating that a DPIA is not required for the processing, for example because it is not likely to result in a high risk or because it appears on a supervisory authority list under GDPR Article 35(5). </td></tr>
             <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv/legal/eu/gdpr#DPIANecessityStatus"><code>eu-gdpr:DPIANecessityStatus</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV GDPR extension (<code>eu-gdpr</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR Art. 35(5)</a></td></tr>
@@ -291,43 +286,43 @@
           </tbody>
         </table>
       </section>
-      <section id="eu-gdpr-ProcessingDescription">
+      <section id="dpv-ProcessingDescription">
         <h4>Processing Description</h4>
         <table>
           <tbody>
-            <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-ProcessingDescription</code></td></tr>
-            <tr><td>Term</td><td>eu-gdpr-ProcessingDescription</td></tr>
+            <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/dpv-ProcessingDescription</code></td></tr>
+            <tr><td>Term</td><td>dpv-ProcessingDescription</td></tr>
             <tr><td>Label</td><td>Processing Description</td></tr>
-            <tr><td>Definition</td><td>A systematic description of the envisaged processing operations and the purposes of the processing, including, where applicable, the legitimate interest pursued by the controller, as part of a DPIA. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
-            <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv/legal/eu/gdpr#DPIAProcedure"><code>eu-gdpr:DPIAProcedure</code></a></td></tr>
-            <tr><td>Proposed for</td><td>DPV GDPR extension (<code>eu-gdpr</code>)</td></tr>
+            <tr><td>Definition</td><td>A systematic description of the envisaged processing operations and the purposes of the processing, including, where applicable, the legitimate interest pursued by the controller, as part of a DPIA. </td></tr>
+            <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv/legal/dpv#Context"><code>dpv:Context</code></a></td></tr>
+            <tr><td>Proposed for</td><td>DPV (<code>dpv</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR Art. 35(7)(a)</a></td></tr>
           </tbody>
         </table>
       </section>
-      <section id="dpv-DPIAExempt">
+      <section id="dpv-DPIAExemption">
         <h4>DPIA Exempt</h4>
         <table>
           <tbody>
-            <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#dpv-DPIAExempt</code></td></tr>
-            <tr><td>Term</td><td>dpv-DPIAExempt</td></tr>
-            <tr><td>Label</td><td>DPIA Exempt</td></tr>
-            <tr><td>Definition</td><td>Indication that processing is exempt from the obligation to carry out a DPIA. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
-            <tr class="missing-parent"><td>SubClassOf</td><td><span class="flag">Parent not specified</span></td></tr>
+            <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#dpv-DPIAExemption</code></td></tr>
+            <tr><td>Term</td><td>dpv-DPIAExemption</td></tr>
+            <tr><td>Label</td><td>DPIA Exemption</td></tr>
+            <tr><td>Definition</td><td>The one condition under which specific processing is exempt from the obligation to carry out a DPIA as per GDPR Art. 35(10). </td></tr>
+            <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv/legal/dpv#DPIA"><code>dpv:DPIA</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV core (<code>dpv</code>)</td></tr>
-            <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR Art. 35(5), 35(10)</a></td></tr>
+            <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR Art. 35(10)</a></td></tr>
           </tbody>
         </table>
       </section>
-      <section id="dpv-DPIAExemptC1">
+      <section id="dpv-DPIAExemptionA35">
         <h4>DPIA Exempt C1</h4>
         <table>
           <tbody>
-            <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#dpv-DPIAExemptC1</code></td></tr>
-            <tr><td>Term</td><td>dpv-DPIAExemptC1</td></tr>
-            <tr><td>Label</td><td>DPIA Exempt C1</td></tr>
-            <tr><td>Definition</td><td>A specific DPIA exemption corresponding to condition C1 of the IMPACTO analysis of Member State DPA lists. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
-            <tr class="missing-parent"><td>SubClassOf</td><td><span class="flag">Parent not specified</span></td></tr>
+            <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#dpv-DPIAExemptionA35</code></td></tr>
+            <tr><td>Term</td><td>dpv-DPIAExemptionA35</td></tr>
+            <tr><td>Label</td><td>DPIA Exemption A35</td></tr>
+            <tr><td>Definition</td><td>The specific DPIA exemption in Article 35 of the GDPR which states that if processing under Article 6(1)(c) or (e) is goverened by Union or MemberState law and a DPIA was already conducted as part o a general impact assesment, a further DPIA is not required unless the Member State considers one necessary before processing. </td></tr>
+            <tr><td>SubClassOf</td><td><a href="https://tyttikatariina.github.io/IMPACTO/#dpv-DPIAExemption"><code>dpv:DPIA</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV core (<code>dpv</code>)</td></tr>
           </tbody>
         </table>
@@ -339,7 +334,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#dpv-DPIAReview</code></td></tr>
             <tr><td>Term</td><td>dpv-DPIAReview</td></tr>
             <tr><td>Label</td><td>DPIA Review</td></tr>
-            <tr><td>Definition</td><td>A review carried out by the controller, where necessary, to assess whether processing is performed in accordance with the DPIA, at least when there is a change in the risk represented by the processing operations. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>A review carried out by the controller, where necessary, to assess whether processing is performed in accordance with the DPIA, at least when there is a change in the risk represented by the processing operations. </td></tr>
             <tr class="missing-parent"><td>SubClassOf</td><td><span class="flag">Parent not specified</span></td></tr>
             <tr><td>Proposed for</td><td>DPV core (<code>dpv</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR Art. 35(11)</a></td></tr>
@@ -353,7 +348,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-RiskChangeCategory</code></td></tr>
             <tr><td>Term</td><td>eu-gdpr-RiskChangeCategory</td></tr>
             <tr><td>Label</td><td>Risk Change Category</td></tr>
-            <tr><td>Definition</td><td>A category describing the type of change in the risk represented by processing operations, used to determine whether a DPIA review is required. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>A category describing the type of change in the risk represented by processing operations, used to determine whether a DPIA review is required. </td></tr>
             <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv#Context"><code>dpv:Context</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV GDPR extension (<code>eu-gdpr</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR Art. 35(11)</a></td></tr>
@@ -367,7 +362,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-PredeterminedRiskChange</code></td></tr>
             <tr><td>Term</td><td>eu-gdpr-PredeterminedRiskChange</td></tr>
             <tr><td>Label</td><td>Predetermined Risk Change</td></tr>
-            <tr><td>Definition</td><td>A change in risk that was anticipated and accounted for in the original DPIA. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>A change in risk that was anticipated and accounted for in the original DPIA. </td></tr>
             <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv#Context"><code>dpv:Context</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV GDPR extension (<code>eu-gdpr</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR Art. 35(11)</a></td></tr>
@@ -382,7 +377,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-NonpredeterminedRiskChange</code></td></tr>
             <tr><td>Term</td><td>eu-gdpr-NonpredeterminedRiskChange</td></tr>
             <tr><td>Label</td><td>Non-predetermined Risk Change</td></tr>
-            <tr><td>Definition</td><td>A change in risk that was not anticipated or accounted for in the original DPIA. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>A change in risk that was not anticipated or accounted for in the original DPIA. </td></tr>
             <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv#Context"><code>dpv:Context</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV GDPR extension (<code>eu-gdpr</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR Art. 35(11)</a></td></tr>
@@ -397,7 +392,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-A63-Consistency-Mechanism</code></td></tr>
             <tr><td>Term</td><td>eu-gdpr-A63-Consistency-Mechanism</td></tr>
             <tr><td>Label</td><td>Art 63 Consistency Mechanism</td></tr>
-            <tr><td>Definition</td><td>The consistency mechanism under GDPR Article 63, which a supervisory authority applies before adopting DPIA lists that involve cross-border processing or may substantially affect the free movement of personal data. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>The consistency mechanism under GDPR Article 63, which a supervisory authority applies before adopting DPIA lists that involve cross-border processing or may substantially affect the free movement of personal data. </td></tr>
             <tr class="missing-parent"><td>SubClassOf</td><td><span class="flag">Parent not specified</span></td></tr>
             <tr><td>Proposed for</td><td>DPV GDPR extension (<code>eu-gdpr</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR Art. 35(6), Art. 63</a></td></tr>
@@ -411,7 +406,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-A40-Code-Of-Conduct</code></td></tr>
             <tr><td>Term</td><td>eu-gdpr-A40-Code-Of-Conduct</td></tr>
             <tr><td>Label</td><td>Art 40 Code of Conduct</td></tr>
-            <tr><td>Definition</td><td>A code of conduct approved under GDPR Article 40, compliance with which is taken into due account when assessing the impact of processing operations in a DPIA. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>A code of conduct approved under GDPR Article 40, compliance with which is taken into due account when assessing the impact of processing operations in a DPIA. </td></tr>
             <tr class="missing-parent"><td>SubClassOf</td><td><span class="flag">Parent not specified</span></td></tr>
             <tr><td>Proposed for</td><td>DPV GDPR extension (<code>eu-gdpr</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR Art. 35(8), Art. 40</a></td></tr>
@@ -430,7 +425,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#dpv-ProcessingContextEvaluation</code></td></tr>
             <tr><td>Term</td><td>dpv-ProcessingContextEvaluation</td></tr>
             <tr><td>Label</td><td>Processing Context Evaluation</td></tr>
-            <tr><td>Definition</td><td>A processing context in which personal data is used to evaluate personal aspects relating to natural persons, such as in systematic and extensive evaluation. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>A processing context in which personal data is used to evaluate personal aspects relating to natural persons, such as in systematic and extensive evaluation. </td></tr>
             <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv#ProcessingContext"><code>dpv:ProcessingContext</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV core (<code>dpv</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR Art. 35(3)(a)</a></td></tr>
@@ -444,7 +439,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#dpv-DataSubjectGoodsOffer</code></td></tr>
             <tr><td>Term</td><td>dpv-DataSubjectGoodsOffer</td></tr>
             <tr><td>Label</td><td>Data Subject Goods Offer</td></tr>
-            <tr><td>Definition</td><td>Processing related to the offering of goods to data subjects, irrespective of whether a payment is required. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>Processing related to the offering of goods to data subjects, irrespective of whether a payment is required. </td></tr>
             <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv#Purpose"><code>dpv:Purpose</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV core (<code>dpv</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR Art. 3(2)(a)</a></td></tr>
@@ -458,7 +453,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#dpv-DataSubjectServicesOffer</code></td></tr>
             <tr><td>Term</td><td>dpv-DataSubjectServicesOffer</td></tr>
             <tr><td>Label</td><td>Data Subject Services Offer</td></tr>
-            <tr><td>Definition</td><td>Processing related to the offering of services to data subjects, irrespective of whether a payment is required. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>Processing related to the offering of services to data subjects, irrespective of whether a payment is required. </td></tr>
             <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv#Purpose"><code>dpv:Purpose</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV core (<code>dpv</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR Art. 3(2)(a)</a></td></tr>
@@ -472,7 +467,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#dpv-DataSubjectBehaviourMonitoring</code></td></tr>
             <tr><td>Term</td><td>dpv-DataSubjectBehaviourMonitoring</td></tr>
             <tr><td>Label</td><td>Data Subject Behaviour Monitoring</td></tr>
-            <tr><td>Definition</td><td>Processing related to the monitoring of the behaviour of data subjects, as far as that behaviour takes place within the Union. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>Processing related to the monitoring of the behaviour of data subjects, as far as that behaviour takes place within the Union. </td></tr>
             <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv#Purpose"><code>dpv:Purpose</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV core (<code>dpv</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR Art. 3(2)(b)</a></td></tr>
@@ -486,7 +481,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#dpv-CommercialBenefit</code></td></tr>
             <tr><td>Term</td><td>dpv-CommercialBenefit</td></tr>
             <tr><td>Label</td><td>Commercial Benefit</td></tr>
-            <tr><td>Definition</td><td>Purposes associated with obtaining or preserving a commercial benefit for an organisation. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>Purposes associated with obtaining or preserving a commercial benefit for an organisation. </td></tr>
             <tr><td>Scope Note</td><td>Proposed as the parent of dpv:ProtectionOfCommercialInterest.</td></tr>
             <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv#Purpose"><code>dpv:Purpose</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV core (<code>dpv</code>)</td></tr>
@@ -500,7 +495,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#dpv-ProtectionOfCommercialInterest</code></td></tr>
             <tr><td>Term</td><td>dpv-ProtectionOfCommercialInterest</td></tr>
             <tr><td>Label</td><td>Protection Of Commercial Interest</td></tr>
-            <tr><td>Definition</td><td>Processing carried out to protect the commercial interests of an organisation, such as trade secrets or business confidentiality. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>Processing carried out to protect the commercial interests of an organisation, such as trade secrets or business confidentiality. </td></tr>
             <tr><td>SubClassOf</td><td><a href="#dpv-CommercialBenefit"><code>impacto:dpv-CommercialBenefit</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV core (<code>dpv</code>)</td></tr>
           </tbody>
@@ -513,7 +508,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#dpv-ProtectionOfPublicInterest</code></td></tr>
             <tr><td>Term</td><td>dpv-ProtectionOfPublicInterest</td></tr>
             <tr><td>Label</td><td>Protection Of Public Interest</td></tr>
-            <tr><td>Definition</td><td>Processing carried out to protect an interest of the public at large. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>Processing carried out to protect an interest of the public at large. </td></tr>
             <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv#PublicBenefit"><code>dpv:PublicBenefit</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV core (<code>dpv</code>)</td></tr>
           </tbody>
@@ -526,7 +521,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#dpv-ProtectionOfOperationalSecurity</code></td></tr>
             <tr><td>Term</td><td>dpv-ProtectionOfOperationalSecurity</td></tr>
             <tr><td>Label</td><td>Protection Of Operational Security</td></tr>
-            <tr><td>Definition</td><td>Processing carried out to protect the security of an organisation&#x27;s operations, systems or premises. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>Processing carried out to protect the security of an organisation&#x27;s operations, systems or premises. </td></tr>
             <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv#Purpose"><code>dpv:Purpose</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV core (<code>dpv</code>)</td></tr>
           </tbody>
@@ -539,7 +534,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#dpv-AffectedEntity</code></td></tr>
             <tr><td>Term</td><td>dpv-AffectedEntity</td></tr>
             <tr><td>Label</td><td>Affected Entity</td></tr>
-            <tr><td>Definition</td><td>An entity, such as a natural person, group or organisation, that is affected by the impacts of processing or of the use of a technology. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>An entity, such as a natural person, group or organisation, that is affected by the impacts of processing or of the use of a technology. </td></tr>
             <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv#Impact"><code>dpv:Impact</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV core (<code>dpv</code>)</td></tr>
             <tr class="review"><td>Review Note</td><td>dpv:Impact describes an effect rather than an entity; dpv:Entity may be the intended parent.</td></tr>
@@ -558,7 +553,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIA</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-FRIA</td></tr>
             <tr><td>Label</td><td>FRIA</td></tr>
-            <tr><td>Definition</td><td>Fundamental Rights Impact Assessment: an assessment of the impact on fundamental rights that the use of a high-risk AI system may produce, carried out by a deployer prior to deploying the system. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>Fundamental Rights Impact Assessment: an assessment of the impact on fundamental rights that the use of a high-risk AI system may produce, carried out by a deployer prior to deploying the system. </td></tr>
             <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv#RightsImpactAssessment"><code>dpv:RightsImpactAssessment</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(1)</a></td></tr>
@@ -573,7 +568,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANecessity</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-FRIANecessity</td></tr>
             <tr><td>Label</td><td>FRIA Necessity</td></tr>
-            <tr><td>Definition</td><td>Whether a FRIA is required for a given deployment of an AI system, as determined under AI Act Article 27(1). <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>Whether a FRIA is required for a given deployment of an AI system, as determined under AI Act Article 27(1). </td></tr>
             <tr><td>SubClassOf</td><td><a href="#eu-aiact-FRIA"><code>impacto:eu-aiact-FRIA</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(1)</a></td></tr>
@@ -630,7 +625,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANotification</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-FRIANotification</td></tr>
             <tr><td>Label</td><td>FRIA Notification</td></tr>
-            <tr><td>Definition</td><td>The step of notifying the market surveillance authority of the results of the FRIA, including the submission of the filled-out template. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>The step of notifying the market surveillance authority of the results of the FRIA, including the submission of the filled-out template. </td></tr>
             <tr><td>SubClassOf</td><td><a href="#eu-aiact-FRIA"><code>impacto:eu-aiact-FRIA</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(3)</a></td></tr>
@@ -644,7 +639,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-UpdateFRIA</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-UpdateFRIA</td></tr>
             <tr><td>Label</td><td>Update FRIA</td></tr>
-            <tr><td>Definition</td><td>The updating of a FRIA where, during the use of the high-risk AI system, the deployer considers that any of the assessed elements has changed or is no longer up to date. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>The updating of a FRIA where, during the use of the high-risk AI system, the deployer considers that any of the assessed elements has changed or is no longer up to date. </td></tr>
             <tr class="missing-parent"><td>SubClassOf</td><td><span class="flag">Parent not specified</span></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(2)</a></td></tr>
@@ -658,7 +653,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-ExistingFRIA</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-ExistingFRIA</td></tr>
             <tr><td>Label</td><td>Existing FRIA</td></tr>
-            <tr><td>Definition</td><td>A previously conducted FRIA, or an existing impact assessment carried out by the provider, on which a deployer may rely in similar cases. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>A previously conducted FRIA, or an existing impact assessment carried out by the provider, on which a deployer may rely in similar cases. </td></tr>
             <tr class="missing-parent"><td>SubClassOf</td><td><span class="flag">Parent not specified</span></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
             <tr><td>Related</td><td><a href="https://w3id.org/dpv#hasReuseCompatability"><code>dpv:hasReuseCompatability</code></a></td></tr>
@@ -673,7 +668,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-ExistingDPIA</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-ExistingDPIA</td></tr>
             <tr><td>Label</td><td>Existing DPIA</td></tr>
-            <tr><td>Definition</td><td>A DPIA conducted under GDPR Article 35 through which some FRIA obligations are already met, and which the FRIA complements. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>A DPIA conducted under GDPR Article 35 through which some FRIA obligations are already met, and which the FRIA complements. </td></tr>
             <tr class="missing-parent"><td>SubClassOf</td><td><span class="flag">Parent not specified</span></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
             <tr><td>Related</td><td><a href="https://w3id.org/dpv#hasReuseCompatability"><code>dpv:hasReuseCompatability</code></a></td></tr>
@@ -732,7 +727,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAExempt</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-FRIAExempt</td></tr>
             <tr><td>Label</td><td>FRIA Exempt</td></tr>
-            <tr><td>Definition</td><td>A FRIA necessity status indicating that a FRIA is not required because an exemption applies, such as for high-risk AI systems intended to be used in the area listed in point 2 of Annex III. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>A FRIA necessity status indicating that a FRIA is not required because an exemption applies, such as for high-risk AI systems intended to be used in the area listed in point 2 of Annex III. </td></tr>
             <tr><td>SubClassOf</td><td><a href="#eu-aiact-FRIANecessityStatus"><code>impacto:eu-aiact-FRIANecessityStatus</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(1)</a></td></tr>
@@ -746,7 +741,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANecessityDetermination</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-FRIANecessityDetermination</td></tr>
             <tr><td>Label</td><td>FRIA Necessity Determination</td></tr>
-            <tr><td>Definition</td><td>The basis on which the necessity of a FRIA is determined, such as the risk classification of the AI system or the applicability of an exemption. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>The basis on which the necessity of a FRIA is determined, such as the risk classification of the AI system or the applicability of an exemption. </td></tr>
             <tr><td>SubClassOf</td><td><a href="#eu-aiact-FRIANecessityStatus"><code>impacto:eu-aiact-FRIANecessityStatus</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
           </tbody>
@@ -759,7 +754,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-HighRiskAISystem</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-HighRiskAISystem</td></tr>
             <tr><td>Label</td><td>High Risk AI System</td></tr>
-            <tr><td>Definition</td><td>A determination that the AI system is a high-risk AI system referred to in AI Act Article 6(2), bringing its deployment within the scope of Article 27. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>A determination that the AI system is a high-risk AI system referred to in AI Act Article 6(2), bringing its deployment within the scope of Article 27. </td></tr>
             <tr><td>SubClassOf</td><td><a href="#eu-aiact-FRIANecessityDetermination"><code>impacto:eu-aiact-FRIANecessityDetermination</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 6(2), Art. 27(1)</a></td></tr>
@@ -774,7 +769,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-NotHighRiskAISystem</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-NotHighRiskAISystem</td></tr>
             <tr><td>Label</td><td>Not High Risk AI System</td></tr>
-            <tr><td>Definition</td><td>A determination that the AI system is not a high-risk AI system, so that the FRIA obligation under Article 27 does not apply. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>A determination that the AI system is not a high-risk AI system, so that the FRIA obligation under Article 27 does not apply. </td></tr>
             <tr><td>SubClassOf</td><td><a href="#eu-aiact-FRIANecessityDetermination"><code>impacto:eu-aiact-FRIANecessityDetermination</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
           </tbody>
@@ -787,7 +782,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-PotentiallyHighRiskAISystem</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-PotentiallyHighRiskAISystem</td></tr>
             <tr><td>Label</td><td>Potentially High Risk AI System</td></tr>
-            <tr><td>Definition</td><td>A determination that the AI system may be a high-risk AI system, pending further assessment, for example of whether the derogation in Article 6(3) applies. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>A determination that the AI system may be a high-risk AI system, pending further assessment, for example of whether the derogation in Article 6(3) applies. </td></tr>
             <tr><td>SubClassOf</td><td><a href="#eu-aiact-FRIANecessityDetermination"><code>impacto:eu-aiact-FRIANecessityDetermination</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 6(3)</a></td></tr>
@@ -801,7 +796,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-AnnexIII</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-AnnexIII</td></tr>
             <tr><td>Label</td><td>Annex III</td></tr>
-            <tr><td>Definition</td><td>Annex III of the AI Act, which lists the areas in which AI systems referred to in Article 6(2) are considered high-risk. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>Annex III of the AI Act, which lists the areas in which AI systems referred to in Article 6(2) are considered high-risk. </td></tr>
             <tr class="missing-parent"><td>SubClassOf</td><td><span class="flag">Parent not specified</span></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Annex III</a></td></tr>
@@ -816,7 +811,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-AnnexIIIAISystem</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-AnnexIIIAISystem</td></tr>
             <tr><td>Label</td><td>Annex III AI System</td></tr>
-            <tr><td>Definition</td><td>An AI system intended to be used in one of the areas listed in Annex III of the AI Act. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>An AI system intended to be used in one of the areas listed in Annex III of the AI Act. </td></tr>
             <tr><td>SubClassOf</td><td><a href="#eu-aiact-AnnexIII"><code>impacto:eu-aiact-AnnexIII</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Annex III</a></td></tr>
@@ -831,7 +826,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAExemptions</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-FRIAExemptions</td></tr>
             <tr><td>Label</td><td>FRIA Exemptions</td></tr>
-            <tr><td>Definition</td><td>A determination of whether an exemption from the FRIA obligation applies to the deployment of the AI system. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>A determination of whether an exemption from the FRIA obligation applies to the deployment of the AI system. </td></tr>
             <tr><td>SubClassOf</td><td><a href="#eu-aiact-FRIANecessityDetermination"><code>impacto:eu-aiact-FRIANecessityDetermination</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(1)</a></td></tr>
@@ -845,7 +840,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-Exempt</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-Exempt</td></tr>
             <tr><td>Label</td><td>AI System Exempt</td></tr>
-            <tr><td>Definition</td><td>A determination that the deployment of the AI system is exempt from the FRIA obligation. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>A determination that the deployment of the AI system is exempt from the FRIA obligation. </td></tr>
             <tr><td>SubClassOf</td><td><a href="#eu-aiact-FRIAExemptions"><code>impacto:eu-aiact-FRIAExemptions</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
           </tbody>
@@ -858,7 +853,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-NotExempt</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-NotExempt</td></tr>
             <tr><td>Label</td><td>AI System Not Exempt</td></tr>
-            <tr><td>Definition</td><td>A determination that no exemption from the FRIA obligation applies to the deployment of the AI system. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>A determination that no exemption from the FRIA obligation applies to the deployment of the AI system. </td></tr>
             <tr><td>SubClassOf</td><td><a href="#eu-aiact-FRIAExemptions"><code>impacto:eu-aiact-FRIAExemptions</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
           </tbody>
@@ -889,7 +884,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAPermitsDeployment</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-FRIAPermitsDeployment</td></tr>
             <tr><td>Label</td><td>FRIA Permits Deployment</td></tr>
-            <tr><td>Definition</td><td>A FRIA outcome status indicating that the deployment of the AI system may proceed. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>A FRIA outcome status indicating that the deployment of the AI system may proceed. </td></tr>
             <tr><td>SubClassOf</td><td><a href="#eu-aiact-FRIAOutcomeStatus"><code>impacto:eu-aiact-FRIAOutcomeStatus</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
           </tbody>
@@ -902,7 +897,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAProhibitsDeployment</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-FRIAProhibitsDeployment</td></tr>
             <tr><td>Label</td><td>FRIA Prohibits Deployment</td></tr>
-            <tr><td>Definition</td><td>A FRIA outcome status indicating that the AI system should not be deployed because of the identified impacts on fundamental rights. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>A FRIA outcome status indicating that the AI system should not be deployed because of the identified impacts on fundamental rights. </td></tr>
             <tr><td>SubClassOf</td><td><a href="#eu-aiact-FRIAOutcomeStatus"><code>impacto:eu-aiact-FRIAOutcomeStatus</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
           </tbody>
@@ -915,7 +910,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIARequiresConsultation</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-FRIARequiresConsultation</td></tr>
             <tr><td>Label</td><td>FRIA Requires Consultation</td></tr>
-            <tr><td>Definition</td><td>A FRIA outcome status indicating that consultation is required before a decision on deployment can be taken. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>A FRIA outcome status indicating that consultation is required before a decision on deployment can be taken. </td></tr>
             <tr><td>SubClassOf</td><td><a href="#eu-aiact-FRIAOutcomeStatus"><code>impacto:eu-aiact-FRIAOutcomeStatus</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
           </tbody>
@@ -928,7 +923,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-ConsultationWithAffectedEntities</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-ConsultationWithAffectedEntities</td></tr>
             <tr><td>Label</td><td>Consultation with Affected Entities</td></tr>
-            <tr><td>Definition</td><td>Consultation with the natural persons, groups or other entities likely to be affected by the use of the AI system, or with their representatives. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>Consultation with the natural persons, groups or other entities likely to be affected by the use of the AI system, or with their representatives. </td></tr>
             <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv#Consultation"><code>dpv:Consultation</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
           </tbody>
@@ -941,7 +936,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-ConsultationWithProvider</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-ConsultationWithProvider</td></tr>
             <tr><td>Label</td><td>Consultation with Provider</td></tr>
-            <tr><td>Definition</td><td>Consultation with the provider of the AI system, for example regarding the information provided under Article 13 or existing impact assessments. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>Consultation with the provider of the AI system, for example regarding the information provided under Article 13 or existing impact assessments. </td></tr>
             <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv#Consultation"><code>dpv:Consultation</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
           </tbody>
@@ -954,7 +949,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-ConsultationWithMarketSurveillanceAuthority</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-ConsultationWithMarketSurveillanceAuthority</td></tr>
             <tr><td>Label</td><td>Consultation with Market Surveillance Authority</td></tr>
-            <tr><td>Definition</td><td>Consultation with the market surveillance authority competent for the AI system. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>Consultation with the market surveillance authority competent for the AI system. </td></tr>
             <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv#Consultation"><code>dpv:Consultation</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
           </tbody>
@@ -967,7 +962,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIARiskStatus</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-FRIARiskStatus</td></tr>
             <tr><td>Label</td><td>FRIA Risk Status</td></tr>
-            <tr><td>Definition</td><td>A status representing the level of risk to fundamental rights indicated by a FRIA. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>A status representing the level of risk to fundamental rights indicated by a FRIA. </td></tr>
             <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv#AuditStatus"><code>dpv:AuditStatus</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
           </tbody>
@@ -980,7 +975,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAIndicatesHighRisk</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-FRIAIndicatesHighRisk</td></tr>
             <tr><td>Label</td><td>FRIA Indicates High Risk</td></tr>
-            <tr><td>Definition</td><td>A FRIA risk status indicating a high risk to fundamental rights. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>A FRIA risk status indicating a high risk to fundamental rights. </td></tr>
             <tr><td>SubClassOf</td><td><a href="#eu-aiact-FRIARiskStatus"><code>impacto:eu-aiact-FRIARiskStatus</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
           </tbody>
@@ -993,7 +988,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAIndicatesLowRisk</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-FRIAIndicatesLowRisk</td></tr>
             <tr><td>Label</td><td>FRIA Indicates Low Risk</td></tr>
-            <tr><td>Definition</td><td>A FRIA risk status indicating a low risk to fundamental rights. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>A FRIA risk status indicating a low risk to fundamental rights. </td></tr>
             <tr><td>SubClassOf</td><td><a href="#eu-aiact-FRIARiskStatus"><code>impacto:eu-aiact-FRIARiskStatus</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
           </tbody>
@@ -1006,7 +1001,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAIndicatesNoRisk</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-FRIAIndicatesNoRisk</td></tr>
             <tr><td>Label</td><td>FRIA Indicates No Risk</td></tr>
-            <tr><td>Definition</td><td>A FRIA risk status indicating no identified risk to fundamental rights. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>A FRIA risk status indicating no identified risk to fundamental rights. </td></tr>
             <tr><td>SubClassOf</td><td><a href="#eu-aiact-FRIARiskStatus"><code>impacto:eu-aiact-FRIARiskStatus</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
           </tbody>
@@ -1064,7 +1059,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAMarketSurveillanceAuthorityNotified</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-FRIAMarketSurveillanceAuthorityNotified</td></tr>
             <tr><td>Label</td><td>FRIA Market Surveillance Authority Notified</td></tr>
-            <tr><td>Definition</td><td>Indication that the market surveillance authority has been notified of the results of the FRIA. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>Indication that the market surveillance authority has been notified of the results of the FRIA. </td></tr>
             <tr><td>SubClassOf</td><td><a href="#eu-aiact-FRIANotification"><code>impacto:eu-aiact-FRIANotification</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(3)</a></td></tr>
@@ -1079,7 +1074,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAObligationtoNotify</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-FRIAObligationtoNotify</td></tr>
             <tr><td>Label</td><td>FRIA Obligation to Notify</td></tr>
-            <tr><td>Definition</td><td>The obligation of the deployer to notify the market surveillance authority of the results of the FRIA once it has been performed. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>The obligation of the deployer to notify the market surveillance authority of the results of the FRIA once it has been performed. </td></tr>
             <tr><td>SubClassOf</td><td><a href="#eu-aiact-FRIANotification"><code>impacto:eu-aiact-FRIANotification</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(3)</a></td></tr>
@@ -1093,7 +1088,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-A46-Notification-Exemptions</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-A46-Notification-Exemptions</td></tr>
             <tr><td>Label</td><td>Art 46 Notification Exemptions</td></tr>
-            <tr><td>Definition</td><td>The exemption from the obligation to notify the market surveillance authority that applies in the cases referred to in AI Act Article 46(1). <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>The exemption from the obligation to notify the market surveillance authority that applies in the cases referred to in AI Act Article 46(1). </td></tr>
             <tr class="missing-parent"><td>SubClassOf</td><td><span class="flag">Parent not specified</span></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(3), Art. 46(1)</a></td></tr>
@@ -1112,7 +1107,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-PublicLawGovernedDeployer</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-PublicLawGovernedDeployer</td></tr>
             <tr><td>Label</td><td>Public Law Governed Deployer</td></tr>
-            <tr><td>Definition</td><td>A deployer that is a body governed by public law. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>A deployer that is a body governed by public law. </td></tr>
             <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv/legal/eu/aiact#AIDeployer"><code>eu-aiact:AIDeployer</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(1)</a></td></tr>
@@ -1126,7 +1121,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-PublicServiceProvidingPrivateEntityDeployer</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-PublicServiceProvidingPrivateEntityDeployer</td></tr>
             <tr><td>Label</td><td>Public Service Providing Private Entity Deployer</td></tr>
-            <tr><td>Definition</td><td>A deployer that is a private entity providing public services. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>A deployer that is a private entity providing public services. </td></tr>
             <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv/legal/eu/aiact#AIDeployer"><code>eu-aiact:AIDeployer</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(1)</a></td></tr>
@@ -1140,7 +1135,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-ProcessDescription</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-ProcessDescription</td></tr>
             <tr><td>Label</td><td>Process Description</td></tr>
-            <tr><td>Definition</td><td>A description of the deployer&#x27;s processes in which the high-risk AI system will be used in line with its intended purpose. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>A description of the deployer&#x27;s processes in which the high-risk AI system will be used in line with its intended purpose. </td></tr>
             <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv#Context"><code>dpv:Context</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(1)(a)</a></td></tr>
@@ -1154,7 +1149,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-PeriodOfUse</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-PeriodOfUse</td></tr>
             <tr><td>Label</td><td>Period Of Use</td></tr>
-            <tr><td>Definition</td><td>The period of time within which the high-risk AI system is intended to be used. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>The period of time within which the high-risk AI system is intended to be used. </td></tr>
             <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv#Technology"><code>dpv:Technology</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(1)(b)</a></td></tr>
@@ -1168,7 +1163,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FrequencyOfUse</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-FrequencyOfUse</td></tr>
             <tr><td>Label</td><td>Frequency Of Use</td></tr>
-            <tr><td>Definition</td><td>The frequency with which the high-risk AI system is intended to be used. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>The frequency with which the high-risk AI system is intended to be used. </td></tr>
             <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv#Technology"><code>dpv:Technology</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(1)(b)</a></td></tr>
@@ -1198,7 +1193,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#ai-AISubject</code></td></tr>
             <tr><td>Term</td><td>ai-AISubject</td></tr>
             <tr><td>Label</td><td>AI Subject</td></tr>
-            <tr><td>Definition</td><td>A natural person or group of persons that is subject to, or affected by, the use of an AI system. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>A natural person or group of persons that is subject to, or affected by, the use of an AI system. </td></tr>
             <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv/ai#AI"><code>ai:AI</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV AI extension (<code>ai</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(1)(c)</a></td></tr>
@@ -1212,7 +1207,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#ai-NaturalPersonCategorySubjects</code></td></tr>
             <tr><td>Term</td><td>ai-NaturalPersonCategorySubjects</td></tr>
             <tr><td>Label</td><td>Natural Person Category Subjects</td></tr>
-            <tr><td>Definition</td><td>The categories of natural persons and groups likely to be affected by the use of an AI system in a specific context. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>The categories of natural persons and groups likely to be affected by the use of an AI system in a specific context. </td></tr>
             <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv/ai#AI"><code>ai:AI</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV AI extension (<code>ai</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(1)(c)</a></td></tr>
@@ -1226,7 +1221,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-A13-Information</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-A13-Information</td></tr>
             <tr><td>Label</td><td>Art 13 Information</td></tr>
-            <tr><td>Definition</td><td>The information provided by the provider to deployers under AI Act Article 13, including the instructions for use, which the deployer takes into account when identifying risks of harm. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>The information provided by the provider to deployers under AI Act Article 13, including the instructions for use, which the deployer takes into account when identifying risks of harm. </td></tr>
             <tr class="missing-parent"><td>SubClassOf</td><td><span class="flag">Parent not specified</span></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 13, Art. 27(1)(d)</a></td></tr>
@@ -1240,7 +1235,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-InternalGovernanceMeasures</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-InternalGovernanceMeasures</td></tr>
             <tr><td>Label</td><td>Internal Governance Measures</td></tr>
-            <tr><td>Definition</td><td>Arrangements for internal governance to be taken by the deployer in the case of the materialisation of risks to fundamental rights. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>Arrangements for internal governance to be taken by the deployer in the case of the materialisation of risks to fundamental rights. </td></tr>
             <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv#AIGovernance"><code>dpv:AIGovernance</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(1)(f)</a></td></tr>
@@ -1254,7 +1249,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-ComplaintMeasures</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-ComplaintMeasures</td></tr>
             <tr><td>Label</td><td>Complaint Measures</td></tr>
-            <tr><td>Definition</td><td>Complaint mechanisms to be used by the deployer in the case of the materialisation of risks to fundamental rights. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>Complaint mechanisms to be used by the deployer in the case of the materialisation of risks to fundamental rights. </td></tr>
             <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv#AIGovernance"><code>dpv:AIGovernance</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(1)(f)</a></td></tr>
@@ -1273,7 +1268,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-ImpactOnFundamentalRights</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-ImpactOnFundamentalRights</td></tr>
             <tr><td>Label</td><td>Impact On Fundamental Rights</td></tr>
-            <tr><td>Definition</td><td>A risk that the use of an AI system impacts the fundamental rights of natural persons. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>A risk that the use of an AI system impacts the fundamental rights of natural persons. </td></tr>
             <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv#Risk"><code>dpv:Risk</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(1)</a></td></tr>
@@ -1287,7 +1282,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-cfr-FundamentalRightsCFR</code></td></tr>
             <tr><td>Term</td><td>eu-cfr-FundamentalRightsCFR</td></tr>
             <tr><td>Label</td><td>Fundamental Rights (Charter of Fundamental Rights)</td></tr>
-            <tr><td>Definition</td><td>Fundamental rights as enshrined in the Charter of Fundamental Rights of the European Union. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>Fundamental rights as enshrined in the Charter of Fundamental Rights of the European Union. </td></tr>
             <tr><td>SubClassOf</td><td><a href="#eu-aiact-ImpactOnFundamentalRights"><code>impacto:eu-aiact-ImpactOnFundamentalRights</code></a></td></tr>
             <tr><td>Proposed for</td><td><code>eu-cfr</code> (new module, to be established)</td></tr>
             <tr class="review"><td>Review Note</td><td>eu-cfr is not yet an established DPV module; the existing eu-rights extension, which already models Charter rights, may be an alternative home.</td></tr>
@@ -1301,7 +1296,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FundamentalRightsEngagement</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-FundamentalRightsEngagement</td></tr>
             <tr><td>Label</td><td>Fundamental Rights Engagement</td></tr>
-            <tr><td>Definition</td><td>The manner and extent to which the use of an AI system engages, interferes with or limits fundamental rights. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>The manner and extent to which the use of an AI system engages, interferes with or limits fundamental rights. </td></tr>
             <tr class="uncertain-parent"><td>SubClassOf</td><td><a href="https://w3id.org/dpv#Process"><code>dpv:Process</code></a> <span class="flag">Uncertain – to be confirmed</span></td></tr>
             <tr><td>Proposed for</td><td><code>eu-aiact</code> or <code>eu-cfr</code> (to be decided)</td></tr>
           </tbody>
@@ -1314,7 +1309,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-AffectedRight</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-AffectedRight</td></tr>
             <tr><td>Label</td><td>Affected Right</td></tr>
-            <tr><td>Definition</td><td>A specific fundamental right that is affected by the use of an AI system. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>A specific fundamental right that is affected by the use of an AI system. </td></tr>
             <tr class="uncertain-parent"><td>SubClassOf</td><td><a href="https://w3id.org/dpv#Process"><code>dpv:Process</code></a> <span class="flag">Uncertain – to be confirmed</span></td></tr>
             <tr><td>Proposed for</td><td><code>eu-aiact</code> or <code>eu-cfr</code> (to be decided)</td></tr>
           </tbody>
@@ -1332,7 +1327,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIATemplate</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-FRIATemplate</td></tr>
             <tr><td>Label</td><td>FRIA Template</td></tr>
-            <tr><td>Definition</td><td>The template for a questionnaire developed by the AI Office to facilitate deployers in complying with their FRIA obligations. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>The template for a questionnaire developed by the AI Office to facilitate deployers in complying with their FRIA obligations. </td></tr>
             <tr class="missing-parent"><td>SubClassOf</td><td><span class="flag">Parent not specified</span></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(5)</a></td></tr>
@@ -1346,7 +1341,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-RightsQuestionnaire</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-RightsQuestionnaire</td></tr>
             <tr><td>Label</td><td>Rights Questionnaire</td></tr>
-            <tr><td>Definition</td><td>A questionnaire through which a deployer documents its assessment of impacts on fundamental rights, based on the template provided by the AI Office. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>A questionnaire through which a deployer documents its assessment of impacts on fundamental rights, based on the template provided by the AI Office. </td></tr>
             <tr class="missing-parent"><td>SubClassOf</td><td><span class="flag">Parent not specified</span></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(3), 27(5)</a></td></tr>
@@ -1360,7 +1355,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-AutomatedTool</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-AutomatedTool</td></tr>
             <tr><td>Label</td><td>Automated Tool</td></tr>
-            <tr><td>Definition</td><td>An automated tool through which the FRIA questionnaire template may be provided and completed. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>An automated tool through which the FRIA questionnaire template may be provided and completed. </td></tr>
             <tr class="missing-parent"><td>SubClassOf</td><td><span class="flag">Parent not specified</span></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(5)</a></td></tr>
@@ -1374,7 +1369,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-AIOffice</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-AIOffice</td></tr>
             <tr><td>Label</td><td>AI Office</td></tr>
-            <tr><td>Definition</td><td>The Commission&#x27;s function of contributing to the implementation, monitoring and supervision of AI systems, general-purpose AI models and AI governance, which develops the FRIA questionnaire template. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>The Commission&#x27;s function of contributing to the implementation, monitoring and supervision of AI systems, general-purpose AI models and AI governance, which develops the FRIA questionnaire template. </td></tr>
             <tr class="missing-parent"><td>SubClassOf</td><td><span class="flag">Parent not specified</span></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 3(47), Art. 27(5)</a></td></tr>
@@ -1393,7 +1388,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-hasRiskChangeCategory</code></td></tr>
             <tr><td>Term</td><td>eu-gdpr-hasRiskChangeCategory</td></tr>
             <tr><td>Label</td><td>has risk change category</td></tr>
-            <tr><td>Definition</td><td>Indicates the category of change in risk associated with processing or with a DPIA. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>Indicates the category of change in risk associated with processing or with a DPIA. </td></tr>
             <tr><td>Type</td><td><code>rdf:Property</code></td></tr>
             <tr class="missing-parent"><td>SubPropertyOf</td><td><span class="flag">Parent not specified</span></td></tr>
             <tr><td>Range</td><td><a href="#eu-gdpr-RiskChangeCategory"><code>impacto:eu-gdpr-RiskChangeCategory</code></a></td></tr>
@@ -1409,7 +1404,7 @@
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-hasChangeDescription</code></td></tr>
             <tr><td>Term</td><td>eu-gdpr-hasChangeDescription</td></tr>
             <tr><td>Label</td><td>has change description</td></tr>
-            <tr><td>Definition</td><td>Provides a description of a change in the processing or its risk that is relevant to a DPIA review. <span class="draft" title="Draft definition, not in the previous index">†</span></td></tr>
+            <tr><td>Definition</td><td>Provides a description of a change in the processing or its risk that is relevant to a DPIA review. </td></tr>
             <tr><td>Type</td><td><code>rdf:Property</code></td></tr>
             <tr class="missing-parent"><td>SubPropertyOf</td><td><span class="flag">Parent not specified</span></td></tr>
             <tr><td>Proposed for</td><td>DPV GDPR extension (<code>eu-gdpr</code>)</td></tr>
