@@ -216,9 +216,7 @@
             <tr class="missing-parent"><td><a href="#eu-gdpr-A63-Consistency-Mechanism"><code>impacto:eu-gdpr-A63-Consistency-Mechanism</code></a></td><td>Art 63 Consistency Mechanism</td><td>Parent not specified</td><td>DPIA Concepts</td></tr>
             <tr class="missing-parent"><td><a href="#eu-gdpr-A40-Code-Of-Conduct"><code>impacto:eu-gdpr-A40-Code-Of-Conduct</code></a></td><td>Art 40 Code of Conduct</td><td>Parent not specified</td><td>DPIA Concepts</td></tr>
             <tr class="missing-parent"><td><a href="#eu-aiact-A13-Information"><code>impacto:eu-aiact-A13-Information</code></a></td><td>Art 13 Information</td><td>Parent not specified</td><td>Deployer and Deployment Context Concepts</td></tr>
-            <tr class="missing-parent"><td><a href="#eu-aiact-FRIATemplate"><code>impacto:eu-aiact-FRIATemplate</code></a></td><td>FRIA Template</td><td>Parent not specified</td><td>FRIA Templates, Tools and Bodies</td></tr>
-            <tr class="missing-parent"><td><a href="#eu-aiact-RightsQuestionnaire"><code>impacto:eu-aiact-RightsQuestionnaire</code></a></td><td>Rights Questionnaire</td><td>Parent not specified</td><td>FRIA Templates, Tools and Bodies</td></tr>
-            <tr class="missing-parent"><td><a href="#eu-aiact-AutomatedTool"><code>impacto:eu-aiact-AutomatedTool</code></a></td><td>Automated Tool</td><td>Parent not specified</td><td>FRIA Templates, Tools and Bodies</td></tr>        </tbody>
+       </tbody>
       </table>
     </section>
 
@@ -1307,8 +1305,8 @@
       </section>
     </section>
     <!-- ==================== FRIA TEMPLATES, TOOLS AND BODIES ==================== -->
-    <section id="FRIAToolConcepts">
-      <h3>FRIA Templates, Tools and Bodies</h3>
+    <section id="FRIATemplateConcepts">
+      <h3>FRIA Templates and Tools</h3>
       <p>Concepts representing the template, questionnaire and automated tool provided under AI Act Article 27(5), and the body responsible for them.</p>
       <section id="eu-aiact-FRIATemplate">
         <h4>FRIA Template</h4>
@@ -1318,7 +1316,7 @@
             <tr><td>Term</td><td>eu-aiact-FRIATemplate</td></tr>
             <tr><td>Label</td><td>FRIA Template</td></tr>
             <tr><td>Definition</td><td>The template for a questionnaire developed by the AI Office to facilitate deployers in complying with their FRIA obligations. </td></tr>
-            <tr class="missing-parent"><td>SubClassOf</td><td><span class="flag">Parent not specified</span></td></tr>
+            <tr><td>SubClassOf</td><td><a href="https://w3c-cg.github.io/dpv/legal/eu/aiact/#FRIA"><code>eu-aiact:FRIA</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(5)</a></td></tr>
           </tbody>
@@ -1332,9 +1330,9 @@
             <tr><td>Term</td><td>eu-aiact-RightsQuestionnaire</td></tr>
             <tr><td>Label</td><td>Rights Questionnaire</td></tr>
             <tr><td>Definition</td><td>A questionnaire through which a deployer documents its assessment of impacts on fundamental rights, based on the template provided by the AI Office. </td></tr>
-            <tr class="missing-parent"><td>SubClassOf</td><td><span class="flag">Parent not specified</span></td></tr>
+            <tr><td>SubClassOf</td><td><a href="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIATemplate"><code>impacto:eu-aiact-FRIATemplate</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
-            <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(3), 27(5)</a></td></tr>
+            <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(5)</a></td></tr>
           </tbody>
         </table>
       </section>
@@ -1346,7 +1344,7 @@
             <tr><td>Term</td><td>eu-aiact-AutomatedTool</td></tr>
             <tr><td>Label</td><td>Automated Tool</td></tr>
             <tr><td>Definition</td><td>An automated tool through which the FRIA questionnaire template may be provided and completed. </td></tr>
-            <tr class="missing-parent"><td>SubClassOf</td><td><span class="flag">Parent not specified</span></td></tr>
+            <tr><td>SubClassOf</td><td><a href="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIATemplate"><code>impacto:eu-aiact-FRIATemplate</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(5)</a></td></tr>
           </tbody>
