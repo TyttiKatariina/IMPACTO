@@ -574,20 +574,6 @@
       <h3>FRIA Process Concepts</h3>
       <p>Concepts proposed for the DPV EU AI Act extension representing the Fundamental Rights Impact Assessment (FRIA) under AI Act Article 27 and its steps.</p>
       <section id="eu-aiact-FRIA">
-        <h4>FRIA</h4>
-        <table>
-          <tbody>
-            <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIA</code></td></tr>
-            <tr><td>Term</td><td>eu-aiact-FRIA</td></tr>
-            <tr><td>Label</td><td>FRIA</td></tr>
-            <tr><td>Definition</td><td>Fundamental Rights Impact Assessment: an assessment of the impact on fundamental rights that the use of a high-risk AI system may produce, carried out by a deployer prior to deploying the system. </td></tr>
-            <tr><td>SubClassOf</td><td><a href="https://w3id.org/dpv#RightsImpactAssessment"><code>dpv:RightsImpactAssessment</code></a></td></tr>
-            <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
-            <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(1)</a></td></tr>
-            <tr class="review"><td>Review Note</td><td>dpv:FRIA and eu-aiact:FRIA already exist in DPV and are listed under reused concepts. Confirm whether this entry is a redefinition (with parent dpv:RightsImpactAssessment) or should be removed in favour of the existing concept.</td></tr>
-          </tbody>
-        </table>
-      </section>
       <section id="eu-aiact-FRIANecessity">
         <h4>FRIA Necessity</h4>
         <table>
@@ -596,7 +582,7 @@
             <tr><td>Term</td><td>eu-aiact-FRIANecessity</td></tr>
             <tr><td>Label</td><td>FRIA Necessity</td></tr>
             <tr><td>Definition</td><td>Whether a FRIA is required for a given deployment of an AI system, as determined under AI Act Article 27(1). </td></tr>
-            <tr><td>SubClassOf</td><td><a href="#eu-aiact-FRIA"><code>impacto:eu-aiact-FRIA</code></a></td></tr>
+            <tr><td>SubClassOf</td><td><a href="https://w3c-cg.github.io/dpv/2.3/legal/eu/aiact/#FRIA"><code>eu-aiact:FRIA</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(1)</a></td></tr>
             <tr class="review"><td>Review Note</td><td>Overlaps with eu-aiact:FRIANecessityAssessment, which has the same parent; confirm whether both are needed.</td></tr>
@@ -611,7 +597,7 @@
             <tr><td>Term</td><td>eu-aiact-FRIANecessityAssessment</td></tr>
             <tr><td>Label</td><td>FRIA Necessity Assessment</td></tr>
             <tr><td>Definition</td><td>A process extending eu-aiact:FRIA that represents the step in which an organisation assesses whether it is necessary to conduct a FRIA, as required under AI Act Article 27(1). Associated with a FRIA using dpv:hasAssessment.</td></tr>
-            <tr><td>SubClassOf</td><td><a href="#eu-aiact-FRIA"><code>impacto:eu-aiact-FRIA</code></a></td></tr>
+            <tr><td>SubClassOf</td><td><a href="https://w3c-cg.github.io/dpv/2.3/legal/eu/aiact/#FRIA"><code>eu-aiact:FRIA</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(1)</a></td></tr>
           </tbody>
@@ -625,7 +611,7 @@
             <tr><td>Term</td><td>eu-aiact-FRIAProcedure</td></tr>
             <tr><td>Label</td><td>FRIA Procedure</td></tr>
             <tr><td>Definition</td><td>A process extending eu-aiact:FRIA that represents the activity of carrying out the FRIA itself, including collection and documentation of all required inputs as per AI Act Article 27(1). Associated with a FRIA using dpv:hasAssessment.</td></tr>
-            <tr><td>SubClassOf</td><td><a href="#eu-aiact-FRIA"><code>impacto:eu-aiact-FRIA</code></a></td></tr>
+            <tr><td>SubClassOf</td><td><a href="https://w3c-cg.github.io/dpv/2.3/legal/eu/aiact/#FRIA"><code>eu-aiact:FRIA</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(1)</a></td></tr>
           </tbody>
@@ -639,7 +625,7 @@
             <tr><td>Term</td><td>eu-aiact-FRIAOutcome</td></tr>
             <tr><td>Label</td><td>FRIA Outcome</td></tr>
             <tr><td>Definition</td><td>A process extending eu-aiact:FRIA that represents the step of determining the result of the FRIA procedure, specifically whether the use of the AI system produces an impact on fundamental rights, as stated in AI Act Article 27(1). Associated with a FRIA using dpv:hasAssessment.</td></tr>
-            <tr><td>SubClassOf</td><td><a href="#eu-aiact-FRIA"><code>impacto:eu-aiact-FRIA</code></a></td></tr>
+            <tr><td>SubClassOf</td><td><a href="https://w3c-cg.github.io/dpv/2.3/legal/eu/aiact/#FRIA"><code>eu-aiact:FRIA</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(1)</a></td></tr>
           </tbody>
@@ -653,28 +639,56 @@
             <tr><td>Term</td><td>eu-aiact-FRIANotification</td></tr>
             <tr><td>Label</td><td>FRIA Notification</td></tr>
             <tr><td>Definition</td><td>The step of notifying the market surveillance authority of the results of the FRIA, including the submission of the filled-out template. </td></tr>
-            <tr><td>SubClassOf</td><td><a href="#eu-aiact-FRIA"><code>impacto:eu-aiact-FRIA</code></a></td></tr>
+            <tr><td>SubClassOf</td><td><a href="https://w3c-cg.github.io/dpv/2.3/legal/eu/aiact/#FRIA"><code>eu-aiact:FRIA</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(3)</a></td></tr>
           </tbody>
         </table>
       </section>      
-      <section id="eu-aiact-UpdateFRIA">
-        <h4>Update FRIA</h4>
+         <section id="eu-aiact-FRIAUpdateStatus">
+        <h4>FRIA Update Status</h4>
         <table>
           <tbody>
-            <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-UpdateFRIA</code></td></tr>
-            <tr><td>Term</td><td>eu-aiact-UpdateFRIA</td></tr>
-            <tr><td>Label</td><td>Update FRIA</td></tr>
-            <tr><td>Definition</td><td>The updating of a FRIA where, during the use of the high-risk AI system, the deployer considers that any of the assessed elements has changed or is no longer up to date. </td></tr>
-            <tr class="missing-parent"><td>SubClassOf</td><td><span class="flag">Parent not specified</span></td></tr>
-            <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
+            <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAUpdateStatus</code></td></tr>
+            <tr><td>Term</td><td>eu-aiact-FRIAUpdateStatus</td></tr>
+            <tr><td>Label</td><td>FRIA Update Status</td></tr>
+            <tr><td>Definition</td><td>Status reflecting the deployers need to update the information in the FRIA if any elements listed in Art. 27(1) have changed or are no longer up to date. </td></tr>
+            <tr><td>SubClassOf</td><td><a href="https://w3c-cg.github.io/dpv/2.3/legal/eu/aiact/#FRIA"><code>eu-aiact:FRIA</code></a></td></tr>
+            <tr><td>Proposed for</td><td>DPV EU AI Act (<code>eu-aiact</code>)</td></tr>
+            <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(2)</a></td></tr>
+          </tbody>
+        </table>
+      </section>
+         <section id="eu-aiact-FRIAUpdatePending">
+        <h4>FRIA Update Pending</h4>
+        <table>
+          <tbody>
+            <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAUpdatePending</code></td></tr>
+            <tr><td>Term</td><td>eu-aiact-FRIAUpdatePending</td></tr>
+            <tr><td>Label</td><td>FRIA Update Pending</td></tr>
+            <tr><td>Definition</td><td>Status reflecting a review is still pending and waiting to been carried out by the deployer if any elements listed in Art. 27(1) have changed or are no longer up to date. </td></tr>
+            <tr><td>SubClassOf</td><td><a href="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAUpdateStatus"><code>impacto:eu-aiact-FRIAUpdateStatus</code></a></td></tr>
+            <tr><td>Proposed for</td><td>DPV EU AI Act (<code>eu-aiact</code>)</td></tr>
+            <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(2)</a></td></tr>
+          </tbody>
+        </table>
+      </section>
+         <section id="eu-aiact-FRIAUpdateComplete">
+        <h4>FRIA Update Complete</h4>
+        <table>
+          <tbody>
+            <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAUpdateComplete</code></td></tr>
+            <tr><td>Term</td><td>eu-aiact-FRIAUpdateComplete</td></tr>
+            <tr><td>Label</td><td>FRIA Update Complete</td></tr>
+            <tr><td>Definition</td><td>Status reflecting a review has been carried out by the deployer if any elements listed in Art. 27(1) have changed or are no longer up to date. </td></tr>
+            <tr><td>SubClassOf</td><td><a href="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAUpdateStatus"><code>impacto:eu-aiact-FRIAUpdateStatus</code></a></td></tr>
+            <tr><td>Proposed for</td><td>DPV EU AI Act (<code>eu-aiact</code>)</td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(2)</a></td></tr>
           </tbody>
         </table>
       </section>
       <section id="eu-aiact-ImpactAssessmentReuse">
-        <h4>Update FRIA</h4>
+        <h4>Impact Assessment Reuse</h4>
         <table>
           <tbody>
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-ImpactAssessmentReuse</code></td></tr>
@@ -687,30 +701,30 @@
           </tbody>
         </table>
       </section>
-      <section id="eu-aiact-ExistingFRIA">
-        <h4>Existing FRIA</h4>
+      <section id="eu-aiact-ReuseofExistingFRIA">
+        <h4>Reuse of Existing FRIA</h4>
         <table>
           <tbody>
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-ExistingFRIA</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-ExistingFRIA</td></tr>
             <tr><td>Label</td><td>Existing FRIA</td></tr>
             <tr><td>Definition</td><td>A previously conducted FRIA, or an existing impact assessment carried out by the provider, on which a deployer may rely in similar cases. </td></tr>
-            <tr class="missing-parent"><td>SubClassOf</td><td><span class="flag">Parent not specified</span></td></tr>
+            <tr><td>SubClassOf</td><td><a href="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-ImpactAssessmentReuse"><code>impacto:eu-aiact-ImpactAssessmentReuse</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
             <tr><td>Related</td><td><a href="https://w3id.org/dpv#hasReuseCompatability"><code>dpv:hasReuseCompatability</code></a></td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(2)</a></td></tr>
           </tbody>
         </table>
       </section>
-      <section id="eu-aiact-ExistingDPIA">
-        <h4>Existing DPIA</h4>
+      <section id="eu-aiact-ExistingDPIAInput">
+        <h4>Existing DPIA Input</h4>
         <table>
           <tbody>
-            <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-ExistingDPIA</code></td></tr>
-            <tr><td>Term</td><td>eu-aiact-ExistingDPIA</td></tr>
-            <tr><td>Label</td><td>Existing DPIA</td></tr>
-            <tr><td>Definition</td><td>A DPIA conducted under GDPR Article 35 through which some FRIA obligations are already met, and which the FRIA complements. </td></tr>
-            <tr class="missing-parent"><td>SubClassOf</td><td><span class="flag">Parent not specified</span></td></tr>
+            <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-ExistingDPIAInput</code></td></tr>
+            <tr><td>Term</td><td>eu-aiact-ExistingDPIAInput</td></tr>
+            <tr><td>Label</td><td>Existing DPIA Input</td></tr>
+            <tr><td>Definition</td><td>A DPIA conducted under GDPR Article 35 through which some FRIA obligations are already met, and which can be used as input in a FRIA. </td></tr>
+            <tr><td>SubClassOf</td><td><a href="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-ImpactAssessmentReuse"><code>impacto:eu-aiact-ImpactAssessmentReuse</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV EU AI Act extension (<code>eu-aiact</code>)</td></tr>
             <tr><td>Related</td><td><a href="https://w3id.org/dpv#hasReuseCompatability"><code>dpv:hasReuseCompatability</code></a></td></tr>
             <tr><td>Source</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(4)</a></td></tr>
