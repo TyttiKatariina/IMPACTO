@@ -70,16 +70,7 @@
       padding: 2px;
       border: 1px solid black;
     }
-    /* Parent not specified */
-    tr.missing-parent td { background-color: #FBE1E1; }
-    /* Parent given but uncertain */
-    tr.uncertain-parent td { background-color: #FFF1CC; }
-    /* Open questions to resolve before proposing to DPV */
-    tr.review td { background-color: #E8F0FB; font-size: 0.95em; }
-    .flag {
-      font-weight: bold;
-      font-size: 0.9em;
-    }
+   
     .draft { color: #8A5A00; font-weight: bold; cursor: help; }
     table.reuse td, table.reuse th { padding: 0.15cm 0.3cm; }
     .legend td { padding: 0.15cm 0.3cm; }
@@ -186,7 +177,7 @@
             <tr><td><b>legal-eu</b></td><td>&lt;https://w3id.org/dpv/legal/eu#&gt;</td></tr>
             <tr><td><b>eu-gdpr</b></td><td>&lt;https://w3id.org/dpv/legal/eu/gdpr#&gt;</td></tr>
             <tr><td><b>eu-aiact</b></td><td>&lt;https://w3id.org/dpv/legal/eu/aiact#&gt;</td></tr>
-            <tr><td><b>eu-rights</b></td><td>&lt;https://w3id.org/dpv/legal/eu/rights#&gt;</td></tr>
+            <tr><td><b>eu-rights</b></td><td>&lt;https://w3id.org/dpv/rights/eu#&gt;</td></tr>
             <tr><td><b>eu-cfr</b></td><td>Proposed module; namespace not yet established</td></tr>
             <tr><td><b>skos</b></td><td>&lt;http://www.w3.org/2004/02/skos/core#&gt;</td></tr>
             <tr><td><b>dct</b></td><td>&lt;http://purl.org/dc/terms/&gt;</td></tr>
@@ -271,7 +262,7 @@
         <h4>Processing Description</h4>
         <table>
           <tbody>
-            <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/dpv-ProcessingDescription</code></td></tr>
+            <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#dpv-ProcessingDescription</code></td></tr>
             <tr><td>Term</td><td>dpv-ProcessingDescription</td></tr>
             <tr><td>Label</td><td>Processing Description</td></tr>
             <tr><td>Definition</td><td>A systematic description of the envisaged processing operations and the purposes of the processing, including, where applicable, the legitimate interest pursued by the controller, as part of a DPIA. </td></tr>
@@ -282,7 +273,7 @@
         </table>
       </section>
       <section id="dpv-DPIAExemption">
-        <h4>DPIA Exempt</h4>
+        <h4>DPIA Exemption</h4>
         <table>
           <tbody>
             <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#dpv-DPIAExemption</code></td></tr>
@@ -303,7 +294,7 @@
             <tr><td>Term</td><td>dpv-DPIAExemptionA35</td></tr>
             <tr><td>Label</td><td>DPIA Exemption A35</td></tr>
             <tr><td>Definition</td><td>The specific DPIA exemption in Article 35 of the GDPR which states that if processing under Article 6(1)(c) or (e) is goverened by Union or MemberState law and a DPIA was already conducted as part o a general impact assesment, a further DPIA is not required unless the Member State considers one necessary before processing. </td></tr>
-            <tr><td>SubClassOf</td><td><a href="https://tyttikatariina.github.io/IMPACTO/#dpv-DPIAExemption"><code>dpv:DPIA</code></a></td></tr>
+            <tr><td>SubClassOf</td><td><a href="https://tyttikatariina.github.io/IMPACTO/#dpv-DPIAExemption"><code>impacto:dpv-DPIAExemption</code></a></td></tr>
             <tr><td>Proposed for</td><td>DPV core (<code>dpv</code>)</td></tr>
           </tbody>
         </table>
@@ -652,11 +643,11 @@
           </tbody>
         </table>
       </section>
-      <section id="eu-aiact-ReuseofExistingFRIA">
+      <section id="eu-aiact-ReuseOfExistingFRIA">
         <h4>Reuse of Existing FRIA</h4>
         <table>
           <tbody>
-            <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-ExistingFRIA</code></td></tr>
+            <tr><td style="width:20%">IRI</td><td><code>https://tyttikatariina.github.io/IMPACTO/#eu-aiact-ReuseOfExistingFRIA</code></td></tr>
             <tr><td>Term</td><td>eu-aiact-ExistingFRIA</td></tr>
             <tr><td>Label</td><td>Existing FRIA</td></tr>
             <tr><td>Definition</td><td>A previously conducted FRIA, or an existing impact assessment carried out by the provider, on which a deployer may rely in similar cases. </td></tr>
@@ -1223,7 +1214,7 @@
     <section id="FundamentalRightsConcepts">
       <h3>Fundamental Rights Concepts</h3>
       <p>Concepts proposed for the DPV EU Rights extension describing the fundamental rights engaged or affected by the use of an AI system.</p>
-      <section id="eu-aiact-FundamentalRightsEngagement">
+      <section id="eu-rights-FundamentalRightsEngagement">
         <h4>Fundamental Rights Engagement</h4>
         <table>
           <tbody>
@@ -1414,7 +1405,7 @@
           <tr><td><a href="https://w3id.org/dpv/legal/eu/gdpr#LeadSupervisoryAuthority"><code>eu-gdpr:LeadSupervisoryAuthority</code></a></td><td>Concept</td><td>DPV GDPR</td></tr>
           <tr><td><a href="https://w3id.org/dpv/legal/eu/gdpr#LocalSupervisoryAuthority"><code>eu-gdpr:LocalSupervisoryAuthority</code></a></td><td>Concept</td><td>DPV GDPR</td></tr>
           <tr><td><a href="https://w3id.org/dpv/legal/eu#DPA-EDPB"><code>legal-eu:DPA-EDPB</code></a></td><td>Concept</td><td>DPV LEGAL (EU)</td></tr>
-          <tr><td><a href="https://w3id.org/dpv/legal/eu/rights#A45-FreedomOfMovementAndResidenceImpact"><code>eu-rights:A45-FreedomOfMovementAndResidenceImpact</code></a></td><td>Concept</td><td>DPV EU Rights</td></tr>
+          <tr><td><a href="https://w3id.org/dpv/rights/eu#A45-FreedomOfMovementAndResidenceImpact"><code>eu-rights:A45-FreedomOfMovementAndResidenceImpact</code></a></td><td>Concept</td><td>DPV EU Rights</td></tr>
           <tr><td><a href="https://w3id.org/dpv#Purpose"><code>dpv:Purpose</code></a></td><td>Concept</td><td>DPV</td></tr>
           <tr><td><a href="https://w3id.org/dpv#hasPurpose"><code>dpv:hasPurpose</code></a></td><td>Property</td><td>DPV</td></tr>
           <tr><td><a href="https://w3id.org/dpv#LegitimateInterestOfController"><code>dpv:LegitimateInterestOfController</code></a></td><td>Concept</td><td>DPV</td></tr>
@@ -1523,8 +1514,8 @@
       <table class="reuse">
         <thead><tr><th>Reused concept</th><th>Type</th><th>Module</th></tr></thead>
         <tbody>
-          <tr><td><a href="https://w3id.org/dpv/legal/eu/rights#EUFundamentalRights"><code>eu-rights:EUFundamentalRights</code></a></td><td>Concept</td><td>DPV EU Rights</td></tr>
-          <tr><td><a href="https://w3id.org/dpv/legal/eu/rights#EUFundamentalRightsImpact"><code>eu-rights:EUFundamentalRightsImpact</code></a></td><td>Concept</td><td>DPV EU Rights</td></tr>
+          <tr><td><a href="https://w3id.org/dpv/rights/eu#EUFundamentalRights"><code>eu-rights:EUFundamentalRights</code></a></td><td>Concept</td><td>DPV EU Rights</td></tr>
+          <tr><td><a href="https://w3id.org/dpv/rights/eu#EUFundamentalRightsImpact"><code>eu-rights:EUFundamentalRightsImpact</code></a></td><td>Concept</td><td>DPV EU Rights</td></tr>
         </tbody>
       </table>
     </section>
