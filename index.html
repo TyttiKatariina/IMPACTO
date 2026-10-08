@@ -166,10 +166,7 @@
         <code>eu-aiact:FRIANecessityStatus</code>. The <i>Proposed for</i> row of each concept states the target module.</p>
       <table class="legend">
         <tbody>
-          <tr class="missing-parent"><td style="width:20%">Red row</td><td>Parent concept not specified.</td></tr>
-          <tr class="uncertain-parent"><td>Amber row</td><td>Parent concept given but uncertain.</td></tr>
-          <tr class="review"><td>Blue row</td><td>Review note: an open question to resolve before proposing the concept to DPV.</td></tr>
-          <tr><td><span class="draft">†</span></td><td>Draft definition, not carried over from the previous version of this index.</td></tr>
+          <tr class="review"><td style="width:20%">Blue row</td><td>Review note: an open question to resolve before proposing the concept to DPV.</td></tr>
         </tbody>
       </table>
     </section>
@@ -205,7 +202,7 @@
   <!-- CONCEPTS -->
   <section id="concepts">
     <h2>Concepts</h2>
-    <p>IMPACTO defines 79 new concepts and two properties, grouped below by the part of the DPIA or FRIA process they support.</p>
+    <p>IMPACTO defines 76 new concepts and two properties, grouped below by the part of the DPIA or FRIA process they support.</p>
 
 
     <!-- ==================== DPIA CONCEPTS ==================== -->
@@ -395,7 +392,8 @@
           </tbody>
         </table>
       </section>
-   
+    </section>
+
     <!-- ==================== PROCESSING CONTEXT AND PURPOSE CONCEPTS ==================== -->
     <section id="ProcessingContextPurposeConcepts">
       <h3>Processing Context and Purpose Concepts</h3>
@@ -527,7 +525,6 @@
     <section id="FRIAProcessConcepts">
       <h3>FRIA Process Concepts</h3>
       <p>Concepts proposed for the DPV EU AI Act extension representing the Fundamental Rights Impact Assessment (FRIA) under AI Act Article 27 and its steps.</p>
-      <section id="eu-aiact-FRIA">
       <section id="eu-aiact-FRIANecessity">
         <h4>FRIA Necessity</h4>
         <table>
@@ -1223,6 +1220,9 @@
       </section>
     </section>
     <!-- ==================== FUNDAMENTAL RIGHTS CONCEPTS ==================== -->
+    <section id="FundamentalRightsConcepts">
+      <h3>Fundamental Rights Concepts</h3>
+      <p>Concepts proposed for the DPV EU Rights extension describing the fundamental rights engaged or affected by the use of an AI system.</p>
       <section id="eu-aiact-FundamentalRightsEngagement">
         <h4>Fundamental Rights Engagement</h4>
         <table>
@@ -1340,8 +1340,10 @@
     <h2>Reuse of Existing Concepts</h2>
     <p>IMPACTO is designed as an extension of DPV rather than a standalone vocabulary. Before proposing a new concept, the
       DPV core vocabulary and its extensions were checked for an existing concept with the same meaning; where one exists it is
-      reused through its DPV IRI and is not redefined here. The tables below list the 132 existing concepts and
-      relations reused by IMPACTO, grouped by the part of the assessment they support.</p>
+      reused through its DPV IRI and is not redefined here. The tables below list the 134 existing concepts and
+      relations (111 concepts and 23 relations) reused by IMPACTO, grouped by the part of the assessment they support. Four concepts
+      (<code>dpv:ImpactAssessment</code>, <code>dpv:RiskAssessment</code>, <code>dpv:RiskMitigationMeasure</code> and
+      <code>dpv:ComplianceStatus</code>) are used for both the DPIA and the FRIA and therefore appear in two tables.</p>
 
     <section id="ReuseDPIAProcess">
       <h3>Reuse of DPIA process, statuses and outcomes</h3>
@@ -1517,16 +1519,17 @@
     </section>
       <section id="ReuseEURights">
       <h3>Reuse of EU Fundamental Rights Concepts</h3>
-      <p>The Annex III categories of high-risk AI systems already defined in the DPV EU AI Act extension, used to determine whether an AI system falls within the scope of Article 27.</p>
+      <p>Concepts from the DPV EU Rights extension used to represent the fundamental rights, and impacts on them, considered in a FRIA.</p>
       <table class="reuse">
         <thead><tr><th>Reused concept</th><th>Type</th><th>Module</th></tr></thead>
         <tbody>
-          <tr><td><a href="https://w3id.org/dpv/rights/eu#EUFundamentalRights"><code>eu-rights:EUFundamentalRights</code></a></td><td>Concept</td><td>EU Rights</td></tr>
-          <tr><td><a href="https://w3id.org/dpv/rights/eu#EUFundamentalRightsImpact"><code>eu-rights:EUFundamentalRightsImpact</code></a></td><td>Concept</td><td>EU Rights</td></tr>
-      </tbody>
+          <tr><td><a href="https://w3id.org/dpv/legal/eu/rights#EUFundamentalRights"><code>eu-rights:EUFundamentalRights</code></a></td><td>Concept</td><td>DPV EU Rights</td></tr>
+          <tr><td><a href="https://w3id.org/dpv/legal/eu/rights#EUFundamentalRightsImpact"><code>eu-rights:EUFundamentalRightsImpact</code></a></td><td>Concept</td><td>DPV EU Rights</td></tr>
+        </tbody>
       </table>
     </section>
-          
+  </section>
+
   <!-- REFERENCES -->
   <section id="references">
     <h2>References</h2>
