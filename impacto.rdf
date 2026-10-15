@@ -1,0 +1,1194 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://tyttikatariina.github.io/IMPACTO/#"
+     xml:base="https://tyttikatariina.github.io/IMPACTO/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:impacto="https://tyttikatariina.github.io/IMPACTO/#">
+    <skos:ConceptScheme rdf:about="https://tyttikatariina.github.io/IMPACTO/">
+        <skos:prefLabel xml:lang="en">IMPACTO (Impact Assessment Ontology)</skos:prefLabel>
+        <skos:altLabel xml:lang="en">IMPACTO</skos:altLabel>
+        <skos:notation>impacto</skos:notation>
+        <skos:definition xml:lang="en">IMPACTO represents impact assessment requirements and processes based on the GDPR and the EU AI Act, specifically the Data Protection Impact Assessment (DPIA) and the Fundamental Rights Impact Assessment (FRIA).</skos:definition>
+        <skos:note xml:lang="en">Version 1.0</skos:note>
+        <skos:note xml:lang="en">Authors: Tytti Rintamäki (ADAPT Centre, Dublin City University); Harshvardhan J. Pandit (AI Accountability Lab, Trinity College Dublin)</skos:note>
+        <skos:note xml:lang="en">Sources: GDPR (Regulation EU 2016/679); EU AI Act (Regulation EU 2024/1689)</skos:note>
+    </skos:ConceptScheme>
+
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // DPIA Concepts
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-DPIAProcess -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-DPIAProcess">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">DPIA Process</skos:prefLabel>
+        <skos:notation>eu-gdpr-DPIAProcess</skos:notation>
+        <skos:definition xml:lang="en">The process of conducting a DPIA that has two outcomes, either a DPIA is required and is conducted, or a DPIA is not required and is therefore not conducted.</skos:definition>
+        <skos:broader rdf:resource="https://w3id.org/dpv#Process"/>
+        <skos:note xml:lang="en">Proposed for: DPV GDPR extension (eu-gdpr)</skos:note>
+        <skos:note xml:lang="en">Source: GDPR Art. 35</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-DPIARequiredProcess -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-DPIARequiredProcess">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">DPIA Required Process</skos:prefLabel>
+        <skos:notation>eu-gdpr-DPIARequiredProcess</skos:notation>
+        <skos:definition xml:lang="en">A personal data processing activity that requires a DPIA according to GDPR Article 35.</skos:definition>
+        <skos:scopeNote xml:lang="en">The requirements for whether a DPIA is required for a specific process can be found in GDPR Art 35 and also in specific lists published by Member State Data Protection Authorities.</skos:scopeNote>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-DPIAProcess"/>
+        <skos:note xml:lang="en">Proposed for: DPV GDPR extension (eu-gdpr)</skos:note>
+        <skos:note xml:lang="en">Source: GDPR Art. 35</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-DPIANotRequiredProcess -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-DPIANotRequiredProcess">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">DPIA Not Required Process</skos:prefLabel>
+        <skos:notation>eu-gdpr-DPIANotRequiredProcess</skos:notation>
+        <skos:definition xml:lang="en">A personal data processing activity that does not require a DPIA according to the whitelists of processing activities published by Member State Data Protection Authorities.</skos:definition>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-DPIAProcess"/>
+        <skos:note xml:lang="en">Proposed for: DPV GDPR extension (eu-gdpr)</skos:note>
+        <skos:note xml:lang="en">Source: GDPR Art. 35(5); Member State DPA Not-Required Lists (AT, CZ, FR, HR, IT, LV, NL, ES)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-DPIANotRequired -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-DPIANotRequired">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">DPIA Not Required</skos:prefLabel>
+        <skos:notation>eu-gdpr-DPIANotRequired</skos:notation>
+        <skos:definition xml:lang="en">Status indicating that a DPIA is not required for the processing, for example because it is not likely to result in a high risk or because it appears on a supervisory authority list under GDPR Article 35(5).</skos:definition>
+        <skos:broader rdf:resource="https://w3id.org/dpv/legal/eu/gdpr#DPIANecessityStatus"/>
+        <skos:note xml:lang="en">Proposed for: DPV GDPR extension (eu-gdpr)</skos:note>
+        <skos:note xml:lang="en">Source: GDPR Art. 35(5)</skos:note>
+        <skos:editorialNote xml:lang="en">eu-gdpr:DPIANotRequired already exists in the DPV GDPR extension and is also listed under reused concepts. Confirm whether this entry is a refinement or should be removed.</skos:editorialNote>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-ProcessingDescription -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-ProcessingDescription">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">Processing Description</skos:prefLabel>
+        <skos:notation>dpv-ProcessingDescription</skos:notation>
+        <skos:definition xml:lang="en">A systematic description of the envisaged processing operations and the purposes of the processing, including, where applicable, the legitimate interest pursued by the controller, as part of a DPIA.</skos:definition>
+        <skos:broader rdf:resource="https://w3id.org/dpv#Context"/>
+        <skos:note xml:lang="en">Proposed for: DPV (dpv)</skos:note>
+        <skos:note xml:lang="en">Source: GDPR Art. 35(7)(a)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-DPIAExemption -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-DPIAExemption">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">DPIA Exemption</skos:prefLabel>
+        <skos:notation>dpv-DPIAExemption</skos:notation>
+        <skos:definition xml:lang="en">The one condition under which specific processing is exempt from the obligation to carry out a DPIA as per GDPR Art. 35(10).</skos:definition>
+        <skos:broader rdf:resource="https://w3id.org/dpv#DPIA"/>
+        <skos:note xml:lang="en">Proposed for: DPV core (dpv)</skos:note>
+        <skos:note xml:lang="en">Source: GDPR Art. 35(10)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-DPIAExemptionA35 -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-DPIAExemptionA35">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">DPIA Exemption A35</skos:prefLabel>
+        <skos:notation>dpv-DPIAExemptionA35</skos:notation>
+        <skos:definition xml:lang="en">The specific DPIA exemption in Article 35 of the GDPR which states that if processing under Article 6(1)(c) or (e) is goverened by Union or MemberState law and a DPIA was already conducted as part o a general impact assesment, a further DPIA is not required unless the Member State considers one necessary before processing.</skos:definition>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#dpv-DPIAExemption"/>
+        <skos:note xml:lang="en">Proposed for: DPV core (dpv)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-DPIAReviewStatus -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-DPIAReviewStatus">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">DPIA Review Status</skos:prefLabel>
+        <skos:notation>eu-gdpr-DPIAReviewStatus</skos:notation>
+        <skos:definition xml:lang="en">Status reflecting whether a review has been carried out by the controller, where necessary, to assess whether processing is performed in accordance with the DPIA, at least when there is a change in the risk represented by the processing operations.</skos:definition>
+        <skos:broader rdf:resource="https://w3id.org/dpv#AuditStatus"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU GDPR (dpv)</skos:note>
+        <skos:note xml:lang="en">Source: GDPR Art. 35(11)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-DPIAReviewPending -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-DPIAReviewPending">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">DPIA Review Pending</skos:prefLabel>
+        <skos:notation>eu-gdpr-DPIAReviewPending</skos:notation>
+        <skos:definition xml:lang="en">Status reflecting a review is still pending and waiting to been carried out by the controller, where necessary, to assess whether processing is performed in accordance with the DPIA, at least when there is a change in the risk represented by the processing operations.</skos:definition>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-DPIAReviewStatus"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU GDPR (eu-gdpr)</skos:note>
+        <skos:note xml:lang="en">Source: GDPR Art. 35(11)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-DPIAReviewComplete -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-DPIAReviewComplete">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">DPIA Review Complete</skos:prefLabel>
+        <skos:notation>eu-gdpr-DPIAReviewComplete</skos:notation>
+        <skos:definition xml:lang="en">Status reflecting a review has been carried out by the controller, where necessary, to assess whether processing is performed in accordance with the DPIA, at least when there is a change in the risk represented by the processing operations.</skos:definition>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-DPIAReviewStatus"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU GDPR (eu-gdpr)</skos:note>
+        <skos:note xml:lang="en">Source: GDPR Art. 35(11)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-RiskChangeCategory -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-RiskChangeCategory">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">Risk Change Category</skos:prefLabel>
+        <skos:notation>eu-gdpr-RiskChangeCategory</skos:notation>
+        <skos:definition xml:lang="en">A categorisation of the change of risk associated with processing operations, requiring a DPIA review.</skos:definition>
+        <skos:broader rdf:resource="https://w3id.org/dpv#Context"/>
+        <skos:note xml:lang="en">Proposed for: DPV GDPR extension (eu-gdpr)</skos:note>
+        <skos:note xml:lang="en">Source: GDPR Art. 35(11)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-PredeterminedRiskChange -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-PredeterminedRiskChange">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">Predetermined Risk Change</skos:prefLabel>
+        <skos:notation>eu-gdpr-PredeterminedRiskChange</skos:notation>
+        <skos:definition xml:lang="en">A change in risk that was anticipated and accounted for in the original DPIA and for which a review was in place/ scheduled for.</skos:definition>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-RiskChangeCategory"/>
+        <skos:note xml:lang="en">Proposed for: DPV GDPR extension (eu-gdpr)</skos:note>
+        <skos:note xml:lang="en">Source: GDPR Art. 35(11)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-NonpredeterminedRiskChange -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-NonpredeterminedRiskChange">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">Non-predetermined Risk Change</skos:prefLabel>
+        <skos:notation>eu-gdpr-NonpredeterminedRiskChange</skos:notation>
+        <skos:definition xml:lang="en">A change in risk that was not anticipated or accounted for and requires an immediate review of the original DPIA.</skos:definition>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-RiskChangeCategory"/>
+        <skos:note xml:lang="en">Proposed for: DPV GDPR extension (eu-gdpr)</skos:note>
+        <skos:note xml:lang="en">Source: GDPR Art. 35(11)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Processing Context and Purpose Concepts
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-ProcessingContextEvaluation -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-ProcessingContextEvaluation">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">Processing Context Evaluation</skos:prefLabel>
+        <skos:notation>dpv-ProcessingContextEvaluation</skos:notation>
+        <skos:definition xml:lang="en">A processing context in which personal data is used to evaluate personal aspects relating to natural persons, such as in systematic and extensive evaluation.</skos:definition>
+        <skos:broader rdf:resource="https://w3id.org/dpv#ProcessingContext"/>
+        <skos:note xml:lang="en">Proposed for: DPV core (dpv)</skos:note>
+        <skos:note xml:lang="en">Source: GDPR Art. 35(3)(a)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-DataSubjectGoodsOffer -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-DataSubjectGoodsOffer">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">Data Subject Goods Offer</skos:prefLabel>
+        <skos:notation>dpv-DataSubjectGoodsOffer</skos:notation>
+        <skos:definition xml:lang="en">Processing related to the offering of goods to data subjects, irrespective of whether a payment is required.</skos:definition>
+        <skos:broader rdf:resource="https://w3id.org/dpv#Purpose"/>
+        <skos:note xml:lang="en">Proposed for: DPV core (dpv)</skos:note>
+        <skos:note xml:lang="en">Source: GDPR Art. 3(2)(a)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-DataSubjectServicesOffer -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-DataSubjectServicesOffer">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">Data Subject Services Offer</skos:prefLabel>
+        <skos:notation>dpv-DataSubjectServicesOffer</skos:notation>
+        <skos:definition xml:lang="en">Processing related to the offering of services to data subjects, irrespective of whether a payment is required.</skos:definition>
+        <skos:broader rdf:resource="https://w3id.org/dpv#Purpose"/>
+        <skos:note xml:lang="en">Proposed for: DPV core (dpv)</skos:note>
+        <skos:note xml:lang="en">Source: GDPR Art. 3(2)(a)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-DataSubjectBehaviourMonitoring -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-DataSubjectBehaviourMonitoring">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">Data Subject Behaviour Monitoring</skos:prefLabel>
+        <skos:notation>dpv-DataSubjectBehaviourMonitoring</skos:notation>
+        <skos:definition xml:lang="en">Processing related to the monitoring of the behaviour of data subjects, as far as that behaviour takes place within the Union.</skos:definition>
+        <skos:broader rdf:resource="https://w3id.org/dpv#Purpose"/>
+        <skos:note xml:lang="en">Proposed for: DPV core (dpv)</skos:note>
+        <skos:note xml:lang="en">Source: GDPR Art. 3(2)(b)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-CommercialBenefit -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-CommercialBenefit">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">Commercial Benefit</skos:prefLabel>
+        <skos:notation>dpv-CommercialBenefit</skos:notation>
+        <skos:definition xml:lang="en">Purposes associated with obtaining or preserving a commercial benefit for an organisation.</skos:definition>
+        <skos:scopeNote xml:lang="en">Proposed as the parent of dpv:ProtectionOfCommercialInterest.</skos:scopeNote>
+        <skos:broader rdf:resource="https://w3id.org/dpv#Purpose"/>
+        <skos:note xml:lang="en">Proposed for: DPV core (dpv)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-ProtectionOfCommercialInterest -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-ProtectionOfCommercialInterest">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">Protection Of Commercial Interest</skos:prefLabel>
+        <skos:notation>dpv-ProtectionOfCommercialInterest</skos:notation>
+        <skos:definition xml:lang="en">Processing carried out to protect the commercial interests of an organisation, such as trade secrets or business confidentiality.</skos:definition>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#dpv-CommercialBenefit"/>
+        <skos:note xml:lang="en">Proposed for: DPV core (dpv)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-ProtectionOfPublicInterest -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-ProtectionOfPublicInterest">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">Protection Of Public Interest</skos:prefLabel>
+        <skos:notation>dpv-ProtectionOfPublicInterest</skos:notation>
+        <skos:definition xml:lang="en">Processing carried out to protect an interest of the public at large.</skos:definition>
+        <skos:broader rdf:resource="https://w3id.org/dpv#PublicBenefit"/>
+        <skos:note xml:lang="en">Proposed for: DPV core (dpv)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-ProtectionOfOperationalSecurity -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-ProtectionOfOperationalSecurity">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">Protection Of Operational Security</skos:prefLabel>
+        <skos:notation>dpv-ProtectionOfOperationalSecurity</skos:notation>
+        <skos:definition xml:lang="en">Processing carried out to protect the security of an organisation's operations, systems or premises.</skos:definition>
+        <skos:broader rdf:resource="https://w3id.org/dpv#Purpose"/>
+        <skos:note xml:lang="en">Proposed for: DPV core (dpv)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#dpv-AffectedEntity -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#dpv-AffectedEntity">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">Affected Entity</skos:prefLabel>
+        <skos:notation>dpv-AffectedEntity</skos:notation>
+        <skos:definition xml:lang="en">An entity, such as a natural person, group or organisation, that is affected by the impacts of processing or of the use of a technology.</skos:definition>
+        <skos:broader rdf:resource="https://w3id.org/dpv#Entity"/>
+        <skos:note xml:lang="en">Proposed for: DPV core (dpv)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // FRIA Process Concepts
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANecessity -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANecessity">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">FRIA Necessity</skos:prefLabel>
+        <skos:notation>eu-aiact-FRIANecessity</skos:notation>
+        <skos:definition xml:lang="en">Whether a FRIA is required for a given deployment of an AI system, as determined under AI Act Article 27(1).</skos:definition>
+        <skos:broader rdf:resource="https://w3id.org/dpv/legal/eu/aiact#FRIA"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+        <skos:note xml:lang="en">Source: AI Act Art. 27(1)</skos:note>
+        <skos:editorialNote xml:lang="en">Overlaps with eu-aiact:FRIANecessityAssessment, which has the same parent; confirm whether both are needed.</skos:editorialNote>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANecessityAssessment -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANecessityAssessment">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">FRIA Necessity Assessment</skos:prefLabel>
+        <skos:notation>eu-aiact-FRIANecessityAssessment</skos:notation>
+        <skos:definition xml:lang="en">A process extending eu-aiact:FRIA that represents the step in which an organisation assesses whether it is necessary to conduct a FRIA, as required under AI Act Article 27(1). Associated with a FRIA using dpv:hasAssessment.</skos:definition>
+        <skos:broader rdf:resource="https://w3id.org/dpv/legal/eu/aiact#FRIA"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+        <skos:note xml:lang="en">Source: AI Act Art. 27(1)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAProcedure -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAProcedure">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">FRIA Procedure</skos:prefLabel>
+        <skos:notation>eu-aiact-FRIAProcedure</skos:notation>
+        <skos:definition xml:lang="en">A process extending eu-aiact:FRIA that represents the activity of carrying out the FRIA itself, including collection and documentation of all required inputs as per AI Act Article 27(1). Associated with a FRIA using dpv:hasAssessment.</skos:definition>
+        <skos:broader rdf:resource="https://w3id.org/dpv/legal/eu/aiact#FRIA"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+        <skos:note xml:lang="en">Source: AI Act Art. 27(1)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAOutcome -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAOutcome">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">FRIA Outcome</skos:prefLabel>
+        <skos:notation>eu-aiact-FRIAOutcome</skos:notation>
+        <skos:definition xml:lang="en">A process extending eu-aiact:FRIA that represents the step of determining the result of the FRIA procedure, specifically whether the use of the AI system produces an impact on fundamental rights, as stated in AI Act Article 27(1). Associated with a FRIA using dpv:hasAssessment.</skos:definition>
+        <skos:broader rdf:resource="https://w3id.org/dpv/legal/eu/aiact#FRIA"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+        <skos:note xml:lang="en">Source: AI Act Art. 27(1)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANotification -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANotification">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">FRIA Notification</skos:prefLabel>
+        <skos:notation>eu-aiact-FRIANotification</skos:notation>
+        <skos:definition xml:lang="en">The step of notifying the market surveillance authority of the results of the FRIA, including the submission of the filled-out template.</skos:definition>
+        <skos:broader rdf:resource="https://w3id.org/dpv/legal/eu/aiact#FRIA"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+        <skos:note xml:lang="en">Source: AI Act Art. 27(3)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAUpdateStatus -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAUpdateStatus">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">FRIA Update Status</skos:prefLabel>
+        <skos:notation>eu-aiact-FRIAUpdateStatus</skos:notation>
+        <skos:definition xml:lang="en">Status reflecting the deployers need to update the information in the FRIA if any elements listed in Art. 27(1) have changed or are no longer up to date.</skos:definition>
+        <skos:broader rdf:resource="https://w3id.org/dpv/legal/eu/aiact#FRIA"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act (eu-aiact)</skos:note>
+        <skos:note xml:lang="en">Source: AI Act Art. 27(2)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAUpdatePending -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAUpdatePending">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">FRIA Update Pending</skos:prefLabel>
+        <skos:notation>eu-aiact-FRIAUpdatePending</skos:notation>
+        <skos:definition xml:lang="en">Status reflecting a review is still pending and waiting to been carried out by the deployer if any elements listed in Art. 27(1) have changed or are no longer up to date.</skos:definition>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAUpdateStatus"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act (eu-aiact)</skos:note>
+        <skos:note xml:lang="en">Source: AI Act Art. 27(2)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAUpdateComplete -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAUpdateComplete">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">FRIA Update Complete</skos:prefLabel>
+        <skos:notation>eu-aiact-FRIAUpdateComplete</skos:notation>
+        <skos:definition xml:lang="en">Status reflecting a review has been carried out by the deployer if any elements listed in Art. 27(1) have changed or are no longer up to date.</skos:definition>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAUpdateStatus"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act (eu-aiact)</skos:note>
+        <skos:note xml:lang="en">Source: AI Act Art. 27(2)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-ImpactAssessmentReuse -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-ImpactAssessmentReuse">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">Impact Assessment Reuse</skos:prefLabel>
+        <skos:notation>eu-aiact-ImpactAssessmentReuse</skos:notation>
+        <skos:definition xml:lang="en">The reuse of an existing and previously conducted impact assessment as input in a FRIA.</skos:definition>
+        <skos:broader rdf:resource="https://w3id.org/dpv/legal/eu/aiact#FRIA"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+        <skos:note xml:lang="en">Source: AI Act Art. 27(2)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-ReuseOfExistingFRIA -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-ReuseOfExistingFRIA">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">Existing FRIA</skos:prefLabel>
+        <skos:notation>eu-aiact-ExistingFRIA</skos:notation>
+        <skos:definition xml:lang="en">A previously conducted FRIA, or an existing impact assessment carried out by the provider, on which a deployer may rely in similar cases.</skos:definition>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-ImpactAssessmentReuse"/>
+        <skos:related rdf:resource="https://w3id.org/dpv#hasReuseCompatability"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+        <skos:note xml:lang="en">Source: AI Act Art. 27(2)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-ExistingDPIAInput -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-ExistingDPIAInput">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">Existing DPIA Input</skos:prefLabel>
+        <skos:notation>eu-aiact-ExistingDPIAInput</skos:notation>
+        <skos:definition xml:lang="en">A DPIA conducted under GDPR Article 35 through which some FRIA obligations are already met, and which can be used as input in a FRIA.</skos:definition>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-ImpactAssessmentReuse"/>
+        <skos:related rdf:resource="https://w3id.org/dpv#hasReuseCompatability"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+        <skos:note xml:lang="en">Source: AI Act Art. 27(4)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // FRIA Necessity Concepts
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANecessityStatus -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANecessityStatus">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">FRIA Necessity Status</skos:prefLabel>
+        <skos:notation>eu-aiact-FRIANecessityStatus</skos:notation>
+        <skos:definition xml:lang="en">A status associated with eu-aiact:FRIANecessityAssessment (via dpv:hasStatus) that represents the specific outcome of the necessity assessment process.</skos:definition>
+        <skos:broader rdf:resource="https://w3id.org/dpv#AuditStatus"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIARequired -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIARequired">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">FRIA Required</skos:prefLabel>
+        <skos:notation>eu-aiact-FRIARequired</skos:notation>
+        <skos:definition xml:lang="en">A FRIA necessity status indicating that the organisation is required to conduct a FRIA.</skos:definition>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANecessityStatus"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANotRequired -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANotRequired">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">FRIA Not Required</skos:prefLabel>
+        <skos:notation>eu-aiact-FRIANotRequired</skos:notation>
+        <skos:definition xml:lang="en">A FRIA necessity status indicating that the organisation is not required to conduct a FRIA.</skos:definition>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANecessityStatus"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAExempt -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAExempt">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">FRIA Exempt</skos:prefLabel>
+        <skos:notation>eu-aiact-FRIAExempt</skos:notation>
+        <skos:definition xml:lang="en">A FRIA necessity status indicating that a FRIA is not required because an exemption applies, such as for high-risk AI systems intended to be used in the area listed in point 2 of Annex III.</skos:definition>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANecessityStatus"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+        <skos:note xml:lang="en">Source: AI Act Art. 27(1)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANecessityDetermination -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANecessityDetermination">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">FRIA Necessity Determination</skos:prefLabel>
+        <skos:notation>eu-aiact-FRIANecessityDetermination</skos:notation>
+        <skos:definition xml:lang="en">The basis on which the necessity of a FRIA is determined, such as the risk classification of the AI system or the applicability of an exemption.</skos:definition>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANecessityStatus"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-HighRiskAISystem -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-HighRiskAISystem">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">High Risk AI System</skos:prefLabel>
+        <skos:notation>eu-aiact-HighRiskAISystem</skos:notation>
+        <skos:definition xml:lang="en">A determination that the AI system is a high-risk AI system referred to in AI Act Article 6(2), bringing its deployment within the scope of Article 27.</skos:definition>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANecessityDetermination"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+        <skos:note xml:lang="en">Source: AI Act Art. 6(2), Art. 27(1)</skos:note>
+        <skos:editorialNote xml:lang="en">Name collides with the existing eu-aiact:HighRiskAISystem, which is listed under reused concepts. A distinct name (for example HighRiskAISystemDetermination) would avoid the clash when proposed to eu-aiact.</skos:editorialNote>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-NotHighRiskAISystem -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-NotHighRiskAISystem">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">Not High Risk AI System</skos:prefLabel>
+        <skos:notation>eu-aiact-NotHighRiskAISystem</skos:notation>
+        <skos:definition xml:lang="en">A determination that the AI system is not a high-risk AI system, so that the FRIA obligation under Article 27 does not apply.</skos:definition>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANecessityDetermination"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-PotentiallyHighRiskAISystem -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-PotentiallyHighRiskAISystem">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">Potentially High Risk AI System</skos:prefLabel>
+        <skos:notation>eu-aiact-PotentiallyHighRiskAISystem</skos:notation>
+        <skos:definition xml:lang="en">A determination that the AI system may be a high-risk AI system, pending further assessment, for example of whether the derogation in Article 6(3) applies.</skos:definition>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANecessityDetermination"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+        <skos:note xml:lang="en">Source: AI Act Art. 6(3)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAExemptions -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAExemptions">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">FRIA Exemptions</skos:prefLabel>
+        <skos:notation>eu-aiact-FRIAExemptions</skos:notation>
+        <skos:definition xml:lang="en">A determination of whether an exemption from the FRIA obligation applies to the deployment of the AI system.</skos:definition>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANecessityDetermination"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+        <skos:note xml:lang="en">Source: AI Act Art. 27(1)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-Exempt -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-Exempt">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">AI System Exempt</skos:prefLabel>
+        <skos:notation>eu-aiact-Exempt</skos:notation>
+        <skos:definition xml:lang="en">A determination that the deployment of the AI system is exempt from the FRIA obligation.</skos:definition>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAExemptions"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-NotExempt -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-NotExempt">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">AI System Not Exempt</skos:prefLabel>
+        <skos:notation>eu-aiact-NotExempt</skos:notation>
+        <skos:definition xml:lang="en">A determination that no exemption from the FRIA obligation applies to the deployment of the AI system.</skos:definition>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAExemptions"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // FRIA Outcome, Consultation and Risk Concepts
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAOutcomeStatus -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAOutcomeStatus">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">FRIA Outcome Status</skos:prefLabel>
+        <skos:notation>eu-aiact-FRIAOutcomeStatus</skos:notation>
+        <skos:definition xml:lang="en">A status associated with eu-aiact:FRIAOutcome (via dpv:hasStatus) that represents the specific result determined at the conclusion of the FRIA procedure.</skos:definition>
+        <skos:broader rdf:resource="https://w3id.org/dpv#AuditStatus"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAPermitsDeployment -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAPermitsDeployment">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">FRIA Permits Deployment</skos:prefLabel>
+        <skos:notation>eu-aiact-FRIAPermitsDeployment</skos:notation>
+        <skos:definition xml:lang="en">A FRIA outcome status indicating that the deployment of the AI system may proceed.</skos:definition>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAOutcomeStatus"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAProhibitsDeployment -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAProhibitsDeployment">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">FRIA Prohibits Deployment</skos:prefLabel>
+        <skos:notation>eu-aiact-FRIAProhibitsDeployment</skos:notation>
+        <skos:definition xml:lang="en">A FRIA outcome status indicating that the AI system should not be deployed because of the identified impacts on fundamental rights.</skos:definition>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAOutcomeStatus"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIARequiresConsultation -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIARequiresConsultation">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">FRIA Requires Consultation</skos:prefLabel>
+        <skos:notation>eu-aiact-FRIARequiresConsultation</skos:notation>
+        <skos:definition xml:lang="en">A FRIA outcome status indicating that consultation is required before a decision on deployment can be taken.</skos:definition>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAOutcomeStatus"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-ConsultationWithAffectedEntities -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-ConsultationWithAffectedEntities">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">Consultation with Affected Entities</skos:prefLabel>
+        <skos:notation>eu-aiact-ConsultationWithAffectedEntities</skos:notation>
+        <skos:definition xml:lang="en">Consultation with the natural persons, groups or other entities likely to be affected by the use of the AI system, or with their representatives.</skos:definition>
+        <skos:broader rdf:resource="https://w3id.org/dpv#Consultation"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-ConsultationWithProvider -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-ConsultationWithProvider">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">Consultation with Provider</skos:prefLabel>
+        <skos:notation>eu-aiact-ConsultationWithProvider</skos:notation>
+        <skos:definition xml:lang="en">Consultation with the provider of the AI system, for example regarding the information provided under Article 13 or existing impact assessments.</skos:definition>
+        <skos:broader rdf:resource="https://w3id.org/dpv#Consultation"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-ConsultationWithMarketSurveillanceAuthority -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-ConsultationWithMarketSurveillanceAuthority">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">Consultation with Market Surveillance Authority</skos:prefLabel>
+        <skos:notation>eu-aiact-ConsultationWithMarketSurveillanceAuthority</skos:notation>
+        <skos:definition xml:lang="en">Consultation with the market surveillance authority competent for the AI system.</skos:definition>
+        <skos:broader rdf:resource="https://w3id.org/dpv#Consultation"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIARiskStatus -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIARiskStatus">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">FRIA Risk Status</skos:prefLabel>
+        <skos:notation>eu-aiact-FRIARiskStatus</skos:notation>
+        <skos:definition xml:lang="en">A status representing the level of risk to fundamental rights indicated by a FRIA.</skos:definition>
+        <skos:broader rdf:resource="https://w3id.org/dpv#AuditStatus"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAIndicatesHighRisk -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAIndicatesHighRisk">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">FRIA Indicates High Risk</skos:prefLabel>
+        <skos:notation>eu-aiact-FRIAIndicatesHighRisk</skos:notation>
+        <skos:definition xml:lang="en">A FRIA risk status indicating a high risk to fundamental rights.</skos:definition>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIARiskStatus"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAIndicatesLowRisk -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAIndicatesLowRisk">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">FRIA Indicates Low Risk</skos:prefLabel>
+        <skos:notation>eu-aiact-FRIAIndicatesLowRisk</skos:notation>
+        <skos:definition xml:lang="en">A FRIA risk status indicating a low risk to fundamental rights.</skos:definition>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIARiskStatus"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAIndicatesNoRisk -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAIndicatesNoRisk">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">FRIA Indicates No Risk</skos:prefLabel>
+        <skos:notation>eu-aiact-FRIAIndicatesNoRisk</skos:notation>
+        <skos:definition xml:lang="en">A FRIA risk status indicating no identified risk to fundamental rights.</skos:definition>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIARiskStatus"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // FRIA Notification Concepts
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANotificationStatus -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANotificationStatus">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">FRIA Notification Status</skos:prefLabel>
+        <skos:notation>eu-aiact-FRIANotificationStatus</skos:notation>
+        <skos:definition xml:lang="en">A status associated with eu-aiact:FRIANotification (via dpv:hasStatus) that represents the state of the notification obligation and its fulfilment.</skos:definition>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANotification"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+        <skos:editorialNote xml:lang="en">The other status concepts in this index descend from dpv:AuditStatus; the source table gives eu-aiact:FRIANotification (a process) as the parent here.</skos:editorialNote>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANotificationSent -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANotificationSent">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">FRIA Notification Sent</skos:prefLabel>
+        <skos:notation>eu-aiact-FRIANotificationSent</skos:notation>
+        <skos:definition xml:lang="en">A FRIA notification status indicating that the FRIA notification has been sent to the relevant market surveillance authority.</skos:definition>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANotificationStatus"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANotificationPending -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANotificationPending">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">FRIA Notification Pending</skos:prefLabel>
+        <skos:notation>eu-aiact-FRIANotificationPending</skos:notation>
+        <skos:definition xml:lang="en">A FRIA notification status indicating that a notification has been identified as needed but has not been sent.</skos:definition>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANotificationStatus"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAMarketSurveillanceAuthorityNotified -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAMarketSurveillanceAuthorityNotified">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">FRIA Market Surveillance Authority Notified</skos:prefLabel>
+        <skos:notation>eu-aiact-FRIAMarketSurveillanceAuthorityNotified</skos:notation>
+        <skos:definition xml:lang="en">Indication that the market surveillance authority has been notified of the results of the FRIA.</skos:definition>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANotification"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+        <skos:note xml:lang="en">Source: AI Act Art. 27(3)</skos:note>
+        <skos:editorialNote xml:lang="en">Appears to overlap with eu-aiact:FRIANotificationSent.</skos:editorialNote>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAObligationtoNotify -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAObligationtoNotify">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">FRIA Obligation to Notify</skos:prefLabel>
+        <skos:notation>eu-aiact-FRIAObligationtoNotify</skos:notation>
+        <skos:definition xml:lang="en">The obligation of the deployer to notify the market surveillance authority of the results of the FRIA once it has been performed.</skos:definition>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANotification"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+        <skos:note xml:lang="en">Source: AI Act Art. 27(3)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-A46-Notification-Exemptions -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-A46-Notification-Exemptions">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">Art 46 Notification Exemptions</skos:prefLabel>
+        <skos:notation>eu-aiact-A46-Notification-Exemptions</skos:notation>
+        <skos:definition xml:lang="en">The exemption from the obligation to notify the market surveillance authority that applies in the cases referred to in AI Act Article 46(1).</skos:definition>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANotification"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+        <skos:note xml:lang="en">Source: AI Act Art. 27(3), Art. 46(1)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Deployer and Deployment Context Concepts
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-PublicLawGovernedDeployer -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-PublicLawGovernedDeployer">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">Public Law Governed Deployer</skos:prefLabel>
+        <skos:notation>eu-aiact-PublicLawGovernedDeployer</skos:notation>
+        <skos:definition xml:lang="en">A deployer that is a body governed by public law.</skos:definition>
+        <skos:broader rdf:resource="https://w3id.org/dpv/legal/eu/aiact#AIDeployer"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+        <skos:note xml:lang="en">Source: AI Act Art. 27(1)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-PublicServiceProvidingPrivateEntityDeployer -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-PublicServiceProvidingPrivateEntityDeployer">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">Public Service Providing Private Entity Deployer</skos:prefLabel>
+        <skos:notation>eu-aiact-PublicServiceProvidingPrivateEntityDeployer</skos:notation>
+        <skos:definition xml:lang="en">A deployer that is a private entity providing public services.</skos:definition>
+        <skos:broader rdf:resource="https://w3id.org/dpv/legal/eu/aiact#AIDeployer"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+        <skos:note xml:lang="en">Source: AI Act Art. 27(1)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-ProcessDescription -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-ProcessDescription">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">Process Description</skos:prefLabel>
+        <skos:notation>eu-aiact-ProcessDescription</skos:notation>
+        <skos:definition xml:lang="en">A description of the deployer's processes in which the high-risk AI system will be used in line with its intended purpose.</skos:definition>
+        <skos:broader rdf:resource="https://w3id.org/dpv#Context"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+        <skos:note xml:lang="en">Source: AI Act Art. 27(1)(a)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-PeriodOfUse -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-PeriodOfUse">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">Period Of Use</skos:prefLabel>
+        <skos:notation>eu-aiact-PeriodOfUse</skos:notation>
+        <skos:definition xml:lang="en">The period of time within which the high-risk AI system is intended to be used.</skos:definition>
+        <skos:broader rdf:resource="https://w3id.org/dpv#Technology"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+        <skos:note xml:lang="en">Source: AI Act Art. 27(1)(b)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FrequencyOfUse -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FrequencyOfUse">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">Frequency Of Use</skos:prefLabel>
+        <skos:notation>eu-aiact-FrequencyOfUse</skos:notation>
+        <skos:definition xml:lang="en">The frequency with which the high-risk AI system is intended to be used.</skos:definition>
+        <skos:broader rdf:resource="https://w3id.org/dpv#Technology"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+        <skos:note xml:lang="en">Source: AI Act Art. 27(1)(b)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-IntendedUse -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-IntendedUse">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">Intended Use</skos:prefLabel>
+        <skos:notation>eu-aiact-IntendedUse</skos:notation>
+        <skos:definition xml:lang="en">The contextual application of an AI system's intended purpose in a specific deployment scenario. Distinct from eu-aiact:IntendedPurpose in that the same AI system with one intended purpose may have multiple intended uses, varying by input/output data, human subjects involved, or hardware and software used.</skos:definition>
+        <skos:scopeNote xml:lang="en">Distinct from eu-aiact:IntendedPurpose: while an AI system has a single intended purpose, it may have multiple intended uses depending on deployment context.</skos:scopeNote>
+        <skos:broader rdf:resource="https://w3id.org/dpv#Technology"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+        <skos:note xml:lang="en">Source: AI Act Art. 27(1)(b)</skos:note>
+        <skos:editorialNote xml:lang="en">Parent changed from tech:IntendedUse (previous index) to dpv:Technology.</skos:editorialNote>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#ai-AISubject -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#ai-AISubject">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">AI Subject</skos:prefLabel>
+        <skos:notation>ai-AISubject</skos:notation>
+        <skos:definition xml:lang="en">A natural person or group of persons that is subject to, or affected by, the use of an AI system.</skos:definition>
+        <skos:broader rdf:resource="https://w3id.org/dpv/ai#AI"/>
+        <skos:note xml:lang="en">Proposed for: DPV AI extension (ai)</skos:note>
+        <skos:note xml:lang="en">Source: AI Act Art. 27(1)(c)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#ai-NaturalPersonCategorySubjects -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#ai-NaturalPersonCategorySubjects">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">Natural Person Category Subjects</skos:prefLabel>
+        <skos:notation>ai-NaturalPersonCategorySubjects</skos:notation>
+        <skos:definition xml:lang="en">The categories of natural persons and groups likely to be affected by the use of an AI system in a specific context.</skos:definition>
+        <skos:broader rdf:resource="https://w3id.org/dpv/ai#AI"/>
+        <skos:note xml:lang="en">Proposed for: DPV AI extension (ai)</skos:note>
+        <skos:note xml:lang="en">Source: AI Act Art. 27(1)(c)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-InternalGovernanceMeasures -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-InternalGovernanceMeasures">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">Internal Governance Measures</skos:prefLabel>
+        <skos:notation>eu-aiact-InternalGovernanceMeasures</skos:notation>
+        <skos:definition xml:lang="en">Arrangements for internal governance to be taken by the deployer in the case of the materialisation of risks to fundamental rights.</skos:definition>
+        <skos:broader rdf:resource="https://w3id.org/dpv#AIGovernance"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+        <skos:note xml:lang="en">Source: AI Act Art. 27(1)(f)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-ComplaintMeasures -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-ComplaintMeasures">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">Complaint Measures</skos:prefLabel>
+        <skos:notation>eu-aiact-ComplaintMeasures</skos:notation>
+        <skos:definition xml:lang="en">Complaint mechanisms to be used by the deployer in the case of the materialisation of risks to fundamental rights.</skos:definition>
+        <skos:broader rdf:resource="https://w3id.org/dpv#AIGovernance"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+        <skos:note xml:lang="en">Source: AI Act Art. 27(1)(f)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Fundamental Rights Concepts
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-rights-FundamentalRightsEngagement -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-rights-FundamentalRightsEngagement">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">Fundamental Rights Engagement</skos:prefLabel>
+        <skos:notation>eu-rights-FundamentalRightsEngagement</skos:notation>
+        <skos:definition xml:lang="en">The rights that the specific use of an AI system engages with. E.g. in terms of impact, promotion, interference or limiting of fundamental rights.</skos:definition>
+        <skos:broader rdf:resource="https://w3id.org/dpv/rights/eu#EUFundamentalRightsImpact"/>
+        <skos:note xml:lang="en">Proposed for: eu-rights</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-rights-AffectedRight -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-rights-AffectedRight">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">Affected Right</skos:prefLabel>
+        <skos:notation>eu-rights-AffectedRight</skos:notation>
+        <skos:definition xml:lang="en">A specific identified fundamental right that is affected by the use of an AI system.</skos:definition>
+        <skos:broader rdf:resource="https://w3id.org/dpv/rights/eu#EUFundamentalRightsImpact"/>
+        <skos:note xml:lang="en">Proposed for: eu-rights</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // FRIA Templates and Tools
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIATemplate -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIATemplate">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">FRIA Template</skos:prefLabel>
+        <skos:notation>eu-aiact-FRIATemplate</skos:notation>
+        <skos:definition xml:lang="en">The template for a questionnaire developed by the AI Office to facilitate deployers in complying with their FRIA obligations.</skos:definition>
+        <skos:broader rdf:resource="https://w3id.org/dpv/legal/eu/aiact#FRIA"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+        <skos:note xml:lang="en">Source: AI Act Art. 27(5)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-RightsQuestionnaire -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-RightsQuestionnaire">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">Rights Questionnaire</skos:prefLabel>
+        <skos:notation>eu-aiact-RightsQuestionnaire</skos:notation>
+        <skos:definition xml:lang="en">A questionnaire through which a deployer documents its assessment of impacts on fundamental rights, based on the template provided by the AI Office.</skos:definition>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIATemplate"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+        <skos:note xml:lang="en">Source: AI Act Art. 27(5)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-aiact-AutomatedTool -->
+
+    <skos:Concept rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-AutomatedTool">
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">Automated Tool</skos:prefLabel>
+        <skos:notation>eu-aiact-AutomatedTool</skos:notation>
+        <skos:definition xml:lang="en">An automated tool through which the FRIA questionnaire template may be provided and completed.</skos:definition>
+        <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIATemplate"/>
+        <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
+        <skos:note xml:lang="en">Source: AI Act Art. 27(5)</skos:note>
+    </skos:Concept>
+
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-hasRiskChangeCategory -->
+
+    <rdf:Property rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-hasRiskChangeCategory">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">has risk change category</skos:prefLabel>
+        <skos:notation>eu-gdpr-hasRiskChangeCategory</skos:notation>
+        <skos:definition xml:lang="en">Indicates the category of change in risk associated with processing or with a DPIA.</skos:definition>
+        <skos:broader rdf:resource="https://w3id.org/dpv#hasContext"/>
+        <skos:note xml:lang="en">Range: https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-RiskChangeCategory</skos:note>
+        <skos:note xml:lang="en">Proposed for: DPV GDPR extension (eu-gdpr)</skos:note>
+        <skos:note xml:lang="en">Source: GDPR Art. 35(11)</skos:note>
+    </rdf:Property>
+
+
+
+    <!-- https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-hasChangeDescription -->
+
+    <rdf:Property rdf:about="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-hasChangeDescription">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="https://tyttikatariina.github.io/IMPACTO/"/>
+        <skos:prefLabel xml:lang="en">has change description</skos:prefLabel>
+        <skos:notation>eu-gdpr-hasChangeDescription</skos:notation>
+        <skos:definition xml:lang="en">Provides a description of a change in the processing or its risk that is relevant to a DPIA review.</skos:definition>
+        <skos:broader rdf:resource="https://w3id.org/dpv#hasContext"/>
+        <skos:note xml:lang="en">Proposed for: DPV GDPR extension (eu-gdpr)</skos:note>
+        <skos:note xml:lang="en">Source: GDPR Art. 35(11)</skos:note>
+    </rdf:Property>
+</rdf:RDF>
