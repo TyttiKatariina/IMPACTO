@@ -3,13 +3,23 @@
      xml:base="https://tyttikatariina.github.io/IMPACTO/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dct="http://purl.org/dc/terms/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:impacto="https://tyttikatariina.github.io/IMPACTO/#">
+
+    <!-- SKOS classes used in this file, declared so they are recognised as classes -->
+
+    <rdfs:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+
     <skos:ConceptScheme rdf:about="https://tyttikatariina.github.io/IMPACTO/">
         <skos:prefLabel xml:lang="en">IMPACTO (Impact Assessment Ontology)</skos:prefLabel>
         <skos:altLabel xml:lang="en">IMPACTO</skos:altLabel>
         <skos:notation>impacto</skos:notation>
         <skos:definition xml:lang="en">IMPACTO represents impact assessment requirements and processes based on the GDPR and the EU AI Act, specifically the Data Protection Impact Assessment (DPIA) and the Fundamental Rights Impact Assessment (FRIA).</skos:definition>
+        <dct:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <skos:note xml:lang="en">Licensed under a Creative Commons Attribution 4.0 International License (CC BY 4.0).</skos:note>
         <skos:note xml:lang="en">Version 1.0</skos:note>
         <skos:note xml:lang="en">Authors: Tytti Rintamäki (ADAPT Centre, Dublin City University); Harshvardhan J. Pandit (AI Accountability Lab, Trinity College Dublin)</skos:note>
         <skos:note xml:lang="en">Sources: GDPR (Regulation EU 2016/679); EU AI Act (Regulation EU 2024/1689)</skos:note>
