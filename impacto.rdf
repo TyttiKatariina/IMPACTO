@@ -25,7 +25,23 @@
         <skos:note xml:lang="en">Sources: GDPR (Regulation EU 2016/679); EU AI Act (Regulation EU 2024/1689)</skos:note>
     </skos:ConceptScheme>
 
-
+<owl:Ontology rdf:about="https://tyttikatariina.github.io/IMPACTO/">
+    <owl:versionIRI rdf:resource="https://tyttikatariina.github.io/IMPACTO/1.0"/>
+    <owl:versionInfo xml:lang="en">1.0</owl:versionInfo>
+    <terms:title>IMPACTO</terms:title>
+    <rdfs:label xml:lang="en">Impact Assessment Ontology</rdfs:label>
+    <terms:description xml:lang="en">IMPACTO represents impact assessment requirements and processes based on the GDPR and the EU AI Act, specifically the Data Protection Impact Assessment (DPIA) and the Fundamental Rights Impact Assessment (FRIA).</terms:description>
+    <terms:creator>Tytti Rintamäki</terms:creator>
+    <terms:contributor>Harshvardhan J. Pandit</terms:contributor>
+    <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+    <terms:source xml:lang="en">GDPR (Regulation EU 2016/679)</terms:source>
+    <terms:source xml:lang="en">EU AI Act (Regulation EU 2024/1689)</terms:source>
+    <terms:publisher>ADAPT Centre, Dublin City University</terms:publisher>
+    <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">YYYY-MM-DD</terms:created>
+    <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-15</terms:modified>
+    <vann:preferredNamespacePrefix>impacto</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>https://tyttikatariina.github.io/IMPACTO/#</vann:preferredNamespaceUri>
+</owl:Ontology>
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
