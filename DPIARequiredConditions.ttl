@@ -455,13 +455,13 @@ be:C42 a impacto:eu-gdpr-DPIARequiredProcess ;
 
 be:C52a a impacto:eu-gdpr-DPIARequiredProcess ;
 	skos:definition "A process which requires a DPIA according to the Data Protection Authorities of Austria and which involves where personal data are collected from third parties in order to be subsequently taken into account in the decision to refuse or terminate a specific service contract with a natural person"@en ;
-	dpv:hasSource dpv:ThirdPartyDataSource ;
+	dpv:hasDataSource dpv:ThirdPartyDataSource ;
 	dpv:hasContext dpv:RefuseContract ;
 	dct:source be:DPIARequiredList ;
 	dpv:hasJurisdiction loc:BE .
 be:C52b a impacto:eu-gdpr-DPIARequiredProcess ;
 	skos:definition "A process which requires a DPIA according to the Data Protection Authorities of Austria and which involves where personal data are collected from third parties in order to be subsequently taken into account in the decision to refuse or terminate a specific service contract with a natural person"@en ;
-	dpv:hasSource dpv:ThirdPartyDataSource ;
+	dpv:hasDataSource dpv:ThirdPartyDataSource ;
 	dpv:hasContext dpv:TerminateContract ;
 	dct:source be:DPIARequiredList ;
 	dpv:hasJurisdiction loc:BE .
@@ -486,7 +486,7 @@ be:C87a a impacto:eu-gdpr-DPIARequiredProcess ;
 	dpv:hasProcessingScale dpv:LargeScaleProcessing ;
 	dpv:hasProcessing dpv:Analyse ;
 	dpv:hasPersonalData pd:FinancialStatus ;
-	dpv:hasSource dpv:ThirdPartyDataSource ;
+	dpv:hasDataSource dpv:ThirdPartyDataSource ;
 	dct:source be:DPIARequiredList ;
 	dpv:hasJurisdiction loc:BE .
 be:C87b a impacto:eu-gdpr-DPIARequiredProcess ;
@@ -494,7 +494,7 @@ be:C87b a impacto:eu-gdpr-DPIARequiredProcess ;
 	dpv:hasProcessingScale dpv:LargeScaleProcessing ;
 	dpv:hasProcessing dpv:Analyse ;
 	dpv:hasPersonalData pd:MedicalHealth ;
-	dpv:hasSource dpv:ThirdPartyDataSource ;
+	dpv:hasDataSource dpv:ThirdPartyDataSource ;
 	dct:source be:DPIARequiredList ;
 	dpv:hasJurisdiction loc:BE .
 be:C87c a impacto:eu-gdpr-DPIARequiredProcess ;
@@ -502,7 +502,7 @@ be:C87c a impacto:eu-gdpr-DPIARequiredProcess ;
 	dpv:hasProcessingScale dpv:LargeScaleProcessing ;
 	dpv:hasProcessing dpv:Analyse ;
 	dpv:hasPersonalData pd:Preference ;
-	dpv:hasSource dpv:ThirdPartyDataSource ;
+	dpv:hasDataSource dpv:ThirdPartyDataSource ;
 	dct:source be:DPIARequiredList ;
 	dpv:hasJurisdiction loc:BE .
 be:C87d a impacto:eu-gdpr-DPIARequiredProcess ;
@@ -510,7 +510,7 @@ be:C87d a impacto:eu-gdpr-DPIARequiredProcess ;
 	dpv:hasProcessingScale dpv:LargeScaleProcessing ;
 	dpv:hasProcessing dpv:Analyse ;
 	dpv:hasPersonalData pd:Interest ;
-	dpv:hasSource dpv:ThirdPartyDataSource ;
+	dpv:hasDataSource dpv:ThirdPartyDataSource ;
 	dct:source be:DPIARequiredList ;
 	dpv:hasJurisdiction loc:BE .
 be:C87e a impacto:eu-gdpr-DPIARequiredProcess ;
@@ -518,7 +518,7 @@ be:C87e a impacto:eu-gdpr-DPIARequiredProcess ;
 	dpv:hasProcessingScale dpv:LargeScaleProcessing ;
 	dpv:hasProcessing dpv:Analyse ;
 	dpv:hasPersonalData pd:Reliability ;
-	dpv:hasSource dpv:ThirdPartyDataSource ;
+	dpv:hasDataSource dpv:ThirdPartyDataSource ;
 	dct:source be:DPIARequiredList ;
 	dpv:hasJurisdiction loc:BE .
 be:C87f a impacto:eu-gdpr-DPIARequiredProcess ;
@@ -526,7 +526,7 @@ be:C87f a impacto:eu-gdpr-DPIARequiredProcess ;
 	dpv:hasProcessingScale dpv:LargeScaleProcessing ;
 	dpv:hasProcessing dpv:Analyse ;
 	dpv:hasPersonalData pd:Behavioural ;
-	dpv:hasSource dpv:ThirdPartyDataSource ;
+	dpv:hasDataSource dpv:ThirdPartyDataSource ;
 	dct:source be:DPIARequiredList ;
 	dpv:hasJurisdiction loc:BE .
 be:C87g a impacto:eu-gdpr-DPIARequiredProcess ;
@@ -534,7 +534,7 @@ be:C87g a impacto:eu-gdpr-DPIARequiredProcess ;
 	dpv:hasProcessingScale dpv:LargeScaleProcessing ;
 	dpv:hasProcessing dpv:Analyse ;
 	dpv:hasPersonalData pd:Location ;
-	dpv:hasSource dpv:ThirdPartyDataSource ;
+	dpv:hasDataSource dpv:ThirdPartyDataSource ;
 	dct:source be:DPIARequiredList ;
 	dpv:hasJurisdiction loc:BE .
 be:C87h a impacto:eu-gdpr-DPIARequiredProcess ;
@@ -542,7 +542,7 @@ be:C87h a impacto:eu-gdpr-DPIARequiredProcess ;
 	dpv:hasProcessingScale dpv:LargeScaleProcessing ;
 	dpv:hasProcessing dpv:Analyse ;
 	dpv:hasPersonalData impacto:pd-LocationDisplacement ;
-	dpv:hasSource dpv:ThirdPartyDataSource ;
+	dpv:hasDataSource dpv:ThirdPartyDataSource ;
 	dct:source be:DPIARequiredList ;
 	dpv:hasJurisdiction loc:BE .
 be:C87i a impacto:eu-gdpr-DPIARequiredProcess ;
@@ -550,7 +550,7 @@ be:C87i a impacto:eu-gdpr-DPIARequiredProcess ;
 	dpv:hasProcessingScale dpv:LargeScaleProcessing ;
 	dpv:hasProcessing impacto:dpv-Predict ;
 	dpv:hasPersonalData pd:FinancialStatus ;
-	dpv:hasSource dpv:ThirdPartyDataSource ;
+	dpv:hasDataSource dpv:ThirdPartyDataSource ;
 	dct:source be:DPIARequiredList ;
 	dpv:hasJurisdiction loc:BE .
 be:C87j a impacto:eu-gdpr-DPIARequiredProcess ;
@@ -558,7 +558,7 @@ be:C87j a impacto:eu-gdpr-DPIARequiredProcess ;
 	dpv:hasProcessingScale dpv:LargeScaleProcessing ;
 	dpv:hasProcessing impacto:dpv-Predict ;
 	dpv:hasPersonalData pd:MedicalHealth ;
-	dpv:hasSource dpv:ThirdPartyDataSource ;
+	dpv:hasDataSource dpv:ThirdPartyDataSource ;
 	dct:source be:DPIARequiredList ;
 	dpv:hasJurisdiction loc:BE .
 be:C87k a impacto:eu-gdpr-DPIARequiredProcess ;
@@ -566,7 +566,7 @@ be:C87k a impacto:eu-gdpr-DPIARequiredProcess ;
 	dpv:hasProcessingScale dpv:LargeScaleProcessing ;
 	dpv:hasProcessing impacto:dpv-Predict ;
 	dpv:hasPersonalData pd:Preference ;
-	dpv:hasSource dpv:ThirdPartyDataSource ;
+	dpv:hasDataSource dpv:ThirdPartyDataSource ;
 	dct:source be:DPIARequiredList ;
 	dpv:hasJurisdiction loc:BE .
 be:C87l a impacto:eu-gdpr-DPIARequiredProcess ;
@@ -574,7 +574,7 @@ be:C87l a impacto:eu-gdpr-DPIARequiredProcess ;
 	dpv:hasProcessingScale dpv:LargeScaleProcessing ;
 	dpv:hasProcessing impacto:dpv-Predict ;
 	dpv:hasPersonalData pd:Interest ;
-	dpv:hasSource dpv:ThirdPartyDataSource ;
+	dpv:hasDataSource dpv:ThirdPartyDataSource ;
 	dct:source be:DPIARequiredList ;
 	dpv:hasJurisdiction loc:BE .
 be:C87m a impacto:eu-gdpr-DPIARequiredProcess ;
@@ -582,7 +582,7 @@ be:C87m a impacto:eu-gdpr-DPIARequiredProcess ;
 	dpv:hasProcessingScale dpv:LargeScaleProcessing ;
 	dpv:hasProcessing impacto:dpv-Predict ;
 	dpv:hasPersonalData pd:Reliability ;
-	dpv:hasSource dpv:ThirdPartyDataSource ;
+	dpv:hasDataSource dpv:ThirdPartyDataSource ;
 	dct:source be:DPIARequiredList ;
 	dpv:hasJurisdiction loc:BE .
 be:C87n a impacto:eu-gdpr-DPIARequiredProcess ;
@@ -590,7 +590,7 @@ be:C87n a impacto:eu-gdpr-DPIARequiredProcess ;
 	dpv:hasProcessingScale dpv:LargeScaleProcessing ;
 	dpv:hasProcessing impacto:dpv-Predict ;
 	dpv:hasPersonalData pd:Behavioural ;
-	dpv:hasSource dpv:ThirdPartyDataSource ;
+	dpv:hasDataSource dpv:ThirdPartyDataSource ;
 	dct:source be:DPIARequiredList ;
 	dpv:hasJurisdiction loc:BE .
 be:C87o a impacto:eu-gdpr-DPIARequiredProcess ;
@@ -598,7 +598,7 @@ be:C87o a impacto:eu-gdpr-DPIARequiredProcess ;
 	dpv:hasProcessingScale dpv:LargeScaleProcessing ;
 	dpv:hasProcessing impacto:dpv-Predict ;
 	dpv:hasPersonalData pd:Location ;
-	dpv:hasSource dpv:ThirdPartyDataSource ;
+	dpv:hasDataSource dpv:ThirdPartyDataSource ;
 	dct:source be:DPIARequiredList ;
 	dpv:hasJurisdiction loc:BE .
 be:C87p a impacto:eu-gdpr-DPIARequiredProcess ;
@@ -606,7 +606,7 @@ be:C87p a impacto:eu-gdpr-DPIARequiredProcess ;
 	dpv:hasProcessingScale dpv:LargeScaleProcessing ;
 	dpv:hasProcessing impacto:dpv-Predict ;
 	dpv:hasPersonalData impacto:pd-LocationDisplacement ;
-	dpv:hasSource dpv:ThirdPartyDataSource ;
+	dpv:hasDataSource dpv:ThirdPartyDataSource ;
 	dct:source be:DPIARequiredList ;
 	dpv:hasJurisdiction loc:BE .
 
@@ -942,14 +942,14 @@ hr:C41 a impacto:eu-gdpr-DPIARequiredProcess ;
 
 hr:C52a a impacto:eu-gdpr-DPIARequiredProcess ;
 	skos:definition "A process which requires a DPIA according to the Data Protection Authorities of Croatia and which involves where personal data are collected from third parties in order to be subsequently taken into account in the decision to refuse or terminate a specific service contract with a natural person"@en ;
-	dpv:hasSource dpv:ThirdPartyDataSource ;
+	dpv:hasDataSource dpv:ThirdPartyDataSource ;
 	dpv:hasContext dpv:RefuseContract ;
 	dct:source hr:DPIARequiredList ;
 	dpv:hasJurisdiction loc:HR .
 
 hr:C52b a impacto:eu-gdpr-DPIARequiredProcess ;
 	skos:definition "A process which requires a DPIA according to the Data Protection Authorities of Croatia and which involves where personal data are collected from third parties in order to be subsequently taken into account in the decision to refuse or terminate a specific service contract with a natural person"@en ;
-	dpv:hasSource dpv:ThirdPartyDataSource ;
+	dpv:hasDataSource dpv:ThirdPartyDataSource ;
 	dpv:hasContext dpv:TerminateContract ;
 	dct:source hr:DPIARequiredList ;
 	dpv:hasJurisdiction loc:HR .
@@ -2883,7 +2883,7 @@ gr:C39b a impacto:eu-gdpr-DPIARequiredProcess ;
 gr:C40 a impacto:eu-gdpr-DPIARequiredProcess ;
 	skos:definition "A process which requires a DPIA according to the Data Protection Authorities of Greece and which involves large scale data collection from third parties"@en ;
 	dpv:hasProcessingScale dpv:LargeScaleProcessing ;
-	dpv:hasSource dpv:ThirdPartyDataSource ;
+	dpv:hasDataSource dpv:ThirdPartyDataSource ;
 	dct:source gr:DPIARequiredList ;
 	dpv:hasJurisdiction loc:GR .
 
@@ -3211,7 +3211,7 @@ hu:C39b a impacto:eu-gdpr-DPIARequiredProcess ;
 hu:C40 a impacto:eu-gdpr-DPIARequiredProcess ;
 	skos:definition "A process which requires a DPIA according to the Data Protection Authorities of Hungary and which involves large scale data collection from third parties"@en ;
 	dpv:hasProcessingScale dpv:LargeScaleProcessing ;
-	dpv:hasSource dpv:ThirdPartyDataSource ;
+	dpv:hasDataSource dpv:ThirdPartyDataSource ;
 	dct:source hu:DPIARequiredList ;
 	dpv:hasJurisdiction loc:HU .
 
@@ -3531,7 +3531,7 @@ is_:C37q a impacto:eu-gdpr-DPIARequiredProcess ;
 is_:C40 a impacto:eu-gdpr-DPIARequiredProcess ;
 	skos:definition "A process which requires a DPIA according to the Data Protection Authorities of Iceland and which involves large scale data collection from third parties"@en ;
 	dpv:hasProcessingScale dpv:LargeScaleProcessing ;
-	dpv:hasSource dpv:ThirdPartyDataSource ;
+	dpv:hasDataSource dpv:ThirdPartyDataSource ;
 	dct:source is_:DPIARequiredList ;
 	dpv:hasJurisdiction loc:IS .
 
@@ -4806,7 +4806,7 @@ no:C30b a impacto:eu-gdpr-DPIARequiredProcess ;
 no:C40 a impacto:eu-gdpr-DPIARequiredProcess ;
 	skos:definition "A process which requires a DPIA according to the Data Protection Authorities of Norway and which involves large scale data collection from third parties"@en ;
 	dpv:hasProcessingScale dpv:LargeScaleProcessing ;
-	dpv:hasSource dpv:ThirdPartyDataSource ;
+	dpv:hasDataSource dpv:ThirdPartyDataSource ;
 	dct:source no:DPIARequiredList ;
 	dpv:hasJurisdiction loc:NO .
 
@@ -6242,7 +6242,7 @@ EX:C39b a impacto:eu-gdpr-DPIARequiredProcess ;
 EX:C40 a impacto:eu-gdpr-DPIARequiredProcess ;
 	skos:definition "A process which requires a DPIA according to the Data Protection Authorities of EX and which involves large scale data collection from third parties"@en ;
 	dpv:hasProcessingScale dpv:LargeScaleProcessing ;
-	dpv:hasSource dpv:ThirdPartyDataSource ;
+	dpv:hasDataSource dpv:ThirdPartyDataSource ;
 	dct:source EX:DPIARequiredList ;
 	dpv:hasJurisdiction loc:EX .
 
@@ -6799,7 +6799,7 @@ EX:C91b a impacto:eu-gdpr-DPIARequiredProcess ;
 
 EX:C92 a impacto:eu-gdpr-DPIARequiredProcess ;
 	skos:definition "A process which requires a DPIA according to the Data Protection Authorities of EX and which involves processing using data from external sources"@en ;
-	dpv:hasDataSource dpv:ThirdPartyDataSOurce ;
+	dpv:hasDataSource dpv:ThirdPartyDataSource ;
 	dct:source EX:DPIARequiredList ;
 	dpv:hasJurisdiction loc:EX .
 
