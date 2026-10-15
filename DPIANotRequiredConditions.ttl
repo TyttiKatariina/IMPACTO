@@ -177,16 +177,14 @@ it:CN3 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dct:identifier "CN3" ;
     dpv:hasJurisdiction loc:IT .
 
-nl:CN3 
-    a impacto:eu-gdpr-DPIANotRequiredProcess ;
+nl:CN3 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Where a processing operation, pursuant to point (c) or (e) of article 6(1), has a legal basis in EU or Member State law, where the law regulates the specific processing operation and where a DPIA has already been carried out as part of the establishment of that legal basis (Article 35(10))21, except if a Member state has stated it to be necessary to carry out a DPIA prior processing activities"@en ;
     dpv:hasLegalBasis impacto:dpv-LegalBasisExemption ;
     dct:source nl:DPIAExemptList ;
     dct:identifier "CN3" ;
     dpv:hasJurisdiction loc:NL .
 
-eu-gdpr:CN4 
-    a impacto:eu-gdpr-DPIANotRequiredProcess ;
+eu-gdpr:CN4 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Where the processing is included on the optional list (established by the supervisory authority) of processing operations for which no DPIA is required (Article 35(5))"@en ;
     dpv:hasEntity impacto:dpv-DataProtectionAuthorityGuidance ;
     impacto:hasExemptionBasis impacto:dpv-WhiteListActivity ;
