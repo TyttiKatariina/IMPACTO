@@ -187,7 +187,7 @@ nl:CN3 a impacto:eu-gdpr-DPIANotRequiredProcess ;
 eu-gdpr:CN4 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Where the processing is included on the optional list (established by the supervisory authority) of processing operations for which no DPIA is required (Article 35(5))"@en ;
     dpv:hasEntity impacto:dpv-DataProtectionAuthorityGuidance ;
-    impacto:hasExemptionBasis impacto:dpv-WhiteListActivity ;
+    dpv:hasSource impacto:dpv-WhiteListActivity ;
     dct:source eu-gdpr:DPIAExemptList ;
     dct:identifier "CN4" ;
     skos:note "Listed by: EDPB"@en .
@@ -195,7 +195,7 @@ eu-gdpr:CN4 a impacto:eu-gdpr-DPIANotRequiredProcess ;
 hr:CN4 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Where the processing is included on the optional list (established by the supervisory authority) of processing operations for which no DPIA is required (Article 35(5))"@en ;
     dpv:hasEntity impacto:dpv-DataProtectionAuthorityGuidance ;
-    impacto:hasExemptionBasis impacto:dpv-WhiteListActivity ;
+    dpv:hasSource impacto:dpv-WhiteListActivity ;
     dct:source hr:DPIAExemptList ;
     dct:identifier "CN4" ;
     dpv:hasJurisdiction loc:HR .
@@ -203,7 +203,7 @@ hr:CN4 a impacto:eu-gdpr-DPIANotRequiredProcess ;
 it:CN4 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Where the processing is included on the optional list (established by the supervisory authority) of processing operations for which no DPIA is required (Article 35(5))"@en ;
     dpv:hasEntity impacto:dpv-DataProtectionAuthorityGuidance ;
-    impacto:hasExemptionBasis impacto:dpv-WhiteListActivity ;
+    dpv:hasSource impacto:dpv-WhiteListActivity ;
     dct:source it:DPIAExemptList ;
     dct:identifier "CN4" ;
     dpv:hasJurisdiction loc:IT .
@@ -211,12 +211,22 @@ it:CN4 a impacto:eu-gdpr-DPIANotRequiredProcess ;
 nl:CN4 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Where the processing is included on the optional list (established by the supervisory authority) of processing operations for which no DPIA is required (Article 35(5))"@en ;
     dpv:hasEntity impacto:dpv-DataProtectionAuthorityGuidance ;
-    impacto:hasExemptionBasis impacto:dpv-WhiteListActivity ;
+    dpv:hasSource impacto:dpv-WhiteListActivity ;
     dct:source nl:DPIAExemptList ;
     dct:identifier "CN4" ;
     dpv:hasJurisdiction loc:NL .
 
-at:CN5 a impacto:eu-gdpr-DPIANotRequiredProcess ;
+at:CN5a a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "Processing of personal data in the context of any business relationship with customers and suppliers, including systematic recording of all business transactions relating to income and expenses."@en ;
+    dpv:hasData impacto:dpv-ExpenseData ;
+    dpv:hasData impacto:dpv-OrganisationalTransactions ;
+    dpv:hasEntity impacto:dpv-ServiceCustomer ;
+    dpv:hasPurpose impacto:dpv-BusinessRelationshipManagement ;
+    dct:source at:DPIAExemptList ;
+    dct:identifier "CN5" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN5b a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Processing of personal data in the context of any business relationship with customers and suppliers, including systematic recording of all business transactions relating to income and expenses."@en ;
     dpv:hasData impacto:dpv-ExpenseData ;
     dpv:hasData impacto:dpv-OrganisationalTransactions ;
@@ -228,9 +238,11 @@ at:CN5 a impacto:eu-gdpr-DPIANotRequiredProcess ;
 
 at:CN6 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Processing activities of companies that process data about third parties (not clients of the controller) with whom the companies have no business relationship (such as detective agencies, debt collection agencies or credit agencies) are not covered by this exception."@en ;
+	dpv:hasDataSource dpv:ThirdPartyDataSource ;
     dpv:hasEntity impacto:dpv-CreditAgency ;
     dpv:hasEntity impacto:dpv-DebtAgency ;
     dpv:hasEntity impacto:dpv-DetectiveAgencies ;
+    skos:scopeNote "Companies to have no business relationship." ;
     dct:source at:DPIAExemptList ;
     dct:identifier "CN6" ;
     dpv:hasJurisdiction loc:AT .
