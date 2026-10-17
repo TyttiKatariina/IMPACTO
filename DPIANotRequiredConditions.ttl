@@ -218,8 +218,8 @@ nl:CN4 a impacto:eu-gdpr-DPIANotRequiredProcess ;
 
 at:CN5a a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Processing of personal data in the context of any business relationship with customers and suppliers, including systematic recording of all business transactions relating to income and expenses."@en ;
-    dpv:hasData impacto:dpv-ExpenseData ;
-    dpv:hasData impacto:dpv-OrganisationalTransactions ;
+    dpv:hasData impacto:dpv-IncomeData ;
+    dpv:hasData impacto:dpv-BusinessTransactions ;
     dpv:hasEntity impacto:dpv-ServiceCustomer ;
     dpv:hasPurpose impacto:dpv-BusinessRelationshipManagement ;
     dct:source at:DPIAExemptList ;
@@ -228,13 +228,34 @@ at:CN5a a impacto:eu-gdpr-DPIANotRequiredProcess ;
 
 at:CN5b a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Processing of personal data in the context of any business relationship with customers and suppliers, including systematic recording of all business transactions relating to income and expenses."@en ;
-    dpv:hasData impacto:dpv-ExpenseData ;
-    dpv:hasData impacto:dpv-OrganisationalTransactions ;
+    dpv:hasData impacto:dpv-IncomeData ;
+    dpv:hasData impacto:dpv-BusinessTransactions ;
     dpv:hasEntity impacto:dpv-ServiceSupplier ;
     dpv:hasPurpose impacto:dpv-BusinessRelationshipManagement ;
     dct:source at:DPIAExemptList ;
     dct:identifier "CN5" ;
     dpv:hasJurisdiction loc:AT .
+
+at:CN5c a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "Processing of personal data in the context of any business relationship with customers and suppliers, including systematic recording of all business transactions relating to income and expenses."@en ;
+    dpv:hasData impacto:dpv-ExpenseData ;
+    dpv:hasData impacto:dpv-BusinessTransactions ;
+    dpv:hasEntity impacto:dpv-ServiceCustomer ;
+    dpv:hasPurpose impacto:dpv-BusinessRelationshipManagement ;
+    dct:source at:DPIAExemptList ;
+    dct:identifier "CN5" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN5d a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "Processing of personal data in the context of any business relationship with customers and suppliers, including systematic recording of all business transactions relating to income and expenses."@en ;
+    dpv:hasData impacto:dpv-ExpenseData ;
+    dpv:hasData impacto:dpv-BusinessTransactions ;
+    dpv:hasEntity impacto:dpv-ServiceSupplier ;
+    dpv:hasPurpose impacto:dpv-BusinessRelationshipManagement ;
+    dct:source at:DPIAExemptList ;
+    dct:identifier "CN5" ;
+    dpv:hasJurisdiction loc:AT .
+
 
 at:CN6 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Processing activities of companies that process data about third parties (not clients of the controller) with whom the companies have no business relationship (such as detective agencies, debt collection agencies or credit agencies) are not covered by this exception."@en ;
