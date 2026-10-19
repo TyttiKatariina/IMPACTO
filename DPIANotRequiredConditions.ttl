@@ -257,7 +257,7 @@ at:CN5d a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dpv:hasJurisdiction loc:AT .
 
 
-at:CN6 a impacto:eu-gdpr-DPIANotRequiredProcess ;
+#TR at:CN6 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Processing activities of companies that process data about third parties (not clients of the controller) with whom the companies have no business relationship (such as detective agencies, debt collection agencies or credit agencies) are not covered by this exception."@en ;
 	dpv:hasDataSource dpv:ThirdPartyDataSource ;
     dpv:hasEntity impacto:dpv-CreditAgency ;
@@ -268,15 +268,35 @@ at:CN6 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dct:identifier "CN6" ;
     dpv:hasJurisdiction loc:AT .
 
-at:CN7  a impacto:eu-gdpr-DPIANotRequiredProcess ;
+at:CN7a  a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Processing and keeping evidence of personal data for payroll, payroll and compliance with recording, information and reporting obligations, insofar as this is necessary on the basis of laws or norms of collective legal design or employment contract obligations;"@en ;
     dpv:hasJustification impacto:justifications-CollectiveLegalNorm ;
+	dpv:hasData impacto:pd-Payroll ;
     dpv:hasPurpose impacto:dpv-RecordKeeping ;
     dct:source at:DPIAExemptList ;
     dct:identifier "CN7" ;
     dpv:hasJurisdiction loc:AT .
 
-at:CN8   a impacto:eu-gdpr-DPIANotRequiredProcess ;
+at:CN7b  a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "Processing and keeping evidence of personal data for payroll, payroll and compliance with recording, information and reporting obligations, insofar as this is necessary on the basis of laws or norms of collective legal design or employment contract obligations;"@en ;
+    dpv:hasLegalBasis dpv:EmploymentContract ;
+	dpv:hasData impacto:pd-Payroll ;
+    dpv:hasPurpose impacto:dpv-RecordKeeping ;
+    dct:source at:DPIAExemptList ;
+    dct:identifier "CN7" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN7c  a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "Processing and keeping evidence of personal data for payroll, payroll and compliance with recording, information and reporting obligations, insofar as this is necessary on the basis of laws or norms of collective legal design or employment contract obligations;"@en ;
+    dpv:hasApplicableLaw legal-ex:Example ;
+	dpv:hasData impacto:pd-Payroll ;
+    dpv:hasPurpose impacto:dpv-RecordKeeping ;
+    dct:source at:DPIAExemptList ;
+    dct:identifier "CN7" ;
+    dpv:hasJurisdiction loc:AT .
+
+
+#TR seperate all these at:CN8 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Processing and evident of service law, salary-related, training-related and other personal data directly related to the employment relationship of public servants and other persons paid by those responsible for the public sector (such as civil servants, contract staff, persons in training, temporary staff, but also deputies and civil servants) as well as volunteers and civil servants (each without remuneration) by the service authorities and personnel departments for the purpose of individual personnel measures and statistical evaluations;"@en ;
     dpv:hasEntity impacto:dpv-CivilServant ;
     dpv:hasEntity impacto:dpv-Deputies ;
@@ -286,18 +306,23 @@ at:CN8   a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dpv:hasEntity impacto:dpv-StaffOnContract ;
     dpv:hasEntity impacto:dpv-TemporaryStaff ;
     dpv:hasPurpose impacto:tech-StatisticalEvaluations ;
+	dpv:hasPurpose impacto:dpv-PersonnelMeasures ; 
+	dpv:hasPurpose dpv:PersonnelPayment ;
+	dpv:hasPurpose impacto:dpv-PersonnelTraining ;
+	dpv:hasResponsibleEntity dpv:PublicSectorBody ;
     dct:source at:DPIAExemptList ;
     dct:identifier "CN8" ;
     dpv:hasJurisdiction loc:AT .
 
-at:CN9  a impacto:eu-gdpr-DPIANotRequiredProcess ;
+at:CN9 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Processing and preservation of personal data of applicants, if this data has been provided by the data subject."@en ;
-    dpv:hasEntity impacto:dpv-Employer ;
+	dpv:hasHumanSubject dpv:Applicant ;
+	dpv:hasPersonalData dpv:ProvidedPersonalData ;
     dct:source at:DPIAExemptList ;
     dct:identifier "CN9" ;
     dpv:hasJurisdiction loc:AT .
 
-at:CN10  a impacto:eu-gdpr-DPIANotRequiredProcess ;
+#TR resume here at:CN10  a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Processing of special categories of personal data within the meaning of Art. 9 and a processing of personal data on criminal convictions and criminal offences within the meaning of Art. 10 GDPR within the framework of this exception are only permitted on the basis of a statutory authorization or on the basis of legal obligations."@en ;
     dpv:hasEntity impacto:dpv-StateAuthorities ;
     dpv:hasEntity impacto:dpv-UnionAuthorities ;
