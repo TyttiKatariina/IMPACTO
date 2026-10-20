@@ -41,56 +41,56 @@
 # Art. 35(5) exemption lists
 ###############################################################################
 
-at:DPIAExemptList a impacto:DPIAExemptList ;
+at:DPIANotRequiredList a impacto:DPIANotRequiredList ;
     skos:prefLabel "DPIA exempt list (AT)"@en ;
     rdfs:label "DPIA exempt list (AT)"@en ;
     skos:definition "List of processing operations for which no data protection impact assessment is required, published by the supervisory authority of AT under GDPR Art. 35(5)."@en ;
     dpv:hasJurisdiction loc:AT ;
     dct:source "GDPR Art. 35(5)"@en .
-cz:DPIAExemptList a impacto:DPIAExemptList ;
+cz:DPIANotRequiredList a impacto:DPIANotRequiredList ;
     skos:prefLabel "DPIA exempt list (CZ)"@en ;
     rdfs:label "DPIA exempt list (CZ)"@en ;
     skos:definition "List of processing operations for which no data protection impact assessment is required, published by the supervisory authority of CZ under GDPR Art. 35(5)."@en ;
     dpv:hasJurisdiction loc:CZ ;
     dct:source "GDPR Art. 35(5)"@en .
-es:DPIAExemptList a impacto:DPIAExemptList ;
+es:DPIANotRequiredList a impacto:DPIANotRequiredList ;
     skos:prefLabel "DPIA exempt list (ES)"@en ;
     rdfs:label "DPIA exempt list (ES)"@en ;
     skos:definition "List of processing operations for which no data protection impact assessment is required, published by the supervisory authority of ES under GDPR Art. 35(5)."@en ;
     dpv:hasJurisdiction loc:ES ;
     dct:source "GDPR Art. 35(5)"@en .
-fr:DPIAExemptList a impacto:DPIAExemptList ;
+fr:DPIANotRequiredList a impacto:DPIANotRequiredList ;
     skos:prefLabel "DPIA exempt list (FR)"@en ;
     rdfs:label "DPIA exempt list (FR)"@en ;
     skos:definition "List of processing operations for which no data protection impact assessment is required, published by the supervisory authority of FR under GDPR Art. 35(5)."@en ;
     dpv:hasJurisdiction loc:FR ;
     dct:source "GDPR Art. 35(5)"@en .
-hr:DPIAExemptList a impacto:DPIAExemptList ;
+hr:DPIANotRequiredList a impacto:DPIANotRequiredList ;
     skos:prefLabel "DPIA exempt list (HR)"@en ;
     rdfs:label "DPIA exempt list (HR)"@en ;
     skos:definition "List of processing operations for which no data protection impact assessment is required, published by the supervisory authority of HR under GDPR Art. 35(5)."@en ;
     dpv:hasJurisdiction loc:HR ;
     dct:source "GDPR Art. 35(5)"@en .
-it:DPIAExemptList a impacto:DPIAExemptList ;
+it:DPIANotRequiredList a impacto:DPIANotRequiredList ;
     skos:prefLabel "DPIA exempt list (IT)"@en ;
     rdfs:label "DPIA exempt list (IT)"@en ;
     skos:definition "List of processing operations for which no data protection impact assessment is required, published by the supervisory authority of IT under GDPR Art. 35(5)."@en ;
     dpv:hasJurisdiction loc:IT ;
     dct:source "GDPR Art. 35(5)"@en .
-lv:DPIAExemptList a impacto:DPIAExemptList ;
+lv:DPIANotRequiredList a impacto:DPIANotRequiredList ;
     skos:prefLabel "DPIA exempt list (LV)"@en ;
     rdfs:label "DPIA exempt list (LV)"@en ;
     skos:definition "List of processing operations for which no data protection impact assessment is required, published by the supervisory authority of LV under GDPR Art. 35(5)."@en ;
     dpv:hasJurisdiction loc:LV ;
     dct:source "GDPR Art. 35(5)"@en .
-nl:DPIAExemptList a impacto:DPIAExemptList ;
+nl:DPIANotRequiredList a impacto:DPIANotRequiredList ;
     skos:prefLabel "DPIA exempt list (NL)"@en ;
     rdfs:label "DPIA exempt list (NL)"@en ;
     skos:definition "List of processing operations for which no data protection impact assessment is required, published by the supervisory authority of NL under GDPR Art. 35(5)."@en ;
     dpv:hasJurisdiction loc:NL ;
     dct:source "GDPR Art. 35(5)"@en .
 
-eu-gdpr:DPIAExemptList a impacto:DPIAExemptList ;
+eu-gdpr:DPIANotRequiredList a impacto:DPIANotRequiredList ;
     skos:prefLabel "DPIA exemptions at EU level"@en ;
     rdfs:label "DPIA exemptions at EU level"@en ;
     skos:definition "Exemptions from the obligation to carry out a data protection impact assessment arising from the GDPR itself and from EDPB guidance, rather than from a national list."@en ;
@@ -103,84 +103,84 @@ eu-gdpr:DPIAExemptList a impacto:DPIAExemptList ;
 eu-gdpr:CN1 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Where the processing is not \"likely to result in a high risk to the rights and freedoms of natural persons\" (Article 35(1))"@en ;
     dpv:hasRiskLevel impacto:dpv-RiskLevelNotHigh ;
-    dct:source eu-gdpr:DPIAExemptList ;
+    dct:source eu-gdpr:DPIANotRequiredList ;
     dct:identifier "CN1" ;
     skos:note "Listed by: EDPB"@en .
 
 hr:CN1 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Where the processing is not \"likely to result in a high risk to the rights and freedoms of natural persons\" (Article 35(1))"@en ;
     dpv:hasRiskLevel impacto:dpv-RiskLevelNotHigh ;
-    dct:source hr:DPIAExemptList ;
+    dct:source hr:DPIANotRequiredList ;
     dct:identifier "CN1" ;
     dpv:hasJurisdiction loc:HR .
 
 it:CN1 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Where the processing is not \"likely to result in a high risk to the rights and freedoms of natural persons\" (Article 35(1))"@en ;
     dpv:hasRiskLevel impacto:dpv-RiskLevelNotHigh ;
-    dct:source it:DPIAExemptList ;
+    dct:source it:DPIANotRequiredList ;
     dct:identifier "CN1" ;
     dpv:hasJurisdiction loc:IT .
 
 nl:CN1 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Where the processing is not \"likely to result in a high risk to the rights and freedoms of natural persons\" (Article 35(1))"@en ;
     dpv:hasRiskLevel impacto:dpv-RiskLevelNotHigh ;
-    dct:source nl:DPIAExemptList ;
+    dct:source nl:DPIANotRequiredList ;
     dct:identifier "CN1" ;
     dpv:hasJurisdiction loc:NL .
 
 eu-gdpr:CN2 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "When the nature, scope, context and purposes of the processing are very similar to the processing for which a DPIA has already been carried out"@en ;
     impacto:hasExemptionBasis impacto:dpv-ExistingDPIAReuse ;
-    dct:source eu-gdpr:DPIAExemptList ;
+    dct:source eu-gdpr:DPIANotRequiredList ;
     dct:identifier "CN2" ;
     skos:note "Listed by: EDPB"@en .
 
 hr:CN2 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "When the nature, scope, context and purposes of the processing are very similar to the processing for which a DPIA has already been carried out"@en ;
     impacto:hasExemptionBasis impacto:dpv-ExistingDPIAReuse ;
-    dct:source hr:DPIAExemptList ;
+    dct:source hr:DPIANotRequiredList ;
     dct:identifier "CN2" ;
     dpv:hasJurisdiction loc:HR .
 
 it:CN2 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "When the nature, scope, context and purposes of the processing are very similar to the processing for which a DPIA has already been carried out"@en ;
     impacto:hasExemptionBasis impacto:dpv-ExistingDPIAReuse ;
-    dct:source it:DPIAExemptList ;
+    dct:source it:DPIANotRequiredList ;
     dct:identifier "CN2" ;
     dpv:hasJurisdiction loc:IT .
 
 nl:CN2 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "When the nature, scope, context and purposes of the processing are very similar to the processing for which a DPIA has already been carried out"@en ;
     impacto:hasExemptionBasis impacto:dpv-ExistingDPIAReuse ;
-    dct:source nl:DPIAExemptList ;
+    dct:source nl:DPIANotRequiredList ;
     dct:identifier "CN2" ;
     dpv:hasJurisdiction loc:NL .
 
 eu-gdpr:CN3 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Where a processing operation, pursuant to point (c) or (e) of article 6(1), has a legal basis in EU or Member State law, where the law regulates the specific processing operation and where a DPIA has already been carried out as part of the establishment of that legal basis (Article 35(10))21, except if a Member state has stated it to be necessary to carry out a DPIA prior processing activities"@en ;
     dpv:hasLegalBasis impacto:dpv-LegalBasisExemption ;
-    dct:source eu-gdpr:DPIAExemptList ;
+    dct:source eu-gdpr:DPIANotRequiredList ;
     dct:identifier "CN3" ;
     skos:note "Listed by: EDPB"@en .
 
 hr:CN3 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Where a processing operation, pursuant to point (c) or (e) of article 6(1), has a legal basis in EU or Member State law, where the law regulates the specific processing operation and where a DPIA has already been carried out as part of the establishment of that legal basis (Article 35(10))21, except if a Member state has stated it to be necessary to carry out a DPIA prior processing activities"@en ;
     dpv:hasLegalBasis impacto:dpv-LegalBasisExemption ;
-    dct:source hr:DPIAExemptList ;
+    dct:source hr:DPIANotRequiredList ;
     dct:identifier "CN3" ;
     dpv:hasJurisdiction loc:HR .
 
 it:CN3 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Where a processing operation, pursuant to point (c) or (e) of article 6(1), has a legal basis in EU or Member State law, where the law regulates the specific processing operation and where a DPIA has already been carried out as part of the establishment of that legal basis (Article 35(10))21, except if a Member state has stated it to be necessary to carry out a DPIA prior processing activities"@en ;
     dpv:hasLegalBasis impacto:dpv-LegalBasisExemption ;
-    dct:source it:DPIAExemptList ;
+    dct:source it:DPIANotRequiredList ;
     dct:identifier "CN3" ;
     dpv:hasJurisdiction loc:IT .
 
 nl:CN3 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Where a processing operation, pursuant to point (c) or (e) of article 6(1), has a legal basis in EU or Member State law, where the law regulates the specific processing operation and where a DPIA has already been carried out as part of the establishment of that legal basis (Article 35(10))21, except if a Member state has stated it to be necessary to carry out a DPIA prior processing activities"@en ;
     dpv:hasLegalBasis impacto:dpv-LegalBasisExemption ;
-    dct:source nl:DPIAExemptList ;
+    dct:source nl:DPIANotRequiredList ;
     dct:identifier "CN3" ;
     dpv:hasJurisdiction loc:NL .
 
@@ -188,7 +188,7 @@ eu-gdpr:CN4 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Where the processing is included on the optional list (established by the supervisory authority) of processing operations for which no DPIA is required (Article 35(5))"@en ;
     dpv:hasEntity impacto:dpv-DataProtectionAuthorityGuidance ;
     dpv:hasSource impacto:dpv-WhiteListActivity ;
-    dct:source eu-gdpr:DPIAExemptList ;
+    dct:source eu-gdpr:DPIANotRequiredList ;
     dct:identifier "CN4" ;
     skos:note "Listed by: EDPB"@en .
 
@@ -196,7 +196,7 @@ hr:CN4 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Where the processing is included on the optional list (established by the supervisory authority) of processing operations for which no DPIA is required (Article 35(5))"@en ;
     dpv:hasEntity impacto:dpv-DataProtectionAuthorityGuidance ;
     dpv:hasSource impacto:dpv-WhiteListActivity ;
-    dct:source hr:DPIAExemptList ;
+    dct:source hr:DPIANotRequiredList ;
     dct:identifier "CN4" ;
     dpv:hasJurisdiction loc:HR .
 
@@ -204,7 +204,7 @@ it:CN4 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Where the processing is included on the optional list (established by the supervisory authority) of processing operations for which no DPIA is required (Article 35(5))"@en ;
     dpv:hasEntity impacto:dpv-DataProtectionAuthorityGuidance ;
     dpv:hasSource impacto:dpv-WhiteListActivity ;
-    dct:source it:DPIAExemptList ;
+    dct:source it:DPIANotRequiredList ;
     dct:identifier "CN4" ;
     dpv:hasJurisdiction loc:IT .
 
@@ -212,7 +212,7 @@ nl:CN4 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Where the processing is included on the optional list (established by the supervisory authority) of processing operations for which no DPIA is required (Article 35(5))"@en ;
     dpv:hasEntity impacto:dpv-DataProtectionAuthorityGuidance ;
     dpv:hasSource impacto:dpv-WhiteListActivity ;
-    dct:source nl:DPIAExemptList ;
+    dct:source nl:DPIANotRequiredList ;
     dct:identifier "CN4" ;
     dpv:hasJurisdiction loc:NL .
 
@@ -222,7 +222,7 @@ at:CN5a a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dpv:hasData impacto:dpv-BusinessTransactions ;
     dpv:hasEntity impacto:dpv-ServiceCustomer ;
     dpv:hasPurpose impacto:dpv-BusinessRelationshipManagement ;
-    dct:source at:DPIAExemptList ;
+    dct:source at:DPIANotRequiredList ;
     dct:identifier "CN5" ;
     dpv:hasJurisdiction loc:AT .
 
@@ -232,7 +232,7 @@ at:CN5b a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dpv:hasData impacto:dpv-BusinessTransactions ;
     dpv:hasEntity impacto:dpv-ServiceSupplier ;
     dpv:hasPurpose impacto:dpv-BusinessRelationshipManagement ;
-    dct:source at:DPIAExemptList ;
+    dct:source at:DPIANotRequiredList ;
     dct:identifier "CN5" ;
     dpv:hasJurisdiction loc:AT .
 
@@ -242,7 +242,7 @@ at:CN5c a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dpv:hasData impacto:dpv-BusinessTransactions ;
     dpv:hasEntity impacto:dpv-ServiceCustomer ;
     dpv:hasPurpose impacto:dpv-BusinessRelationshipManagement ;
-    dct:source at:DPIAExemptList ;
+    dct:source at:DPIANotRequiredList ;
     dct:identifier "CN5" ;
     dpv:hasJurisdiction loc:AT .
 
@@ -252,7 +252,7 @@ at:CN5d a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dpv:hasData impacto:dpv-BusinessTransactions ;
     dpv:hasEntity impacto:dpv-ServiceSupplier ;
     dpv:hasPurpose impacto:dpv-BusinessRelationshipManagement ;
-    dct:source at:DPIAExemptList ;
+    dct:source at:DPIANotRequiredList ;
     dct:identifier "CN5" ;
     dpv:hasJurisdiction loc:AT .
 
@@ -264,7 +264,7 @@ at:CN5d a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dpv:hasEntity impacto:dpv-DebtAgency ;
     dpv:hasEntity impacto:dpv-DetectiveAgencies ;
     skos:scopeNote "Companies to have no business relationship." ;
-    dct:source at:DPIAExemptList ;
+    dct:source at:DPIANotRequiredList ;
     dct:identifier "CN6" ;
     dpv:hasJurisdiction loc:AT .
 
@@ -273,7 +273,7 @@ at:CN7a  a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dpv:hasJustification impacto:justifications-CollectiveLegalNorm ;
 	dpv:hasData impacto:pd-Payroll ;
     dpv:hasPurpose impacto:dpv-RecordKeeping ;
-    dct:source at:DPIAExemptList ;
+    dct:source at:DPIANotRequiredList ;
     dct:identifier "CN7" ;
     dpv:hasJurisdiction loc:AT .
 
@@ -282,7 +282,7 @@ at:CN7b  a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dpv:hasLegalBasis dpv:EmploymentContract ;
 	dpv:hasData impacto:pd-Payroll ;
     dpv:hasPurpose impacto:dpv-RecordKeeping ;
-    dct:source at:DPIAExemptList ;
+    dct:source at:DPIANotRequiredList ;
     dct:identifier "CN7" ;
     dpv:hasJurisdiction loc:AT .
 
@@ -291,7 +291,7 @@ at:CN7c  a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dpv:hasApplicableLaw legal-ex:Example ;
 	dpv:hasData impacto:pd-Payroll ;
     dpv:hasPurpose impacto:dpv-RecordKeeping ;
-    dct:source at:DPIAExemptList ;
+    dct:source at:DPIANotRequiredList ;
     dct:identifier "CN7" ;
     dpv:hasJurisdiction loc:AT .
 
@@ -310,7 +310,7 @@ at:CN7c  a impacto:eu-gdpr-DPIANotRequiredProcess ;
 	dpv:hasPurpose dpv:PersonnelPayment ;
 	dpv:hasPurpose impacto:dpv-PersonnelTraining ;
 	dpv:hasResponsibleEntity dpv:PublicSectorBody ;
-    dct:source at:DPIAExemptList ;
+    dct:source at:DPIANotRequiredList ;
     dct:identifier "CN8" ;
     dpv:hasJurisdiction loc:AT .
 
@@ -318,41 +318,68 @@ at:CN9 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Processing and preservation of personal data of applicants, if this data has been provided by the data subject."@en ;
 	dpv:hasHumanSubject dpv:Applicant ;
 	dpv:hasPersonalData dpv:ProvidedPersonalData ;
-    dct:source at:DPIAExemptList ;
+    dct:source at:DPIANotRequiredList ;
     dct:identifier "CN9" ;
     dpv:hasJurisdiction loc:AT .
+
 
 #TR resume here at:CN10  a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Processing of special categories of personal data within the meaning of Art. 9 and a processing of personal data on criminal convictions and criminal offences within the meaning of Art. 10 GDPR within the framework of this exception are only permitted on the basis of a statutory authorization or on the basis of legal obligations."@en ;
     dpv:hasEntity impacto:dpv-StateAuthorities ;
     dpv:hasEntity impacto:dpv-UnionAuthorities ;
     dpv:hasJustification impacto:dpv-StatutoryAuthorisation ;
-    dct:source at:DPIAExemptList ;
+    dct:source at:DPIANotRequiredList ;
     dct:identifier "CN10" ;
     dpv:hasJurisdiction loc:AT .
 
-at:CN11   a impacto:eu-gdpr-DPIANotRequiredProcess ;
+dpv:hasPersonalData dpv:SpecialCategoryPersonalData ;
+	dpv:hasPurpose dpv:HealthCare ;
+	dpv:hasContext impacto:dpv-ProfessionalConfidentialityRelationship ;
+
+at:CN11  a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Maintenance of member lists, evidence of membership and funding fees, contact with members or sponsors of bodies under public and private law, in particular associations and partnerships, as well as support for members and sponsors."@en ;
-    dpv:hasContext impacto:dpv-FundingFees ;
+    dpv:hasPurpose impacto:dpv-MemberListMaintenance ;
+	dpv:hasPurpose impacto:dpv-FundingManagement ;
+	dpv:hasPurpose impacto:dpv-MemberContact 
+	dpv:hasPersonalData impacto:pd-MemberContact ;
+	dpv:hasPersonalData pd:GroupMembership ;
+FeeManagement
+MemberContact
+SponserContact 
+PublicLaw
+PrivateLaw
+Associations
+Partnerships
+MemberSupport
+SponserSupport
+
+dpv:hasContext impacto:dpv-FundingFees ;
     dpv:hasContext impacto:dpv-MembershipLists ;
     dpv:hasEntity impacto:dpv-Members ;
     dpv:hasEntity impacto:dpv-PrivateSponsors ;
     dpv:hasEntity impacto:dpv-PublicSponsors ;
     dpv:hasEntity impacto:dpv-SubscribedMembers ;
-    dct:source at:DPIAExemptList ;
+    dct:source at:DPIANotRequiredList ;
     dct:identifier "CN11" ;
     dpv:hasJurisdiction loc:AT .
 
+dpv:hasPurpose dpv:MemberManagement ;
+	dpv:hasPersonalData pd:MembershipStatus ;
+	dpv:hasOrganisation dpv:NonProfitOrganisation ;
+
 at:CN12   a impacto:eu-gdpr-DPIANotRequiredProcess ;
-    skos:definition "Processing of own or purchased customer and interested party data for the business initiation regarding the own delivery or service offer as well as for the implementation of advertising measures and newsletter dispatch."@en ;
+	skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Processing of own or purchased customer and interested party data for the business initiation regarding the own delivery or service offer as well as for the implementation of advertising measures and newsletter dispatch."@en ;
     dpv:hasEntity impacto:dpv-InterestedParty ;
     dpv:hasPurpose impacto:dpv-BusinessInitiation ;
     dpv:hasPurpose impacto:dpv-DeliveryOffering ;
     dpv:hasPurpose impacto:dpv-NewsletterDistribution ;
     dpv:hasPurpose impacto:dpv-ServiceOffering ;
-    dct:source at:DPIAExemptList ;
+    dct:source at:DPIANotRequiredList ;
     dct:identifier "CN12" ;
     dpv:hasJurisdiction loc:AT .
+dpv:hasPurpose dpv:DirectMarketing ;
+	dpv:hasPurpose dpv:CustomerManagement ;
+	dpv:hasHumanSubject dpv:Customer ;
 
 at:CN13 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Inventory management (management of inventory records), support for the exchange of goods and the company's accounting, ancillary and auxiliary records of suppliers related to inventory management, acquisition costs and management of the allocation of hardware and software to computer system users."@en ;
@@ -361,9 +388,11 @@ at:CN13 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dpv:hasPurpose impacto:dpv-AuxiliaryRecords ;
     dpv:hasPurpose impacto:dpv-HardwareManagement ;
     dpv:hasPurpose impacto:dpv-SoftwareManagement ;
-    dct:source at:DPIAExemptList ;
+    dct:source at:DPIANotRequiredList ;
     dct:identifier "CN13" ;
     dpv:hasJurisdiction loc:AT .
+	dpv:hasPurpose dpv:ManageOperations ;
+	dpv:hasPurpose impacto:dpv-InventoryManagement ;
 
 at:CN14 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Processing of personal data within the framework of registers, evidence or books established by Union, federal or state law, provided that no personal data within the meaning of Art. 9 and 10 GDPR are processed."@en ;
@@ -371,16 +400,22 @@ at:CN14 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dpv:hasData impacto:dpv-PersonalDataRegisters ;
     dpv:hasData impacto:dpv-UnionLevelRegisters ;
     dpv:hasEntity impacto:dpv-FederalAuthority ;
-    dct:source at:DPIAExemptList ;
+    dct:source at:DPIANotRequiredList ;
     dct:identifier "CN14" ;
     dpv:hasJurisdiction loc:AT .
+dpv:hasLegalBasis dpv:LegalObligation ;
+	dpv:hasPurpose impacto:dpv-StatutoryRecordKeeping ;
+	dpv:hasContext impacto:dpv-DataRegister ;
 
 at:CN15  a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Management of usernames and passwords as well as system access logging."@en ;
     dpv:hasTechnicalMeasure impacto:dpv-AccessLogins ;
-    dct:source at:DPIAExemptList ;
+    dct:source at:DPIANotRequiredList ;
     dct:identifier "CN15" ;
     dpv:hasJurisdiction loc:AT .
+	dpv:hasPurpose dpv:IdentityManagement ;
+	dpv:hasPurpose dpv:SecurityManagement ;
+	dpv:hasPersonalData pd:UserID ;
 
 at:CN16   a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Control of the authorization of access to buildings and delimited areas by the owner or authorized user with the help of systems that process personal data with automated assistance, whereby no biometric data of data subjects are processed. The mere real-time reproduction of facial images is covered by this exception."@en ;
@@ -388,9 +423,12 @@ at:CN16   a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dpv:hasDataSource impacto:dpv-VideoData ;
     dpv:hasDataSource impacto:pd-FacialImages ;
     dpv:isImplementedUsingTechnology impacto:tech-AutomatedAccess ;
-    dct:source at:DPIAExemptList ;
+    dct:source at:DPIANotRequiredList ;
     dct:identifier "CN16" ;
     dpv:hasJurisdiction loc:AT .
+	dpv:hasPurpose dpv:AccessControl ;
+	dpv:hasPurpose dpv:PhysicalAccessControl ;
+	dpv:hasLocation dpv:PrivateLocation ;
 
 at:CN17   a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Stationary image processing and associated acoustic processing for monitoring purposes (video surveillance). Subject to conditions. Spatial recording area: Localities over which the person responsible is authorized to dispose. The video surveillance may not extend beyond the property, with the exception of an inevitable inclusion of public traffic areas to the extent of up to half a meter measured from the property boundary of the monitored object. In addition, video surveillance may not be operated in places that represent the most personal area of life of people. Storage period: Recorded personal data must be deleted by the controller after 72 hours at the latest, unless a longer storage period has been expressly stipulated in a law, by an official legal act, in a works agreement or with the consent of the personnel representation. Identification: The prerequisite for the exception is the appropriate identification of the image processing by the person responsible. In any case, the person responsible must be clearly stated from the marking."@en ;
@@ -398,9 +436,13 @@ at:CN17   a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dpv:hasDataSource impacto:dpv-AudioData ;
     dpv:hasLocation impacto:dpv-LimitedPublicArea ;
     dpv:hasPersonalData impacto:pd-Gait ;
-    dct:source at:DPIAExemptList ;
+    dct:source at:DPIANotRequiredList ;
     dct:identifier "CN17" ;
     dpv:hasJurisdiction loc:AT .
+dpv:hasPurpose impacto:dpv-Monitoring ;
+	dpv:hasData tech:VideoContent ;
+	dpv:hasData tech:AudioContent ;
+	dpv:hasLocation dpv:PrivateLocation ;
 
 at:CN18  a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Image and acoustic processing, which serve the preventive protection of persons or things on private properties used for residential purposes, which are used exclusively by the person responsible and by all authorized users living in the common household. The prerequisite is the consent of all authorized users."@en ;
@@ -410,32 +452,43 @@ at:CN18  a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dpv:hasPurpose impacto:dpv-ResidentialPurpose ;
     dpv:hasTechnicalMeasure impacto:dpv-PersonsPreventativeProtection ;
     dpv:hasTechnicalMeasure impacto:dpv-PropertyPreventativeProtection ;
-    dct:source at:DPIAExemptList ;
+    dct:source at:DPIANotRequiredList ;
     dct:identifier "CN18" ;
     dpv:hasJurisdiction loc:AT .
+dpv:hasPurpose impacto:dpv-PreventativeProtectionOfPersons ;
+	dpv:hasPurpose impacto:dpv-PreventativeProtectionOfProperty ;
+	dpv:hasData tech:ImageData ;
+	dpv:hasLocation dpv:PrivateLocation ;
 
 at:CN19  a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Image and acoustic processing, which are necessary for the preventive protection of persons or things in generally accessible places that are subject to the house law of the person responsible, due to violations of law that have already occurred or a special potential hazard in the nature of the place and no suitable means is available. In cases where employee representatives have to be formed, the existence of a valid works agreement or a valid consent of the personnel representation, which regulates the implementation of video surveillance, is a prerequisite. This exception does not apply to places that may be entered due to an existing contract obligation or due to the public interest of anyone."@en ;
     dpv:hasPurpose impacto:dpv-PreventativeProtection ;
     dpv:hasPurpose impacto:dpv-ProtectionOfPersons ;
-    dct:source at:DPIAExemptList ;
+    dct:source at:DPIANotRequiredList ;
     dct:identifier "CN19" ;
     dpv:hasJurisdiction loc:AT .
+dpv:hasPurpose dpv:ProtectionOfPublicSecurity ;
+	tech:hasInput tech:MobilePhone ;
+	dpv:hasData tech:ImageData ;
 
 at:CN20 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Processing of image and acoustic data transmittions in real time without recording."@en ;
     dpv:hasContext impacto:dpv-RealtimeMonitoring ;
-    dct:source at:DPIAExemptList ;
+    dct:source at:DPIANotRequiredList ;
     dct:identifier "CN20" ;
     dpv:hasJurisdiction loc:AT .
+	dpv:hasData tech:VideoContent ;
+	dpv:hasContext impacto:dpv-RealTimeWithoutStorage ;
 
 at:CN21 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Image and acoustic processing that exclusively pursue a documentation interest that is not aimed at the identifying recording of uninvolved persons or the targeted recording of objects that are suitable for the indirect identification of such persons. Criminal, administrative or civil law purposes may not be prosecuted within the framework of this exception."@en ;
     dpv:hasPurpose impacto:dpv-Documentation ;
     dpv:hasPurpose impacto:dpv-Identification ;
-    dct:source at:DPIAExemptList ;
+    dct:source at:DPIANotRequiredList ;
     dct:identifier "CN21" ;
     dpv:hasJurisdiction loc:AT .
+dpv:hasPurpose impacto:dpv-DocumentationPurpose ;
+	dpv:hasData tech:ImageContent ;
 
 at:CN22  a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Patient management and fee billing of individual doctors, dentists and dentists as well as patient/client management and fee billing of other freelance or commercially active individually active health service providers and pharmacies."@en ;
@@ -446,9 +499,13 @@ at:CN22  a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dpv:hasPurpose impacto:sector-health-PatientCareAdministration ;
     dpv:hasPurpose impacto:sector-health-PatientCareBilling ;
     dpv:hasPurpose impacto:sector-health-PatientInformationManagement ;
-    dct:source at:DPIAExemptList ;
+    dct:source at:DPIANotRequiredList ;
     dct:identifier "CN22" ;
     dpv:hasJurisdiction loc:AT .
+dpv:hasPurpose dpv:HealthCare ;
+	dpv:hasPurpose sector-health:PatientManagement ;
+	dpv:hasHumanSubject dpv:Patient ;
+	dpv:hasOrganisation impacto:dpv-IndividualHealthcarePractitioner ;
 
 at:CN23 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Data processing of legal advisory and business advisory professions, such as individual lawyers, notaries, patent lawyers, business trustees, tax consultants and management consultants within the framework of their professional practice."@en ;
@@ -461,18 +518,24 @@ at:CN23 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dpv:hasPersonalData impacto:pd-Legal ;
     dpv:hasPurpose impacto:dpv-BusinessAdvisoryServices ;
     dpv:hasPurpose impacto:dpv-LegalAdvisoryServices ;
-    dct:source at:DPIAExemptList ;
+    dct:source at:DPIANotRequiredList ;
     dct:identifier "CN23" ;
     dpv:hasJurisdiction loc:AT .
+dpv:hasPurpose sector-law:LegalAdvice ;
+	dpv:hasOrganisation impacto:dpv-IndividualLegalPractitioner ;
+	dpv:hasContext impacto:dpv-ProfessionalConfidentialityRelationship ;
 
 at:CN24  a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Processing of personal data for archival purposes in the public interest, scientific or historical research purposes or statistical purposes on the basis of special legal provisions or with the consent of the data subject."@en ;
     dpv:hasPurpose impacto:dpv-Archive ;
     dpv:hasPurpose impacto:dpv-HistoricalResearch ;
     dpv:hasPurpose impacto:dpv-Statistics ;
-    dct:source at:DPIAExemptList ;
+    dct:source at:DPIANotRequiredList ;
     dct:identifier "CN24" ;
     dpv:hasJurisdiction loc:AT .
+dpv:hasPurpose dpv:Archiving ;
+	dpv:hasPurpose dpv:ResearchAndDevelopment ;
+	dpv:hasLegalBasis dpv:PublicInterest ;
 
 at:CN25  a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Processing of personal data in the context of citizens' initiatives, petition lists or signature collections by the organizers."@en ;
@@ -485,9 +548,11 @@ at:CN25  a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dpv:hasPurpose impacto:dpv-CitizensInitiatives ;
     dpv:hasPurpose impacto:dpv-CivicParticipationManagement ;
     dpv:hasPurpose impacto:dpv-DemocraticParticipationManagement ;
-    dct:source at:DPIAExemptList ;
+    dct:source at:DPIANotRequiredList ;
     dct:identifier "CN25" ;
     dpv:hasJurisdiction loc:AT .
+dpv:hasPurpose impacto:dpv-CivicParticipation ;
+	dpv:hasLegalBasis dpv:LegalObligation ;
 
 at:CN26 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Preparation of estimates, financial accounting, payment transactions, preparation of reports, operating accounts, ancillary and auxiliary accounting and evaluation of data on budget control, strategic controlling and liquidity management, financial statements, annual financial statements as well as audits and audits."@en ;
@@ -502,9 +567,12 @@ at:CN26 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dpv:hasPurpose impacto:sector-finance-LiquidityManagement ;
     dpv:hasPurpose impacto:sector-finance-Payments ;
     dpv:hasPurpose impacto:sector-finance-RecordKeeping ;
-    dct:source at:DPIAExemptList ;
+    dct:source at:DPIANotRequiredList ;
     dct:identifier "CN26" ;
     dpv:hasJurisdiction loc:AT .
+dpv:hasPurpose dpv:FinancialManagement ;
+	dpv:hasPurpose sector-finance:AccountingManagement ;
+	dpv:hasLegalBasis dpv:LegalObligation ;
 
 at:CN27 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Prescription, collection and settlement of taxes and fees regulated under public law by the federal government, states, municipalities, associations of municipalities and other bodies under public law as well as their control."@en ;
@@ -515,16 +583,19 @@ at:CN27 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dpv:hasPurpose impacto:sector-finance-TaxCollection ;
     dpv:hasPurpose impacto:sector-finance-TaxPrescription ;
     dpv:hasPurpose impacto:sector-finance-TaxSettlement ;
-    dct:source at:DPIAExemptList ;
+    dct:source at:DPIANotRequiredList ;
     dct:identifier "CN27" ;
     dpv:hasJurisdiction loc:AT .
+dpv:hasPurpose impacto:sector-finance-TaxAdministration ;
+	dpv:hasOrganisation dpv:PublicSectorOrganisation ;
+	dpv:hasLegalBasis dpv:LegalObligation ;
 
 at:CN28 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Processing of personal data by funders and paying agencies in the context of the processing of public subsidies, provided that no personal data within the meaning of Art. 9 and 10 GDPR are processed."@en ;
     dpv:hasContext impacto:dpv-PublicSubsidies ;
     dpv:hasEntity impacto:dpv-FundingAgency ;
     dpv:hasPurpose impacto:dpv-PublicFunding ;
-    dct:source at:DPIAExemptList ;
+    dct:source at:DPIANotRequiredList ;
     dct:identifier "CN28" ;
     dpv:hasJurisdiction loc:AT .
 
@@ -532,7 +603,7 @@ at:CN28 a impacto:eu-gdpr-DPIANotRequiredProcess ;
 # REVIEW: this definition duplicates at:CN5; the original AT list item for CN29 is missing.
 at:CN29 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Processing of personal data in the context of any business relationship with customers and suppliers, including systematic recording of all business transactions relating to income and expenses."@en ;
-    dct:source at:DPIAExemptList ;
+    dct:source at:DPIANotRequiredList ;
     dct:identifier "CN29" ;
     dpv:hasJurisdiction loc:AT .
 
@@ -540,7 +611,7 @@ at:CN30 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Processing of data of persons to be informed ( within the public relations and information by public officials and their business apparatus sector), if there is a general need for information due to a large number of inquiries on a specific topic."@en ;
     dpv:hasEntity impacto:dpv-PublicOfficials ;
     dpv:hasPurpose impacto:dpv-PublicInquiryManagement ;
-    dct:source at:DPIAExemptList ;
+    dct:source at:DPIANotRequiredList ;
     dct:identifier "CN30" ;
     dpv:hasJurisdiction loc:AT .
 
@@ -550,7 +621,7 @@ at:CN31 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dpv:hasEntity impacto:dpv-Corporation ;
     dpv:hasPurpose impacto:dpv-BusinessCases ;
     dpv:hasPurpose impacto:dpv-CaseManagement ;
-    dct:source at:DPIAExemptList ;
+    dct:source at:DPIANotRequiredList ;
     dct:identifier "CN31" ;
     dpv:hasJurisdiction loc:AT .
 
@@ -571,7 +642,7 @@ at:CN32 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dpv:hasPurpose impacto:dpv-Registration ;
     dpv:hasPurpose impacto:dpv-ReimbursementTravelExpenses ;
     dpv:hasPurpose impacto:dpv-TravelOrganisation ;
-    dct:source at:DPIAExemptList ;
+    dct:source at:DPIANotRequiredList ;
     dct:identifier "CN32" ;
     dpv:hasJurisdiction loc:AT .
 
@@ -583,27 +654,27 @@ at:CN33 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dpv:hasEntity impacto:dpv-AwardGrantingBody ;
     dpv:hasPurpose impacto:dpv-AwardingDecorations ;
     dpv:hasPurpose impacto:dpv-AwardingPrizes ;
-    dct:source at:DPIAExemptList ;
+    dct:source at:DPIANotRequiredList ;
     dct:identifier "CN33" ;
     dpv:hasJurisdiction loc:AT .
 
 cz:CN34 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Processing (processing operations) of personal data of employees with a permanent workplace in the territory of the Member State carried out only in the territory of the Member State, within the fulfillment of legal obligations in accounting, payroll, social and health insurance."@en ;
     dpv:hasLocation impacto:dpv-MemberStateTerritory ;
-    dct:source cz:DPIAExemptList ;
+    dct:source cz:DPIANotRequiredList ;
     dct:identifier "CN34" ;
     dpv:hasJurisdiction loc:CZ .
 
 lv:CN34 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Processing (processing operations) of personal data of employees with a permanent workplace in the territory of the Member State carried out only in the territory of the Member State, within the fulfillment of legal obligations in accounting, payroll, social and health insurance."@en ;
     dpv:hasLocation impacto:dpv-MemberStateTerritory ;
-    dct:source lv:DPIAExemptList ;
+    dct:source lv:DPIANotRequiredList ;
     dct:identifier "CN34" ;
     dpv:hasJurisdiction loc:LV .
 
 cz:CN35 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Processing of personnel records of employees with a permanent workplace in the territory of the Member State carried out only in the territory of the Member State."@en ;
-    dct:source cz:DPIAExemptList ;
+    dct:source cz:DPIANotRequiredList ;
     dct:identifier "CN35" ;
     dpv:hasJurisdiction loc:CZ .
 
@@ -611,7 +682,7 @@ cz:CN36 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Processing (processing operations) of personal data of customers carried out entirely in the territory of the Member State, relating to business activities (sales and provision of services, including organizing competitions and sending newsletters), carried out only in the National Language, unless it includes the processing of special categories of personal data, evaluation, scoring or systematic monitoring of data subjects."@en ;
     dpv:hasPurpose impacto:dpv-CompetitionOrganisation ;
     dpv:hasPurpose impacto:dpv-NewsletterDistribution ;
-    dct:source cz:DPIAExemptList ;
+    dct:source cz:DPIANotRequiredList ;
     dct:identifier "CN36" ;
     dpv:hasJurisdiction loc:CZ .
 
@@ -619,7 +690,7 @@ lv:CN36 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Processing (processing operations) of personal data of customers carried out entirely in the territory of the Member State, relating to business activities (sales and provision of services, including organizing competitions and sending newsletters), carried out only in the National Language, unless it includes the processing of special categories of personal data, evaluation, scoring or systematic monitoring of data subjects."@en ;
     dpv:hasPurpose impacto:dpv-CompetitionOrganisation ;
     dpv:hasPurpose impacto:dpv-NewsletterDistribution ;
-    dct:source lv:DPIAExemptList ;
+    dct:source lv:DPIANotRequiredList ;
     dct:identifier "CN36" ;
     dpv:hasJurisdiction loc:LV .
 
@@ -627,7 +698,7 @@ cz:CN37 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Processing (processing operations) associated with an individual customer visit to the controller's website, including customer profiling based on their selection of items or displaying items from the offer of goods, products and services placed on the website on the controller's side. This processing does not involve the processing of special categories of personal data, data of a highly personal nature (see point 4 on page 11 of the WP248 Guideline) and does not target the processing of personal data on vulnerable data subjects as a separate target group."@en ;
     dpv:hasPurpose impacto:dpv-OfferOfGoods ;
     dpv:hasPurpose impacto:dpv-OfferOfProducts ;
-    dct:source cz:DPIAExemptList ;
+    dct:source cz:DPIANotRequiredList ;
     dct:identifier "CN37" ;
     dpv:hasJurisdiction loc:CZ .
 
@@ -637,20 +708,20 @@ cz:CN38 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dpv:hasEntity impacto:dpv-NotEmploymentRelationship ;
     dpv:hasEntity impacto:dpv-SelfEmployedHealthcarePractitioner ;
     dpv:hasEntity impacto:dpv-SelfEmployedHealthcareProfessional ;
-    dct:source cz:DPIAExemptList ;
+    dct:source cz:DPIANotRequiredList ;
     dct:identifier "CN38" ;
     dpv:hasJurisdiction loc:CZ .
 
 cz:CN39 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Processing (processing operations) carried out by individual lawyers and notaries (lawyers and notaries who are not in an employment relationship), using the necessary personal data only to provide legal services to the data subject (see recital 91 of the Regulation), and not systematically transferring them to third countries, for some of the processing operations on personal data of clients, a processor is not used, or there is no sharing/linking of personal data of clients of two or more individual lawyers."@en ;
     dpv:hasPurpose impacto:dpv-LinkingPersonalData ;
-    dct:source cz:DPIAExemptList ;
+    dct:source cz:DPIANotRequiredList ;
     dct:identifier "CN39" ;
     dpv:hasJurisdiction loc:CZ .
 
 cz:CN40 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Processing (processing operations) carried out by individual natural persons providing social services (persons who are not in an employment relationship), using the necessary personal data only to provide social services to the data subject, and not systematically transferring them to third countries, for some of the processing operations on personal data of clients, a processor is not used, or there is no sharing/linking of personal data of clients of two or more individual social service providers."@en ;
-    dct:source cz:DPIAExemptList ;
+    dct:source cz:DPIANotRequiredList ;
     dct:identifier "CN40" ;
     dpv:hasJurisdiction loc:CZ .
 
@@ -658,13 +729,13 @@ fr:CN41 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Processing, implemented solely for human resources purposes and under the conditions provided for by applicable regulations, for the sole purpose of managing the personnel of organizations employing fewer than 250 people, with the exception of the use of profiling."@en ;
     dpv:hasProcessingScale impacto:dpv-LessThan250Employees ;
     dpv:hasProcessingScale impacto:dpv-MoreThan250Employees ;
-    dct:source fr:DPIAExemptList ;
+    dct:source fr:DPIANotRequiredList ;
     dct:identifier "CN41" ;
     dpv:hasJurisdiction loc:FR .
 
 fr:CN42 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Supplier relationship management processes."@en ;
-    dct:source fr:DPIAExemptList ;
+    dct:source fr:DPIANotRequiredList ;
     dct:identifier "CN42" ;
     dpv:hasJurisdiction loc:FR .
 
@@ -673,7 +744,7 @@ fr:CN43 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dpv:hasHumanSubject impacto:dpv-RegisteredVoter ;
     dpv:hasPersonalData impacto:pd-Vote ;
     dpv:hasPurpose impacto:dpv-MunicipalityElectoralRegisterManagement ;
-    dct:source fr:DPIAExemptList ;
+    dct:source fr:DPIANotRequiredList ;
     dct:identifier "CN43" ;
     dpv:hasJurisdiction loc:FR .
 
@@ -681,7 +752,7 @@ fr:CN44 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Data processing intended for the management of the activities of works councils and establishment committees."@en ;
     dpv:hasPurpose impacto:dpv-EstablishmentCommitteeActivityManagement ;
     dpv:hasPurpose impacto:dpv-WorkCouncilActivityManagement ;
-    dct:source fr:DPIAExemptList ;
+    dct:source fr:DPIANotRequiredList ;
     dct:identifier "CN44" ;
     dpv:hasJurisdiction loc:FR .
 
@@ -689,7 +760,7 @@ fr:CN45 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Processing carried out by an association, foundation or any other non-profit institution for the management of its members and donors within the framework of its usual activities, provided that the data is not sensitive."@en ;
     dpv:hasPurpose impacto:dpv-DonorManagement ;
     dpv:hasPurpose impacto:dpv-MemberManagement ;
-    dct:source fr:DPIAExemptList ;
+    dct:source fr:DPIANotRequiredList ;
     dct:identifier "CN45" ;
     dpv:hasJurisdiction loc:FR .
 
@@ -697,7 +768,7 @@ fr:CN46 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Processing of health data necessary for the care of a patient by a healthcare professional practicing individually within a medical practice, a pharmacy or a medical biology laboratory."@en ;
     dpv:hasEntity impacto:sector-health-MedicalLaboratory ;
     dpv:hasEntity impacto:sector-health-MedicalPractice ;
-    dct:source fr:DPIAExemptList ;
+    dct:source fr:DPIANotRequiredList ;
     dct:identifier "CN46" ;
     dpv:hasJurisdiction loc:FR .
 
@@ -705,7 +776,7 @@ fr:CN47 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Data processing carried out by lawyers in the course of their individual professional practice."@en ;
     dpv:hasContext impacto:sector-law-IndividualLegalPracticeActivity ;
     dpv:hasEntity impacto:sector-law-IndividualLegalPractice ;
-    dct:source fr:DPIAExemptList ;
+    dct:source fr:DPIANotRequiredList ;
     dct:identifier "CN47" ;
     dpv:hasJurisdiction loc:FR .
 
@@ -713,7 +784,7 @@ fr:CN48 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Data processing carried out by the clerks of the commercial courts for the purposes of performing their duties."@en ;
     dpv:hasEntity impacto:dpv-CommercialCourtClerk ;
     dpv:hasPurpose impacto:sector-law-LegalDuties ;
-    dct:source fr:DPIAExemptList ;
+    dct:source fr:DPIANotRequiredList ;
     dct:identifier "CN48" ;
     dpv:hasJurisdiction loc:FR .
 
@@ -721,7 +792,7 @@ fr:CN49 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Data processing carried out by notaries for the purposes of carrying out their notarial activities and drafting documents for notarial offices."@en ;
     dpv:hasPurpose impacto:dpv-Documentation ;
     dpv:hasPurpose impacto:sector-law-NotarialActivities ;
-    dct:source fr:DPIAExemptList ;
+    dct:source fr:DPIANotRequiredList ;
     dct:identifier "CN49" ;
     dpv:hasJurisdiction loc:FR .
 
@@ -730,13 +801,13 @@ fr:CN50 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dpv:hasEntity impacto:dpv-LocalAuthority ;
     dpv:hasPurpose impacto:sector-education-EarlyChildhoodServiceManagement ;
     dpv:hasPurpose impacto:sector-education-ExtraCurricularServiceManagement ;
-    dct:source fr:DPIAExemptList ;
+    dct:source fr:DPIANotRequiredList ;
     dct:identifier "CN50" ;
     dpv:hasJurisdiction loc:FR .
 
 fr:CN51 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Processing implemented solely for the purpose of managing physical access controls and working time calculations, excluding any biometric devices. This excludes the processing of data that reveals sensitive or highly personal information."@en ;
-    dct:source fr:DPIAExemptList ;
+    dct:source fr:DPIANotRequiredList ;
     dct:identifier "CN51" ;
     dpv:hasJurisdiction loc:FR .
 
@@ -746,7 +817,7 @@ fr:CN52 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dpv:hasPurpose impacto:sector-law-RoadVehicleBreathalyserTesting ;
     dpv:hasPurpose impacto:sector-law-RoadVehicleDrugTesting ;
     dpv:hasPurpose impacto:sector-law-RoadVehicleSubstanceImpairmentPrevention ;
-    dct:source fr:DPIAExemptList ;
+    dct:source fr:DPIANotRequiredList ;
     dct:identifier "CN52" ;
     dpv:hasJurisdiction loc:FR .
 
@@ -754,7 +825,7 @@ lv:CN53 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "The processing of health data necessary for the care of the patient by self-employed staff working individually in the exercise of their professional duties, such as medical practitioners and healthcare professionals, provided that the processing operations do not involve systematic transfer to third countries."@en ;
     dpv:hasEntity impacto:dpv-HealthCareProfessional ;
     dpv:hasEntity impacto:dpv-MedicalPractitioner ;
-    dct:source lv:DPIAExemptList ;
+    dct:source lv:DPIANotRequiredList ;
     dct:identifier "CN53" ;
     dpv:hasJurisdiction loc:LV .
 
@@ -762,13 +833,13 @@ lv:CN54 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Data processing by lawyers, notaries, sworn bailiffs working individually and engaged in their professional activities related to the obligation of professional secrecy, provided that the processing operations do not involve systematic transmission to third countries."@en ;
     dpv:hasEntity impacto:dpv-SwornBailiffs ;
     dpv:hasLegalBasis impacto:dpv-ProfessionalSecrecyObligation ;
-    dct:source lv:DPIAExemptList ;
+    dct:source lv:DPIANotRequiredList ;
     dct:identifier "CN54" ;
     dpv:hasJurisdiction loc:LV .
 
 lv:CN55 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Data processing carried out by an association, foundation, for the management of its members and donors in the framework of its regular activities, except processing of personal data of a sensitive nature;"@en ;
-    dct:source lv:DPIAExemptList ;
+    dct:source lv:DPIANotRequiredList ;
     dct:identifier "CN55" ;
     dpv:hasJurisdiction loc:LV .
 
@@ -778,13 +849,13 @@ lv:CN56 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dpv:hasLocation impacto:loc-CooperativeSocietyOfApartments ;
     dpv:hasPurpose impacto:dpv-LandManagement ;
     dpv:hasPurpose impacto:dpv-ResidentialBuildingManagement ;
-    dct:source lv:DPIAExemptList ;
+    dct:source lv:DPIANotRequiredList ;
     dct:identifier "CN56" ;
     dpv:hasJurisdiction loc:LV .
 
 lv:CN57 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Processing of data for the management of physical access controls and schedules for the calculation of working time, excluding special categories of personal data and/or other personal data of highly sensitive nature."@en ;
-    dct:source lv:DPIAExemptList ;
+    dct:source lv:DPIANotRequiredList ;
     dct:identifier "CN57" ;
     dpv:hasJurisdiction loc:LV .
 
@@ -793,7 +864,7 @@ lv:CN58 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dpv:hasPurpose impacto:sector-law-RoadVehicleDriverAlcoholLevelVerification ;
     dpv:hasPurpose impacto:sector-law-RoadVehicleDriverDrugInfluenceVerification ;
     dpv:hasPurpose impacto:sector-law-RoadVehicleDriverSobrietyVerification ;
-    dct:source lv:DPIAExemptList ;
+    dct:source lv:DPIANotRequiredList ;
     dct:identifier "CN58" ;
     dpv:hasJurisdiction loc:LV .
 
@@ -803,14 +874,14 @@ lv:CN59 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dpv:hasDataSubject impacto:dpv-Resident ;
     dpv:hasLegalBasis impacto:dpv-LocalGovernmentLaw ;
     dpv:hasPurpose impacto:dpv-CollectiveSubmissionsManagement ;
-    dct:source lv:DPIAExemptList ;
+    dct:source lv:DPIANotRequiredList ;
     dct:identifier "CN59" ;
     dpv:hasJurisdiction loc:LV .
 
 es:CN60 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Processing carried out strictly under the guidelines established or authorized previously, by way of circulars or decisions issued by supervisory bodies, whenever the processing has not changed since it was authorized."@en ;
     impacto:hasExemptionBasis impacto:dpv-AuthorisedProcessing ;
-    dct:source es:DPIAExemptList ;
+    dct:source es:DPIANotRequiredList ;
     dct:identifier "CN60" ;
     dpv:hasJurisdiction loc:ES .
 
@@ -819,25 +890,25 @@ es:CN61 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dpv:hasEntity impacto:dpv-EuropeanCommission ;
     dpv:hasOrganisationalMeasure impacto:dpv-DPIAMeasures ;
     dpv:hasOrganisationalMeasure impacto:dpv-DPIASafeguards ;
-    dct:source es:DPIAExemptList ;
+    dct:source es:DPIANotRequiredList ;
     dct:identifier "CN61" ;
     dpv:hasJurisdiction loc:ES .
 
 es:CN62 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Processing that is necessary in order to comply with a legal requirement or to complete a mission being carried out in the public interest or in the exercise of official authority vested in the controller, provided that there is no duty to carry out a DPIA within the legal mandate itself, whenever a full DPIA has already been performed."@en ;
-    dct:source es:DPIAExemptList ;
+    dct:source es:DPIANotRequiredList ;
     dct:identifier "CN62" ;
     dpv:hasJurisdiction loc:ES .
 
 es:CN63 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Processing carried out by self-employed personnel who work on an individual basis in the exercise of their professional duties, especially physicians, healthcare professionals, or lawyers, unless two or more criteria established in the list of types of data processing that require impact assessment are met."@en ;
-    dct:source es:DPIAExemptList ;
+    dct:source es:DPIANotRequiredList ;
     dct:identifier "CN63" ;
     dpv:hasJurisdiction loc:ES .
 
 es:CN64 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Processing carried out in relation to the internal administration of personnel working at SMEs, in order to face processing operations mandatory by law for the purposes of accounting, human resources management, payroll management, social security, and safety in the workplace, but never in relation to customer data."@en ;
-    dct:source es:DPIAExemptList ;
+    dct:source es:DPIANotRequiredList ;
     dct:identifier "CN64" ;
     dpv:hasJurisdiction loc:ES .
 
@@ -847,12 +918,12 @@ es:CN65 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dpv:hasLocation impacto:loc-MultiOccupancyProperty ;
     rdfs:label "CN65: Processing carried out by owners’ associations and sub-assoc"@en ;
     dct:identifier "CN65" ;
-    dct:source es:DPIAExemptList ;
+    dct:source es:DPIANotRequiredList ;
     dpv:hasJurisdiction loc:ES .
 
 es:CN66  a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Processing carried out by professional colleges and non-profit associations in connection with the data of their associates members and donors of the data controllers listed therein concerning the management of their personal data, and in the performance of their tasks, provided that the processing does not extend to sensitive data such as those referred to in article 9.1 of the GDPR and that article 9.2(d) does not apply."@en ;
-    dct:source es:DPIAExemptList ;
+    dct:source es:DPIANotRequiredList ;
     dct:identifier "CN66" ;
     dpv:hasJurisdiction loc:ES .
 
