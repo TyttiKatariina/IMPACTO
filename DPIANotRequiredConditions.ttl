@@ -6,39 +6,39 @@
 @prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dct:      <http://purl.org/dc/terms/> .
-@prefix at: <https://w3id.org/dpv/legal/at#> .
-@prefix be: <https://w3id.org/dpv/legal/be#> .
-@prefix bg: <https://w3id.org/dpv/legal/bg#> .
-@prefix cy: <https://w3id.org/dpv/legal/cy#> .
-@prefix cz: <https://w3id.org/dpv/legal/cz#> .
-@prefix de: <https://w3id.org/dpv/legal/de#> .
-@prefix dk: <https://w3id.org/dpv/legal/dk#> .
-@prefix ee: <https://w3id.org/dpv/legal/ee#> .
-@prefix es: <https://w3id.org/dpv/legal/es#> .
-@prefix fi: <https://w3id.org/dpv/legal/fi#> .
-@prefix fr: <https://w3id.org/dpv/legal/fr#> .
-@prefix gr: <https://w3id.org/dpv/legal/gr#> .
-@prefix hr: <https://w3id.org/dpv/legal/hr#> .
-@prefix hu: <https://w3id.org/dpv/legal/hu#> .
-@prefix ie: <https://w3id.org/dpv/legal/ie#> .
-@prefix is_: <https://w3id.org/dpv/legal/is#> .
-@prefix it: <https://w3id.org/dpv/legal/it#> .
-@prefix li: <https://w3id.org/dpv/legal/li#> .
-@prefix lt: <https://w3id.org/dpv/legal/lt#> .
-@prefix lu: <https://w3id.org/dpv/legal/lu#> .
-@prefix lv: <https://w3id.org/dpv/legal/lv#> .
-@prefix mt: <https://w3id.org/dpv/legal/mt#> .
-@prefix nl: <https://w3id.org/dpv/legal/nl#> .
-@prefix no: <https://w3id.org/dpv/legal/no#> .
-@prefix pl: <https://w3id.org/dpv/legal/pl#> .
-@prefix pt: <https://w3id.org/dpv/legal/pt#> .
-@prefix ro: <https://w3id.org/dpv/legal/ro#> .
-@prefix se: <https://w3id.org/dpv/legal/se#> .
-@prefix si: <https://w3id.org/dpv/legal/si#> .
-@prefix sk: <https://w3id.org/dpv/legal/sk#> .
+@prefix at: 	  <https://w3id.org/dpv/legal/at#> .
+@prefix be: 	  <https://w3id.org/dpv/legal/be#> .
+@prefix bg: 	  <https://w3id.org/dpv/legal/bg#> .
+@prefix cy: 	  <https://w3id.org/dpv/legal/cy#> .
+@prefix cz: 	  <https://w3id.org/dpv/legal/cz#> .
+@prefix de: 	  <https://w3id.org/dpv/legal/de#> .
+@prefix dk:	  	  <https://w3id.org/dpv/legal/dk#> .
+@prefix ee: 	  <https://w3id.org/dpv/legal/ee#> .
+@prefix es:	  	  <https://w3id.org/dpv/legal/es#> .
+@prefix fi: 	  <https://w3id.org/dpv/legal/fi#> .
+@prefix fr: 	  <https://w3id.org/dpv/legal/fr#> .
+@prefix gr: 	  <https://w3id.org/dpv/legal/gr#> .
+@prefix hr: 	  <https://w3id.org/dpv/legal/hr#> .
+@prefix hu: 	  <https://w3id.org/dpv/legal/hu#> .
+@prefix ie: 	  <https://w3id.org/dpv/legal/ie#> .
+@prefix is: 	  <https://w3id.org/dpv/legal/is#> .
+@prefix it: 	  <https://w3id.org/dpv/legal/it#> .
+@prefix li: 	  <https://w3id.org/dpv/legal/li#> .
+@prefix lt: 	  <https://w3id.org/dpv/legal/lt#> .
+@prefix lu: 	  <https://w3id.org/dpv/legal/lu#> .
+@prefix lv: 	  <https://w3id.org/dpv/legal/lv#> .
+@prefix mt: 	  <https://w3id.org/dpv/legal/mt#> .
+@prefix nl: 	  <https://w3id.org/dpv/legal/nl#> .
+@prefix no: 	  <https://w3id.org/dpv/legal/no#> .
+@prefix pl: 	  <https://w3id.org/dpv/legal/pl#> .
+@prefix pt: 	  <https://w3id.org/dpv/legal/pt#> .
+@prefix ro: 	  <https://w3id.org/dpv/legal/ro#> .
+@prefix se: 	  <https://w3id.org/dpv/legal/se#> .
+@prefix si:	      <https://w3id.org/dpv/legal/si#> .
+@prefix sk: 	  <https://w3id.org/dpv/legal/sk#> .
 
 ###############################################################################
-# Art. 35(5) exemption lists
+# Art. 35(5) DPIA Not Required lists (White lists of processing activities)
 ###############################################################################
 
 at:DPIANotRequiredList a impacto:DPIANotRequiredList ;
@@ -99,7 +99,7 @@ eu-gdpr:DPIANotRequiredList a impacto:DPIANotRequiredList ;
 
 
 ###############################################################################
-# Conditions
+# DPIA Not Required Conditions
 ###############################################################################
 
 eu-gdpr:CN1 a impacto:eu-gdpr-DPIANotRequiredProcess ;
@@ -228,7 +228,6 @@ at:CN8 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dct:identifier "CN8" ;
     dpv:hasJurisdiction loc:AT .
 
-
 at:CN9a  a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria: Processing of special categories of personal data within the meaning of Art. 9 and a processing of personal data on criminal convictions and criminal offences within the meaning of Art. 10 GDPR within the framework of this exception are only permitted on the basis of a statutory authorization or on the basis of legal obligations."@en ;
     dpv:hasPersonalData dpv:SpecialCategoryPersonalData ;
@@ -249,7 +248,7 @@ at:CN10  a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Maintenance of member lists, evidence of membership and funding fees, contact with members or sponsors of bodies under public and private law, in particular associations and partnerships, as well as support for members and sponsors."@en ;
     dpv:hasPurpose impacto:dpv-MemberListMaintenance ;
 	dpv:hasPurpose impacto:dpv-FundingManagement ;
-	dpv:hasPurpose impacto:dpv-MemberContact 
+	dpv:hasPurpose impacto:dpv-MemberContact ;
 	dpv:hasPersonalData impacto:pd-MemberContact ;
 	dpv:hasPersonalData pd:GroupMembership ;
 FeeManagement
@@ -276,32 +275,25 @@ dpv:hasPurpose dpv:MemberManagement ;
 	dpv:hasPersonalData pd:MembershipStatus ;
 	dpv:hasOrganisation dpv:NonProfitOrganisation ;
 
-at:CN11   a impacto:eu-gdpr-DPIANotRequiredProcess ;
+at:CN11 a impacto:eu-gdpr-DPIANotRequiredProcess ;
 	skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Processing of own or purchased customer and interested party data for the business initiation regarding the own delivery or service offer as well as for the implementation of advertising measures and newsletter dispatch."@en ;
     dpv:hasEntity impacto:dpv-InterestedParty ;
-    dpv:hasPurpose impacto:dpv-BusinessInitiation ;
-    dpv:hasPurpose impacto:dpv-DeliveryOffering ;
-    dpv:hasPurpose impacto:dpv-NewsletterDistribution ;
-    dpv:hasPurpose impacto:dpv-ServiceOffering ;
+    dpv:hasPurpose impacto:dpv-BusinessInitiation, impacto:dpv-DeliveryOffering, impacto:dpv-NewsletterDistribution, impacto:dpv-ServiceOffering, dpv:Advertising ;
+	dpv:hasHumanSubject dpv:Customer ;
+	dpv:hasSubject impacto:dpv-InterestedParty ;
     dct:source at:DPIANotRequiredList ;
     dct:identifier "CN11" ;
     dpv:hasJurisdiction loc:AT .
-dpv:hasPurpose dpv:DirectMarketing ;
-	dpv:hasPurpose dpv:CustomerManagement ;
-	dpv:hasHumanSubject dpv:Customer ;
+
 
 at:CN12 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Inventory management (management of inventory records), support for the exchange of goods and the company's accounting, ancillary and auxiliary records of suppliers related to inventory management, acquisition costs and management of the allocation of hardware and software to computer system users."@en ;
-    dpv:hasPurpose impacto:dpv-Accounting ;
-    dpv:hasPurpose impacto:dpv-AncillaryRecords ;
-    dpv:hasPurpose impacto:dpv-AuxiliaryRecords ;
-    dpv:hasPurpose impacto:dpv-HardwareManagement ;
-    dpv:hasPurpose impacto:dpv-SoftwareManagement ;
+    dpv:hasPurpose impacto:dpv-InventoryManagement, impacto:dpv-ExchangeOfGoods, impacto:dpv-Accounting, impacto:dpv-HardwareUserAllocation, impacto:dpv-SoftwareUserAllocation  ;
+	dpv:hasData impacto:dpv-AcquisitionCosts, impacto:dpv-AncillaryRecords, impacto:dpv-AuxiliaryRecords ;
     dct:source at:DPIANotRequiredList ;
     dct:identifier "CN12" ;
     dpv:hasJurisdiction loc:AT .
-	dpv:hasPurpose dpv:ManageOperations ;
-	dpv:hasPurpose impacto:dpv-InventoryManagement ;
+
 
 at:CN13 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Processing of personal data within the framework of registers, evidence or books established by Union, federal or state law, provided that no personal data within the meaning of Art. 9 and 10 GDPR are processed."@en ;
