@@ -42,58 +42,58 @@
 ###############################################################################
 
 at:DPIANotRequiredList a impacto:DPIANotRequiredList ;
-    skos:prefLabel "DPIA exempt list (AT)"@en ;
-    rdfs:label "DPIA exempt list (AT)"@en ;
+    skos:prefLabel "DPIA Not Required list (AT)"@en ;
+    rdfs:label "DPIA Not Required list (AT)"@en ;
     skos:definition "List of processing operations for which no data protection impact assessment is required, published by the supervisory authority of AT under GDPR Art. 35(5)."@en ;
     dpv:hasJurisdiction loc:AT ;
     dct:source "GDPR Art. 35(5)"@en .
 cz:DPIANotRequiredList a impacto:DPIANotRequiredList ;
-    skos:prefLabel "DPIA exempt list (CZ)"@en ;
-    rdfs:label "DPIA exempt list (CZ)"@en ;
+    skos:prefLabel "DPIA Not Required list (CZ)"@en ;
+    rdfs:label "DPIA Not Required list (CZ)"@en ;
     skos:definition "List of processing operations for which no data protection impact assessment is required, published by the supervisory authority of CZ under GDPR Art. 35(5)."@en ;
     dpv:hasJurisdiction loc:CZ ;
     dct:source "GDPR Art. 35(5)"@en .
 es:DPIANotRequiredList a impacto:DPIANotRequiredList ;
-    skos:prefLabel "DPIA exempt list (ES)"@en ;
-    rdfs:label "DPIA exempt list (ES)"@en ;
+    skos:prefLabel "DPIA Not Required list (ES)"@en ;
+    rdfs:label "DPIA Not Required list (ES)"@en ;
     skos:definition "List of processing operations for which no data protection impact assessment is required, published by the supervisory authority of ES under GDPR Art. 35(5)."@en ;
     dpv:hasJurisdiction loc:ES ;
     dct:source "GDPR Art. 35(5)"@en .
 fr:DPIANotRequiredList a impacto:DPIANotRequiredList ;
-    skos:prefLabel "DPIA exempt list (FR)"@en ;
-    rdfs:label "DPIA exempt list (FR)"@en ;
+    skos:prefLabel "DPIA Not Required list (FR)"@en ;
+    rdfs:label "DPIA Not Required list (FR)"@en ;
     skos:definition "List of processing operations for which no data protection impact assessment is required, published by the supervisory authority of FR under GDPR Art. 35(5)."@en ;
     dpv:hasJurisdiction loc:FR ;
     dct:source "GDPR Art. 35(5)"@en .
 hr:DPIANotRequiredList a impacto:DPIANotRequiredList ;
-    skos:prefLabel "DPIA exempt list (HR)"@en ;
-    rdfs:label "DPIA exempt list (HR)"@en ;
+    skos:prefLabel "DPIA Not Required list (HR)"@en ;
+    rdfs:label "DPIA Not Required list (HR)"@en ;
     skos:definition "List of processing operations for which no data protection impact assessment is required, published by the supervisory authority of HR under GDPR Art. 35(5)."@en ;
     dpv:hasJurisdiction loc:HR ;
     dct:source "GDPR Art. 35(5)"@en .
 it:DPIANotRequiredList a impacto:DPIANotRequiredList ;
-    skos:prefLabel "DPIA exempt list (IT)"@en ;
-    rdfs:label "DPIA exempt list (IT)"@en ;
+    skos:prefLabel "DPIA Not Required list (IT)"@en ;
+    rdfs:label "DPIA Not Required list (IT)"@en ;
     skos:definition "List of processing operations for which no data protection impact assessment is required, published by the supervisory authority of IT under GDPR Art. 35(5)."@en ;
     dpv:hasJurisdiction loc:IT ;
     dct:source "GDPR Art. 35(5)"@en .
 lv:DPIANotRequiredList a impacto:DPIANotRequiredList ;
-    skos:prefLabel "DPIA exempt list (LV)"@en ;
-    rdfs:label "DPIA exempt list (LV)"@en ;
+    skos:prefLabel "DPIA Not Required list (LV)"@en ;
+    rdfs:label "DPIA Not Required list (LV)"@en ;
     skos:definition "List of processing operations for which no data protection impact assessment is required, published by the supervisory authority of LV under GDPR Art. 35(5)."@en ;
     dpv:hasJurisdiction loc:LV ;
     dct:source "GDPR Art. 35(5)"@en .
 nl:DPIANotRequiredList a impacto:DPIANotRequiredList ;
-    skos:prefLabel "DPIA exempt list (NL)"@en ;
-    rdfs:label "DPIA exempt list (NL)"@en ;
+    skos:prefLabel "DPIA Not Required list (NL)"@en ;
+    rdfs:label "DPIA Not Required list (NL)"@en ;
     skos:definition "List of processing operations for which no data protection impact assessment is required, published by the supervisory authority of NL under GDPR Art. 35(5)."@en ;
     dpv:hasJurisdiction loc:NL ;
     dct:source "GDPR Art. 35(5)"@en .
 
 eu-gdpr:DPIANotRequiredList a impacto:DPIANotRequiredList ;
-    skos:prefLabel "DPIA exemptions at EU level"@en ;
-    rdfs:label "DPIA exemptions at EU level"@en ;
-    skos:definition "Exemptions from the obligation to carry out a data protection impact assessment arising from the GDPR itself and from EDPB guidance, rather than from a national list."@en ;
+    skos:prefLabel "DPIA Not Required List"@en ;
+    rdfs:label "DPIA Not Required List"@en ;
+    skos:definition "Exemptions from the obligation to carry out a data protection impact assessment arising from the GDPR itself and from EDPB guidance."@en ;
     dct:source "GDPR Art. 35(1), 35(5), 35(10); EDPB WP248rev.01"@en .
 
 ###############################################################################
