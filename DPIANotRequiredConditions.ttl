@@ -813,18 +813,65 @@ es:CN63 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dct:identifier "CN63" ;
     dpv:hasJurisdiction loc:ES .
 
-es:CN64 a impacto:eu-gdpr-DPIANotRequiredProcess ;
+es:CN64a a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Spain and which involves: Processing carried out by owners’ associations and sub-associations in multi- occupancy properties, according as these are defined at article 2 (a, b, and d) of Law 49/1960 on Horizontal Property."@en ;
-    dpv:hasEntity impacto:dpv-OwnerAssociation ;
-    dpv:hasLocation impacto:loc-MultiOccupancyProperty ;
-    rdfs:label "CN65: Processing carried out by owners’ associations and sub-assoc"@en ;
+    dpv:hasPurpose impacto:dpv-ResidentialBuildingManagement ;
+    dpv:hasDataSubject impacto:dpv-ApartmentOwner ;
+    dpv:hasLocation impacto:dpv-MultiOccupancyProperty ;
+    dpv:hasApplicableLaw impacto:legal-HorizontalPropertyLaw ;
+    dpv:hasResponsibleEntity impacto:dpv-OwnersAssociation ;
     dct:identifier "CN64" ;
     dct:source es:DPIANotRequiredList ;
     dpv:hasJurisdiction loc:ES .
 
-es:CN65  a impacto:eu-gdpr-DPIANotRequiredProcess ;
-    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Spain and which involves: Processing carried out by professional colleges and non-profit associations in connection with the data of their associates members and donors of the data controllers listed therein concerning the management of their personal data, and in the performance of their tasks, provided that the processing does not extend to sensitive data such as those referred to in article 9.1 of the GDPR and that article 9.2(d) does not apply."@en ;
+es:CN64b a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Spain and which involves: Processing carried out by owners’ associations and sub-associations in multi- occupancy properties, according as these are defined at article 2 (a, b, and d) of Law 49/1960 on Horizontal Property."@en ;
+    dpv:hasPurpose impacto:dpv-ResidentialBuildingManagement ;
+    dpv:hasDataSubject impacto:dpv-ApartmentOwner ;
+    dpv:hasLocation impacto:dpv-MultiOccupancyProperty ;
+    dpv:hasApplicableLaw impacto:legal-HorizontalPropertyLaw ;
+    dpv:hasResponsibleEntity impacto:dpv-OwnersSubAssociation ;
+    dct:identifier "CN64" ;
     dct:source es:DPIANotRequiredList ;
+    dpv:hasJurisdiction loc:ES .
+
+es:CN65a  a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Spain and which involves: Processing carried out by professional colleges and non-profit associations in connection with the data of their associates members and donors of the data controllers listed therein concerning the management of their personal data, and in the performance of their tasks, provided that the processing does not extend to sensitive data such as those referred to in article 9.1 of the GDPR and that article 9.2(d) does not apply."@en ;
+    dpv:hasPurpose dpv:MemberPartnerManagement  ;
+	dpv:hasResponsibleEntity impacto:dpv-ProfessionalCollege ;
+    dpv:hasDataSubject dpv:Member ;
+	dct:source es:DPIANotRequiredList ;
     dct:identifier "CN65" ;
     dpv:hasJurisdiction loc:ES .
+
+es:CN65b  a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Spain and which involves: Processing carried out by professional colleges and non-profit associations in connection with the data of their associates members and donors of the data controllers listed therein concerning the management of their personal data, and in the performance of their tasks, provided that the processing does not extend to sensitive data such as those referred to in article 9.1 of the GDPR and that article 9.2(d) does not apply."@en ;
+	dpv:hasPurpose impacto:dpv-DonorManagement ;
+	dpv:hasResponsibleEntity impacto:dpv-ProfessionalCollege ;
+    dpv:hasDataSubject impacto:dpv-Donor ;
+	dct:source es:DPIANotRequiredList ;
+    dct:identifier "CN65" ;
+    dpv:hasJurisdiction loc:ES .
+
+es:CN65c  a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Spain and which involves: Processing carried out by professional colleges and non-profit associations in connection with the data of their associates members and donors of the data controllers listed therein concerning the management of their personal data, and in the performance of their tasks, provided that the processing does not extend to sensitive data such as those referred to in article 9.1 of the GDPR and that article 9.2(d) does not apply."@en ;
+	dpv:hasPurpose dpv:MemberPartnerManagement  ;
+ 	dpv:hasResponsibleEntity dpv:NonProfitOrganisation ;
+    dpv:hasDataSubject dpv:Member ;
+	dct:source es:DPIANotRequiredList ;
+    dct:identifier "CN65" ;
+    dpv:hasJurisdiction loc:ES .
+
+
+es:CN65d  a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Spain and which involves: Processing carried out by professional colleges and non-profit associations in connection with the data of their associates members and donors of the data controllers listed therein concerning the management of their personal data, and in the performance of their tasks, provided that the processing does not extend to sensitive data such as those referred to in article 9.1 of the GDPR and that article 9.2(d) does not apply."@en ;
+	dpv:hasPurpose impacto:dpv-DonorManagement ;
+    dpv:hasResponsibleEntity dpv:NonProfitOrganisation ;
+    dpv:hasDataSubject impacto:dpv-Donor ;
+    dpv:hasPurpose impacto:dpv-DonorManagement ;
+	dct:source es:DPIANotRequiredList ;
+    dct:identifier "CN65" ;
+    dpv:hasJurisdiction loc:ES .
+
+
 
