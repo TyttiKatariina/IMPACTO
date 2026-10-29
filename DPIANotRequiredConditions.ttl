@@ -224,6 +224,7 @@ at:CN8 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria: Processing and preservation of personal data of applicants, if this data has been provided by the data subject."@en ;
 	dpv:hasHumanSubject dpv:Applicant ;
 	dpv:hasPersonalData dpv:ProvidedPersonalData ;
+	dpv:hasProcessing dpv:Store ;
     dct:source at:DPIANotRequiredList ;
     dct:identifier "CN8" ;
     dpv:hasJurisdiction loc:AT .
@@ -275,10 +276,57 @@ dpv:hasPurpose dpv:MemberManagement ;
 	dpv:hasPersonalData pd:MembershipStatus ;
 	dpv:hasOrganisation dpv:NonProfitOrganisation ;
 
-at:CN11 a impacto:eu-gdpr-DPIANotRequiredProcess ;
-	skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Processing of own or purchased customer and interested party data for the business initiation regarding the own delivery or service offer as well as for the implementation of advertising measures and newsletter dispatch."@en ;
+
+at:CN11a a impacto:eu-gdpr-DPIANotRequiredProcess ;
+	skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Processing of own or purchased customer and interested party data for the business initiation 
+regarding the own delivery or service offer as well as for the implementation of advertising measures and newsletter dispatch."@en ;
     dpv:hasEntity impacto:dpv-InterestedParty ;
-    dpv:hasPurpose impacto:dpv-BusinessInitiation, impacto:dpv-DeliveryOffering, impacto:dpv-NewsletterDistribution, impacto:dpv-ServiceOffering, dpv:Advertising ;
+    dpv:hasPurpose impacto:dpv-BusinessInitiation ;
+	dpv:hasHumanSubject dpv:Customer ;
+	dpv:hasSubject impacto:dpv-InterestedParty ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN11" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN11b a impacto:eu-gdpr-DPIANotRequiredProcess ;
+	skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Processing of own or purchased customer and interested party data for the business initiation 
+regarding the own delivery or service offer as well as for the implementation of advertising measures and newsletter dispatch."@en ;
+    dpv:hasEntity impacto:dpv-InterestedParty ;
+    dpv:hasPurpose impacto:dpv-DeliveryOffering ;
+	dpv:hasHumanSubject dpv:Customer ;
+	dpv:hasSubject impacto:dpv-InterestedParty ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN11" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN11c a impacto:eu-gdpr-DPIANotRequiredProcess ;
+	skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Processing of own or purchased customer and interested party data for the business initiation 
+regarding the own delivery or service offer as well as for the implementation of advertising measures and newsletter dispatch."@en ;
+    dpv:hasEntity impacto:dpv-InterestedParty ;
+    dpv:hasPurpose impacto:dpv-NewsletterDistribution ;
+	dpv:hasHumanSubject dpv:Customer ;
+	dpv:hasSubject impacto:dpv-InterestedParty ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN11" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN11d a impacto:eu-gdpr-DPIANotRequiredProcess ;
+	skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Processing of own or purchased customer and interested party data for the business initiation 
+regarding the own delivery or service offer as well as for the implementation of advertising measures and newsletter dispatch."@en ;
+    dpv:hasEntity impacto:dpv-InterestedParty ;
+    dpv:hasPurpose impacto:dpv-ServiceOffering ;
+	dpv:hasHumanSubject dpv:Customer ;
+	dpv:hasSubject impacto:dpv-InterestedParty ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN11" ;
+    dpv:hasJurisdiction loc:AT .
+
+
+at:CN11e a impacto:eu-gdpr-DPIANotRequiredProcess ;
+	skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Processing of own or purchased customer and interested party data for the business initiation 
+regarding the own delivery or service offer as well as for the implementation of advertising measures and newsletter dispatch."@en ;
+    dpv:hasEntity impacto:dpv-InterestedParty ;
+    dpv:hasPurpose dpv:Advertising ;
 	dpv:hasHumanSubject dpv:Customer ;
 	dpv:hasSubject impacto:dpv-InterestedParty ;
     dct:source at:DPIANotRequiredList ;
@@ -287,7 +335,9 @@ at:CN11 a impacto:eu-gdpr-DPIANotRequiredProcess ;
 
 
 at:CN12 a impacto:eu-gdpr-DPIANotRequiredProcess ;
-    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Inventory management (management of inventory records), support for the exchange of goods and the company's accounting, ancillary and auxiliary records of suppliers related to inventory management, acquisition costs and management of the allocation of hardware and software to computer system users."@en ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Inventory management (management of inventory records), 
+support for the exchange of goods and the company's accounting, ancillary and auxiliary records of suppliers related to inventory management, acquisition costs and management of the allocation of 
+hardware and software to computer system users."@en ;
     dpv:hasPurpose impacto:dpv-InventoryManagement, impacto:dpv-ExchangeOfGoods, impacto:dpv-Accounting, impacto:dpv-HardwareUserAllocation, impacto:dpv-SoftwareUserAllocation  ;
 	dpv:hasData impacto:dpv-AcquisitionCosts, impacto:dpv-AncillaryRecords, impacto:dpv-AuxiliaryRecords ;
     dct:source at:DPIANotRequiredList ;
@@ -296,7 +346,8 @@ at:CN12 a impacto:eu-gdpr-DPIANotRequiredProcess ;
 
 
 at:CN13 a impacto:eu-gdpr-DPIANotRequiredProcess ;
-    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Processing of personal data within the framework of registers, evidence or books established by Union, federal or state law, provided that no personal data within the meaning of Art. 9 and 10 GDPR are processed."@en ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Processing of personal data within the framework of registers, 
+evidence or books established by Union, federal or state law, provided that no personal data within the meaning of Art. 9 and 10 GDPR are processed."@en ;
     dpv:hasData impacto:dpv-NationalLevelRegisters ;
     dpv:hasData impacto:dpv-PersonalDataRegisters ;
     dpv:hasData impacto:dpv-UnionLevelRegisters ;
@@ -304,7 +355,7 @@ at:CN13 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dct:source at:DPIANotRequiredList ;
     dct:identifier "CN13" ;
     dpv:hasJurisdiction loc:AT .
-dpv:hasLegalBasis dpv:LegalObligation ;
+	dpv:hasLegalBasis dpv:LegalObligation ;
 	dpv:hasPurpose impacto:dpv-StatutoryRecordKeeping ;
 	dpv:hasContext impacto:dpv-DataRegister ;
 
