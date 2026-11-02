@@ -202,20 +202,218 @@ at:CN6c  a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dpv:hasJurisdiction loc:AT .
 
 
-#TR seperate all these at:CN7 a impacto:eu-gdpr-DPIANotRequiredProcess ;
+at:CN7a a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria: Processing and evident of service law, salary-related, training-related and other personal data directly related to the employment relationship of public servants and other persons paid by those responsible for the public sector (such as civil servants, contract staff, persons in training, temporary staff, but also deputies and civil servants) as well as volunteers and civil servants (each without remuneration) by the service authorities and personnel departments for the purpose of individual personnel measures and statistical evaluations."@en ;
-    dpv:hasEntity impacto:dpv-CivilServant ;
-    dpv:hasEntity impacto:dpv-Deputies ;
-    dpv:hasEntity impacto:dpv-HumanResourceDepartment ;
-    dpv:hasEntity impacto:dpv-PersonnelInTraining ;
-    dpv:hasEntity impacto:dpv-PublicServant ;
-    dpv:hasEntity impacto:dpv-StaffOnContract ;
-    dpv:hasEntity impacto:dpv-TemporaryStaff ;
-    dpv:hasPurpose impacto:tech-StatisticalEvaluations ;
-	dpv:hasPurpose impacto:dpv-PersonnelMeasures ; 
-	dpv:hasPurpose dpv:PersonnelPayment ;
-	dpv:hasPurpose impacto:dpv-PersonnelTraining ;
 	dpv:hasResponsibleEntity dpv:PublicSectorBody ;
+	dpv:hasPurpose impacto:tech-StatisticalEvaluations ;
+    dpv:hasDataSubject impacto:dpv-CivilServant ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN7" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN7b a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria: Processing and evident of service law, salary-related, training-related and other personal data directly related to the employment relationship of public servants and other persons paid by those responsible for the public sector (such as civil servants, contract staff, persons in training, temporary staff, but also deputies and civil servants) as well as volunteers and civil servants (each without remuneration) by the service authorities and personnel departments for the purpose of individual personnel measures and statistical evaluations."@en ;
+	dpv:hasResponsibleEntity dpv:PublicSectorBody ;
+	dpv:hasPurpose impacto:dpv-PersonnelMeasures ; 
+    dpv:hasDataSubject impacto:dpv-CivilServant ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN7" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN7c a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria: Processing and evident of service law, salary-related, training-related and other personal data directly related to the employment relationship of public servants and other persons paid by those responsible for the public sector (such as civil servants, contract staff, persons in training, temporary staff, but also deputies and civil servants) as well as volunteers and civil servants (each without remuneration) by the service authorities and personnel departments for the purpose of individual personnel measures and statistical evaluations."@en ;
+	dpv:hasResponsibleEntity dpv:PublicSectorBody ;
+	dpv:hasPurpose dpv:PersonnelPayment ;
+    dpv:hasDataSubject impacto:dpv-CivilServant ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN7" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN7d a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria: Processing and evident of service law, salary-related, training-related and other personal data directly related to the employment relationship of public servants and other persons paid by those responsible for the public sector (such as civil servants, contract staff, persons in training, temporary staff, but also deputies and civil servants) as well as volunteers and civil servants (each without remuneration) by the service authorities and personnel departments for the purpose of individual personnel measures and statistical evaluations."@en ;
+	dpv:hasResponsibleEntity dpv:PublicSectorBody ;
+	dpv:hasPurpose impacto:dpv-PersonnelTraining ;
+    dpv:hasDataSubject impacto:dpv-CivilServant ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN7" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN7e a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria: Processing and evident of service law, salary-related, training-related and other personal data directly related to the employment relationship of public servants and other persons paid by those responsible for the public sector (such as civil servants, contract staff, persons in training, temporary staff, but also deputies and civil servants) as well as volunteers and civil servants (each without remuneration) by the service authorities and personnel departments for the purpose of individual personnel measures and statistical evaluations."@en ;
+	dpv:hasResponsibleEntity dpv:PublicSectorBody ;
+	dpv:hasPurpose impacto:tech-StatisticalEvaluations ;
+    dpv:hasDataSubject impacto:dpv-Deputies ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN7" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN7f a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria: Processing and evident of service law, salary-related, training-related and other personal data directly related to the employment relationship of public servants and other persons paid by those responsible for the public sector (such as civil servants, contract staff, persons in training, temporary staff, but also deputies and civil servants) as well as volunteers and civil servants (each without remuneration) by the service authorities and personnel departments for the purpose of individual personnel measures and statistical evaluations."@en ;
+	dpv:hasResponsibleEntity dpv:PublicSectorBody ;
+	dpv:hasPurpose impacto:dpv-PersonnelMeasures ; 
+    dpv:hasDataSubject impacto:dpv-Deputies ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN7" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN7g a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria: Processing and evident of service law, salary-related, training-related and other personal data directly related to the employment relationship of public servants and other persons paid by those responsible for the public sector (such as civil servants, contract staff, persons in training, temporary staff, but also deputies and civil servants) as well as volunteers and civil servants (each without remuneration) by the service authorities and personnel departments for the purpose of individual personnel measures and statistical evaluations."@en ;
+	dpv:hasResponsibleEntity dpv:PublicSectorBody ;
+	dpv:hasPurpose dpv:PersonnelPayment ;
+    dpv:hasDataSubject impacto:dpv-Deputies ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN7" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN7h a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria: Processing and evident of service law, salary-related, training-related and other personal data directly related to the employment relationship of public servants and other persons paid by those responsible for the public sector (such as civil servants, contract staff, persons in training, temporary staff, but also deputies and civil servants) as well as volunteers and civil servants (each without remuneration) by the service authorities and personnel departments for the purpose of individual personnel measures and statistical evaluations."@en ;
+	dpv:hasResponsibleEntity dpv:PublicSectorBody ;
+	dpv:hasPurpose impacto:dpv-PersonnelTraining ;
+    dpv:hasDataSubject impacto:dpv-Deputies ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN7" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN7i a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria: Processing and evident of service law, salary-related, training-related and other personal data directly related to the employment relationship of public servants and other persons paid by those responsible for the public sector (such as civil servants, contract staff, persons in training, temporary staff, but also deputies and civil servants) as well as volunteers and civil servants (each without remuneration) by the service authorities and personnel departments for the purpose of individual personnel measures and statistical evaluations."@en ;
+	dpv:hasResponsibleEntity dpv:PublicSectorBody ;
+	dpv:hasPurpose impacto:tech-StatisticalEvaluations ;
+    dpv:hasDataSubject impacto:dpv-PersonnelInTraining  ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN7" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN7j a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria: Processing and evident of service law, salary-related, training-related and other personal data directly related to the employment relationship of public servants and other persons paid by those responsible for the public sector (such as civil servants, contract staff, persons in training, temporary staff, but also deputies and civil servants) as well as volunteers and civil servants (each without remuneration) by the service authorities and personnel departments for the purpose of individual personnel measures and statistical evaluations."@en ;
+	dpv:hasResponsibleEntity dpv:PublicSectorBody ;
+	dpv:hasPurpose impacto:dpv-PersonnelMeasures ; 
+    dpv:hasDataSubject impacto:dpv-PersonnelInTraining  ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN7" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN7k a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria: Processing and evident of service law, salary-related, training-related and other personal data directly related to the employment relationship of public servants and other persons paid by those responsible for the public sector (such as civil servants, contract staff, persons in training, temporary staff, but also deputies and civil servants) as well as volunteers and civil servants (each without remuneration) by the service authorities and personnel departments for the purpose of individual personnel measures and statistical evaluations."@en ;
+	dpv:hasResponsibleEntity dpv:PublicSectorBody ;
+	dpv:hasPurpose dpv:PersonnelPayment ;
+    dpv:hasDataSubject impacto:dpv-PersonnelInTraining  ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN7" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN7l a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria: Processing and evident of service law, salary-related, training-related and other personal data directly related to the employment relationship of public servants and other persons paid by those responsible for the public sector (such as civil servants, contract staff, persons in training, temporary staff, but also deputies and civil servants) as well as volunteers and civil servants (each without remuneration) by the service authorities and personnel departments for the purpose of individual personnel measures and statistical evaluations."@en ;
+	dpv:hasResponsibleEntity dpv:PublicSectorBody ;
+	dpv:hasPurpose impacto:dpv-PersonnelTraining ;
+    dpv:hasDataSubject impacto:dpv-PersonnelInTraining  ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN7" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN7m a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria: Processing and evident of service law, salary-related, training-related and other personal data directly related to the employment relationship of public servants and other persons paid by those responsible for the public sector (such as civil servants, contract staff, persons in training, temporary staff, but also deputies and civil servants) as well as volunteers and civil servants (each without remuneration) by the service authorities and personnel departments for the purpose of individual personnel measures and statistical evaluations."@en ;
+	dpv:hasResponsibleEntity dpv:PublicSectorBody ;
+	dpv:hasPurpose impacto:tech-StatisticalEvaluations ;
+    dpv:hasDataSubject impacto:dpv-PublicServant ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN7" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN7n a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria: Processing and evident of service law, salary-related, training-related and other personal data directly related to the employment relationship of public servants and other persons paid by those responsible for the public sector (such as civil servants, contract staff, persons in training, temporary staff, but also deputies and civil servants) as well as volunteers and civil servants (each without remuneration) by the service authorities and personnel departments for the purpose of individual personnel measures and statistical evaluations."@en ;
+	dpv:hasResponsibleEntity dpv:PublicSectorBody ;
+	dpv:hasPurpose impacto:dpv-PersonnelMeasures ; 
+    dpv:hasDataSubject impacto:dpv-PublicServant ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN7" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN7o a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria: Processing and evident of service law, salary-related, training-related and other personal data directly related to the employment relationship of public servants and other persons paid by those responsible for the public sector (such as civil servants, contract staff, persons in training, temporary staff, but also deputies and civil servants) as well as volunteers and civil servants (each without remuneration) by the service authorities and personnel departments for the purpose of individual personnel measures and statistical evaluations."@en ;
+	dpv:hasResponsibleEntity dpv:PublicSectorBody ;
+	dpv:hasPurpose dpv:PersonnelPayment ;
+    dpv:hasDataSubject impacto:dpv-PublicServant ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN7" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN7p a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria: Processing and evident of service law, salary-related, training-related and other personal data directly related to the employment relationship of public servants and other persons paid by those responsible for the public sector (such as civil servants, contract staff, persons in training, temporary staff, but also deputies and civil servants) as well as volunteers and civil servants (each without remuneration) by the service authorities and personnel departments for the purpose of individual personnel measures and statistical evaluations."@en ;
+	dpv:hasResponsibleEntity dpv:PublicSectorBody ;
+	dpv:hasPurpose impacto:dpv-PersonnelTraining ;
+    dpv:hasDataSubject impacto:dpv-PublicServant ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN7" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN7q a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria: Processing and evident of service law, salary-related, training-related and other personal data directly related to the employment relationship of public servants and other persons paid by those responsible for the public sector (such as civil servants, contract staff, persons in training, temporary staff, but also deputies and civil servants) as well as volunteers and civil servants (each without remuneration) by the service authorities and personnel departments for the purpose of individual personnel measures and statistical evaluations."@en ;
+	dpv:hasResponsibleEntity dpv:PublicSectorBody ;
+	dpv:hasPurpose impacto:tech-StatisticalEvaluations ;
+    dpv:hasDataSubject impacto:dpv-StaffOnContract ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN7" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN7r a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria: Processing and evident of service law, salary-related, training-related and other personal data directly related to the employment relationship of public servants and other persons paid by those responsible for the public sector (such as civil servants, contract staff, persons in training, temporary staff, but also deputies and civil servants) as well as volunteers and civil servants (each without remuneration) by the service authorities and personnel departments for the purpose of individual personnel measures and statistical evaluations."@en ;
+	dpv:hasResponsibleEntity dpv:PublicSectorBody ;
+	dpv:hasPurpose impacto:dpv-PersonnelMeasures ; 
+    dpv:hasDataSubject impacto:dpv-StaffOnContract ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN7" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN7s a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria: Processing and evident of service law, salary-related, training-related and other personal data directly related to the employment relationship of public servants and other persons paid by those responsible for the public sector (such as civil servants, contract staff, persons in training, temporary staff, but also deputies and civil servants) as well as volunteers and civil servants (each without remuneration) by the service authorities and personnel departments for the purpose of individual personnel measures and statistical evaluations."@en ;
+	dpv:hasResponsibleEntity dpv:PublicSectorBody ;
+	dpv:hasPurpose dpv:PersonnelPayment ;
+    dpv:hasDataSubject impacto:dpv-StaffOnContract ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN7" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN7t a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria: Processing and evident of service law, salary-related, training-related and other personal data directly related to the employment relationship of public servants and other persons paid by those responsible for the public sector (such as civil servants, contract staff, persons in training, temporary staff, but also deputies and civil servants) as well as volunteers and civil servants (each without remuneration) by the service authorities and personnel departments for the purpose of individual personnel measures and statistical evaluations."@en ;
+	dpv:hasResponsibleEntity dpv:PublicSectorBody ;
+	dpv:hasPurpose impacto:dpv-PersonnelTraining ;
+    dpv:hasDataSubject impacto:dpv-StaffOnContract ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN7" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN7u a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria: Processing and evident of service law, salary-related, training-related and other personal data directly related to the employment relationship of public servants and other persons paid by those responsible for the public sector (such as civil servants, contract staff, persons in training, temporary staff, but also deputies and civil servants) as well as volunteers and civil servants (each without remuneration) by the service authorities and personnel departments for the purpose of individual personnel measures and statistical evaluations."@en ;
+	dpv:hasResponsibleEntity dpv:PublicSectorBody ;
+	dpv:hasPurpose impacto:tech-StatisticalEvaluations ;
+    dpv:hasDataSubject impacto:dpv-TemporaryStaff ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN7" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN7v a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria: Processing and evident of service law, salary-related, training-related and other personal data directly related to the employment relationship of public servants and other persons paid by those responsible for the public sector (such as civil servants, contract staff, persons in training, temporary staff, but also deputies and civil servants) as well as volunteers and civil servants (each without remuneration) by the service authorities and personnel departments for the purpose of individual personnel measures and statistical evaluations."@en ;
+	dpv:hasResponsibleEntity dpv:PublicSectorBody ;
+	dpv:hasPurpose impacto:dpv-PersonnelMeasures ; 
+    dpv:hasDataSubject impacto:dpv-TemporaryStaff ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN7" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN7w a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria: Processing and evident of service law, salary-related, training-related and other personal data directly related to the employment relationship of public servants and other persons paid by those responsible for the public sector (such as civil servants, contract staff, persons in training, temporary staff, but also deputies and civil servants) as well as volunteers and civil servants (each without remuneration) by the service authorities and personnel departments for the purpose of individual personnel measures and statistical evaluations."@en ;
+	dpv:hasResponsibleEntity dpv:PublicSectorBody ;
+	dpv:hasPurpose dpv:PersonnelPayment ;
+    dpv:hasDataSubject impacto:dpv-TemporaryStaff ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN7" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN7x a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria: Processing and evident of service law, salary-related, training-related and other personal data directly related to the employment relationship of public servants and other persons paid by those responsible for the public sector (such as civil servants, contract staff, persons in training, temporary staff, but also deputies and civil servants) as well as volunteers and civil servants (each without remuneration) by the service authorities and personnel departments for the purpose of individual personnel measures and statistical evaluations."@en ;
+	dpv:hasResponsibleEntity dpv:PublicSectorBody ;
+	dpv:hasPurpose impacto:dpv-PersonnelTraining ;
+    dpv:hasDataSubject impacto:dpv-TemporaryStaff ;
     dct:source at:DPIANotRequiredList ;
     dct:identifier "CN7" ;
     dpv:hasJurisdiction loc:AT .
@@ -229,7 +427,7 @@ at:CN8 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dct:identifier "CN8" ;
     dpv:hasJurisdiction loc:AT .
 
-at:CN9a  a impacto:eu-gdpr-DPIANotRequiredProcess ;
+at:CN9a a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria: Processing of special categories of personal data within the meaning of Art. 9 and a processing of personal data on criminal convictions and criminal offences within the meaning of Art. 10 GDPR within the framework of this exception are only permitted on the basis of a statutory authorization or on the basis of legal obligations."@en ;
     dpv:hasPersonalData dpv:SpecialCategoryPersonalData ;
     dpv:hasJustification impacto:dpv-StatutoryAuthorisation ;
@@ -245,7 +443,7 @@ at:CN9b  a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dct:identifier "CN9" ;
     dpv:hasJurisdiction loc:AT .
 
-at:CN10  a impacto:eu-gdpr-DPIANotRequiredProcess ;
+#TR TODO at:CN10  a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "Maintenance of member lists, evidence of membership and funding fees, contact with members or sponsors of bodies under public and private law, in particular associations and partnerships, as well as support for members and sponsors."@en ;
     dpv:hasPurpose impacto:dpv-MemberListMaintenance ;
 	dpv:hasPurpose impacto:dpv-FundingManagement ;
@@ -348,102 +546,143 @@ hardware and software to computer system users."@en ;
 at:CN13 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Processing of personal data within the framework of registers, 
 evidence or books established by Union, federal or state law, provided that no personal data within the meaning of Art. 9 and 10 GDPR are processed."@en ;
-    dpv:hasData impacto:dpv-NationalLevelRegisters ;
-    dpv:hasData impacto:dpv-PersonalDataRegisters ;
-    dpv:hasData impacto:dpv-UnionLevelRegisters ;
-    dpv:hasEntity impacto:dpv-FederalAuthority ;
+   	dpv:hasPurpose impacto:dpv-StatutoryRecordKeeping ;
+	dpv:hasContext impacto:dpv-DataRegister ;
+	dpv:hasData impacto:dpv-NationalLevelRegisters, impacto:dpv-PersonalDataRegisters, impacto:dpv-UnionLevelRegisters ;
+	dpv:hasApplicableLaw impacto:dpv-UnionLaw, impacto:dpv-FederalLaw, impacto:dpv-StateLaw;
     dct:source at:DPIANotRequiredList ;
     dct:identifier "CN13" ;
     dpv:hasJurisdiction loc:AT .
-	dpv:hasLegalBasis dpv:LegalObligation ;
-	dpv:hasPurpose impacto:dpv-StatutoryRecordKeeping ;
-	dpv:hasContext impacto:dpv-DataRegister ;
 
-at:CN14 a impacto:eu-gdpr-DPIANotRequiredProcess ;
+
+at:CN14a a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Management of usernames and passwords as well as system access logging."@en ;
     dpv:hasTechnicalMeasure impacto:dpv-AccessLogins ;
     dct:source at:DPIANotRequiredList ;
     dct:identifier "CN14" ;
     dpv:hasJurisdiction loc:AT .
-	dpv:hasPurpose dpv:IdentityManagement ;
-	dpv:hasPurpose dpv:SecurityManagement ;
-	dpv:hasPersonalData pd:UserID ;
+
+at:CN14b a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Management of usernames and passwords as well as system access logging."@en ;
+	dpv:hasPurpose dpv:UsernameManagement ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN14" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN14c a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Management of usernames and passwords as well as system access logging."@en ;
+	dpv:hasPurpose dpv:PasswordManagement ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN14" ;
+    dpv:hasJurisdiction loc:AT .
 
 at:CN15 a impacto:eu-gdpr-DPIANotRequiredProcess ;
-    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Control of the authorization of access to buildings and delimited areas by the owner or authorized user with the help of systems that process personal data with automated assistance, whereby no biometric data of data subjects are processed. The mere real-time reproduction of facial images is covered by this exception."@en ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Control of the authorization of access to buildings and delimited areas by the owner or 
+authorized user with the help of systems that process personal data with automated assistance, whereby no biometric data of data subjects are processed. The mere real-time reproduction of facial images is covered by this exception."@en ;
     dpv:hasDataSource impacto:dpv-ImageData ;
     dpv:hasDataSource impacto:dpv-VideoData ;
     dpv:hasDataSource impacto:pd-FacialImages ;
-    dpv:isImplementedUsingTechnology impacto:tech-AutomatedAccess ;
+    dpv:isImplementedUsingTechnology impacto:tech-AutomatedAssistance ;
     dct:source at:DPIANotRequiredList ;
     dct:identifier "CN15" ;
     dpv:hasJurisdiction loc:AT .
 	dpv:hasPurpose dpv:AccessControl ;
 	dpv:hasPurpose dpv:PhysicalAccessControl ;
 	dpv:hasLocation dpv:PrivateLocation ;
+	dpv:isNotApplicableFor pd:Biometric ;
 
 at:CN16 a impacto:eu-gdpr-DPIANotRequiredProcess ;
-    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Stationary image processing and associated acoustic processing for monitoring purposes (video surveillance). Subject to conditions. Spatial recording area: Localities over which the person responsible is authorized to dispose. The video surveillance may not extend beyond the property, with the exception of an inevitable inclusion of public traffic areas to the extent of up to half a meter measured from the property boundary of the monitored object. In addition, video surveillance may not be operated in places that represent the most personal area of life of people. Storage period: Recorded personal data must be deleted by the controller after 72 hours at the latest, unless a longer storage period has been expressly stipulated in a law, by an official legal act, in a works agreement or with the consent of the personnel representation. Identification: The prerequisite for the exception is the appropriate identification of the image processing by the person responsible. In any case, the person responsible must be clearly stated from the marking."@en ;
-    dpv:hasContext impacto:dpv-PropertyBoundaryLimitation ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Stationary image processing and associated acoustic processing for monitoring purposes 
+(video surveillance). Subject to conditions. Spatial recording area: Localities over which the person responsible is authorized to dispose. The video surveillance may not extend beyond the property, with the exception of an 
+inevitable inclusion of public traffic areas to the extent of up to half a meter measured from the property boundary of the monitored object. In addition, video surveillance may not be operated in places that represent the most 
+personal area of life of people. Storage period: Recorded personal data must be deleted by the controller after 72 hours at the latest, unless a longer storage period has been expressly stipulated in a law, by an official legal act, 
+in a works agreement or with the consent of the personnel representation. Identification: The prerequisite for the exception is the appropriate identification of the image processing by the person responsible. In any case, the person 
+responsible must be clearly stated from the marking."@en ;
+	dpv:hasPurpose impacto:dpv-VideoSurveillance ;
+   
+	dpv:hasContext impacto:dpv-PropertyBoundaryLimitation ;
     dpv:hasDataSource impacto:dpv-AudioData ;
     dpv:hasLocation impacto:dpv-LimitedPublicArea ;
     dpv:hasPersonalData impacto:pd-Gait ;
     dct:source at:DPIANotRequiredList ;
     dct:identifier "CN16" ;
     dpv:hasJurisdiction loc:AT .
-dpv:hasPurpose impacto:dpv-Monitoring ;
+	dpv:hasPurpose impacto:dpv-VideoSurveillance ;
 	dpv:hasData tech:VideoContent ;
 	dpv:hasData tech:AudioContent ;
 	dpv:hasLocation dpv:PrivateLocation ;
 
-at:CN17  a impacto:eu-gdpr-DPIANotRequiredProcess ;
-    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Image and acoustic processing, which serve the preventive protection of persons or things on private properties used for residential purposes, which are used exclusively by the person responsible and by all authorized users living in the common household. The prerequisite is the consent of all authorized users."@en ;
-    dpv:hasContext impacto:dpv-PrivateUse ;
-    dpv:hasContext impacto:dpv-ResidentialUse ;
-    dpv:hasEntity impacto:dpv-PropertyOwner ;
-    dpv:hasPurpose impacto:dpv-ResidentialPurpose ;
-    dpv:hasTechnicalMeasure impacto:dpv-PersonsPreventativeProtection ;
-    dpv:hasTechnicalMeasure impacto:dpv-PropertyPreventativeProtection ;
+at:CN17a  a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Image and acoustic processing, which serve the preventive protection of persons or things on
+private properties used for residential purposes, which are used exclusively by the person responsible and by all authorized users living in the common household. The prerequisite is the consent of all authorized users."@en ;
+    dpv:hasPurpose impacto:dpv-PersonsPreventativeProtection, impacto:dpv-ResidentialPurpose  ;
+	dpv:hasJustification dpv:ConsentProvided ;
+    dpv:hasEntity impacto:dpv-PropertyOwner, impacto:dpv-AuthorisedUser ;
+	dpv:hasData tech:ImageContent, tech:AudioContent ;
     dct:source at:DPIANotRequiredList ;
     dct:identifier "CN17" ;
     dpv:hasJurisdiction loc:AT .
-dpv:hasPurpose impacto:dpv-PreventativeProtectionOfPersons ;
-	dpv:hasPurpose impacto:dpv-PreventativeProtectionOfProperty ;
-	dpv:hasData tech:ImageData ;
-	dpv:hasLocation dpv:PrivateLocation ;
+
+at:CN17b  a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Image and acoustic processing, which serve the preventive protection of persons or things on
+private properties used for residential purposes, which are used exclusively by the person responsible and by all authorized users living in the common household. The prerequisite is the consent of all authorized users."@en ;
+    dpv:hasPurpose impacto:dpv-PropertyPreventativeProtection, impacto:dpv-ResidentialPurpose ;
+	dpv:hasJustification dpv:ConsentProvided ;
+    dpv:hasEntity impacto:dpv-PropertyOwner, impacto:dpv-AuthorisedUser ;
+	dpv:hasData tech:ImageContent, tech:AudioContent ;
+  	dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN17" ;
+    dpv:hasJurisdiction loc:AT .
+
 
 at:CN18  a impacto:eu-gdpr-DPIANotRequiredProcess ;
-    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Image and acoustic processing, which are necessary for the preventive protection of persons or things in generally accessible places that are subject to the house law of the person responsible, due to violations of law that have already occurred or a special potential hazard in the nature of the place and no suitable means is available. In cases where employee representatives have to be formed, the existence of a valid works agreement or a valid consent of the personnel representation, which regulates the implementation of video surveillance, is a prerequisite. This exception does not apply to places that may be entered due to an existing contract obligation or due to the public interest of anyone."@en ;
-    dpv:hasPurpose impacto:dpv-PreventativeProtection ;
-    dpv:hasPurpose impacto:dpv-ProtectionOfPersons ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Image and acoustic processing, which are necessary for the preventive protection of persons 
+or things in generally accessible places that are subject to the house law of the person responsible, due to violations of law that have already occurred or a special potential hazard in the nature of the place and no suitable means 
+is available. In cases where employee representatives have to be formed, the existence of a valid works agreement or a valid consent of the personnel representation, which regulates the implementation of video surveillance, is a prerequisite.
+This exception does not apply to places that may be entered due to an existing contract obligation or due to the public interest of anyone."@en ;
+    dpv:hasPurpose impacto:dpv-PreventativeProtectionOfThings ;
+    dpv:hasPurpose impacto:dpv-PreventativeProtectionOfPersons ;
     dct:source at:DPIANotRequiredList ;
     dct:identifier "CN18" ;
     dpv:hasJurisdiction loc:AT .
-dpv:hasPurpose dpv:ProtectionOfPublicSecurity ;
+	dpv:hasPurpose dpv:ProtectionOfPublicSecurity ;
 	tech:hasInput tech:MobilePhone ;
-	dpv:hasData tech:ImageData ;
+	dpv:hasData tech:ImageContent, tech:AudioContent ;
+dpv:isNotApplicableFor impacto:dpv-ContractualAccessPlace, dpv:PublicSpace ;
+dpv:hasData dpv:LawViolationsatProperty, ;
+dpv:hasContext impacto:dpv-PotentialHazardLocation (parent dpv:LocalityScale) ;
 
 at:CN19 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Processing of image and acoustic data transmittions in real time without recording."@en ;
-    dpv:hasContext impacto:dpv-RealtimeMonitoring ;
+    dpv:hasContext impacto:dpv-RealtimeDataTransmissionWithoutStorage ;
     dct:source at:DPIANotRequiredList ;
     dct:identifier "CN19" ;
     dpv:hasJurisdiction loc:AT .
-	dpv:hasData tech:VideoContent ;
-	dpv:hasContext impacto:dpv-RealTimeWithoutStorage ;
+	dpv:hasData tech:VideoContent, tech:AudioContent ;
+	dpv:isNotApplicableFor impacto:dpv-Recording, impacto:dpv-DataStorage ;
 
 at:CN20 a impacto:eu-gdpr-DPIANotRequiredProcess ;
-    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Image and acoustic processing that exclusively pursue a documentation interest that is not aimed at the identifying recording of uninvolved persons or the targeted recording of objects that are suitable for the indirect identification of such persons. Criminal, administrative or civil law purposes may not be prosecuted within the framework of this exception."@en ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Image and acoustic processing that exclusively pursue a documentation interest that is not 
+aimed at the identifying recording of uninvolved persons or the targeted recording of objects that are suitable for the indirect identification of such persons. Criminal, administrative or civil law purposes may not be prosecuted
+within the framework of this exception."@en ;
     dpv:hasPurpose impacto:dpv-Documentation ;
-    dpv:hasPurpose impacto:dpv-Identification ;
+
+    dpv:isNotApplicableFor impacto:dpv-Identification, recording  ;
+datasubject UninvolvedPerson
+IndirectIdentification 
+CriminalPurposes
+AdministrativePurposes
+CivilLawPurposes
+
     dct:source at:DPIANotRequiredList ;
     dct:identifier "CN20" ;
     dpv:hasJurisdiction loc:AT .
 dpv:hasPurpose impacto:dpv-DocumentationPurpose ;
-	dpv:hasData tech:ImageContent ;
+	dpv:hasData tech:ImageContent, tech:AudioContent ;
 
 at:CN21  a impacto:eu-gdpr-DPIANotRequiredProcess ;
-    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Patient management and fee billing of individual doctors, dentists and dentists as well as patient/client management and fee billing of other freelance or commercially active individually active health service providers and pharmacies."@en ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Patient management and fee billing of individual doctors, dentists and dentists as well as 
+patient/client management and fee billing of other freelance or commercially active individually active health service providers and pharmacies."@en ;
     dpv:hasEntity impacto:sector-health-Dentist ;
     dpv:hasEntity impacto:sector-health-IndividualDoctor ;
     dpv:hasEntity impacto:sector-health-Pharmacy ;
@@ -460,7 +699,8 @@ dpv:hasPurpose dpv:HealthCare ;
 	dpv:hasOrganisation impacto:dpv-IndividualHealthcarePractitioner ;
 
 at:CN22 a impacto:eu-gdpr-DPIANotRequiredProcess ;
-    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Data processing of legal advisory and business advisory professions, such as individual lawyers, notaries, patent lawyers, business trustees, tax consultants and management consultants within the framework of their professional practice."@en ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Data processing of legal advisory and business advisory professions, such as individual lawyers, 
+notaries, patent lawyers, business trustees, tax consultants and management consultants within the framework of their professional practice."@en ;
     dpv:hasEntity impacto:dpv-BusinessTrustees ;
     dpv:hasEntity impacto:dpv-ManagementConsultants ;
     dpv:hasEntity impacto:dpv-Notaries ;
@@ -477,34 +717,80 @@ dpv:hasPurpose sector-law:LegalAdvice ;
 	dpv:hasOrganisation impacto:dpv-IndividualLegalPractitioner ;
 	dpv:hasContext impacto:dpv-ProfessionalConfidentialityRelationship ;
 
-at:CN23  a impacto:eu-gdpr-DPIANotRequiredProcess ;
-    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Processing of personal data for archival purposes in the public interest, scientific or historical research purposes or statistical purposes on the basis of special legal provisions or with the consent of the data subject."@en ;
+at:CN23a  a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Processing of personal data for archival purposes in the public interest, scientific or historical 
+research purposes or statistical purposes on the basis of special legal provisions or with the consent of the data subject."@en ;
     dpv:hasPurpose impacto:dpv-Archive ;
-    dpv:hasPurpose impacto:dpv-HistoricalResearch ;
-    dpv:hasPurpose impacto:dpv-Statistics ;
+   	dpv:hasLegalBasis dpv:PublicInterest ;
     dct:source at:DPIANotRequiredList ;
     dct:identifier "CN23" ;
     dpv:hasJurisdiction loc:AT .
-dpv:hasPurpose dpv:Archiving ;
-	dpv:hasPurpose dpv:ResearchAndDevelopment ;
-	dpv:hasLegalBasis dpv:PublicInterest ;
 
-at:CN24  a impacto:eu-gdpr-DPIANotRequiredProcess ;
-    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Processing of personal data in the context of citizens' initiatives, petition lists or signature collections by the organizers."@en ;
-    dpv:hasContext impacto:dpv-CivicEngagement ;
-    dpv:hasContext impacto:dpv-DemocraticProcesses ;
-    dpv:hasEntity impacto:dpv-InitiativeOrganisers ;
-    dpv:hasEntity impacto:dpv-PetitionOrganisers ;
-    dpv:hasPersonalData impacto:pd-PetitionLists ;
-    dpv:hasPersonalData impacto:pd-Signatory ;
+at:CN23b  a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Processing of personal data for archival purposes in the public interest, scientific or historical 
+research purposes or statistical purposes on the basis of special legal provisions or with the consent of the data subject."@en ;
+    dpv:hasPurpose impacto:dpv-ScientificResearch ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN23" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN23c  a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Processing of personal data for archival purposes in the public interest, scientific or historical 
+research purposes or statistical purposes on the basis of special legal provisions or with the consent of the data subject."@en ;
+    dpv:hasPurpose impacto:dpv-HistoricalResearch ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN23" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN23d  a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Processing of personal data for archival purposes in the public interest, scientific or historical 
+research purposes or statistical purposes on the basis of special legal provisions or with the consent of the data subject."@en ;
+    dpv:hasPurpose impacto:dpv-Statistics ;
+	dpv:hasLegalBasis dpv:LegalBasis ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN23" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN23e  a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Processing of personal data for archival purposes in the public interest, scientific or historical 
+research purposes or statistical purposes on the basis of special legal provisions or with the consent of the data subject."@en ;
+    dpv:hasPurpose impacto:dpv-Statistics ;
+	dpv:hasLegalBasis dpv:Consent ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN23" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN24a  a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Processing of personal data in the context of citizens' initiatives, petition lists or signature 
+collections by the organizers."@en ;
     dpv:hasPurpose impacto:dpv-CitizensInitiatives ;
-    dpv:hasPurpose impacto:dpv-CivicParticipationManagement ;
-    dpv:hasPurpose impacto:dpv-DemocraticParticipationManagement ;
+	dpv:hasResponsibleEntity impacto:dpv-CitizensInitiativeOrganiser ;
     dct:source at:DPIANotRequiredList ;
     dct:identifier "CN24" ;
     dpv:hasJurisdiction loc:AT .
-dpv:hasPurpose impacto:dpv-CivicParticipation ;
-	dpv:hasLegalBasis dpv:LegalObligation ;
+
+at:CN24b  a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Processing of personal data in the context of citizens' initiatives, petition lists or signature 
+collections by the organizers."@en ;
+    dpv:hasPurpose impacto:dpv-PetitionList ;
+	dpv:hasResponsibleEntity impacto:dpv-PetitionOrganiser ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN24" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN24c  a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Processing of personal data in the context of citizens' initiatives, petition lists or signature 
+collections by the organizers."@en ;
+    dpv:hasPurpose impacto:dpv-SignatureCollection ;
+	dpv:hasResponsibleEntity impacto:dpv-SignatureCollector ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN24" ;
+    dpv:hasJurisdiction loc:AT .
+
+Maybe incorporate 
+dpv:hasPurpose impacto:dpv-CivicParticipation ;dpv:hasContext impacto:dpv-CivicEngagement ;
+    dpv:hasContext impacto:dpv-DemocraticProcesses ;
+
 
 at:CN25 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Preparation of estimates, financial accounting, payment transactions, preparation of reports, operating accounts, ancillary and auxiliary accounting and evaluation of data on budget control, strategic controlling and liquidity management, financial statements, annual financial statements as well as audits and audits."@en ;
