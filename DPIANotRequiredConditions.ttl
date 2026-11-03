@@ -856,7 +856,6 @@ strategic controlling and liquidity management, financial statements, annual fin
     dct:identifier "CN25" ;
     dpv:hasJurisdiction loc:AT .
 
-
 at:CN25h a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Preparation of estimates, 
 financial accounting, payment transactions, preparation of reports, operating accounts, ancillary and auxiliary accounting and evaluation of data on budget control,
@@ -913,21 +912,206 @@ strategic controlling and liquidity management, financial statements, annual fin
     dct:identifier "CN25" ;
     dpv:hasJurisdiction loc:AT .
 
-at:CN26 a impacto:eu-gdpr-DPIANotRequiredProcess ;
-    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Prescription, collection and settlement of taxes and fees regulated under public law by the federal government, states, municipalities, associations of municipalities and other bodies under public law as well as their control."@en ;
-    dpv:hasEntity impacto:dpv-FederalGovernment ;
-    dpv:hasEntity impacto:dpv-Municipalities ;
-    dpv:hasEntity impacto:dpv-MunicipalityAssociations ;
+at:CN26a a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Prescription, collection and 
+settlement of taxes and fees regulated under public law by the federal government, states, municipalities, associations of municipalities and other bodies under public 
+law as well as their control."@en ;
+	dpv:hasOrganisation dpv:PublicSectorOrganisation ;
     dpv:hasPurpose impacto:sector-finance-FeeSettlement ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN26" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN26b a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Prescription, collection and 
+settlement of taxes and fees regulated under public law by the federal government, states, municipalities, associations of municipalities and other bodies under public 
+law as well as their control."@en ;
+	dpv:hasOrganisation dpv:PublicSectorOrganisation ;
     dpv:hasPurpose impacto:sector-finance-TaxCollection ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN26" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN26c a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Prescription, collection and 
+settlement of taxes and fees regulated under public law by the federal government, states, municipalities, associations of municipalities and other bodies under public 
+law as well as their control."@en ;
+	dpv:hasOrganisation dpv:PublicSectorOrganisation ;
     dpv:hasPurpose impacto:sector-finance-TaxPrescription ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN26" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN26d a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Prescription, collection and 
+settlement of taxes and fees regulated under public law by the federal government, states, municipalities, associations of municipalities and other bodies under public 
+law as well as their control."@en ;
+	dpv:hasOrganisation dpv:PublicSectorOrganisation ;
     dpv:hasPurpose impacto:sector-finance-TaxSettlement ;
     dct:source at:DPIANotRequiredList ;
     dct:identifier "CN26" ;
     dpv:hasJurisdiction loc:AT .
-dpv:hasPurpose impacto:sector-finance-TaxAdministration ;
-	dpv:hasOrganisation dpv:PublicSectorOrganisation ;
-	dpv:hasLegalBasis dpv:LegalObligation ;
+
+at:CN26e a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Prescription, collection and 
+settlement of taxes and fees regulated under public law by the federal government, states, municipalities, associations of municipalities and other bodies under public 
+law as well as their control."@en ;
+    dpv:hasEntity impacto:dpv-FederalGovernment ;
+    dpv:hasPurpose impacto:sector-finance-FeeSettlement ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN26" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN26f a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Prescription, collection and 
+settlement of taxes and fees regulated under public law by the federal government, states, municipalities, associations of municipalities and other bodies under public 
+law as well as their control."@en ;
+    dpv:hasEntity impacto:dpv-FederalGovernment ;
+    dpv:hasPurpose impacto:sector-finance-TaxCollection ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN26" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN26g a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Prescription, collection and 
+settlement of taxes and fees regulated under public law by the federal government, states, municipalities, associations of municipalities and other bodies under public 
+law as well as their control."@en ;
+    dpv:hasEntity impacto:dpv-FederalGovernment ;
+    dpv:hasPurpose impacto:sector-finance-TaxPrescription ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN26" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN26h a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Prescription, collection and 
+settlement of taxes and fees regulated under public law by the federal government, states, municipalities, associations of municipalities and other bodies under public 
+law as well as their control."@en ;
+    dpv:hasEntity impacto:dpv-FederalGovernment ;
+    dpv:hasPurpose impacto:sector-finance-TaxSettlement ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN26" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN26i a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Prescription, collection and 
+settlement of taxes and fees regulated under public law by the federal government, states, municipalities, associations of municipalities and other bodies under public 
+law as well as their control."@en ;
+    dpv:hasEntity impacto:dpv-Municipalities ;
+    dpv:hasPurpose impacto:sector-finance-FeeSettlement ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN26" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN26j a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Prescription, collection and 
+settlement of taxes and fees regulated under public law by the federal government, states, municipalities, associations of municipalities and other bodies under public 
+law as well as their control."@en ;
+    dpv:hasEntity impacto:dpv-Municipalities ;
+    dpv:hasPurpose impacto:sector-finance-TaxCollection ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN26" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN26k a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Prescription, collection and 
+settlement of taxes and fees regulated under public law by the federal government, states, municipalities, associations of municipalities and other bodies under public 
+law as well as their control."@en ;
+    dpv:hasEntity impacto:dpv-Municipalities ;
+    dpv:hasPurpose impacto:sector-finance-TaxPrescription ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN26" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN26l a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Prescription, collection and 
+settlement of taxes and fees regulated under public law by the federal government, states, municipalities, associations of municipalities and other bodies under public 
+law as well as their control."@en ;
+    dpv:hasEntity impacto:dpv-Municipalities ;
+    dpv:hasPurpose impacto:sector-finance-TaxSettlement ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN26" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN26m a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Prescription, collection and 
+settlement of taxes and fees regulated under public law by the federal government, states, municipalities, associations of municipalities and other bodies under public 
+law as well as their control."@en ;
+    dpv:hasEntity impacto:dpv-MunicipalityAssociations ;
+    dpv:hasPurpose impacto:sector-finance-FeeSettlement ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN26" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN26n a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Prescription, collection and 
+settlement of taxes and fees regulated under public law by the federal government, states, municipalities, associations of municipalities and other bodies under public 
+law as well as their control."@en ;
+    dpv:hasEntity impacto:dpv-MunicipalityAssociations ;
+    dpv:hasPurpose impacto:sector-finance-TaxCollection ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN26" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN26o a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Prescription, collection and 
+settlement of taxes and fees regulated under public law by the federal government, states, municipalities, associations of municipalities and other bodies under public 
+law as well as their control."@en ;
+    dpv:hasEntity impacto:dpv-MunicipalityAssociations ;
+    dpv:hasPurpose impacto:sector-finance-TaxPrescription ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN26" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN26p a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Prescription, collection and 
+settlement of taxes and fees regulated under public law by the federal government, states, municipalities, associations of municipalities and other bodies under public 
+law as well as their control."@en ;
+    dpv:hasEntity impacto:dpv-MunicipalityAssociations ;
+    dpv:hasPurpose impacto:sector-finance-TaxSettlement ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN26" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN26q a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Prescription, collection and 
+settlement of taxes and fees regulated under public law by the federal government, states, municipalities, associations of municipalities and other bodies under public 
+law as well as their control."@en ;
+    dpv:hasEntity impacto:dpv-PublicLawBody ;
+    dpv:hasPurpose impacto:sector-finance-FeeSettlement ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN26" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN26r a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Prescription, collection and 
+settlement of taxes and fees regulated under public law by the federal government, states, municipalities, associations of municipalities and other bodies under public 
+law as well as their control."@en ;
+    dpv:hasEntity impacto:dpv-PublicLawBody ;
+    dpv:hasPurpose impacto:sector-finance-TaxCollection ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN26" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN26s a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Prescription, collection and 
+settlement of taxes and fees regulated under public law by the federal government, states, municipalities, associations of municipalities and other bodies under public 
+law as well as their control."@en ;
+    dpv:hasEntity impacto:dpv-PublicLawBody ;
+    dpv:hasPurpose impacto:sector-finance-TaxPrescription ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN26" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN26t a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Prescription, collection and 
+settlement of taxes and fees regulated under public law by the federal government, states, municipalities, associations of municipalities and other bodies under public 
+law as well as their control."@en ;
+    dpv:hasEntity impacto:dpv-PublicLawBody ;
+    dpv:hasPurpose impacto:sector-finance-TaxSettlement ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN26" ;
+    dpv:hasJurisdiction loc:AT .
+
 
 at:CN27 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Processing of personal data by funders and paying agencies in the context of the processing of public subsidies, provided that no personal data within the meaning of Art. 9 and 10 GDPR are processed."@en ;
@@ -938,33 +1122,25 @@ at:CN27 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dct:identifier "CN27" ;
     dpv:hasJurisdiction loc:AT .
 
-
-# REVIEW: this definition duplicates at:CN5; the original AT list item for CN29 is missing.
 at:CN28 a impacto:eu-gdpr-DPIANotRequiredProcess ;
-    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Processing of personal data in the context of any business relationship with customers and suppliers, including systematic recording of all business transactions relating to income and expenses."@en ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Processing of data of persons to be informed ( within the public relations and information by public officials and their business apparatus sector), if there is a general need for information due to a large number of inquiries on a specific topic."@en ;
+    dpv:hasEntity impacto:dpv-PublicOfficials ;
+    dpv:hasPurpose impacto:dpv-PublicInquiryManagement ;
     dct:source at:DPIANotRequiredList ;
     dct:identifier "CN28" ;
     dpv:hasJurisdiction loc:AT .
 
 at:CN29 a impacto:eu-gdpr-DPIANotRequiredProcess ;
-    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Processing of data of persons to be informed ( within the public relations and information by public officials and their business apparatus sector), if there is a general need for information due to a large number of inquiries on a specific topic."@en ;
-    dpv:hasEntity impacto:dpv-PublicOfficials ;
-    dpv:hasPurpose impacto:dpv-PublicInquiryManagement ;
-    dct:source at:DPIANotRequiredList ;
-    dct:identifier "CN29" ;
-    dpv:hasJurisdiction loc:AT .
-
-at:CN30 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Formal handling of business cases (File management and procedure management) to be provided by the controller (including the storage of documents arising from this activity, settlement of fees, organization of large-scale proceedings)."@en ;
     dpv:hasEntity impacto:dpv-Business ;
     dpv:hasEntity impacto:dpv-Corporation ;
     dpv:hasPurpose impacto:dpv-BusinessCases ;
     dpv:hasPurpose impacto:dpv-CaseManagement ;
     dct:source at:DPIANotRequiredList ;
-    dct:identifier "CN30" ;
+    dct:identifier "CN29" ;
     dpv:hasJurisdiction loc:AT .
 
-at:CN31 a impacto:eu-gdpr-DPIANotRequiredProcess ;
+at:CN30 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Data processing for holding events in the public and private sector, such as invitation and registration of participants, organization of trips and stays, supply of participants and communication before and after the event, settlement of monetary benefits (fees, reimbursement of travel expenses), processing of cultural programs, transmission of documents and production of image and acoustic recordings in connection with the event."@en ;
     dpv:hasContext impacto:dpv-CulturalProgram ;
     dpv:hasPersonalData impacto:pd-Travel ;
@@ -982,10 +1158,10 @@ at:CN31 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dpv:hasPurpose impacto:dpv-ReimbursementTravelExpenses ;
     dpv:hasPurpose impacto:dpv-TravelOrganisation ;
     dct:source at:DPIANotRequiredList ;
-    dct:identifier "CN31" ;
+    dct:identifier "CN30" ;
     dpv:hasJurisdiction loc:AT .
 
-at:CN32 a impacto:eu-gdpr-DPIANotRequiredProcess ;
+at:CN31 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Data processing for the awarding of prizes and decorations or similar awards, including the related preliminary examinations."@en ;
     dpv:hasContext impacto:dpv-PreliminaryExamination ;
     dpv:hasDataSubject impacto:dpv-Candidate ;
@@ -994,321 +1170,321 @@ at:CN32 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dpv:hasPurpose impacto:dpv-AwardingDecorations ;
     dpv:hasPurpose impacto:dpv-AwardingPrizes ;
     dct:source at:DPIANotRequiredList ;
-    dct:identifier "CN32" ;
+    dct:identifier "CN31" ;
     dpv:hasJurisdiction loc:AT .
 
-cz:CN33 a impacto:eu-gdpr-DPIANotRequiredProcess ;
+cz:CN32 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of the Czech Republic and which involves: Processing (processing operations) of personal data of employees with a permanent workplace in the territory of the Member State carried out only in the territory of the Member State, within the fulfillment of legal obligations in accounting, payroll, social and health insurance."@en ;
     dpv:hasLocation impacto:dpv-MemberStateTerritory ;
     dct:source cz:DPIANotRequiredList ;
-    dct:identifier "CN33" ;
+    dct:identifier "CN32" ;
     dpv:hasJurisdiction loc:CZ .
 
-lv:CN33 a impacto:eu-gdpr-DPIANotRequiredProcess ;
+lv:CN32 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Latvia and which involves: Processing (processing operations) of personal data of employees with a permanent workplace in the territory of the Member State carried out only in the territory of the Member State, within the fulfillment of legal obligations in accounting, payroll, social and health insurance."@en ;
     dpv:hasLocation impacto:dpv-MemberStateTerritory ;
     dct:source lv:DPIANotRequiredList ;
-    dct:identifier "CN33" ;
+    dct:identifier "CN32" ;
     dpv:hasJurisdiction loc:LV .
 
-cz:CN34 a impacto:eu-gdpr-DPIANotRequiredProcess ;
+cz:CN33 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of the Czech Republic and which involves: Processing of personnel records of employees with a permanent workplace in the territory of the Member State carried out only in the territory of the Member State."@en ;
     dct:source cz:DPIANotRequiredList ;
-    dct:identifier "CN34" ;
+    dct:identifier "CN33" ;
     dpv:hasJurisdiction loc:CZ .
 
-cz:CN35 a impacto:eu-gdpr-DPIANotRequiredProcess ;
+cz:CN34 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of the Czech Republic and which involves: Processing (processing operations) of personal data of customers carried out entirely in the territory of the Member State, relating to business activities (sales and provision of services, including organizing competitions and sending newsletters), carried out only in the National Language, unless it includes the processing of special categories of personal data, evaluation, scoring or systematic monitoring of data subjects."@en ;
     dpv:hasPurpose impacto:dpv-CompetitionOrganisation ;
     dpv:hasPurpose impacto:dpv-NewsletterDistribution ;
     dct:source cz:DPIANotRequiredList ;
-    dct:identifier "CN35" ;
+    dct:identifier "CN34" ;
     dpv:hasJurisdiction loc:CZ .
 
-lv:CN35 a impacto:eu-gdpr-DPIANotRequiredProcess ;
+lv:CN34 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Latvia and which involves: Processing (processing operations) of personal data of customers carried out entirely in the territory of the Member State, relating to business activities (sales and provision of services, including organizing competitions and sending newsletters), carried out only in the National Language, unless it includes the processing of special categories of personal data, evaluation, scoring or systematic monitoring of data subjects."@en ;
     dpv:hasPurpose impacto:dpv-CompetitionOrganisation ;
     dpv:hasPurpose impacto:dpv-NewsletterDistribution ;
     dct:source lv:DPIANotRequiredList ;
-    dct:identifier "CN35" ;
+    dct:identifier "CN34" ;
     dpv:hasJurisdiction loc:LV .
 
-cz:CN36 a impacto:eu-gdpr-DPIANotRequiredProcess ;
+cz:CN35 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of the Czech Republic and which involves: Processing (processing operations) associated with an individual customer visit to the controller's website, including customer profiling based on their selection of items or displaying items from the offer of goods, products and services placed on the website on the controller's side. This processing does not involve the processing of special categories of personal data, data of a highly personal nature (see point 4 on page 11 of the WP248 Guideline) and does not target the processing of personal data on vulnerable data subjects as a separate target group."@en ;
     dpv:hasPurpose impacto:dpv-OfferOfGoods ;
     dpv:hasPurpose impacto:dpv-OfferOfProducts ;
     dct:source cz:DPIANotRequiredList ;
-    dct:identifier "CN36" ;
+    dct:identifier "CN35" ;
     dpv:hasJurisdiction loc:CZ .
 
-cz:CN37 a impacto:eu-gdpr-DPIANotRequiredProcess ;
+cz:CN36 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of the Czech Republic and which involves: Processing (processing operations) carried out by a person authorised to provide healthcare services who is not in an employment relationship. This person uses the necessary personal data only to provide healthcare services to the data subject (see recital 91 of the Regulation), and there is no systematic transfer to third countries, no processor is used for some processing operations on personal data of patients, or there is no sharing/linking of personal data of patients of two or more individual doctors."@en ;
     dpv:hasEntity impacto:dpv-EmploymentRelationship ;
     dpv:hasEntity impacto:dpv-NotEmploymentRelationship ;
     dpv:hasEntity impacto:dpv-SelfEmployedHealthcarePractitioner ;
     dpv:hasEntity impacto:dpv-SelfEmployedHealthcareProfessional ;
     dct:source cz:DPIANotRequiredList ;
+    dct:identifier "CN36" ;
+    dpv:hasJurisdiction loc:CZ .
+
+cz:CN37 a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of the Czech Republic and which involves: Processing (processing operations) carried out by individual lawyers and notaries (lawyers and notaries who are not in an employment relationship), using the necessary personal data only to provide legal services to the data subject (see recital 91 of the Regulation), and not systematically transferring them to third countries, for some of the processing operations on personal data of clients, a processor is not used, or there is no sharing/linking of personal data of clients of two or more individual lawyers."@en ;
+    dpv:hasPurpose impacto:dpv-LinkingPersonalData ;
+    dct:source cz:DPIANotRequiredList ;
     dct:identifier "CN37" ;
     dpv:hasJurisdiction loc:CZ .
 
 cz:CN38 a impacto:eu-gdpr-DPIANotRequiredProcess ;
-    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of the Czech Republic and which involves: Processing (processing operations) carried out by individual lawyers and notaries (lawyers and notaries who are not in an employment relationship), using the necessary personal data only to provide legal services to the data subject (see recital 91 of the Regulation), and not systematically transferring them to third countries, for some of the processing operations on personal data of clients, a processor is not used, or there is no sharing/linking of personal data of clients of two or more individual lawyers."@en ;
-    dpv:hasPurpose impacto:dpv-LinkingPersonalData ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of the Czech Republic and which involves: Processing (processing operations) carried out by individual natural persons providing social services (persons who are not in an employment relationship), using the necessary personal data only to provide social services to the data subject, and not systematically transferring them to third countries, for some of the processing operations on personal data of clients, a processor is not used, or there is no sharing/linking of personal data of clients of two or more individual social service providers."@en ;
     dct:source cz:DPIANotRequiredList ;
     dct:identifier "CN38" ;
     dpv:hasJurisdiction loc:CZ .
 
-cz:CN39 a impacto:eu-gdpr-DPIANotRequiredProcess ;
-    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of the Czech Republic and which involves: Processing (processing operations) carried out by individual natural persons providing social services (persons who are not in an employment relationship), using the necessary personal data only to provide social services to the data subject, and not systematically transferring them to third countries, for some of the processing operations on personal data of clients, a processor is not used, or there is no sharing/linking of personal data of clients of two or more individual social service providers."@en ;
-    dct:source cz:DPIANotRequiredList ;
-    dct:identifier "CN39" ;
-    dpv:hasJurisdiction loc:CZ .
-
-fr:CN40 a impacto:eu-gdpr-DPIANotRequiredProcess ;
+fr:CN39 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of France and which involves: Processing, implemented solely for human resources purposes and under the conditions provided for by applicable regulations, for the sole purpose of managing the personnel of organizations employing fewer than 250 people, with the exception of the use of profiling."@en ;
     dpv:hasProcessingScale impacto:dpv-LessThan250Employees ;
     dpv:hasProcessingScale impacto:dpv-MoreThan250Employees ;
     dct:source fr:DPIANotRequiredList ;
-    dct:identifier "CN40" ;
+    dct:identifier "CN39" ;
+    dpv:hasJurisdiction loc:FR .
+
+fr:CN40 a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of France and which involves: Supplier relationship management processes."@en ;
+    dct:source fr:DPIANotRequiredList ;
+    dct:identifier "CN4" ;
     dpv:hasJurisdiction loc:FR .
 
 fr:CN41 a impacto:eu-gdpr-DPIANotRequiredProcess ;
-    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of France and which involves: Supplier relationship management processes."@en ;
-    dct:source fr:DPIANotRequiredList ;
-    dct:identifier "CN41" ;
-    dpv:hasJurisdiction loc:FR .
-
-fr:CN42 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of France and which involves: Processing carried out under the conditions stipulated by the texts relating to the management of the electoral register of municipalities"@en ;
     dpv:hasHumanSubject impacto:dpv-RegisteredVoter ;
     dpv:hasPersonalData impacto:pd-Vote ;
     dpv:hasPurpose impacto:dpv-MunicipalityElectoralRegisterManagement ;
     dct:source fr:DPIANotRequiredList ;
+    dct:identifier "CN41" ;
+    dpv:hasJurisdiction loc:FR .
+
+fr:CN42 a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of France and which involves: Data processing intended for the management of the activities of works councils and establishment committees."@en ;
+    dpv:hasPurpose impacto:dpv-EstablishmentCommitteeActivityManagement ;
+    dpv:hasPurpose impacto:dpv-WorkCouncilActivityManagement ;
+    dct:source fr:DPIANotRequiredList ;
     dct:identifier "CN42" ;
     dpv:hasJurisdiction loc:FR .
 
 fr:CN43 a impacto:eu-gdpr-DPIANotRequiredProcess ;
-    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of France and which involves: Data processing intended for the management of the activities of works councils and establishment committees."@en ;
-    dpv:hasPurpose impacto:dpv-EstablishmentCommitteeActivityManagement ;
-    dpv:hasPurpose impacto:dpv-WorkCouncilActivityManagement ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of France and which involves: Processing carried out by an association, foundation or any other non-profit institution for the management of its members and donors within the framework of its usual activities, provided that the data is not sensitive."@en ;
+    dpv:hasPurpose impacto:dpv-DonorManagement ;
+    dpv:hasPurpose impacto:dpv-MemberManagement ;
     dct:source fr:DPIANotRequiredList ;
     dct:identifier "CN43" ;
     dpv:hasJurisdiction loc:FR .
 
 fr:CN44 a impacto:eu-gdpr-DPIANotRequiredProcess ;
-    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of France and which involves: Processing carried out by an association, foundation or any other non-profit institution for the management of its members and donors within the framework of its usual activities, provided that the data is not sensitive."@en ;
-    dpv:hasPurpose impacto:dpv-DonorManagement ;
-    dpv:hasPurpose impacto:dpv-MemberManagement ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of France and which involves: Processing of health data necessary for the care of a patient by a healthcare professional practicing individually within a medical practice, a pharmacy or a medical biology laboratory."@en ;
+    dpv:hasEntity impacto:sector-health-MedicalLaboratory ;
+    dpv:hasEntity impacto:sector-health-MedicalPractice ;
     dct:source fr:DPIANotRequiredList ;
     dct:identifier "CN44" ;
     dpv:hasJurisdiction loc:FR .
 
 fr:CN45 a impacto:eu-gdpr-DPIANotRequiredProcess ;
-    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of France and which involves: Processing of health data necessary for the care of a patient by a healthcare professional practicing individually within a medical practice, a pharmacy or a medical biology laboratory."@en ;
-    dpv:hasEntity impacto:sector-health-MedicalLaboratory ;
-    dpv:hasEntity impacto:sector-health-MedicalPractice ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of France and which involves: Data processing carried out by lawyers in the course of their individual professional practice."@en ;
+    dpv:hasContext impacto:sector-law-IndividualLegalPracticeActivity ;
+    dpv:hasEntity impacto:sector-law-IndividualLegalPractice ;
     dct:source fr:DPIANotRequiredList ;
     dct:identifier "CN45" ;
     dpv:hasJurisdiction loc:FR .
 
 fr:CN46 a impacto:eu-gdpr-DPIANotRequiredProcess ;
-    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of France and which involves: Data processing carried out by lawyers in the course of their individual professional practice."@en ;
-    dpv:hasContext impacto:sector-law-IndividualLegalPracticeActivity ;
-    dpv:hasEntity impacto:sector-law-IndividualLegalPractice ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of France and which involves: Data processing carried out by the clerks of the commercial courts for the purposes of performing their duties."@en ;
+    dpv:hasEntity impacto:dpv-CommercialCourtClerk ;
+    dpv:hasPurpose impacto:sector-law-LegalDuties ;
     dct:source fr:DPIANotRequiredList ;
     dct:identifier "CN46" ;
     dpv:hasJurisdiction loc:FR .
 
 fr:CN47 a impacto:eu-gdpr-DPIANotRequiredProcess ;
-    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of France and which involves: Data processing carried out by the clerks of the commercial courts for the purposes of performing their duties."@en ;
-    dpv:hasEntity impacto:dpv-CommercialCourtClerk ;
-    dpv:hasPurpose impacto:sector-law-LegalDuties ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of France and which involves: Data processing carried out by notaries for the purposes of carrying out their notarial activities and drafting documents for notarial offices."@en ;
+    dpv:hasPurpose impacto:dpv-Documentation ;
+    dpv:hasPurpose impacto:sector-law-NotarialActivities ;
     dct:source fr:DPIANotRequiredList ;
     dct:identifier "CN47" ;
     dpv:hasJurisdiction loc:FR .
 
 fr:CN48 a impacto:eu-gdpr-DPIANotRequiredProcess ;
-    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of France and which involves: Data processing carried out by notaries for the purposes of carrying out their notarial activities and drafting documents for notarial offices."@en ;
-    dpv:hasPurpose impacto:dpv-Documentation ;
-    dpv:hasPurpose impacto:sector-law-NotarialActivities ;
-    dct:source fr:DPIANotRequiredList ;
-    dct:identifier "CN48" ;
-    dpv:hasJurisdiction loc:FR .
-
-fr:CN49 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of France and which involves: Data processing carried out by local authorities and public and private legal entities for the purpose of managing school, extracurricular and early childhood services."@en ;
     dpv:hasEntity impacto:dpv-LocalAuthority ;
     dpv:hasPurpose impacto:sector-education-EarlyChildhoodServiceManagement ;
     dpv:hasPurpose impacto:sector-education-ExtraCurricularServiceManagement ;
     dct:source fr:DPIANotRequiredList ;
+    dct:identifier "CN48" ;
+    dpv:hasJurisdiction loc:FR .
+
+fr:CN49 a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of France and which involves: Processing implemented solely for the purpose of managing physical access controls and working time calculations, excluding any biometric devices. This excludes the processing of data that reveals sensitive or highly personal information."@en ;
+    dct:source fr:DPIANotRequiredList ;
     dct:identifier "CN49" ;
     dpv:hasJurisdiction loc:FR .
 
-fr:CN50 a impacto:eu-gdpr-DPIANotRequiredProcess ;
-    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of France and which involves: Processing implemented solely for the purpose of managing physical access controls and working time calculations, excluding any biometric devices. This excludes the processing of data that reveals sensitive or highly personal information."@en ;
-    dct:source fr:DPIANotRequiredList ;
-    dct:identifier "CN50" ;
-    dpv:hasJurisdiction loc:FR .
-
-fr:CN51 a impacto:eu-gdpr-DPIANotRequiredProcess ;
+fr:CN5 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of France and which involves: Processing related to breathalyzer tests, strictly regulated by legislation and implemented within the context of transport activities for the sole purpose of preventing drivers from operating a vehicle under the influence ofmalcohol or narcotics."@en ;
     dpv:hasPurpose impacto:sector-law-RoadVehicleAlcoholTesting ;
     dpv:hasPurpose impacto:sector-law-RoadVehicleBreathalyserTesting ;
     dpv:hasPurpose impacto:sector-law-RoadVehicleDrugTesting ;
     dpv:hasPurpose impacto:sector-law-RoadVehicleSubstanceImpairmentPrevention ;
     dct:source fr:DPIANotRequiredList ;
-    dct:identifier "CN51" ;
+    dct:identifier "CN50" ;
     dpv:hasJurisdiction loc:FR .
 
-lv:CN52 a impacto:eu-gdpr-DPIANotRequiredProcess ;
+lv:CN51 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Latvia and which involves: The processing of health data necessary for the care of the patient by self-employed staff working individually in the exercise of their professional duties, such as medical practitioners and healthcare professionals, provided that the processing operations do not involve systematic transfer to third countries."@en ;
     dpv:hasEntity impacto:dpv-HealthCareProfessional ;
     dpv:hasEntity impacto:dpv-MedicalPractitioner ;
+    dct:source lv:DPIANotRequiredList ;
+    dct:identifier "CN51" ;
+    dpv:hasJurisdiction loc:LV .
+
+lv:CN52 a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Latvia and which involves: Data processing by lawyers, notaries, sworn bailiffs working individually and engaged in their professional activities related to the obligation of professional secrecy, provided that the processing operations do not involve systematic transmission to third countries."@en ;
+    dpv:hasEntity impacto:dpv-SwornBailiffs ;
+    dpv:hasLegalBasis impacto:dpv-ProfessionalSecrecyObligation ;
     dct:source lv:DPIANotRequiredList ;
     dct:identifier "CN52" ;
     dpv:hasJurisdiction loc:LV .
 
 lv:CN53 a impacto:eu-gdpr-DPIANotRequiredProcess ;
-    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Latvia and which involves: Data processing by lawyers, notaries, sworn bailiffs working individually and engaged in their professional activities related to the obligation of professional secrecy, provided that the processing operations do not involve systematic transmission to third countries."@en ;
-    dpv:hasEntity impacto:dpv-SwornBailiffs ;
-    dpv:hasLegalBasis impacto:dpv-ProfessionalSecrecyObligation ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Latvia and which involves: Data processing carried out by an association, foundation, for the management of its members and donors in the framework of its regular activities, except processing of personal data of a sensitive nature;"@en ;
     dct:source lv:DPIANotRequiredList ;
     dct:identifier "CN53" ;
     dpv:hasJurisdiction loc:LV .
 
 lv:CN54 a impacto:eu-gdpr-DPIANotRequiredProcess ;
-    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Latvia and which involves: Data processing carried out by an association, foundation, for the management of its members and donors in the framework of its regular activities, except processing of personal data of a sensitive nature;"@en ;
-    dct:source lv:DPIANotRequiredList ;
-    dct:identifier "CN54" ;
-    dpv:hasJurisdiction loc:LV .
-
-lv:CN55 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Latvia and which involves: Data processing by the association of apartment owners, the co-operative society of apartments or the community of apartment owners, in relation to the management of multi-apartment residential buildings and related buildings, and land, except processing on a large scale."@en ;
     dpv:hasEntity impacto:dpv-ApartmentOwner ;
     dpv:hasLocation impacto:loc-CooperativeSocietyOfApartments ;
     dpv:hasPurpose impacto:dpv-LandManagement ;
     dpv:hasPurpose impacto:dpv-ResidentialBuildingManagement ;
     dct:source lv:DPIANotRequiredList ;
+    dct:identifier "CN54" ;
+    dpv:hasJurisdiction loc:LV .
+
+lv:CN55 a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Latvia and which involves: Processing of data for the management of physical access controls and schedules for the calculation of working time, excluding special categories of personal data and/or other personal data of highly sensitive nature."@en ;
+    dct:source lv:DPIANotRequiredList ;
     dct:identifier "CN55" ;
     dpv:hasJurisdiction loc:LV .
 
 lv:CN56 a impacto:eu-gdpr-DPIANotRequiredProcess ;
-    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Latvia and which involves: Processing of data for the management of physical access controls and schedules for the calculation of working time, excluding special categories of personal data and/or other personal data of highly sensitive nature."@en ;
-    dct:source lv:DPIANotRequiredList ;
-    dct:identifier "CN56" ;
-    dpv:hasJurisdiction loc:LV .
-
-lv:CN57 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Latvia and which involves: Processing of data in connection with checks of alcohol or narcotic substances within the framework of transport activities arising from legal requirements in the law in order to verify that the driver is not under the influence of alcohol or narcotics."@en ;
     dpv:hasPurpose impacto:sector-law-RoadVehicleDriverAlcoholLevelVerification ;
     dpv:hasPurpose impacto:sector-law-RoadVehicleDriverDrugInfluenceVerification ;
     dpv:hasPurpose impacto:sector-law-RoadVehicleDriverSobrietyVerification ;
     dct:source lv:DPIANotRequiredList ;
-    dct:identifier "CN57" ;
+    dct:identifier "CN56" ;
     dpv:hasJurisdiction loc:LV .
 
-lv:CN58 a impacto:eu-gdpr-DPIANotRequiredProcess ;
+lv:CN57 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Latvia and which involves: Processing of data in relation to collective submissions laid down in the Local Government Law."@en ;
     dpv:hasDataSubject impacto:dpv-Refugee ;
     dpv:hasDataSubject impacto:dpv-Resident ;
     dpv:hasLegalBasis impacto:dpv-LocalGovernmentLaw ;
     dpv:hasPurpose impacto:dpv-CollectiveSubmissionsManagement ;
     dct:source lv:DPIANotRequiredList ;
-    dct:identifier "CN58" ;
+    dct:identifier "CN57" ;
     dpv:hasJurisdiction loc:LV .
 
-es:CN59 a impacto:eu-gdpr-DPIANotRequiredProcess ;
+es:CN58 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Spain and which involves: Processing carried out strictly under the guidelines established or authorized previously, by way of circulars or decisions issued by supervisory bodies, whenever the processing has not changed since it was authorized."@en ;
     impacto:hasExemptionBasis impacto:dpv-AuthorisedProcessing ;
     dct:source es:DPIANotRequiredList ;
-    dct:identifier "CN59" ;
+    dct:identifier "CN58" ;
     dpv:hasJurisdiction loc:ES .
 
-es:CN60 a impacto:eu-gdpr-DPIANotRequiredProcess ;
+es:CN59 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Spain and which involves: Processing carried out strictly under the guidelines of codes of conduct approved by the Commission or by supervisory bodies, whenever a full DPIA has already been carried out within a context of a validated code of conduct, and is implemented with the measures and safeguards defined in the DPIA."@en ;
     dpv:hasEntity impacto:dpv-EuropeanCommission ;
     dpv:hasOrganisationalMeasure impacto:dpv-DPIAMeasures ;
     dpv:hasOrganisationalMeasure impacto:dpv-DPIASafeguards ;
     dct:source es:DPIANotRequiredList ;
+    dct:identifier "CN59" ;
+    dpv:hasJurisdiction loc:ES .
+
+es:CN60 a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Spain and which involves: Processing that is necessary in order to comply with a legal requirement or to complete a mission being carried out in the public interest or in the exercise of official authority vested in the controller, provided that there is no duty to carry out a DPIA within the legal mandate itself, whenever a full DPIA has already been performed."@en ;
+    dct:source es:DPIANotRequiredList ;
     dct:identifier "CN60" ;
     dpv:hasJurisdiction loc:ES .
 
 es:CN61 a impacto:eu-gdpr-DPIANotRequiredProcess ;
-    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Spain and which involves: Processing that is necessary in order to comply with a legal requirement or to complete a mission being carried out in the public interest or in the exercise of official authority vested in the controller, provided that there is no duty to carry out a DPIA within the legal mandate itself, whenever a full DPIA has already been performed."@en ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Spain and which involves: Processing carried out by self-employed personnel who work on an individual basis in the exercise of their professional duties, especially physicians, healthcare professionals, or lawyers, unless two or more criteria established in the list of types of data processing that require impact assessment are met."@en ;
     dct:source es:DPIANotRequiredList ;
     dct:identifier "CN61" ;
     dpv:hasJurisdiction loc:ES .
 
 es:CN62 a impacto:eu-gdpr-DPIANotRequiredProcess ;
-    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Spain and which involves: Processing carried out by self-employed personnel who work on an individual basis in the exercise of their professional duties, especially physicians, healthcare professionals, or lawyers, unless two or more criteria established in the list of types of data processing that require impact assessment are met."@en ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Spain and which involves: Processing carried out in relation to the internal administration of personnel working at SMEs, in order to face processing operations mandatory by law for the purposes of accounting, human resources management, payroll management, social security, and safety in the workplace, but never in relation to customer data."@en ;
     dct:source es:DPIANotRequiredList ;
     dct:identifier "CN62" ;
     dpv:hasJurisdiction loc:ES .
 
-es:CN63 a impacto:eu-gdpr-DPIANotRequiredProcess ;
-    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Spain and which involves: Processing carried out in relation to the internal administration of personnel working at SMEs, in order to face processing operations mandatory by law for the purposes of accounting, human resources management, payroll management, social security, and safety in the workplace, but never in relation to customer data."@en ;
-    dct:source es:DPIANotRequiredList ;
-    dct:identifier "CN63" ;
-    dpv:hasJurisdiction loc:ES .
-
-es:CN64a a impacto:eu-gdpr-DPIANotRequiredProcess ;
+es:CN63a a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Spain and which involves: Processing carried out by owners’ associations and sub-associations in multi- occupancy properties, according as these are defined at article 2 (a, b, and d) of Law 49/1960 on Horizontal Property."@en ;
     dpv:hasPurpose impacto:dpv-ResidentialBuildingManagement ;
     dpv:hasDataSubject impacto:dpv-ApartmentOwner ;
     dpv:hasLocation impacto:dpv-MultiOccupancyProperty ;
     dpv:hasApplicableLaw impacto:legal-HorizontalPropertyLaw ;
     dpv:hasResponsibleEntity impacto:dpv-OwnersAssociation ;
-    dct:identifier "CN64" ;
+    dct:identifier "CN63" ;
     dct:source es:DPIANotRequiredList ;
     dpv:hasJurisdiction loc:ES .
 
-es:CN64b a impacto:eu-gdpr-DPIANotRequiredProcess ;
+es:CN63b a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Spain and which involves: Processing carried out by owners’ associations and sub-associations in multi- occupancy properties, according as these are defined at article 2 (a, b, and d) of Law 49/1960 on Horizontal Property."@en ;
     dpv:hasPurpose impacto:dpv-ResidentialBuildingManagement ;
     dpv:hasDataSubject impacto:dpv-ApartmentOwner ;
     dpv:hasLocation impacto:dpv-MultiOccupancyProperty ;
     dpv:hasApplicableLaw impacto:legal-HorizontalPropertyLaw ;
     dpv:hasResponsibleEntity impacto:dpv-OwnersSubAssociation ;
-    dct:identifier "CN64" ;
+    dct:identifier "CN63" ;
     dct:source es:DPIANotRequiredList ;
     dpv:hasJurisdiction loc:ES .
 
-es:CN65a  a impacto:eu-gdpr-DPIANotRequiredProcess ;
+es:CN64a  a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Spain and which involves: Processing carried out by professional colleges and non-profit associations in connection with the data of their associates members and donors of the data controllers listed therein concerning the management of their personal data, and in the performance of their tasks, provided that the processing does not extend to sensitive data such as those referred to in article 9.1 of the GDPR and that article 9.2(d) does not apply."@en ;
     dpv:hasPurpose dpv:MemberPartnerManagement  ;
 	dpv:hasResponsibleEntity impacto:dpv-ProfessionalCollege ;
     dpv:hasDataSubject dpv:Member ;
 	dct:source es:DPIANotRequiredList ;
-    dct:identifier "CN65" ;
+    dct:identifier "CN64" ;
     dpv:hasJurisdiction loc:ES .
 
-es:CN65b  a impacto:eu-gdpr-DPIANotRequiredProcess ;
+es:CN64b  a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Spain and which involves: Processing carried out by professional colleges and non-profit associations in connection with the data of their associates members and donors of the data controllers listed therein concerning the management of their personal data, and in the performance of their tasks, provided that the processing does not extend to sensitive data such as those referred to in article 9.1 of the GDPR and that article 9.2(d) does not apply."@en ;
 	dpv:hasPurpose impacto:dpv-DonorManagement ;
 	dpv:hasResponsibleEntity impacto:dpv-ProfessionalCollege ;
     dpv:hasDataSubject impacto:dpv-Donor ;
 	dct:source es:DPIANotRequiredList ;
-    dct:identifier "CN65" ;
+    dct:identifier "CN64" ;
     dpv:hasJurisdiction loc:ES .
 
-es:CN65c  a impacto:eu-gdpr-DPIANotRequiredProcess ;
+es:CN64c  a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Spain and which involves: Processing carried out by professional colleges and non-profit associations in connection with the data of their associates members and donors of the data controllers listed therein concerning the management of their personal data, and in the performance of their tasks, provided that the processing does not extend to sensitive data such as those referred to in article 9.1 of the GDPR and that article 9.2(d) does not apply."@en ;
 	dpv:hasPurpose dpv:MemberPartnerManagement  ;
  	dpv:hasResponsibleEntity dpv:NonProfitOrganisation ;
     dpv:hasDataSubject dpv:Member ;
 	dct:source es:DPIANotRequiredList ;
-    dct:identifier "CN65" ;
+    dct:identifier "CN64" ;
     dpv:hasJurisdiction loc:ES .
 
 
-es:CN65d  a impacto:eu-gdpr-DPIANotRequiredProcess ;
+es:CN64d  a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Spain and which involves: Processing carried out by professional colleges and non-profit associations in connection with the data of their associates members and donors of the data controllers listed therein concerning the management of their personal data, and in the performance of their tasks, provided that the processing does not extend to sensitive data such as those referred to in article 9.1 of the GDPR and that article 9.2(d) does not apply."@en ;
 	dpv:hasPurpose impacto:dpv-DonorManagement ;
     dpv:hasResponsibleEntity dpv:NonProfitOrganisation ;
     dpv:hasDataSubject impacto:dpv-Donor ;
     dpv:hasPurpose impacto:dpv-DonorManagement ;
 	dct:source es:DPIANotRequiredList ;
-    dct:identifier "CN65" ;
+    dct:identifier "CN64" ;
     dpv:hasJurisdiction loc:ES .
 
 
