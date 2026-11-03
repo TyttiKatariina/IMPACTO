@@ -681,8 +681,9 @@ dpv:hasPurpose impacto:dpv-DocumentationPurpose ;
 	dpv:hasData tech:ImageContent, tech:AudioContent ;
 
 at:CN21  a impacto:eu-gdpr-DPIANotRequiredProcess ;
-    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Patient management and fee billing of individual doctors, dentists and dentists as well as 
-patient/client management and fee billing of other freelance or commercially active individually active health service providers and pharmacies."@en ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Patient management and fee 
+billing of individual doctors, dentists and dentists as well as patient/client management and fee billing of other freelance or commercially active individually active 
+health service providers and pharmacies."@en ;
     dpv:hasEntity impacto:sector-health-Dentist ;
     dpv:hasEntity impacto:sector-health-IndividualDoctor ;
     dpv:hasEntity impacto:sector-health-Pharmacy ;
@@ -793,24 +794,26 @@ dpv:hasPurpose impacto:dpv-CivicParticipation ;dpv:hasContext impacto:dpv-CivicE
 
 
 at:CN25 a impacto:eu-gdpr-DPIANotRequiredProcess ;
-    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Preparation of estimates, financial accounting, payment transactions, preparation of reports, operating accounts, ancillary and auxiliary accounting and evaluation of data on budget control, strategic controlling and liquidity management, financial statements, annual financial statements as well as audits and audits."@en ;
-    dpv:hasData impacto:sector-finance-BudgetData ;
-    dpv:hasPurpose impacto:dpv-Accounting ;
-    dpv:hasPurpose impacto:sector-finance-AccountManagement ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Preparation of estimates, 
+financial accounting, payment transactions, preparation of reports, operating accounts, ancillary and auxiliary accounting and evaluation of data on budget control,
+strategic controlling and liquidity management, financial statements, annual financial statements as well as audits and audits."@en ;
+	dpv:hasPurpose impacto:sector-finance-FinancialEstimatePreparations ;
+	dpv:hasPurpose impacto:dpv-Accounting ;
+	dpv:hasPurpose impacto:dpv-Payments ;
+	dpv:hasPurpose impacto:dpv-RecordKeeping ;
+	dpv:hasPurpose impacto:sector-finance-AccountManagement ;
+	dpv:hasPurpose impacto:sector-finance-AccountOperation ;
     dpv:hasPurpose impacto:sector-finance-AncillaryAccounting ;
     dpv:hasPurpose impacto:sector-finance-AuxiliaryAccounting ;
-    dpv:hasPurpose impacto:sector-finance-BudgetControl ;
-    dpv:hasPurpose impacto:sector-finance-Evaluation ;
-    dpv:hasPurpose impacto:sector-finance-FinancialEstimates ;
+	dpv:hasPurpose impacto:dpv-DataEvaluation, impacto:dpv-BudgetControl ;
     dpv:hasPurpose impacto:sector-finance-LiquidityManagement ;
-    dpv:hasPurpose impacto:sector-finance-Payments ;
-    dpv:hasPurpose impacto:sector-finance-RecordKeeping ;
-    dct:source at:DPIANotRequiredList ;
+	dpv:hasPurpose impacto:dpv-FinancialAudit ; 
+	dpv:hasData impacto:dpv-FinancialStatements ;
+	dpv:hasData impacto:dpv-AnnualFinancialStatements ;
+	dct:source at:DPIANotRequiredList ;
     dct:identifier "CN25" ;
     dpv:hasJurisdiction loc:AT .
-dpv:hasPurpose dpv:FinancialManagement ;
-	dpv:hasPurpose sector-finance:AccountingManagement ;
-	dpv:hasLegalBasis dpv:LegalObligation ;
+
 
 at:CN26 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Prescription, collection and settlement of taxes and fees regulated under public law by the federal government, states, municipalities, associations of municipalities and other bodies under public law as well as their control."@en ;
