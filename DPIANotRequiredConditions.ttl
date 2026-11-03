@@ -793,27 +793,125 @@ dpv:hasPurpose impacto:dpv-CivicParticipation ;dpv:hasContext impacto:dpv-CivicE
     dpv:hasContext impacto:dpv-DemocraticProcesses ;
 
 
-at:CN25 a impacto:eu-gdpr-DPIANotRequiredProcess ;
+at:CN25a a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Preparation of estimates, 
 financial accounting, payment transactions, preparation of reports, operating accounts, ancillary and auxiliary accounting and evaluation of data on budget control,
 strategic controlling and liquidity management, financial statements, annual financial statements as well as audits and audits."@en ;
 	dpv:hasPurpose impacto:sector-finance-FinancialEstimatePreparations ;
-	dpv:hasPurpose impacto:dpv-Accounting ;
-	dpv:hasPurpose impacto:dpv-Payments ;
-	dpv:hasPurpose impacto:dpv-RecordKeeping ;
-	dpv:hasPurpose impacto:sector-finance-AccountManagement ;
-	dpv:hasPurpose impacto:sector-finance-AccountOperation ;
-    dpv:hasPurpose impacto:sector-finance-AncillaryAccounting ;
-    dpv:hasPurpose impacto:sector-finance-AuxiliaryAccounting ;
-	dpv:hasPurpose impacto:dpv-DataEvaluation, impacto:dpv-BudgetControl ;
-    dpv:hasPurpose impacto:sector-finance-LiquidityManagement ;
-	dpv:hasPurpose impacto:dpv-FinancialAudit ; 
-	dpv:hasData impacto:dpv-FinancialStatements ;
-	dpv:hasData impacto:dpv-AnnualFinancialStatements ;
 	dct:source at:DPIANotRequiredList ;
     dct:identifier "CN25" ;
     dpv:hasJurisdiction loc:AT .
 
+at:CN25b a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Preparation of estimates, 
+financial accounting, payment transactions, preparation of reports, operating accounts, ancillary and auxiliary accounting and evaluation of data on budget control,
+strategic controlling and liquidity management, financial statements, annual financial statements as well as audits and audits."@en ;
+	dpv:hasPurpose impacto:dpv-Accounting ;
+	dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN25" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN25c a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Preparation of estimates, 
+financial accounting, payment transactions, preparation of reports, operating accounts, ancillary and auxiliary accounting and evaluation of data on budget control,
+strategic controlling and liquidity management, financial statements, annual financial statements as well as audits and audits."@en ;
+	dpv:hasPurpose impacto:dpv-Payments ;
+	dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN25" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN25d a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Preparation of estimates, 
+financial accounting, payment transactions, preparation of reports, operating accounts, ancillary and auxiliary accounting and evaluation of data on budget control,
+strategic controlling and liquidity management, financial statements, annual financial statements as well as audits and audits."@en ;
+	dpv:hasPurpose impacto:dpv-RecordKeeping ;
+	dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN25" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN25e a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Preparation of estimates, 
+financial accounting, payment transactions, preparation of reports, operating accounts, ancillary and auxiliary accounting and evaluation of data on budget control,
+strategic controlling and liquidity management, financial statements, annual financial statements as well as audits and audits."@en ;
+	dpv:hasPurpose impacto:sector-finance-AccountManagement ;
+	dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN25" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN25f a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Preparation of estimates, 
+financial accounting, payment transactions, preparation of reports, operating accounts, ancillary and auxiliary accounting and evaluation of data on budget control,
+strategic controlling and liquidity management, financial statements, annual financial statements as well as audits and audits."@en ;
+	dpv:hasPurpose impacto:sector-finance-AccountOperation ;
+	dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN25" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN25g a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Preparation of estimates, 
+financial accounting, payment transactions, preparation of reports, operating accounts, ancillary and auxiliary accounting and evaluation of data on budget control,
+strategic controlling and liquidity management, financial statements, annual financial statements as well as audits and audits."@en ;
+    dpv:hasPurpose impacto:sector-finance-AncillaryAccounting ;
+	dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN25" ;
+    dpv:hasJurisdiction loc:AT .
+
+
+at:CN25h a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Preparation of estimates, 
+financial accounting, payment transactions, preparation of reports, operating accounts, ancillary and auxiliary accounting and evaluation of data on budget control,
+strategic controlling and liquidity management, financial statements, annual financial statements as well as audits and audits."@en ;
+    dpv:hasPurpose impacto:sector-finance-AuxiliaryAccounting ;
+	dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN25" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN25i a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Preparation of estimates, 
+financial accounting, payment transactions, preparation of reports, operating accounts, ancillary and auxiliary accounting and evaluation of data on budget control,
+strategic controlling and liquidity management, financial statements, annual financial statements as well as audits and audits."@en ;
+	dpv:hasPurpose impacto:dpv-DataEvaluation, impacto:dpv-BudgetControl ;
+	dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN25" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN25j a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Preparation of estimates, 
+financial accounting, payment transactions, preparation of reports, operating accounts, ancillary and auxiliary accounting and evaluation of data on budget control,
+strategic controlling and liquidity management, financial statements, annual financial statements as well as audits and audits."@en ;
+    dpv:hasPurpose impacto:sector-finance-LiquidityManagement ;
+	dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN25" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN25k a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Preparation of estimates, 
+financial accounting, payment transactions, preparation of reports, operating accounts, ancillary and auxiliary accounting and evaluation of data on budget control,
+strategic controlling and liquidity management, financial statements, annual financial statements as well as audits and audits."@en ;
+	dpv:hasPurpose impacto:dpv-FinancialAudit ; 
+	dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN25" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN25l a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Preparation of estimates, 
+financial accounting, payment transactions, preparation of reports, operating accounts, ancillary and auxiliary accounting and evaluation of data on budget control,
+strategic controlling and liquidity management, financial statements, annual financial statements as well as audits and audits."@en ;
+	dpv:hasPurpose impacto:dpv-DataEvaluation ;
+	dpv:hasData impacto:dpv-FinancialStatements ;
+	dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN25" ;
+    dpv:hasJurisdiction loc:AT .
+
+at:CN25m a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Preparation of estimates, 
+financial accounting, payment transactions, preparation of reports, operating accounts, ancillary and auxiliary accounting and evaluation of data on budget control,
+strategic controlling and liquidity management, financial statements, annual financial statements as well as audits and audits."@en ;
+	dpv:hasPurpose impacto:dpv-DataEvaluation ;
+	dpv:hasData impacto:dpv-AnnualFinancialStatements ;
+	dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN25" ;
+    dpv:hasJurisdiction loc:AT .
 
 at:CN26 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Prescription, collection and settlement of taxes and fees regulated under public law by the federal government, states, municipalities, associations of municipalities and other bodies under public law as well as their control."@en ;
