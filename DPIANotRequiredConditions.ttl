@@ -1444,6 +1444,10 @@ professional activities related to the obligation of professional secrecy, provi
 lv:CN53 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Latvia and which involves: Data processing carried out by an association, foundation, for the management of its members and 
 donors in the framework of its regular activities, except processing of personal data of a sensitive nature;"@en ;
+	dpv:hasEntity impacto:dpv-Association, impacto:dpv-Foundation, dpv:NonProfitOrganisation ;
+    dpv:hasPurpose impacto:dpv-DonorManagement ;
+    dpv:hasPurpose impacto:dpv-MemberManagement ;
+	dpv:isNotApplicableFor dpv:SensitiveData ;
     dct:source lv:DPIANotRequiredList ;
     dct:identifier "CN53" ;
     dpv:hasJurisdiction loc:LV .
@@ -1452,9 +1456,8 @@ lv:CN54 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Latvia and which involves: Data processing by the association of apartment owners, the co-operative society of apartments or 
 the community of apartment owners, in relation to the management of multi-apartment residential buildings and related buildings, and land, except processing on a large scale."@en ;
     dpv:hasEntity impacto:dpv-ApartmentOwner ;
-    dpv:hasLocation impacto:loc-CooperativeSocietyOfApartments ;
-    dpv:hasPurpose impacto:dpv-LandManagement ;
     dpv:hasPurpose impacto:dpv-ResidentialBuildingManagement ;
+	dpv:isNotApplicableFor dpv:LargeScaleProcessing ;
     dct:source lv:DPIANotRequiredList ;
     dct:identifier "CN54" ;
     dpv:hasJurisdiction loc:LV .
@@ -1462,6 +1465,9 @@ the community of apartment owners, in relation to the management of multi-apartm
 lv:CN55 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Latvia and which involves: Processing of data for the management of physical access controls and schedules for the calculation 
 of working time, excluding special categories of personal data and/or other personal data of highly sensitive nature."@en ;
+	dpv:hasTechnicalMeasure dpv:PhysicalAccessControlMethod ;
+	dpv:hasPurpose impacto:dpv-WorkingTimeCalculations ;
+	dpv:isNotApplicableFor dpv:SensitiveData ;
     dct:source lv:DPIANotRequiredList ;
     dct:identifier "CN55" ;
     dpv:hasJurisdiction loc:LV .
@@ -1469,9 +1475,9 @@ of working time, excluding special categories of personal data and/or other pers
 lv:CN56 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Latvia and which involves: Processing of data in connection with checks of alcohol or narcotic substances within the framework 
 of transport activities arising from legal requirements in the law in order to verify that the driver is not under the influence of alcohol or narcotics."@en ;
-    dpv:hasPurpose impacto:sector-law-RoadVehicleDriverAlcoholLevelVerification ;
-    dpv:hasPurpose impacto:sector-law-RoadVehicleDriverDrugInfluenceVerification ;
-    dpv:hasPurpose impacto:sector-law-RoadVehicleDriverSobrietyVerification ;
+    dpv:hasPurpose impacto:sector-law-RoadVehicleAlcoholTesting, impacto:sector-law-RoadVehicleDrugTesting, impacto:sector-law-RoadVehicleSubstanceImpairmentPrevention ;
+	dpv:hasData impacto:dpv-BreathalyzerTestResult ;
+	dpv:hasPurpose impacto:sector-law-RoadVehicleDriverAlcoholLevelVerification, impacto:sector-law-RoadVehicleDriverDrugInfluenceVerification, impacto:sector-law-RoadVehicleDriverSobrietyVerification ;
     dct:source lv:DPIANotRequiredList ;
     dct:identifier "CN56" ;
     dpv:hasJurisdiction loc:LV .
@@ -1504,6 +1510,8 @@ es:CN60 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Spain and which involves: Processing that is necessary in order to comply with a legal requirement or to complete a 
 mission being carried out in the public interest or in the exercise of official authority vested in the controller, provided that there is no duty to carry out a DPIA within the legal mandate itself, whenever a full DPIA has already 
 been performed."@en ;
+	dpv:hasStatus Impacto:dpv-DPIAComplete ;
+	dpv:hasLegalBasis dpv:OfficalAuthorityOfController, dpv:PublicInterest, impacto:dpv-LegalRequirement ;
     dct:source es:DPIANotRequiredList ;
     dct:identifier "CN60" ;
     dpv:hasJurisdiction loc:ES .
@@ -1511,14 +1519,20 @@ been performed."@en ;
 es:CN61 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Spain and which involves: Processing carried out by self-employed personnel who work on an individual basis in the 
 exercise of their professional duties, especially physicians, healthcare professionals, or lawyers, unless two or more criteria established in the list of types of data processing that require impact assessment are met."@en ;
-    dct:source es:DPIANotRequiredList ;
+    dpv:hasEntity impacto:dpv-SelfEmployedPersonnel ;
+	dpv:hasEntity impacto:dpv-Physician, impacto:dpv-HealthcareProfessional, impacto:dpv-Lawyer ;
+	dct:source es:DPIANotRequiredList ;
     dct:identifier "CN61" ;
-    dpv:hasJurisdiction loc:ES .
+    dpv:hasJurisdiction loc:ES ;
+	dct:scopeNote "unless two or more criteria established in the list of types of data processing that require impact assessment are met" @en . 
 
 es:CN62 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Spain and which involves: Processing carried out in relation to the internal administration of personnel working at SMEs, 
 in order to face processing operations mandatory by law for the purposes of accounting, human resources management, payroll management, social security, and safety in the workplace, but never in relation to customer data."@en ;
-    dct:source es:DPIANotRequiredList ;
+    dpv:hasPurpose impacto:dpv-InternalAdministration, impacto:dpv-Accounting, dpv:HumanResourceManagement, impacto:dpv-PayrollManagement, sector-publicservices:SocialSecurityManagement, impacto:dpv-WorkplaceSafety ;
+	dpv:hasEntity dpv:SMEOrganisation ;
+	dpv:isNotApplicableFor dpv:Customer ;
+	dct:source es:DPIANotRequiredList ;
     dct:identifier "CN62" ;
     dpv:hasJurisdiction loc:ES .
 
