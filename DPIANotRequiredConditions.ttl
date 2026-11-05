@@ -502,37 +502,16 @@ at:CN9b  a impacto:eu-gdpr-DPIANotRequiredProcess ;
     dct:identifier "CN9" ;
     dpv:hasJurisdiction loc:AT .
 
-#TR TODO at:CN10  a impacto:eu-gdpr-DPIANotRequiredProcess ;
-    skos:definition "Maintenance of member lists, evidence of membership and funding fees, contact with members or sponsors of bodies under public and private law, in particular associations and partnerships, as well as support for members and sponsors."@en ;
-    dpv:hasPurpose impacto:dpv-MemberListMaintenance ;
-	dpv:hasPurpose impacto:dpv-FundingManagement ;
-	dpv:hasPurpose impacto:dpv-MemberContact ;
-	dpv:hasPersonalData impacto:pd-MemberContact ;
-	dpv:hasPersonalData pd:GroupMembership ;
-FeeManagement
-MemberContact
-SponserContact 
-PublicLaw
-PrivateLaw
-Associations
-Partnerships
-MemberSupport
-SponserSupport
-
-dpv:hasContext impacto:dpv-FundingFees ;
-    dpv:hasContext impacto:dpv-MembershipLists ;
-    dpv:hasEntity impacto:dpv-Members ;
-    dpv:hasEntity impacto:dpv-PrivateSponsors ;
-    dpv:hasEntity impacto:dpv-PublicSponsors ;
-    dpv:hasEntity impacto:dpv-SubscribedMembers ;
+at:CN10  a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "Maintenance of member lists, evidence of membership and funding fees, contact with members or sponsors of bodies under public and private law, in particular associations and partnerships, as well as support 
+for members and sponsors."@en ;
+    dpv:hasPurpose impacto:dpv-MemberListMaintenance, impacto:dpv-FundingManagement, impacto:dpv-MemberContact, impacto:dpv-SponserContact, impacto:dpv-MembershipManagement, impacto:dpv-SponserManagement ;
+	dpv:hasPersonalData impacto:pd-MemberContact, pd:GroupMembership, impacto:pd-Membership ;
+    dpv:hasEntity impacto:dpv-Association ;
+	dpv:hasContext impacto:dpv-Parternship  ;
     dct:source at:DPIANotRequiredList ;
     dct:identifier "CN10" ;
     dpv:hasJurisdiction loc:AT .
-
-dpv:hasPurpose dpv:MemberManagement ;
-	dpv:hasPersonalData pd:MembershipStatus ;
-	dpv:hasOrganisation dpv:NonProfitOrganisation ;
-
 
 at:CN11a a impacto:eu-gdpr-DPIANotRequiredProcess ;
 	skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Processing of own or purchased customer and interested party data for the business initiation 
@@ -653,19 +632,18 @@ inevitable inclusion of public traffic areas to the extent of up to half a meter
 personal area of life of people. Storage period: Recorded personal data must be deleted by the controller after 72 hours at the latest, unless a longer storage period has been expressly stipulated in a law, by an official legal act, 
 in a works agreement or with the consent of the personnel representation. Identification: The prerequisite for the exception is the appropriate identification of the image processing by the person responsible. In any case, the person 
 responsible must be clearly stated from the marking."@en ;
-	dpv:hasPurpose impacto:dpv-VideoSurveillance ;
-   
+	dpv:hasPurpose impacto:dpv-VideoSurveillance, impacto:dpv-Monitoring ;
+   	dpv:hasData tech:VideoContent, tech:AudioContent, impacto:tech-StationaryImages ;
 	dpv:hasContext impacto:dpv-PropertyBoundaryLimitation ;
-    dpv:hasDataSource impacto:dpv-AudioData ;
-    dpv:hasLocation impacto:dpv-LimitedPublicArea ;
-    dpv:hasPersonalData impacto:pd-Gait ;
+	dpv:isNotApplicableFor dpv:PrivateLocation ;
+	dpv:hasStorageCondition impacto:dpv-RetentionPeriod "PT72H"^^xsd:duration ; ("add into usage note unless a longer storage period has been expressly stipulated in a law, by an official legal act, 
+in a works agreement or with the consent of the personnel representation into definition of retention period"@en)
+	dpv:hasResponsibleEntity dpv:Organisation ; 
     dct:source at:DPIANotRequiredList ;
     dct:identifier "CN16" ;
-    dpv:hasJurisdiction loc:AT .
-	dpv:hasPurpose impacto:dpv-VideoSurveillance ;
-	dpv:hasData tech:VideoContent ;
-	dpv:hasData tech:AudioContent ;
-	dpv:hasLocation dpv:PrivateLocation ;
+    dpv:hasJurisdiction loc:AT ;
+	dct:scopeNote " The organisation or person responsbile for the image processing must be clearly identifiable, it must be made clear who is responsible and this must be demonstrated by a mark or sign"@en . 
+
 
 at:CN17a  a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Image and acoustic processing, which serve the preventive protection of persons or things on
@@ -690,22 +668,36 @@ private properties used for residential purposes, which are used exclusively by 
     dpv:hasJurisdiction loc:AT .
 
 
-at:CN18  a impacto:eu-gdpr-DPIANotRequiredProcess ;
+at:CN18a  a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Image and acoustic processing, which are necessary for the preventive protection of persons 
 or things in generally accessible places that are subject to the house law of the person responsible, due to violations of law that have already occurred or a special potential hazard in the nature of the place and no suitable means 
 is available. In cases where employee representatives have to be formed, the existence of a valid works agreement or a valid consent of the personnel representation, which regulates the implementation of video surveillance, is a prerequisite.
 This exception does not apply to places that may be entered due to an existing contract obligation or due to the public interest of anyone."@en ;
     dpv:hasPurpose impacto:dpv-PreventativeProtectionOfThings ;
     dpv:hasPurpose impacto:dpv-PreventativeProtectionOfPersons ;
+	dpv:hasData tech:ImageContent, tech:AudioContent ;
+	dpv:hasLocation impacto:dpv-PotentiallyHazardousLocation ;
+	dpv:hasStatus impacto:dpv-ViolationOccured ;
+	dpv:hasLocation impacto:dpv-PotentiallyHazardousLocation ;
     dct:source at:DPIANotRequiredList ;
     dct:identifier "CN18" ;
     dpv:hasJurisdiction loc:AT .
-	dpv:hasPurpose dpv:ProtectionOfPublicSecurity ;
-	tech:hasInput tech:MobilePhone ;
+
+at:CN18b  a impacto:eu-gdpr-DPIANotRequiredProcess ;
+    skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Image and acoustic processing, which are necessary for the preventive protection of persons 
+or things in generally accessible places that are subject to the house law of the person responsible, due to violations of law that have already occurred or a special potential hazard in the nature of the place and no suitable means 
+is available. In cases where employee representatives have to be formed, the existence of a valid works agreement or a valid consent of the personnel representation, which regulates the implementation of video surveillance, is a prerequisite.
+This exception does not apply to places that may be entered due to an existing contract obligation or due to the public interest of anyone."@en ;
+    dpv:hasPurpose impacto:dpv-PreventativeProtectionOfThings ;
+    dpv:hasPurpose impacto:dpv-PreventativeProtectionOfPersons ;
 	dpv:hasData tech:ImageContent, tech:AudioContent ;
-dpv:isNotApplicableFor impacto:dpv-ContractualAccessPlace, dpv:PublicSpace ;
-dpv:hasData dpv:LawViolationsatProperty, ;
-dpv:hasContext impacto:dpv-PotentialHazardLocation (parent dpv:LocalityScale) ;
+	dpv:hasLocationLocality impacto:dpv-Workplace ;
+	dpv:hasJustification justifications:ConsentProvided ;
+	dpv:hasLegalBasis dpv:ControllerDataSubjectAgreement ;
+	dpv:isNotApplicableFor dpv:PubliclyAssessibleSpace, impacto:dpv-ContractuallyAccessiblePlace, impacto:dpv-PublicInterestAccessiblePlace ;
+    dct:source at:DPIANotRequiredList ;
+    dct:identifier "CN18" ;
+    dpv:hasJurisdiction loc:AT .
 
 at:CN19 a impacto:eu-gdpr-DPIANotRequiredProcess ;
     skos:definition "A process which does not require a DPIA according to the Data Protection Authorities of Austria and which involves: Processing of image and acoustic data transmittions in real time without recording."@en ;
