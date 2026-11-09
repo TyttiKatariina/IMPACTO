@@ -5,6 +5,9 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:impacto="https://tyttikatariina.github.io/IMPACTO/#">
 
@@ -513,7 +516,7 @@
         <skos:notation>eu-aiact-ExistingFRIA</skos:notation>
         <skos:definition xml:lang="en">A previously conducted FRIA, or an existing impact assessment carried out by the provider, on which a deployer may rely in similar cases.</skos:definition>
         <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-ImpactAssessmentReuse"/>
-        <skos:related rdf:resource="https://w3id.org/dpv#hasReuseCompatability"/>
+        <skos:related rdf:resource="https://w3id.org/dpv#hasReuseCompatibility"/>
         <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
         <skos:note xml:lang="en">Source: AI Act Art. 27(2)</skos:note>
     </skos:Concept>
@@ -528,7 +531,7 @@
         <skos:notation>eu-aiact-ExistingDPIAInput</skos:notation>
         <skos:definition xml:lang="en">A DPIA conducted under GDPR Article 35 through which some FRIA obligations are already met, and which can be used as input in a FRIA.</skos:definition>
         <skos:broader rdf:resource="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-ImpactAssessmentReuse"/>
-        <skos:related rdf:resource="https://w3id.org/dpv#hasReuseCompatability"/>
+        <skos:related rdf:resource="https://w3id.org/dpv#hasReuseCompatibility"/>
         <skos:note xml:lang="en">Proposed for: DPV EU AI Act extension (eu-aiact)</skos:note>
         <skos:note xml:lang="en">Source: AI Act Art. 27(4)</skos:note>
     </skos:Concept>
