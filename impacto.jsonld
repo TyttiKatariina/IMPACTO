@@ -1,0 +1,2366 @@
+{
+  "@context": {
+    "ai": "https://w3id.org/dpv/ai#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dpv": "https://w3id.org/dpv#",
+    "eu-aiact": "https://w3id.org/dpv/legal/eu/aiact#",
+    "eu-gdpr": "https://w3id.org/dpv/legal/eu/gdpr#",
+    "impacto": "https://tyttikatariina.github.io/IMPACTO/#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "tech": "https://w3id.org/dpv/tech#",
+    "vann": "http://purl.org/vocab/vann/"
+  },
+  "@graph": [
+    {
+      "@id": "https://tyttikatariina.github.io/IMPACTO/",
+      "@type": [
+        "skos:ConceptScheme",
+        "owl:Ontology"
+      ],
+      "dcterms:contributor": "Harshvardhan J. Pandit",
+      "dcterms:created": {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "YYYY-MM-DD"
+      },
+      "dcterms:creator": "Tytti Rintamäki",
+      "dcterms:description": {
+        "@language": "en",
+        "@value": "IMPACTO represents impact assessment requirements and processes based on the GDPR and the EU AI Act, specifically the Data Protection Impact Assessment (DPIA) and the Fundamental Rights Impact Assessment (FRIA)."
+      },
+      "dcterms:license": {
+        "@id": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      "dcterms:modified": {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2026-10-15"
+      },
+      "dcterms:publisher": "ADAPT Centre, Dublin City University",
+      "dcterms:source": [
+        {
+          "@language": "en",
+          "@value": "GDPR (Regulation EU 2016/679)"
+        },
+        {
+          "@language": "en",
+          "@value": "EU AI Act (Regulation EU 2024/1689)"
+        }
+      ],
+      "dcterms:title": "IMPACTO",
+      "owl:versionIRI": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/1.0"
+      },
+      "owl:versionInfo": {
+        "@language": "en",
+        "@value": "1.0"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Impact Assessment Ontology"
+      },
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "IMPACTO"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "IMPACTO represents impact assessment requirements and processes based on the GDPR and the EU AI Act, specifically the Data Protection Impact Assessment (DPIA) and the Fundamental Rights Impact Assessment (FRIA)."
+      },
+      "skos:notation": "impacto",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Licensed under a Creative Commons Attribution 4.0 International License (CC BY 4.0)."
+        },
+        {
+          "@language": "en",
+          "@value": "Version 1.0"
+        },
+        {
+          "@language": "en",
+          "@value": "Authors: Tytti Rintamäki (ADAPT Centre, Dublin City University); Harshvardhan J. Pandit (AI Accountability Lab, Trinity College Dublin)"
+        },
+        {
+          "@language": "en",
+          "@value": "Sources: GDPR (Regulation EU 2016/679); EU AI Act (Regulation EU 2024/1689)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "IMPACTO (Impact Assessment Ontology)"
+      },
+      "vann:preferredNamespacePrefix": "impacto",
+      "vann:preferredNamespaceUri": "https://tyttikatariina.github.io/IMPACTO/#"
+    },
+    {
+      "@id": "impacto:ai-AISubject",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "ai:AI"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A natural person or group of persons that is subject to, or affected by, the use of an AI system."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "ai-AISubject",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV AI extension (ai)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: AI Act Art. 27(1)(c)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "AI Subject"
+      }
+    },
+    {
+      "@id": "impacto:ai-NaturalPersonCategorySubjects",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "ai:AI"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "The categories of natural persons and groups likely to be affected by the use of an AI system in a specific context."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "ai-NaturalPersonCategorySubjects",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV AI extension (ai)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: AI Act Art. 27(1)(c)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Natural Person Category Subjects"
+      }
+    },
+    {
+      "@id": "impacto:dpv-AffectedEntity",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "dpv:Entity"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "An entity, such as a natural person, group or organisation, that is affected by the impacts of processing or of the use of a technology."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "dpv-AffectedEntity",
+      "skos:note": {
+        "@language": "en",
+        "@value": "Proposed for: DPV core (dpv)"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Affected Entity"
+      }
+    },
+    {
+      "@id": "impacto:dpv-CommercialBenefit",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "dpv:Purpose"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Purposes associated with obtaining or preserving a commercial benefit for an organisation."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "dpv-CommercialBenefit",
+      "skos:note": {
+        "@language": "en",
+        "@value": "Proposed for: DPV core (dpv)"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Commercial Benefit"
+      },
+      "skos:scopeNote": {
+        "@language": "en",
+        "@value": "Proposed as the parent of dpv:ProtectionOfCommercialInterest."
+      }
+    },
+    {
+      "@id": "impacto:dpv-DPIAExemption",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "dpv:DPIA"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "The one condition under which specific processing is exempt from the obligation to carry out a DPIA as per GDPR Art. 35(10)."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "dpv-DPIAExemption",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV core (dpv)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: GDPR Art. 35(10)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "DPIA Exemption"
+      }
+    },
+    {
+      "@id": "impacto:dpv-DPIAExemptionA35",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "impacto:dpv-DPIAExemption"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "The specific DPIA exemption in Article 35 of the GDPR which states that if processing under Article 6(1)(c) or (e) is goverened by Union or MemberState law and a DPIA was already conducted as part o a general impact assesment, a further DPIA is not required unless the Member State considers one necessary before processing."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "dpv-DPIAExemptionA35",
+      "skos:note": {
+        "@language": "en",
+        "@value": "Proposed for: DPV core (dpv)"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "DPIA Exemption A35"
+      }
+    },
+    {
+      "@id": "impacto:dpv-DataSubjectBehaviourMonitoring",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "dpv:Purpose"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Processing related to the monitoring of the behaviour of data subjects, as far as that behaviour takes place within the Union."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "dpv-DataSubjectBehaviourMonitoring",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV core (dpv)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: GDPR Art. 3(2)(b)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Data Subject Behaviour Monitoring"
+      }
+    },
+    {
+      "@id": "impacto:dpv-DataSubjectGoodsOffer",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "dpv:Purpose"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Processing related to the offering of goods to data subjects, irrespective of whether a payment is required."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "dpv-DataSubjectGoodsOffer",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV core (dpv)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: GDPR Art. 3(2)(a)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Data Subject Goods Offer"
+      }
+    },
+    {
+      "@id": "impacto:dpv-DataSubjectServicesOffer",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "dpv:Purpose"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Processing related to the offering of services to data subjects, irrespective of whether a payment is required."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "dpv-DataSubjectServicesOffer",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV core (dpv)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: GDPR Art. 3(2)(a)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Data Subject Services Offer"
+      }
+    },
+    {
+      "@id": "impacto:dpv-ProcessingContextEvaluation",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "dpv:ProcessingContext"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A processing context in which personal data is used to evaluate personal aspects relating to natural persons, such as in systematic and extensive evaluation."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "dpv-ProcessingContextEvaluation",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV core (dpv)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: GDPR Art. 35(3)(a)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Processing Context Evaluation"
+      }
+    },
+    {
+      "@id": "impacto:dpv-ProcessingDescription",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "dpv:Context"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A systematic description of the envisaged processing operations and the purposes of the processing, including, where applicable, the legitimate interest pursued by the controller, as part of a DPIA."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "dpv-ProcessingDescription",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV (dpv)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: GDPR Art. 35(7)(a)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Processing Description"
+      }
+    },
+    {
+      "@id": "impacto:dpv-ProtectionOfCommercialInterest",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "impacto:dpv-CommercialBenefit"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Processing carried out to protect the commercial interests of an organisation, such as trade secrets or business confidentiality."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "dpv-ProtectionOfCommercialInterest",
+      "skos:note": {
+        "@language": "en",
+        "@value": "Proposed for: DPV core (dpv)"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Protection Of Commercial Interest"
+      }
+    },
+    {
+      "@id": "impacto:dpv-ProtectionOfOperationalSecurity",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "dpv:Purpose"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Processing carried out to protect the security of an organisation's operations, systems or premises."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "dpv-ProtectionOfOperationalSecurity",
+      "skos:note": {
+        "@language": "en",
+        "@value": "Proposed for: DPV core (dpv)"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Protection Of Operational Security"
+      }
+    },
+    {
+      "@id": "impacto:dpv-ProtectionOfPublicInterest",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "dpv:PublicBenefit"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Processing carried out to protect an interest of the public at large."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "dpv-ProtectionOfPublicInterest",
+      "skos:note": {
+        "@language": "en",
+        "@value": "Proposed for: DPV core (dpv)"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Protection Of Public Interest"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-A46-Notification-Exemptions",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "impacto:eu-aiact-FRIANotification"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "The exemption from the obligation to notify the market surveillance authority that applies in the cases referred to in AI Act Article 46(1)."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-A46-Notification-Exemptions",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: AI Act Art. 27(3), Art. 46(1)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Art 46 Notification Exemptions"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-AutomatedTool",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "impacto:eu-aiact-FRIATemplate"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "An automated tool through which the FRIA questionnaire template may be provided and completed."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-AutomatedTool",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: AI Act Art. 27(5)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Automated Tool"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-ComplaintMeasures",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "dpv:AIGovernance"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Complaint mechanisms to be used by the deployer in the case of the materialisation of risks to fundamental rights."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-ComplaintMeasures",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: AI Act Art. 27(1)(f)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Complaint Measures"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-ConsultationWithAffectedEntities",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "dpv:Consultation"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Consultation with the natural persons, groups or other entities likely to be affected by the use of the AI system, or with their representatives."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-ConsultationWithAffectedEntities",
+      "skos:note": {
+        "@language": "en",
+        "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Consultation with Affected Entities"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-ConsultationWithMarketSurveillanceAuthority",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "dpv:Consultation"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Consultation with the market surveillance authority competent for the AI system."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-ConsultationWithMarketSurveillanceAuthority",
+      "skos:note": {
+        "@language": "en",
+        "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Consultation with Market Surveillance Authority"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-ConsultationWithProvider",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "dpv:Consultation"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Consultation with the provider of the AI system, for example regarding the information provided under Article 13 or existing impact assessments."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-ConsultationWithProvider",
+      "skos:note": {
+        "@language": "en",
+        "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Consultation with Provider"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-Exempt",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "impacto:eu-aiact-FRIAExemptions"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A determination that the deployment of the AI system is exempt from the FRIA obligation."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-Exempt",
+      "skos:note": {
+        "@language": "en",
+        "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "AI System Exempt"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-ExistingDPIAInput",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "impacto:eu-aiact-ImpactAssessmentReuse"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A DPIA conducted under GDPR Article 35 through which some FRIA obligations are already met, and which can be used as input in a FRIA."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-ExistingDPIAInput",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: AI Act Art. 27(4)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Existing DPIA Input"
+      },
+      "skos:related": {
+        "@id": "dpv:hasReuseCompatibility"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-FRIAExempt",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "impacto:eu-aiact-FRIANecessityStatus"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A FRIA necessity status indicating that a FRIA is not required because an exemption applies, such as for high-risk AI systems intended to be used in the area listed in point 2 of Annex III."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-FRIAExempt",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: AI Act Art. 27(1)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "FRIA Exempt"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-FRIAExemptions",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "impacto:eu-aiact-FRIANecessityDetermination"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A determination of whether an exemption from the FRIA obligation applies to the deployment of the AI system."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-FRIAExemptions",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: AI Act Art. 27(1)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "FRIA Exemptions"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-FRIAIndicatesHighRisk",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "impacto:eu-aiact-FRIARiskStatus"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A FRIA risk status indicating a high risk to fundamental rights."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-FRIAIndicatesHighRisk",
+      "skos:note": {
+        "@language": "en",
+        "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "FRIA Indicates High Risk"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-FRIAIndicatesLowRisk",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "impacto:eu-aiact-FRIARiskStatus"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A FRIA risk status indicating a low risk to fundamental rights."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-FRIAIndicatesLowRisk",
+      "skos:note": {
+        "@language": "en",
+        "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "FRIA Indicates Low Risk"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-FRIAIndicatesNoRisk",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "impacto:eu-aiact-FRIARiskStatus"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A FRIA risk status indicating no identified risk to fundamental rights."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-FRIAIndicatesNoRisk",
+      "skos:note": {
+        "@language": "en",
+        "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "FRIA Indicates No Risk"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-FRIAMarketSurveillanceAuthorityNotified",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "impacto:eu-aiact-FRIANotification"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Indication that the market surveillance authority has been notified of the results of the FRIA."
+      },
+      "skos:editorialNote": {
+        "@language": "en",
+        "@value": "Appears to overlap with eu-aiact:FRIANotificationSent."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-FRIAMarketSurveillanceAuthorityNotified",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: AI Act Art. 27(3)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "FRIA Market Surveillance Authority Notified"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-FRIANecessity",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "eu-aiact:FRIA"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Whether a FRIA is required for a given deployment of an AI system, as determined under AI Act Article 27(1)."
+      },
+      "skos:editorialNote": {
+        "@language": "en",
+        "@value": "Overlaps with eu-aiact:FRIANecessityAssessment, which has the same parent; confirm whether both are needed."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-FRIANecessity",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: AI Act Art. 27(1)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "FRIA Necessity"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-FRIANecessityAssessment",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "eu-aiact:FRIA"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A process extending eu-aiact:FRIA that represents the step in which an organisation assesses whether it is necessary to conduct a FRIA, as required under AI Act Article 27(1). Associated with a FRIA using dpv:hasAssessment."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-FRIANecessityAssessment",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: AI Act Art. 27(1)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "FRIA Necessity Assessment"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-FRIANecessityDetermination",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "impacto:eu-aiact-FRIANecessityStatus"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "The basis on which the necessity of a FRIA is determined, such as the risk classification of the AI system or the applicability of an exemption."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-FRIANecessityDetermination",
+      "skos:note": {
+        "@language": "en",
+        "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "FRIA Necessity Determination"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-FRIANecessityStatus",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "dpv:AuditStatus"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A status associated with eu-aiact:FRIANecessityAssessment (via dpv:hasStatus) that represents the specific outcome of the necessity assessment process."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-FRIANecessityStatus",
+      "skos:note": {
+        "@language": "en",
+        "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "FRIA Necessity Status"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-FRIANotRequired",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "impacto:eu-aiact-FRIANecessityStatus"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A FRIA necessity status indicating that the organisation is not required to conduct a FRIA."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-FRIANotRequired",
+      "skos:note": {
+        "@language": "en",
+        "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "FRIA Not Required"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-FRIANotRequiredProcess",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "dpv:Process"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A deployment of an AI system that does not require a FRIA under AI Act Article 27(1), for example because the AI system is not a high-risk AI system referred to in Article 6(2), is intended to be used in the area listed in Annex III point 2, or the deployer is not one of the categories listed in Article 27(1)."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-FRIANotRequiredProcess",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: AI Act Art. 27(1)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "FRIA Not Required Process"
+      },
+      "skos:related": [
+        {
+          "@id": "impacto:eu-aiact-FRIANotRequired"
+        },
+        {
+          "@id": "impacto:eu-aiact-FRIAExempt"
+        }
+      ],
+      "skos:scopeNote": {
+        "@language": "en",
+        "@value": "The counterpart of impacto:eu-gdpr-DPIANotRequiredProcess for the FRIA. The outcome of the FRIA necessity assessment is recorded with dpv:hasStatus impacto:eu-aiact-FRIANotRequired or impacto:eu-aiact-FRIAExempt."
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-FRIANotification",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "eu-aiact:FRIA"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "The step of notifying the market surveillance authority of the results of the FRIA, including the submission of the filled-out template."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-FRIANotification",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: AI Act Art. 27(3)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "FRIA Notification"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-FRIANotificationPending",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "impacto:eu-aiact-FRIANotificationStatus"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A FRIA notification status indicating that a notification has been identified as needed but has not been sent."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-FRIANotificationPending",
+      "skos:note": {
+        "@language": "en",
+        "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "FRIA Notification Pending"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-FRIANotificationSent",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "impacto:eu-aiact-FRIANotificationStatus"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A FRIA notification status indicating that the FRIA notification has been sent to the relevant market surveillance authority."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-FRIANotificationSent",
+      "skos:note": {
+        "@language": "en",
+        "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "FRIA Notification Sent"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-FRIANotificationStatus",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "impacto:eu-aiact-FRIANotification"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A status associated with eu-aiact:FRIANotification (via dpv:hasStatus) that represents the state of the notification obligation and its fulfilment."
+      },
+      "skos:editorialNote": {
+        "@language": "en",
+        "@value": "The other status concepts in this index descend from dpv:AuditStatus; the source table gives eu-aiact:FRIANotification (a process) as the parent here."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-FRIANotificationStatus",
+      "skos:note": {
+        "@language": "en",
+        "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "FRIA Notification Status"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-FRIAObligationtoNotify",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "impacto:eu-aiact-FRIANotification"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "The obligation of the deployer to notify the market surveillance authority of the results of the FRIA once it has been performed."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-FRIAObligationtoNotify",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: AI Act Art. 27(3)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "FRIA Obligation to Notify"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-FRIAOutcome",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "eu-aiact:FRIA"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A process extending eu-aiact:FRIA that represents the step of determining the result of the FRIA procedure, specifically whether the use of the AI system produces an impact on fundamental rights, as stated in AI Act Article 27(1). Associated with a FRIA using dpv:hasAssessment."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-FRIAOutcome",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: AI Act Art. 27(1)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "FRIA Outcome"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-FRIAOutcomeStatus",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "dpv:AuditStatus"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A status associated with eu-aiact:FRIAOutcome (via dpv:hasStatus) that represents the specific result determined at the conclusion of the FRIA procedure."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-FRIAOutcomeStatus",
+      "skos:note": {
+        "@language": "en",
+        "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "FRIA Outcome Status"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-FRIAPermitsDeployment",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "impacto:eu-aiact-FRIAOutcomeStatus"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A FRIA outcome status indicating that the deployment of the AI system may proceed."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-FRIAPermitsDeployment",
+      "skos:note": {
+        "@language": "en",
+        "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "FRIA Permits Deployment"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-FRIAProcedure",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "eu-aiact:FRIA"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A process extending eu-aiact:FRIA that represents the activity of carrying out the FRIA itself, including collection and documentation of all required inputs as per AI Act Article 27(1). Associated with a FRIA using dpv:hasAssessment."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-FRIAProcedure",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: AI Act Art. 27(1)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "FRIA Procedure"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-FRIAProhibitsDeployment",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "impacto:eu-aiact-FRIAOutcomeStatus"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A FRIA outcome status indicating that the AI system should not be deployed because of the identified impacts on fundamental rights."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-FRIAProhibitsDeployment",
+      "skos:note": {
+        "@language": "en",
+        "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "FRIA Prohibits Deployment"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-FRIARequired",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "impacto:eu-aiact-FRIANecessityStatus"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A FRIA necessity status indicating that the organisation is required to conduct a FRIA."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-FRIARequired",
+      "skos:note": {
+        "@language": "en",
+        "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "FRIA Required"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-FRIARequiredProcess",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "dpv:Process"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A deployment of a high-risk AI system referred to in AI Act Article 6(2) that requires a FRIA according to Article 27(1), because the deployer is a body governed by public law or a private entity providing public services, or because the AI system is referred to in Annex III point 5(b) or (c)."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-FRIARequiredProcess",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: AI Act Art. 27(1)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "FRIA Required Process"
+      },
+      "skos:related": {
+        "@id": "impacto:eu-aiact-FRIARequired"
+      },
+      "skos:scopeNote": {
+        "@language": "en",
+        "@value": "The counterpart of impacto:eu-gdpr-DPIARequiredProcess for the FRIA. The outcome of the FRIA necessity assessment is recorded with dpv:hasStatus impacto:eu-aiact-FRIARequired."
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-FRIARequiresConsultation",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "impacto:eu-aiact-FRIAOutcomeStatus"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A FRIA outcome status indicating that consultation is required before a decision on deployment can be taken."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-FRIARequiresConsultation",
+      "skos:note": {
+        "@language": "en",
+        "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "FRIA Requires Consultation"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-FRIARiskStatus",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "dpv:AuditStatus"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A status representing the level of risk to fundamental rights indicated by a FRIA."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-FRIARiskStatus",
+      "skos:note": {
+        "@language": "en",
+        "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "FRIA Risk Status"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-FRIATemplate",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "eu-aiact:FRIA"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "The template for a questionnaire developed by the AI Office to facilitate deployers in complying with their FRIA obligations."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-FRIATemplate",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: AI Act Art. 27(5)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "FRIA Template"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-FRIAUpdateComplete",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "impacto:eu-aiact-FRIAUpdateStatus"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Status reflecting a review has been carried out by the deployer if any elements listed in Art. 27(1) have changed or are no longer up to date."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-FRIAUpdateComplete",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV EU AI Act (eu-aiact)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: AI Act Art. 27(2)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "FRIA Update Complete"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-FRIAUpdatePending",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "impacto:eu-aiact-FRIAUpdateStatus"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Status reflecting a review is still pending and waiting to been carried out by the deployer if any elements listed in Art. 27(1) have changed or are no longer up to date."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-FRIAUpdatePending",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV EU AI Act (eu-aiact)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: AI Act Art. 27(2)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "FRIA Update Pending"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-FRIAUpdateStatus",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "eu-aiact:FRIA"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Status reflecting the deployers need to update the information in the FRIA if any elements listed in Art. 27(1) have changed or are no longer up to date."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-FRIAUpdateStatus",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV EU AI Act (eu-aiact)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: AI Act Art. 27(2)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "FRIA Update Status"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-FrequencyOfUse",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "dpv:Technology"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "The frequency with which the high-risk AI system is intended to be used."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-FrequencyOfUse",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: AI Act Art. 27(1)(b)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Frequency Of Use"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-HighRiskAISystem",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "impacto:eu-aiact-FRIANecessityDetermination"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A determination that the AI system is a high-risk AI system referred to in AI Act Article 6(2), bringing its deployment within the scope of Article 27."
+      },
+      "skos:editorialNote": {
+        "@language": "en",
+        "@value": "Name collides with the existing eu-aiact:HighRiskAISystem, which is listed under reused concepts. A distinct name (for example HighRiskAISystemDetermination) would avoid the clash when proposed to eu-aiact."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-HighRiskAISystem",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: AI Act Art. 6(2), Art. 27(1)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "High Risk AI System"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-ImpactAssessmentReuse",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "eu-aiact:FRIA"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "The reuse of an existing and previously conducted impact assessment as input in a FRIA."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-ImpactAssessmentReuse",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: AI Act Art. 27(2)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Impact Assessment Reuse"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-IntendedUse",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "dpv:Technology"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "The contextual application of an AI system's intended purpose in a specific deployment scenario. Distinct from eu-aiact:IntendedPurpose in that the same AI system with one intended purpose may have multiple intended uses, varying by input/output data, human subjects involved, or hardware and software used."
+      },
+      "skos:editorialNote": {
+        "@language": "en",
+        "@value": "Parent changed from tech:IntendedUse (previous index) to dpv:Technology."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-IntendedUse",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: AI Act Art. 27(1)(b)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Intended Use"
+      },
+      "skos:scopeNote": {
+        "@language": "en",
+        "@value": "Distinct from eu-aiact:IntendedPurpose: while an AI system has a single intended purpose, it may have multiple intended uses depending on deployment context."
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-InternalGovernanceMeasures",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "dpv:AIGovernance"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Arrangements for internal governance to be taken by the deployer in the case of the materialisation of risks to fundamental rights."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-InternalGovernanceMeasures",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: AI Act Art. 27(1)(f)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Internal Governance Measures"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-NotExempt",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "impacto:eu-aiact-FRIAExemptions"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A determination that no exemption from the FRIA obligation applies to the deployment of the AI system."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-NotExempt",
+      "skos:note": {
+        "@language": "en",
+        "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "AI System Not Exempt"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-NotHighRiskAISystem",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "impacto:eu-aiact-FRIANecessityDetermination"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A determination that the AI system is not a high-risk AI system, so that the FRIA obligation under Article 27 does not apply."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-NotHighRiskAISystem",
+      "skos:note": {
+        "@language": "en",
+        "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Not High Risk AI System"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-PeriodOfUse",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "dpv:Technology"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "The period of time within which the high-risk AI system is intended to be used."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-PeriodOfUse",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: AI Act Art. 27(1)(b)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Period Of Use"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-PotentiallyHighRiskAISystem",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "impacto:eu-aiact-FRIANecessityDetermination"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A determination that the AI system may be a high-risk AI system, pending further assessment, for example of whether the derogation in Article 6(3) applies."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-PotentiallyHighRiskAISystem",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: AI Act Art. 6(3)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Potentially High Risk AI System"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-ProcessDescription",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "dpv:Context"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A description of the deployer's processes in which the high-risk AI system will be used in line with its intended purpose."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-ProcessDescription",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: AI Act Art. 27(1)(a)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Process Description"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-PublicLawGovernedDeployer",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "eu-aiact:AIDeployer"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A deployer that is a body governed by public law."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-PublicLawGovernedDeployer",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: AI Act Art. 27(1)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Public Law Governed Deployer"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-PublicServiceProvidingPrivateEntityDeployer",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "eu-aiact:AIDeployer"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A deployer that is a private entity providing public services."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-PublicServiceProvidingPrivateEntityDeployer",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: AI Act Art. 27(1)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Public Service Providing Private Entity Deployer"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-ReuseOfExistingFRIA",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "impacto:eu-aiact-ImpactAssessmentReuse"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A previously conducted FRIA, or an existing impact assessment carried out by the provider, on which a deployer may rely in similar cases."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-ReuseOfExistingFRIA",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: AI Act Art. 27(2)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Existing FRIA"
+      },
+      "skos:related": {
+        "@id": "dpv:hasReuseCompatibility"
+      }
+    },
+    {
+      "@id": "impacto:eu-aiact-RightsQuestionnaire",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "impacto:eu-aiact-FRIATemplate"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A questionnaire through which a deployer documents its assessment of impacts on fundamental rights, based on the template provided by the AI Office."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-aiact-RightsQuestionnaire",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV EU AI Act extension (eu-aiact)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: AI Act Art. 27(5)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Rights Questionnaire"
+      }
+    },
+    {
+      "@id": "impacto:eu-gdpr-DPIANotRequired",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "eu-gdpr:DPIANecessityStatus"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Status indicating that a DPIA is not required for the processing, for example because it is not likely to result in a high risk or because it appears on a supervisory authority list under GDPR Article 35(5)."
+      },
+      "skos:editorialNote": {
+        "@language": "en",
+        "@value": "eu-gdpr:DPIANotRequired already exists in the DPV GDPR extension and is also listed under reused concepts. Confirm whether this entry is a refinement or should be removed."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-gdpr-DPIANotRequired",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV GDPR extension (eu-gdpr)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: GDPR Art. 35(5)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "DPIA Not Required"
+      }
+    },
+    {
+      "@id": "impacto:eu-gdpr-DPIANotRequiredProcess",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "impacto:eu-gdpr-DPIAProcess"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A personal data processing activity that does not require a DPIA according to the whitelists of processing activities published by Member State Data Protection Authorities."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-gdpr-DPIANotRequiredProcess",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV GDPR extension (eu-gdpr)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: GDPR Art. 35(5); Member State DPA Not-Required Lists (AT, CZ, FR, HR, IT, LV, NL, ES)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "DPIA Not Required Process"
+      }
+    },
+    {
+      "@id": "impacto:eu-gdpr-DPIAProcess",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "dpv:Process"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "The process of conducting a DPIA that has two outcomes, either a DPIA is required and is conducted, or a DPIA is not required and is therefore not conducted."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-gdpr-DPIAProcess",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV GDPR extension (eu-gdpr)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: GDPR Art. 35"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "DPIA Process"
+      }
+    },
+    {
+      "@id": "impacto:eu-gdpr-DPIARequiredProcess",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "impacto:eu-gdpr-DPIAProcess"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A personal data processing activity that requires a DPIA according to GDPR Article 35."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-gdpr-DPIARequiredProcess",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV GDPR extension (eu-gdpr)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: GDPR Art. 35"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "DPIA Required Process"
+      },
+      "skos:scopeNote": {
+        "@language": "en",
+        "@value": "The requirements for whether a DPIA is required for a specific process can be found in GDPR Art 35 and also in specific lists published by Member State Data Protection Authorities."
+      }
+    },
+    {
+      "@id": "impacto:eu-gdpr-DPIAReviewComplete",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "impacto:eu-gdpr-DPIAReviewStatus"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Status reflecting a review has been carried out by the controller, where necessary, to assess whether processing is performed in accordance with the DPIA, at least when there is a change in the risk represented by the processing operations."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-gdpr-DPIAReviewComplete",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV EU GDPR (eu-gdpr)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: GDPR Art. 35(11)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "DPIA Review Complete"
+      }
+    },
+    {
+      "@id": "impacto:eu-gdpr-DPIAReviewPending",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "impacto:eu-gdpr-DPIAReviewStatus"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Status reflecting a review is still pending and waiting to been carried out by the controller, where necessary, to assess whether processing is performed in accordance with the DPIA, at least when there is a change in the risk represented by the processing operations."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-gdpr-DPIAReviewPending",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV EU GDPR (eu-gdpr)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: GDPR Art. 35(11)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "DPIA Review Pending"
+      }
+    },
+    {
+      "@id": "impacto:eu-gdpr-DPIAReviewStatus",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "dpv:AuditStatus"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Status reflecting whether a review has been carried out by the controller, where necessary, to assess whether processing is performed in accordance with the DPIA, at least when there is a change in the risk represented by the processing operations."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-gdpr-DPIAReviewStatus",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV EU GDPR (dpv)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: GDPR Art. 35(11)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "DPIA Review Status"
+      }
+    },
+    {
+      "@id": "impacto:eu-gdpr-NonpredeterminedRiskChange",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "impacto:eu-gdpr-RiskChangeCategory"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A change in risk that was not anticipated or accounted for and requires an immediate review of the original DPIA."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-gdpr-NonpredeterminedRiskChange",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV GDPR extension (eu-gdpr)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: GDPR Art. 35(11)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Non-predetermined Risk Change"
+      }
+    },
+    {
+      "@id": "impacto:eu-gdpr-PredeterminedRiskChange",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "impacto:eu-gdpr-RiskChangeCategory"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A change in risk that was anticipated and accounted for in the original DPIA and for which a review was in place/ scheduled for."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-gdpr-PredeterminedRiskChange",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV GDPR extension (eu-gdpr)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: GDPR Art. 35(11)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Predetermined Risk Change"
+      }
+    },
+    {
+      "@id": "impacto:eu-gdpr-RiskChangeCategory",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "dpv:Context"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A categorisation of the change of risk associated with processing operations, requiring a DPIA review."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-gdpr-RiskChangeCategory",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV GDPR extension (eu-gdpr)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: GDPR Art. 35(11)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Risk Change Category"
+      }
+    },
+    {
+      "@id": "impacto:eu-gdpr-hasChangeDescription",
+      "@type": [
+        "rdf:Property",
+        "skos:Concept"
+      ],
+      "skos:broader": {
+        "@id": "dpv:hasContext"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Provides a description of a change in the processing or its risk that is relevant to a DPIA review."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-gdpr-hasChangeDescription",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV GDPR extension (eu-gdpr)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: GDPR Art. 35(11)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "has change description"
+      }
+    },
+    {
+      "@id": "impacto:eu-gdpr-hasRiskChangeCategory",
+      "@type": [
+        "rdf:Property",
+        "skos:Concept"
+      ],
+      "skos:broader": {
+        "@id": "dpv:hasContext"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Indicates the category of change in risk associated with processing or with a DPIA."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-gdpr-hasRiskChangeCategory",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Range: https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-RiskChangeCategory"
+        },
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV GDPR extension (eu-gdpr)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: GDPR Art. 35(11)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "has risk change category"
+      }
+    },
+    {
+      "@id": "impacto:eu-rights-AffectedRight",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "https://w3id.org/dpv/rights/eu#EUFundamentalRightsImpact"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A specific identified fundamental right that is affected by the use of an AI system."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-rights-AffectedRight",
+      "skos:note": {
+        "@language": "en",
+        "@value": "Proposed for: eu-rights"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Affected Right"
+      }
+    },
+    {
+      "@id": "impacto:eu-rights-FundamentalRightsEngagement",
+      "@type": "skos:Concept",
+      "skos:broader": {
+        "@id": "https://w3id.org/dpv/rights/eu#EUFundamentalRightsImpact"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "The rights that the specific use of an AI system engages with. E.g. in terms of impact, promotion, interference or limiting of fundamental rights."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "eu-rights-FundamentalRightsEngagement",
+      "skos:note": {
+        "@language": "en",
+        "@value": "Proposed for: eu-rights"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Fundamental Rights Engagement"
+      }
+    },
+    {
+      "@id": "impacto:usesDocumentation",
+      "@type": [
+        "rdf:Property",
+        "skos:Concept"
+      ],
+      "rdfs:range": {
+        "@id": "tech:Documentation"
+      },
+      "skos:broader": {
+        "@id": "dpv:hasContext"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "Indicates documentation used as input when carrying out an impact assessment, such as the instructions for use that the provider of a high-risk AI system makes available to the deployer."
+      },
+      "skos:inScheme": {
+        "@id": "https://tyttikatariina.github.io/IMPACTO/"
+      },
+      "skos:notation": "usesDocumentation",
+      "skos:note": [
+        {
+          "@language": "en",
+          "@value": "Proposed for: DPV core (dpv)"
+        },
+        {
+          "@language": "en",
+          "@value": "Source: AI Act Art. 26(9), Art. 27(2), 27(4), 27(5)"
+        }
+      ],
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "uses documentation"
+      },
+      "skos:related": [
+        {
+          "@id": "tech:hasDocumentation"
+        },
+        {
+          "@id": "eu-aiact:InstructionForUse"
+        }
+      ]
+    },
+    {
+      "@id": "skos:Concept",
+      "@type": "rdfs:Class"
+    },
+    {
+      "@id": "skos:ConceptScheme",
+      "@type": "rdfs:Class"
+    }
+  ]
+}
