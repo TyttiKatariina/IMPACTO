@@ -61,7 +61,7 @@ of deployer. IMPACTO keeps the two apart.
 
 ## Built on
 
-The [Data Privacy Vocabulary](https://w3id.org/dpv) 2.3 and its GDPR, AI Act
+[VAIR](https://delaramglp.github.io/vair/) and [Data Privacy Vocabulary](https://w3id.org/dpv) and  its GDPR, AI Act
 and fundamental rights extensions. Terms carry the name of the DPV module they
 are proposed for as part of their local name, so
 `impacto:eu-gdpr-DPIARequiredProcess` is proposed for the `eu-gdpr` extension.
