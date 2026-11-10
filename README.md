@@ -32,9 +32,9 @@ GitHub: tyttikatariina
 | `impacto.*` | The ontology |
 | `information-requirements.ttl` | The information each assessment must contain, from GDPR Art. 35(7) and AI Act Art. 27(1) |
 | `proposed-concepts.ttl` | Concepts proposed to DPV |
-| `conditions/DPIAConditions.ttl` | 995 conditions under which a DPIA is required (114 Conditions in total but divided by each jurisdiction, the amount climbs to 995) |
-| `conditions/DPIANotRequiredConditions.ttl` | 80 conditions under which no DPIA is required (66 Conditions in total but divided by each jurisdiction, the amount climbs to 80) |
-| `conditions/FRIAConditions.ttl` | Conditions under which a FRIA is required, and the Annex III processing patterns |
+| `DPIAConditions.ttl` | 995 conditions under which a DPIA is required (114 Conditions in total but divided by each jurisdiction, the amount climbs to 995) |
+| `DPIANotRequiredConditions.ttl` | 80 conditions under which no DPIA is required (66 Conditions in total but divided by each jurisdiction, the amount climbs to 80) |
+| `AnnexIIIConditions.ttl` | Conditions under which a DPIA and FRIA is required |
 | `competency-questions/` | The competency questions and the queries answering them |
 | `dpia-sparql/`, `fria-sparql/` | Queries by topic |
 | `dpia-shacl/` | SHACL shapes |
