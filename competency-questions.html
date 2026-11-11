@@ -139,13 +139,13 @@
       that justifies it (<code>dpv:hasJustification</code>), who is responsible and the jurisdiction.</p>
     <p>The processes are described with concepts from <a href="https://tyttikatariina.github.io/HAPT/">HAPT</a> and DPV, and the justifications
       point to the DPIA Required conditions (for example <code>eu-gdpr:C1</code>, <code>ie:C11</code>) and the HAPT Annex III conditions
-      (<code>annex3:C1a</code>, <code>annex3:C2a</code>). HAPT is documented separately; the examples only refer to its terms.</p>
+      (<code>annex3:C1a</code>, <code>annex3:C2</code>). HAPT is documented separately; the examples only refer to its terms.</p>
     <table>
       <thead><tr><th style="width:6%">Example</th><th>Process</th><th style="width:14%">AI Act</th><th style="width:18%">DPIA</th><th style="width:18%">FRIA</th></tr></thead>
       <tbody>
         <tr><td><a href="#ex1">EX1</a></td><td>A public hospital in Ireland processes patients' electronic health records at large scale.</td><td>No AI system</td><td>Required (<code>eu-gdpr:C1</code>, GDPR Art. 35(3)(b))</td><td>Not applicable</td></tr>
         <tr><td><a href="#ex2">EX2</a></td><td>A public transport authority in Ireland identifies people in recorded CCTV footage with a remote biometric identification system.</td><td>Annex III 1(a)</td><td>Required (<code>ie:C11</code>, <code>eu-gdpr:C5</code>)</td><td>Required (<code>annex3:C1a</code>)</td></tr>
-        <tr><td><a href="#ex3">EX3</a></td><td>A water utility in Austria uses an AI safety component to control pressure in the water network. No personal data is processed.</td><td>Annex III 2(a)</td><td>Not applicable</td><td>Not required: exempt (<code>annex3:C2a</code>)</td></tr>
+        <tr><td><a href="#ex3">EX3</a></td><td>A water utility in Austria uses an AI safety component to control pressure in the water network. No personal data is processed.</td><td>Annex III 2(a)</td><td>Not applicable</td><td>Not required: exempt (<code>annex3:C2</code>)</td></tr>
       </tbody>
     </table>
 
@@ -223,7 +223,7 @@ ex:EX3-FRIANecessity a impacto:eu-aiact-FRIANecessityAssessment ;
     rdfs:label &quot;Is a FRIA required for EX3?&quot;@en ;
     dpv:hasStatus impacto:eu-aiact-FRIAExempt ;
     dpv:hasContext impacto:eu-aiact-HighRiskAISystem, impacto:eu-aiact-Exempt ;
-    dpv:hasJustification annex3:C2a ;
+    dpv:hasJustification annex3:C2 ;
     dpv:hasResponsibleEntity ex:WaterUtility ;
     dpv:hasJurisdiction loc:EU, loc:AT ;
     rdfs:comment &quot;Art. 27(1) excludes high-risk AI systems intended to be used in the area listed in Annex III point 2.&quot;@en .</pre>
@@ -531,7 +531,7 @@ ORDER BY ?order</pre></details>
 }
 GROUP BY ?process ?status ?justification
 ORDER BY ?process</pre></details>
-        <details open><summary>Results</summary><table class="res"><thead><tr><th>process</th><th>status</th><th>jurisdictions</th><th>justification</th></tr></thead><tbody><tr><td>ex:EX2-Processing</td><td>impacto:eu-aiact-FRIARequired</td><td>loc:EU loc:IE</td><td>annex3:C1a</td></tr><tr><td>ex:EX3-Processing</td><td>impacto:eu-aiact-FRIAExempt</td><td>loc:EU loc:AT</td><td>annex3:C2a</td></tr></tbody></table></details>
+        <details open><summary>Results</summary><table class="res"><thead><tr><th>process</th><th>status</th><th>jurisdictions</th><th>justification</th></tr></thead><tbody><tr><td>ex:EX2-Processing</td><td>impacto:eu-aiact-FRIARequired</td><td>loc:EU loc:IE</td><td>annex3:C1a</td></tr><tr><td>ex:EX3-Processing</td><td>impacto:eu-aiact-FRIAExempt</td><td>loc:EU loc:AT</td><td>annex3:C2</td></tr></tbody></table></details>
       </section>
       <section id="cq11">
         <h4>CQ11: How is the procedure of conducting a FRIA represented?</h4>
