@@ -1,0 +1,147 @@
+@prefix ex:       <https://tyttikatariina.github.io/IMPACTO/examples#> .
+@prefix impacto:  <https://tyttikatariina.github.io/IMPACTO/#> .
+@prefix hapt:     <https://tyttikatariina.github.io/HAPT/#> .
+@prefix annex3:   <https://tyttikatariina.github.io/HAPT/AnnexIII#> .
+@prefix dpv:      <https://w3id.org/dpv#> .
+@prefix pd:       <https://w3id.org/dpv/pd#> .
+@prefix ai:       <https://w3id.org/dpv/ai#> .
+@prefix tech:     <https://w3id.org/dpv/tech#> .
+@prefix loc:      <https://w3id.org/dpv/loc#> .
+@prefix eu-gdpr:  <https://w3id.org/dpv/legal/eu/gdpr#> .
+@prefix eu-aiact: <https://w3id.org/dpv/legal/eu/aiact#> .
+@prefix ie:       <https://w3id.org/dpv/legal/ie#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+
+# =====================================================================================
+# IMPACTO worked examples. All organisations are fictional.
+#
+#   EX1  Processing of special category data                 ->  DPIA required
+#   EX2  Biometric AI system, AI Act Annex III point 1(a)     ->  FRIA required and DPIA required
+#   EX3  Critical infrastructure AI system, Annex III point 2 ->  FRIA not required (exempt), no DPIA
+#
+# Each example records whether an assessment is required, why, where, and who is responsible.
+# The processing is described with HAPT and DPV concepts. Justifications point to the conditions
+# in DPIARequiredConditions.ttl (e.g. eu-gdpr:C1, ie:C11) and in the HAPT Annex III conditions
+# (e.g. annex3:C1a). HAPT is a separate vocabulary: its terms are only referenced here.
+# =====================================================================================
+
+
+# -------------------------------------------------------------------------------------
+# EX1  Processing of special category data: DPIA required (GDPR Art. 35(3)(b))
+# -------------------------------------------------------------------------------------
+
+ex:EX1 a dpv:ImpactAssessment ;
+    rdfs:label "EX1 DPIA requirement for large-scale processing of patient health records"@en ;
+    dpv:hasProcess ex:EX1-Processing ;
+    dpv:hasAssessment ex:EX1-DPIANecessity .
+
+ex:Hospital a dpv:DataController, hapt:dpv-PublicLawBody ;
+    rdfs:label "Public hospital (example)"@en ;
+    dpv:hasDataProtectionOfficer ex:HospitalDPO ;
+    dpv:hasJurisdiction loc:IE .
+
+ex:HospitalDPO a dpv:DataProtectionOfficer ;
+    rdfs:label "Data protection officer of the hospital"@en .
+
+ex:EX1-Processing a impacto:eu-gdpr-DPIARequiredProcess ;
+    rdfs:label "Processing patients' electronic health records to provide care"@en ;
+    dpv:hasPurpose hapt:sector-health-PatientCare ;
+    dpv:hasPersonalData dpv:SpecialCategoryPersonalData, hapt:pd-ElectronicHealthRecord ;
+    dpv:hasProcessingScale dpv:LargeScaleProcessing ;
+    dpv:hasDataSubject dpv:Patient ;
+    dpv:hasDataController ex:Hospital ;
+    dpv:hasJurisdiction loc:IE .
+
+ex:EX1-DPIANecessity a eu-gdpr:DPIANecessityAssessment ;
+    rdfs:label "Is a DPIA required for EX1?"@en ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    dpv:hasJustification eu-gdpr:C1 ;
+    dpv:hasResponsibleEntity ex:Hospital ;
+    dpv:hasJurisdiction loc:IE ;
+    rdfs:comment "Large-scale processing of special category data (GDPR Art. 35(3)(b))."@en .
+
+
+# -------------------------------------------------------------------------------------
+# EX2  Biometric AI system (Annex III point 1(a)): FRIA required and DPIA required
+# -------------------------------------------------------------------------------------
+
+ex:EX2 a dpv:ImpactAssessment ;
+    rdfs:label "EX2 DPIA and FRIA requirements for a remote biometric identification system"@en ;
+    dpv:hasProcess ex:EX2-Processing ;
+    dpv:hasAssessment ex:EX2-DPIANecessity, ex:EX2-FRIANecessity .
+
+ex:TransportAuthority a dpv:DataController, eu-aiact:AIDeployer, impacto:eu-aiact-PublicLawGovernedDeployer, hapt:dpv-PublicLawBody ;
+    rdfs:label "Public transport authority (example)"@en ;
+    dpv:hasDataProtectionOfficer ex:TransportAuthorityDPO ;
+    dpv:hasJurisdiction loc:IE .
+
+ex:TransportAuthorityDPO a dpv:DataProtectionOfficer ;
+    rdfs:label "Data protection officer of the transport authority"@en .
+
+ex:BiometricAI a eu-aiact:HighRiskAISystem-AnnexIII-1-a, eu-aiact:HighRiskAISystem ;
+    rdfs:label "Post remote biometric identification system"@en ;
+    ai:hasCapability ai:RemoteBiometricIdentification ;
+    tech:hasDeployer ex:TransportAuthority .
+
+ex:EX2-Processing a impacto:eu-gdpr-DPIARequiredProcess, impacto:eu-aiact-FRIARequiredProcess ;
+    rdfs:label "Identifying people in recorded CCTV footage of public transport stations with an AI system"@en ;
+    dpv:hasPurpose hapt:dpv-Identification ;
+    dpv:hasPersonalData eu-gdpr:BiometricData ;
+    dpv:hasContext dpv:SystematicMonitoring ;
+    dpv:hasProcessingScale dpv:LargeScaleProcessing ;
+    dpv:hasLocation dpv:PubliclyAccessibleSpace, hapt:dpv-PublicTransport ;
+    dpv:hasDataSubject dpv:NaturalPerson ;
+    dpv:hasDataController ex:TransportAuthority ;
+    dpv:isImplementedUsingTechnology ex:BiometricAI, hapt:tech-CCTV ;
+    dpv:hasJurisdiction loc:IE .
+
+ex:EX2-DPIANecessity a eu-gdpr:DPIANecessityAssessment ;
+    rdfs:label "Is a DPIA required for EX2?"@en ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    dpv:hasJustification ie:C11, eu-gdpr:C5 ;
+    dpv:hasResponsibleEntity ex:TransportAuthority ;
+    dpv:hasJurisdiction loc:IE ;
+    rdfs:comment "Biometric data (Irish DPIA Required list) and large-scale systematic monitoring of a publicly accessible area (GDPR Art. 35(3)(c))."@en .
+
+ex:EX2-FRIANecessity a impacto:eu-aiact-FRIANecessityAssessment ;
+    rdfs:label "Is a FRIA required for EX2?"@en ;
+    dpv:hasStatus impacto:eu-aiact-FRIARequired ;
+    dpv:hasContext impacto:eu-aiact-HighRiskAISystem, impacto:eu-aiact-NotExempt ;
+    dpv:hasJustification annex3:C1a ;
+    dpv:hasResponsibleEntity ex:TransportAuthority ;
+    dpv:hasJurisdiction loc:EU, loc:IE ;
+    rdfs:comment "High-risk AI system in Annex III point 1(a), deployed by a body governed by public law (AI Act Art. 27(1))."@en .
+
+
+# -------------------------------------------------------------------------------------
+# EX3  Critical infrastructure AI system (Annex III point 2): FRIA not required (exempt)
+# -------------------------------------------------------------------------------------
+
+ex:EX3 a dpv:ImpactAssessment ;
+    rdfs:label "EX3 FRIA requirement for an AI safety component in water supply"@en ;
+    dpv:hasProcess ex:EX3-Processing ;
+    dpv:hasAssessment ex:EX3-FRIANecessity .
+
+ex:WaterUtility a eu-aiact:AIDeployer, hapt:eu-aiact-CriticalInfrastructureOperator, hapt:dpv-PublicUtilityProvider ;
+    rdfs:label "Regional water utility (example)"@en ;
+    dpv:hasJurisdiction loc:AT .
+
+ex:WaterSafetyAI a eu-aiact:HighRiskAISystem-AnnexIII-2, eu-aiact:HighRiskAISystem, eu-aiact:SafetyComponent ;
+    rdfs:label "AI safety component that controls pressure in the water network"@en ;
+    tech:hasDeployer ex:WaterUtility .
+
+ex:EX3-Processing a impacto:eu-aiact-FRIANotRequiredProcess ;
+    rdfs:label "Controlling water network pressure with an AI safety component"@en ;
+    dpv:hasPurpose hapt:eu-aiact-WaterSupplyManagement ;
+    dpv:isImplementedUsingTechnology ex:WaterSafetyAI ;
+    dpv:hasJurisdiction loc:AT ;
+    rdfs:comment "Uses sensor readings only. No personal data is processed, so the GDPR and the DPIA do not apply."@en .
+
+ex:EX3-FRIANecessity a impacto:eu-aiact-FRIANecessityAssessment ;
+    rdfs:label "Is a FRIA required for EX3?"@en ;
+    dpv:hasStatus impacto:eu-aiact-FRIAExempt ;
+    dpv:hasContext impacto:eu-aiact-HighRiskAISystem, impacto:eu-aiact-Exempt ;
+    dpv:hasJustification annex3:C2a ;
+    dpv:hasResponsibleEntity ex:WaterUtility ;
+    dpv:hasJurisdiction loc:EU, loc:AT ;
+    rdfs:comment "Art. 27(1) excludes high-risk AI systems intended to be used in the area listed in Annex III point 2."@en .
