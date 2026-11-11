@@ -35,10 +35,7 @@ GitHub: tyttikatariina
 | `DPIAConditions.ttl` | 995 conditions under which a DPIA is required (114 Conditions in total but divided by each jurisdiction, the amount climbs to 995) |
 | `DPIANotRequiredConditions.ttl` | 80 conditions under which no DPIA is required (66 Conditions in total but divided by each jurisdiction, the amount climbs to 80) |
 | `AnnexIIIConditions.ttl` | Conditions under which a DPIA and FRIA is required |
-| `competency-questions/` | The competency questions and the queries answering them |
-| `dpia-sparql/`, `fria-sparql/` | Queries by topic |
-| `dpia-shacl/` | SHACL shapes |
-| `usecase/` | Three worked deployments |
+| `competency-questions.html` | The competency questions and the queries answering them, including three use cases |
 | `example.ttl` | A worked example |
 
 ## Scope
