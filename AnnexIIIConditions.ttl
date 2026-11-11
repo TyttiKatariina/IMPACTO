@@ -95,7 +95,7 @@ annex3:C1c a eu-aiact:HighRiskAISystem-AnnexIII-1-c ;
     dct:source "AI Act Annex III 1(c)" ;
     dpv:hasJurisdiction loc:EU .
 
-annex3:C2a a eu-aiact:HighRiskAISystem-AnnexIII-2 ;
+annex3:C2 a eu-aiact:HighRiskAISystem-AnnexIII-2 ;
     dct:identifier "2a" ;
     skos:definition "2. Critical infrastructure: (a) AI systems intended to be used as safety components in the management and operation of critical digital infrastructure, road traffic and the supply of water, gas, heating and electricity."@en ;
     dpv:hasSector eu-aiact:CriticalInfrastructureSector ;
@@ -105,10 +105,10 @@ annex3:C2a a eu-aiact:HighRiskAISystem-AnnexIII-2 ;
     tech:hasDeployer hapt:dpv-CriticalInfrastructureOperator ;
     hapt:eu-gdpr-hasDPIARequiredCondition at:C32, cz:C32, dk:C32, de:C32, gr:C32 ;
     skos:note "DPIA required by member states: AT CZ DK DE GR (Use of AI in processing)"@en ;
-    dct:source "AI Act Annex III 2(a)" ;
+    dct:source "AI Act Annex III 2" ;
     dpv:hasJurisdiction loc:EU .
 
-annex3:C2a-1 a eu-aiact:HighRiskAISystem-AnnexIII-2 ;
+annex3:C2-1 a eu-aiact:HighRiskAISystem-AnnexIII-2 ;
     dct:identifier "2a.1." ;
     skos:definition "A use case developed from AI Act Annex III point 2(a) in which the AI system involves purpose: controlling safety of critical digital infrastructure / road traffic / supply of water, gas, heating, electricity; technology: AI, smart meters; deployer: critical infrastructure operations / management."@en ;
     skos:broader annex3:C2a ;
@@ -119,10 +119,10 @@ annex3:C2a-1 a eu-aiact:HighRiskAISystem-AnnexIII-2 ;
     tech:hasDeployer hapt:dpv-CriticalInfrastructureOperator ;
     hapt:eu-gdpr-hasDPIARequiredCondition hu:C23, pl:C23, ro:C23, at:C32, cz:C32, dk:C32, de:C32, gr:C32 ;
     skos:note "DPIA required by member states: HU, PL, RO (smart meters), AT CZ DK DE GR (Use of AI in processing)"@en ;
-    dct:source "AI Act Annex III 2(a)" ;
+    dct:source "AI Act Annex III 2" ;
     dpv:hasJurisdiction loc:EU .
 
-annex3:C2a-2 a eu-aiact:HighRiskAISystem-AnnexIII-2 ;
+annex3:C2-2 a eu-aiact:HighRiskAISystem-AnnexIII-2 ;
     dct:identifier "2a.2." ;
     skos:definition "A use case developed from AI Act Annex III point 2(a) in which the AI system involves purpose: controlling safety of critical digital infrastructure / road traffic / supply of water, gas, heating, electricity; technology: AI, road traffic smart video analysis system; deployer: critical infrastructure operations / management."@en ;
     skos:broader annex3:C2a ;
@@ -133,10 +133,10 @@ annex3:C2a-2 a eu-aiact:HighRiskAISystem-AnnexIII-2 ;
     tech:hasDeployer hapt:dpv-CriticalInfrastructureOperator ;
     hapt:eu-gdpr-hasDPIARequiredCondition cy:C49, at:C43a, at:C43c, cy:C43a, cy:C43c, at:C32, cz:C32, dk:C32, de:C32, gr:C32 ;
     skos:note "DPIA required by member states: AT CY (road traffic analysis) AT CZ DK DE GR (Use of AI in processing)"@en ;
-    dct:source "AI Act Annex III 2(a)" ;
+    dct:source "AI Act Annex III 2" ;
     dpv:hasJurisdiction loc:EU .
 
-annex3:C2a-3 a eu-aiact:HighRiskAISystem-AnnexIII-2 ;
+annex3:C2-3 a eu-aiact:HighRiskAISystem-AnnexIII-2 ;
     dct:identifier "2a.3." ;
     skos:definition "A use case developed from AI Act Annex III point 2(a) in which the AI system involves purpose: controlling safety of critical digital infrastructure / road traffic / supply of water, gas, heating, electricity; technology: AI, public transport monitoring system; deployer: critical infrastructure operations / management."@en ;
     skos:broader annex3:C2a ;
@@ -148,7 +148,7 @@ annex3:C2a-3 a eu-aiact:HighRiskAISystem-AnnexIII-2 ;
     hapt:eu-gdpr-hasDPIARequiredCondition at:C32, cz:C32, dk:C32, de:C32, gr:C32 ;
     skos:note "DPIA required by member states: AT CZ DK DE GR (Use of AI in processing) RO SK (public transport)"@en ;
     skos:editorialNote "No condition found in DPIARequiredConditions.ttl for: Public transport (RO, SK)"@en ;
-    dct:source "AI Act Annex III 2(a)" ;
+    dct:source "AI Act Annex III 2" ;
     dpv:hasJurisdiction loc:EU .
 
 annex3:C3a a eu-aiact:HighRiskAISystem-AnnexIII-3-a ;
