@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>IMPACTO Competency Questions and Evaluation</title>
+
+  <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
+  <script class="remove">
+    var respecConfig = {
+      specStatus: "unofficial",
+      latestVersion: "https://tyttikatariina.github.io/IMPACTO/competency-questions.html",
+      shortName: "IMPACTO-CQ",
+      title: "IMPACTO Competency Questions and Evaluation",
+      subtitle: "Requirements, worked examples, SPARQL queries and SHACL shapes for IMPACTO version 1.0",
+      edDraftURI: "https://tyttikatariina.github.io/IMPACTO/competency-questions.html",
+      github: { repoURL: "https://github.com/tyttikatariina/IMPACTO", branch: "main" },
+      editors: [{ "name": "Tytti Rintamäki", "company": "ADAPT Centre, Dublin City University" }],
+      authors: [
+        { "name": "Tytti Rintamäki", "company": "ADAPT Centre, Dublin City University" },
+        { "name": "Harshvardhan J. Pandit", "url": "https://harshp.com/", "company": "AI Accountability Lab, Trinity College Dublin" },
+      ],
+      otherLinks: [{
+        key: "Related",
+        data: [
+          { value: "IMPACTO (Impact Assessment Ontology)", href: "https://tyttikatariina.github.io/IMPACTO/" },
+          { value: "GDPR (Regulation EU 2016/679)", href: "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679" },
+          { value: "EU AI Act (Regulation EU 2024/1689)", href: "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng" },
+        ],
+      }],
+    };
+  </script>
+
+  <style type="text/css">
+    table { border-collapse: collapse; margin: 0.5em 0 1em; }
+    th, td { border: thin solid black; padding: 0.3cm; overflow-wrap: anywhere; vertical-align: top; }
+    th { background-color: #FDDF95; text-align: left; }
+    table.res th, table.res td { padding: 0.1cm 0.25cm; font-size: 0.9em; }
+    table.orsd td:first-child { width: 22%; font-weight: bold; }
+    tr.group td { background-color: #FFF4D6; font-weight: bold; }
+    details { margin: 0.4em 0 0.8em; }
+    summary { cursor: pointer; font-weight: bold; }
+    pre { overflow-x: auto; }
+    .pass { color: #1B6E20; font-weight: bold; }
+    .fail { color: #A31515; font-weight: bold; }
+  </style>
+</head>
+
+<body>
+
+  <section id="abstract">
+    <p>This page sets out the requirements of <a href="https://tyttikatariina.github.io/IMPACTO/">IMPACTO</a> as an Ontology Requirements
+      Specification Document (ORSD) and the 14 competency questions that IMPACTO must answer about the Data Protection Impact Assessment (DPIA)
+      under the <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR</a> and the Fundamental Rights Impact Assessment (FRIA) under the <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">EU AI Act</a>.
+      It evaluates IMPACTO against those questions using three worked deployments, a SPARQL query for each question,
+      and SHACL shapes that check both the ontology and assessment records built with it.</p>
+  </section>
+
+  <section id="sotd">
+    <p>This document accompanies IMPACTO version 1.0. All the files referred to here are in the
+      <a href="https://github.com/tyttikatariina/IMPACTO">IMPACTO GitHub repository</a>.</p>
+  </section>
+
+  <section id="orsd">
+    <h2>Ontology Requirements Specification</h2>
+    <p>The requirements of IMPACTO are specified as an Ontology Requirements Specification Document (ORSD).</p>
+    <table class="orsd">
+      <tbody>
+        <tr><td>Purpose</td><td>The purpose of IMPACTO is to model a combined (FRIA + DPIA) impact assessment as an information process and its information requirements.</td></tr>
+        <tr><td>Scope</td><td>The DPIA as per <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR</a> Art. 35, the Data Protection Authority blacklists (DPIA Required lists) and whitelists (DPIA Not Required lists), and the FRIA as defined in the <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act</a> Art. 27 and Annex III.</td></tr>
+        <tr><td>Implementation language</td><td>W3C <a href="https://www.w3.org/TR/rdf11-schema/">RDFS</a> and <a href="https://www.w3.org/TR/skos-reference/">SKOS</a>.
+          IMPACTO is published as <a href="impacto.rdf">RDF/XML</a> and <a href="impacto.jsonld">JSON-LD</a>.</td></tr>
+        <tr><td>Intended end-users</td><td>Organisations who create and use DPIAs and FRIAs.</td></tr>
+        <tr><td>Intended uses</td><td>
+          <b>Use 1:</b> to document processes of conducting impact assessments.<br>
+          <b>Use 2:</b> to document obligations regarding impact assessments.</td></tr>
+        <tr><td>Non-functional requirements</td><td>
+          <b>NFR1 Interoperability:</b> the ontology should extend existing legal compliance ontologies such as the <a href="https://w3id.org/dpv">Data Privacy Vocabulary (DPV)</a>.<br>
+          <b>NFR2 Scalability:</b> the ontology should be adaptable and extensible.<br>
+          <b>NFR3 Usability:</b> the ontology should be usable by legal and non-legal stakeholders.</td></tr>
+        <tr><td>Functional requirements</td><td>The competency questions in <a href="#cqs"></a>, grouped as CQG1 (DPIA) and CQG2 (FRIA).</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="cqs">
+    <h2>Competency Questions</h2>
+    <p>The competency questions are the functional requirements of IMPACTO. Each is derived from a provision of the GDPR or the AI Act.
+      The table lists the concepts and relations that answer each question. Concepts in the <code>impacto:</code> namespace are defined in
+      <a href="https://tyttikatariina.github.io/IMPACTO/">IMPACTO</a>; all others are reused from <a href="https://w3id.org/dpv">DPV</a> and its extensions (NFR1).</p>
+    <table>
+      <thead><tr><th style="width:6%">ID</th><th style="width:22%">Competency question</th><th style="width:14%">Law</th><th>Concepts</th><th style="width:22%">Relations</th></tr></thead>
+      <tbody>
+<tr class="group"><td colspan="5">CQG1: Data Protection Impact Assessment (GDPR)</td></tr>
+<tr><td><a href="#cq1">CQ1</a></td><td>How is a process that requires a DPIA represented?</td><td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR Art. 35(1), 35(3), 35(4)</a></td><td><a href="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-DPIARequiredProcess"><code>impacto:eu-gdpr-DPIARequiredProcess</code></a>, <a href="https://w3id.org/dpv/legal/eu/gdpr#DPIANecessityAssessment"><code>eu-gdpr:DPIANecessityAssessment</code></a>, <a href="https://w3id.org/dpv/legal/eu/gdpr#DPIARequired"><code>eu-gdpr:DPIARequired</code></a></td><td><a href="https://w3id.org/dpv#hasProcess"><code>dpv:hasProcess</code></a>, <a href="https://w3id.org/dpv#hasAssessment"><code>dpv:hasAssessment</code></a>, <a href="https://w3id.org/dpv#hasStatus"><code>dpv:hasStatus</code></a>, <a href="https://w3id.org/dpv#hasJustification"><code>dpv:hasJustification</code></a></td></tr>
+<tr><td><a href="#cq2">CQ2</a></td><td>What are the roles associated with a DPIA?</td><td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR Art. 35(2)</a></td><td><a href="https://w3id.org/dpv#DataController"><code>dpv:DataController</code></a>, <a href="https://w3id.org/dpv#DataProtectionOfficer"><code>dpv:DataProtectionOfficer</code></a>, <a href="https://w3id.org/dpv#ConsultationWithDPO"><code>dpv:ConsultationWithDPO</code></a></td><td><a href="https://w3id.org/dpv#hasResponsibleEntity"><code>dpv:hasResponsibleEntity</code></a>, <a href="https://w3id.org/dpv#hasDataProtectionOfficer"><code>dpv:hasDataProtectionOfficer</code></a>, <a href="https://w3id.org/dpv#hasOrganisationalMeasure"><code>dpv:hasOrganisationalMeasure</code></a></td></tr>
+<tr><td><a href="#cq3">CQ3</a></td><td>How is a process that does not require a DPIA represented?</td><td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR Art. 35(5)</a></td><td><a href="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-DPIANotRequiredProcess"><code>impacto:eu-gdpr-DPIANotRequiredProcess</code></a>, <a href="https://w3id.org/dpv/legal/eu/gdpr#DPIANecessityAssessment"><code>eu-gdpr:DPIANecessityAssessment</code></a>, <a href="https://w3id.org/dpv/legal/eu/gdpr#DPIANotRequired"><code>eu-gdpr:DPIANotRequired</code></a></td><td><a href="https://w3id.org/dpv#hasProcess"><code>dpv:hasProcess</code></a>, <a href="https://w3id.org/dpv#hasAssessment"><code>dpv:hasAssessment</code></a>, <a href="https://w3id.org/dpv#hasStatus"><code>dpv:hasStatus</code></a>, <a href="https://w3id.org/dpv#hasJustification"><code>dpv:hasJustification</code></a></td></tr>
+<tr><td><a href="#cq4">CQ4</a></td><td>Which jurisdictions will this process always require a DPIA?</td><td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR Art. 3, 35(4), 35(5)</a></td><td><a href="https://w3id.org/dpv#Jurisdiction"><code>dpv:Jurisdiction</code></a>, <a href="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-DPIARequiredProcess"><code>impacto:eu-gdpr-DPIARequiredProcess</code></a></td><td><a href="https://w3id.org/dpv#hasJurisdiction"><code>dpv:hasJurisdiction</code></a></td></tr>
+<tr><td><a href="#cq5">CQ5</a></td><td>How is the procedure of conducting a DPIA represented?</td><td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR Art. 35(7), 35(9)</a></td><td><a href="https://w3id.org/dpv/legal/eu/gdpr#DPIAProcedure"><code>eu-gdpr:DPIAProcedure</code></a>, <a href="https://tyttikatariina.github.io/IMPACTO/#dpv-ProcessingDescription"><code>impacto:dpv-ProcessingDescription</code></a>, <a href="https://w3id.org/dpv/legal/eu/gdpr#NecessityAssessment"><code>eu-gdpr:NecessityAssessment</code></a>, <a href="https://w3id.org/dpv/legal/eu/gdpr#ProportionalityAssessment"><code>eu-gdpr:ProportionalityAssessment</code></a>, <a href="https://w3id.org/dpv/legal/eu/gdpr#DPIAOutcome"><code>eu-gdpr:DPIAOutcome</code></a></td><td><a href="https://w3id.org/dpv#hasAssessment"><code>dpv:hasAssessment</code></a>, <a href="https://w3id.org/dpv#hasContext"><code>dpv:hasContext</code></a>, <a href="https://w3id.org/dpv#hasRisk"><code>dpv:hasRisk</code></a>, <a href="https://w3id.org/dpv#hasTechnicalMeasure"><code>dpv:hasTechnicalMeasure</code></a>, <a href="https://w3id.org/dpv#hasOrganisationalMeasure"><code>dpv:hasOrganisationalMeasure</code></a>, <a href="https://w3id.org/dpv#isBefore"><code>dpv:isBefore</code></a></td></tr>
+<tr><td><a href="#cq6">CQ6</a></td><td>How can changes associated with processing operations be categorised?</td><td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR Art. 35(11)</a></td><td><a href="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-RiskChangeCategory"><code>impacto:eu-gdpr-RiskChangeCategory</code></a>, <a href="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-PredeterminedRiskChange"><code>impacto:eu-gdpr-PredeterminedRiskChange</code></a>, <a href="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-NonpredeterminedRiskChange"><code>impacto:eu-gdpr-NonpredeterminedRiskChange</code></a>, <a href="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-DPIAReviewStatus"><code>impacto:eu-gdpr-DPIAReviewStatus</code></a></td><td><a href="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-hasRiskChangeCategory"><code>impacto:eu-gdpr-hasRiskChangeCategory</code></a>, <a href="https://tyttikatariina.github.io/IMPACTO/#eu-gdpr-hasChangeDescription"><code>impacto:eu-gdpr-hasChangeDescription</code></a>, <a href="https://w3id.org/dpv#hasStatus"><code>dpv:hasStatus</code></a></td></tr>
+<tr><td><a href="#cq7">CQ7</a></td><td>Which authority must be consulted after the DPIA?</td><td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR Art. 36(1)</a></td><td><a href="https://w3id.org/dpv/legal/eu/gdpr#DPIAOutcome"><code>eu-gdpr:DPIAOutcome</code></a>, <a href="https://w3id.org/dpv/legal/eu/gdpr#DPIAOutcomeDPAConsultation"><code>eu-gdpr:DPIAOutcomeDPAConsultation</code></a>, <a href="https://w3id.org/dpv#DataProtectionAuthority"><code>dpv:DataProtectionAuthority</code></a>, <a href="https://w3id.org/dpv/legal/eu/gdpr#LeadSupervisoryAuthority"><code>eu-gdpr:LeadSupervisoryAuthority</code></a></td><td><a href="https://w3id.org/dpv#hasStatus"><code>dpv:hasStatus</code></a>, <a href="https://w3id.org/dpv#hasAuthority"><code>dpv:hasAuthority</code></a></td></tr>
+<tr class="group"><td colspan="5">CQG2: Fundamental Rights Impact Assessment (AI Act)</td></tr>
+<tr><td><a href="#cq8">CQ8</a></td><td>How is a process that requires a FRIA represented?</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(1)</a></td><td><a href="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIARequiredProcess"><code>impacto:eu-aiact-FRIARequiredProcess</code></a>, <a href="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANecessityAssessment"><code>impacto:eu-aiact-FRIANecessityAssessment</code></a>, <a href="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIARequired"><code>impacto:eu-aiact-FRIARequired</code></a>, <a href="https://w3id.org/dpv/legal/eu/aiact#HighRiskAISystem"><code>eu-aiact:HighRiskAISystem</code></a></td><td><a href="https://w3id.org/dpv#hasProcess"><code>dpv:hasProcess</code></a>, <a href="https://w3id.org/dpv#hasAssessment"><code>dpv:hasAssessment</code></a>, <a href="https://w3id.org/dpv#hasStatus"><code>dpv:hasStatus</code></a>, <a href="https://w3id.org/dpv#isImplementedUsingTechnology"><code>dpv:isImplementedUsingTechnology</code></a>, <a href="https://w3id.org/dpv/tech#hasDeployer"><code>tech:hasDeployer</code></a></td></tr>
+<tr><td><a href="#cq9">CQ9</a></td><td>How is a process that does not require a FRIA represented?</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(1)</a></td><td><a href="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANotRequiredProcess"><code>impacto:eu-aiact-FRIANotRequiredProcess</code></a>, <a href="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANotRequired"><code>impacto:eu-aiact-FRIANotRequired</code></a>, <a href="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAExempt"><code>impacto:eu-aiact-FRIAExempt</code></a></td><td><a href="https://w3id.org/dpv#hasProcess"><code>dpv:hasProcess</code></a>, <a href="https://w3id.org/dpv#hasAssessment"><code>dpv:hasAssessment</code></a>, <a href="https://w3id.org/dpv#hasStatus"><code>dpv:hasStatus</code></a></td></tr>
+<tr><td><a href="#cq10">CQ10</a></td><td>Which is the applicable jurisdiction for the FRIA requirement?</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 2</a></td><td><a href="https://w3id.org/dpv#Jurisdiction"><code>dpv:Jurisdiction</code></a>, <a href="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANecessityAssessment"><code>impacto:eu-aiact-FRIANecessityAssessment</code></a></td><td><a href="https://w3id.org/dpv#hasJurisdiction"><code>dpv:hasJurisdiction</code></a></td></tr>
+<tr><td><a href="#cq11">CQ11</a></td><td>How is the procedure of conducting a FRIA represented?</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(1)(a)–(f)</a></td><td><a href="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAProcedure"><code>impacto:eu-aiact-FRIAProcedure</code></a>, <a href="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-ProcessDescription"><code>impacto:eu-aiact-ProcessDescription</code></a>, <a href="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-PeriodOfUse"><code>impacto:eu-aiact-PeriodOfUse</code></a>, <a href="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FrequencyOfUse"><code>impacto:eu-aiact-FrequencyOfUse</code></a>, <a href="https://tyttikatariina.github.io/IMPACTO/#ai-NaturalPersonCategorySubjects"><code>impacto:ai-NaturalPersonCategorySubjects</code></a>, <a href="https://tyttikatariina.github.io/IMPACTO/#eu-rights-AffectedRight"><code>impacto:eu-rights-AffectedRight</code></a>, <a href="https://w3id.org/dpv#HumanInvolvementForOversight"><code>dpv:HumanInvolvementForOversight</code></a>, <a href="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-InternalGovernanceMeasures"><code>impacto:eu-aiact-InternalGovernanceMeasures</code></a>, <a href="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-ComplaintMeasures"><code>impacto:eu-aiact-ComplaintMeasures</code></a></td><td><a href="https://w3id.org/dpv#hasAssessment"><code>dpv:hasAssessment</code></a>, <a href="https://w3id.org/dpv#hasContext"><code>dpv:hasContext</code></a>, <a href="https://w3id.org/dpv#hasImpact"><code>dpv:hasImpact</code></a>, <a href="https://w3id.org/dpv#hasTechnicalMeasure"><code>dpv:hasTechnicalMeasure</code></a>, <a href="https://w3id.org/dpv#hasOrganisationalMeasure"><code>dpv:hasOrganisationalMeasure</code></a></td></tr>
+<tr><td><a href="#cq12">CQ12</a></td><td>How can changes associated with processing operations be categorised?</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(2)</a></td><td><a href="https://w3id.org/dpv/legal/eu/aiact#ChangeCategory"><code>eu-aiact:ChangeCategory</code></a>, <a href="https://w3id.org/dpv/legal/eu/aiact#PredeterminedChange"><code>eu-aiact:PredeterminedChange</code></a>, <a href="https://w3id.org/dpv/legal/eu/aiact#NonpredeterminedChange"><code>eu-aiact:NonpredeterminedChange</code></a>, <a href="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIAUpdateStatus"><code>impacto:eu-aiact-FRIAUpdateStatus</code></a></td><td><a href="https://w3id.org/dpv/legal/eu/aiact#hasChangeCategory"><code>eu-aiact:hasChangeCategory</code></a>, <a href="https://w3id.org/dpv/legal/eu/aiact#hasChangeDescription"><code>eu-aiact:hasChangeDescription</code></a>, <a href="https://w3id.org/dpv#hasStatus"><code>dpv:hasStatus</code></a></td></tr>
+<tr><td><a href="#cq13">CQ13</a></td><td>What is the notification status of the FRIA result to the market surveillance authority?</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(3)</a></td><td><a href="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANotification"><code>impacto:eu-aiact-FRIANotification</code></a>, <a href="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIANotificationStatus"><code>impacto:eu-aiact-FRIANotificationStatus</code></a>, <a href="https://w3id.org/dpv/legal/eu/aiact#MarketSurveillanceAuthority"><code>eu-aiact:MarketSurveillanceAuthority</code></a></td><td><a href="https://w3id.org/dpv#hasStatus"><code>dpv:hasStatus</code></a>, <a href="https://w3id.org/dpv#hasAuthority"><code>dpv:hasAuthority</code></a></td></tr>
+<tr><td><a href="#cq14">CQ14</a></td><td>What documentation and tools were used for the FRIA?</td><td><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(2), 27(4), 27(5)</a></td><td><a href="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-FRIATemplate"><code>impacto:eu-aiact-FRIATemplate</code></a>, <a href="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-RightsQuestionnaire"><code>impacto:eu-aiact-RightsQuestionnaire</code></a>, <a href="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-AutomatedTool"><code>impacto:eu-aiact-AutomatedTool</code></a>, <a href="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-ExistingDPIAInput"><code>impacto:eu-aiact-ExistingDPIAInput</code></a>, <a href="https://tyttikatariina.github.io/IMPACTO/#eu-aiact-ReuseOfExistingFRIA"><code>impacto:eu-aiact-ReuseOfExistingFRIA</code></a>, <a href="https://w3id.org/dpv/legal/eu/aiact#InstructionForUse"><code>eu-aiact:InstructionForUse</code></a></td><td><a href="https://tyttikatariina.github.io/IMPACTO/#usesDocumentation"><code>impacto:usesDocumentation</code></a></td></tr>
+      </tbody>
+    </table>
+
+    <section id="overlap">
+      <h3>Overlap between DPIA and FRIA questions</h3>
+      <p>Six DPIA questions have a FRIA counterpart. IMPACTO answers each pair with the same modelling pattern, which is what lets
+        one combined impact assessment hold both a DPIA and a FRIA for the same process (<a href="#ex2">EX2</a> below).</p>
+      <table>
+        <thead><tr><th style="width:8%">DPIA</th><th style="width:8%">FRIA</th><th style="width:20%">Shared topic</th><th>Shared pattern and difference</th></tr></thead>
+        <tbody>
+          <tr><td><a href="#cq1">CQ1</a></td><td><a href="#cq8">CQ8</a></td><td>Process that requires the assessment</td><td>Both are typed processes linked to the impact assessment with <code>dpv:hasProcess</code>; a necessity assessment records the outcome with <code>dpv:hasStatus</code>. One process can be both (EX2).</td></tr>
+          <tr><td><a href="#cq3">CQ3</a></td><td><a href="#cq9">CQ9</a></td><td>Process that does not require the assessment</td><td>Both use a "not required" process class and a necessity status. GDPR exemptions come from DPA lists (Art. 35(5)); AI Act exemptions come from Art. 27(1) itself (Annex III point 2).</td></tr>
+          <tr><td><a href="#cq4">CQ4</a></td><td><a href="#cq10">CQ10</a></td><td>Jurisdiction</td><td>Both use <code>dpv:hasJurisdiction</code>. A DPIA requirement differs by Member State list; the FRIA requirement is the same across the EU.</td></tr>
+          <tr><td><a href="#cq5">CQ5</a></td><td><a href="#cq11">CQ11</a></td><td>Procedure and its content</td><td>Both procedures share the same pattern: <code>dpv:hasAssessment</code> chains necessity → procedure → outcome with <code>dpv:isBefore</code>, and their content is given with <code>dpv:hasContext</code>, <code>dpv:hasRisk</code>/<code>dpv:hasImpact</code> and measures. Human oversight (<code>dpv:HumanInvolvementForOversight</code>) is reused in both. Art. 27(4) lets the FRIA complement the DPIA (<code>impacto:eu-aiact-ExistingDPIAInput</code>).</td></tr>
+          <tr><td><a href="#cq6">CQ6</a></td><td><a href="#cq12">CQ12</a></td><td>Changes and updates</td><td>Same two categories (predetermined and non-predetermined change) with a review or update status. IMPACTO mirrors <code>eu-aiact:ChangeCategory</code> for the GDPR with <code>impacto:eu-gdpr-RiskChangeCategory</code>.</td></tr>
+          <tr><td><a href="#cq7">CQ7</a></td><td><a href="#cq13">CQ13</a></td><td>Authority involved after the assessment</td><td>Both name the authority with <code>dpv:hasAuthority</code> and a status. The DPIA leads to prior consultation of the DPA only where high risk remains; the FRIA result is always notified to the market surveillance authority.</td></tr>
+        </tbody>
+      </table>
+      <p>CQ2 (roles) and CQ14 (documentation and tools) have no direct counterpart, but they meet in practice: the controller of the DPIA is
+        often also the deployer who carries out the FRIA, and the DPIA can be documentation used for the FRIA (AI Act Art. 27(4)).</p>
+    </section>
+  </section>
+
+  <section id="usecases">
+    <h2>Use Cases</h2>
+    <p>Three examples show how IMPACTO records whether an impact assessment is required. They are written in
+      <a href="example.ttl">example.ttl</a>; the organisations are fictional. Each example is one impact assessment
+      (<code>dpv:ImpactAssessment</code>) that links to the process with <code>dpv:hasProcess</code> and to the DPIA and FRIA necessity
+      assessments with <code>dpv:hasAssessment</code>. A necessity assessment records the outcome (<code>dpv:hasStatus</code>), the condition
+      that justifies it (<code>dpv:hasJustification</code>), who is responsible and the jurisdiction.</p>
+    <p>The processes are described with concepts from <a href="https://tyttikatariina.github.io/HAPT/">HAPT</a> and DPV, and the justifications
+      point to the DPIA Required conditions (for example <code>eu-gdpr:C1</code>, <code>ie:C11</code>) and the HAPT Annex III conditions
+      (<code>annex3:C1a</code>, <code>annex3:C2a</code>). HAPT is documented separately; the examples only refer to its terms.</p>
+    <table>
+      <thead><tr><th style="width:6%">Example</th><th>Process</th><th style="width:14%">AI Act</th><th style="width:18%">DPIA</th><th style="width:18%">FRIA</th></tr></thead>
+      <tbody>
+        <tr><td><a href="#ex1">EX1</a></td><td>A public hospital in Ireland processes patients' electronic health records at large scale.</td><td>No AI system</td><td>Required (<code>eu-gdpr:C1</code>, GDPR Art. 35(3)(b))</td><td>Not applicable</td></tr>
+        <tr><td><a href="#ex2">EX2</a></td><td>A public transport authority in Ireland identifies people in recorded CCTV footage with a remote biometric identification system.</td><td>Annex III 1(a)</td><td>Required (<code>ie:C11</code>, <code>eu-gdpr:C5</code>)</td><td>Required (<code>annex3:C1a</code>)</td></tr>
+        <tr><td><a href="#ex3">EX3</a></td><td>A water utility in Austria uses an AI safety component to control pressure in the water network. No personal data is processed.</td><td>Annex III 2(a)</td><td>Not applicable</td><td>Not required: exempt (<code>annex3:C2a</code>)</td></tr>
+      </tbody>
+    </table>
+
+    <section id="ex1">
+      <h3>EX1: processing of special category data requires a DPIA</h3>
+      <p>Large-scale processing of special category data requires a DPIA under GDPR Art. 35(3)(b), so the requirement applies across the EU
+        (<a href="#cq4">CQ4</a>). The hospital, as controller, is responsible for the DPIA and has a data protection officer (<a href="#cq2">CQ2</a>).</p>
+      <pre class="nohighlight">ex:EX1-Processing a impacto:eu-gdpr-DPIARequiredProcess ;
+    rdfs:label &quot;Processing patients&#x27; electronic health records to provide care&quot;@en ;
+    dpv:hasPurpose hapt:sector-health-PatientCare ;
+    dpv:hasPersonalData dpv:SpecialCategoryPersonalData, hapt:pd-ElectronicHealthRecord ;
+    dpv:hasProcessingScale dpv:LargeScaleProcessing ;
+    dpv:hasDataSubject dpv:Patient ;
+    dpv:hasDataController ex:Hospital ;
+    dpv:hasJurisdiction loc:IE .
+
+ex:EX1-DPIANecessity a eu-gdpr:DPIANecessityAssessment ;
+    rdfs:label &quot;Is a DPIA required for EX1?&quot;@en ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    dpv:hasJustification eu-gdpr:C1 ;
+    dpv:hasResponsibleEntity ex:Hospital ;
+    dpv:hasJurisdiction loc:IE ;
+    rdfs:comment &quot;Large-scale processing of special category data (GDPR Art. 35(3)(b)).&quot;@en .</pre>
+    </section>
+
+    <section id="ex2">
+      <h3>EX2: a biometric AI system requires a FRIA and a DPIA</h3>
+      <p>A remote biometric identification system is high-risk under AI Act Annex III point 1(a). Because the deployer is a body governed by public
+        law, Art. 27(1) requires a FRIA (<a href="#cq8">CQ8</a>). Because the system processes biometric data, the Irish DPIA Required list
+        (<code>ie:C11</code>) and GDPR Art. 35(3)(c) require a DPIA as well (<a href="#cq1">CQ1</a>). One impact assessment holds both
+        necessity assessments.</p>
+      <pre class="nohighlight">ex:EX2-Processing a impacto:eu-gdpr-DPIARequiredProcess, impacto:eu-aiact-FRIARequiredProcess ;
+    rdfs:label &quot;Identifying people in recorded CCTV footage of public transport stations with an AI system&quot;@en ;
+    dpv:hasPurpose hapt:dpv-Identification ;
+    dpv:hasPersonalData eu-gdpr:BiometricData ;
+    dpv:hasContext dpv:SystematicMonitoring ;
+    dpv:hasProcessingScale dpv:LargeScaleProcessing ;
+    dpv:hasLocation dpv:PubliclyAccessibleSpace, hapt:dpv-PublicTransport ;
+    dpv:hasDataSubject dpv:NaturalPerson ;
+    dpv:hasDataController ex:TransportAuthority ;
+    dpv:isImplementedUsingTechnology ex:BiometricAI, hapt:tech-CCTV ;
+    dpv:hasJurisdiction loc:IE .
+
+ex:EX2-DPIANecessity a eu-gdpr:DPIANecessityAssessment ;
+    rdfs:label &quot;Is a DPIA required for EX2?&quot;@en ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    dpv:hasJustification ie:C11, eu-gdpr:C5 ;
+    dpv:hasResponsibleEntity ex:TransportAuthority ;
+    dpv:hasJurisdiction loc:IE ;
+    rdfs:comment &quot;Biometric data (Irish DPIA Required list) and large-scale systematic monitoring of a publicly accessible area (GDPR Art. 35(3)(c)).&quot;@en .
+
+ex:EX2-FRIANecessity a impacto:eu-aiact-FRIANecessityAssessment ;
+    rdfs:label &quot;Is a FRIA required for EX2?&quot;@en ;
+    dpv:hasStatus impacto:eu-aiact-FRIARequired ;
+    dpv:hasContext impacto:eu-aiact-HighRiskAISystem, impacto:eu-aiact-NotExempt ;
+    dpv:hasJustification annex3:C1a ;
+    dpv:hasResponsibleEntity ex:TransportAuthority ;
+    dpv:hasJurisdiction loc:EU, loc:IE ;
+    rdfs:comment &quot;High-risk AI system in Annex III point 1(a), deployed by a body governed by public law (AI Act Art. 27(1)).&quot;@en .</pre>
+    </section>
+
+    <section id="ex3">
+      <h3>EX3: a critical infrastructure AI system is exempt from the FRIA</h3>
+      <p>An AI safety component in water supply is high-risk under Annex III point 2(a). Art. 27(1) excludes high-risk AI systems intended to be
+        used in the area listed in Annex III point 2, so the FRIA is not required and the status is FRIA Exempt (<a href="#cq9">CQ9</a>).
+        The requirement is still decided under EU law (<a href="#cq10">CQ10</a>). The system processes no personal data, so no DPIA applies.</p>
+      <pre class="nohighlight">ex:EX3-Processing a impacto:eu-aiact-FRIANotRequiredProcess ;
+    rdfs:label &quot;Controlling water network pressure with an AI safety component&quot;@en ;
+    dpv:hasPurpose hapt:eu-aiact-WaterSupplyManagement ;
+    dpv:isImplementedUsingTechnology ex:WaterSafetyAI ;
+    dpv:hasJurisdiction loc:AT ;
+    rdfs:comment &quot;Uses sensor readings only. No personal data is processed, so the GDPR and the DPIA do not apply.&quot;@en .
+
+ex:EX3-FRIANecessity a impacto:eu-aiact-FRIANecessityAssessment ;
+    rdfs:label &quot;Is a FRIA required for EX3?&quot;@en ;
+    dpv:hasStatus impacto:eu-aiact-FRIAExempt ;
+    dpv:hasContext impacto:eu-aiact-HighRiskAISystem, impacto:eu-aiact-Exempt ;
+    dpv:hasJustification annex3:C2a ;
+    dpv:hasResponsibleEntity ex:WaterUtility ;
+    dpv:hasJurisdiction loc:EU, loc:AT ;
+    rdfs:comment &quot;Art. 27(1) excludes high-risk AI systems intended to be used in the area listed in Annex III point 2.&quot;@en .</pre>
+    </section>
+  </section>
+
+  <section id="evaluation">
+    <h2>Evaluation</h2>
+    <p>IMPACTO is validated against its competency questions in two ways.</p>
+    <ol>
+      <li><b>SPARQL.</b> Each competency question is a SPARQL query. Most questions ask how something is represented, so the query lists the
+        concepts and relations that answer it and checks that each one is defined in IMPACTO or in the DPV modules it reuses, with its place in
+        the hierarchy. A missing term is reported as NOT FOUND, so the question fails. The query also shows which examples use each term.
+        CQ4 and CQ10 ask about a particular process, so they can only be answered from instance data: they run over the examples.</li>
+      <li><b>SHACL.</b> Shapes check that every IMPACTO term is documented and placed under a DPV parent (NFR1, NFR3), and that a record of
+        a DPIA or FRIA requirement holds everything the questions need: the status, the justification, the jurisdiction and the responsible
+        role. The examples must conform, and a file of broken records must be rejected.</li>
+    </ol>
+    <p>The examples are therefore needed only for the questions about a specific process, and to show that the ontology can be used to write
+      records that pass the shapes.</p>
+
+    <section id="summary">
+      <h3>Summary</h3>
+      <table>
+        <thead><tr><th>Check</th><th>Data</th><th>Result</th></tr></thead>
+        <tbody>
+          <tr><td>SPARQL competency questions</td><td><code>impacto.rdf</code> + <code>example.ttl</code> + DPV 2.3 (+ <code>DPIARequiredConditions.ttl</code> for CQ4)</td><td><span class="pass">14 of 14 answered</span></td></tr>
+          <tr><td>SHACL: ontology documentation</td><td><code>impacto.rdf</code></td><td><span class="pass">Conforms</span></td></tr>
+          <tr><td>SHACL: worked examples</td><td><code>impacto.rdf</code> + <code>example.ttl</code></td><td><span class="pass">Conforms</span></td></tr>
+          <tr><td>SHACL: negative test</td><td><code>impacto.rdf</code> + <code>tests/example-invalid.ttl</code></td><td><span class="pass">13 violations and 1 warning reported, as expected</span></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="sparql">
+      <h3>SPARQL queries</h3>
+      <p>Each query file in <a href="https://github.com/tyttikatariina/IMPACTO/tree/main/sparql"><code>sparql/</code></a> starts with the question,
+        the law, the data it runs on and the expected answer. The queries need the DPV 2.3 modules <code>dpv</code>, <code>eu-gdpr</code>,
+        <code>eu-aiact</code> and <code>tech</code> to find the reused terms. CQ4 also needs the DPIA Required conditions: a jurisdiction is
+        returned when the process meets every criterion of at least one condition on that jurisdiction's list, and conditions taken directly
+        from the GDPR apply in the whole EU.</p>
+
+      <section id="cq1">
+        <h4>CQ1: How is a process that requires a DPIA represented?</h4>
+        <p><b>Law:</b> <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR Art. 35(1), 35(3), 35(4)</a>. <b>Query:</b> <a href="sparql/cq01.rq">sparql/cq01.rq</a>. <b>Data:</b> impacto.rdf + example.ttl + DPV 2.3 (dpv, eu-gdpr, eu-aiact, tech).<br>
+          <b>Expected:</b> Every term is found. EX1 and EX2 are DPIA required processes, each with a necessity assessment with status DPIA Required and its justification.<br>
+          <b>Result:</b> <span class="pass">Answered</span>: all 7 terms found in IMPACTO or DPV.</p>
+        <details><summary>SPARQL query</summary><pre class="nohighlight">SELECT ?term (COALESCE(SAMPLE(?l), &quot;NOT FOUND&quot;) AS ?label)
+       (GROUP_CONCAT(DISTINCT STR(?parent); separator=&quot; &quot;) AS ?parents)
+       (GROUP_CONCAT(DISTINCT STR(?example); separator=&quot; &quot;) AS ?usedInExamples) WHERE {
+  VALUES (?order ?term) {
+    (1 impacto:eu-gdpr-DPIARequiredProcess)
+    (2 eu-gdpr:DPIANecessityAssessment)
+    (3 eu-gdpr:DPIARequired)
+    (4 dpv:hasProcess)
+    (5 dpv:hasAssessment)
+    (6 dpv:hasStatus)
+    (7 dpv:hasJustification)
+  }
+  OPTIONAL { ?term skos:prefLabel ?l . FILTER(LANGMATCHES(LANG(?l), &quot;en&quot;)) }
+  OPTIONAL { ?term skos:broader|rdfs:subPropertyOf ?parent }
+  OPTIONAL {
+    { ?example ?anyProperty ?term } UNION { ?example ?term ?anyValue }
+    FILTER(STRSTARTS(STR(?example), &quot;https://tyttikatariina.github.io/IMPACTO/examples#&quot;))
+  }
+}
+GROUP BY ?order ?term
+ORDER BY ?order</pre></details>
+        <details open><summary>Results</summary><table class="res"><thead><tr><th>term</th><th>label</th><th>parents</th><th>usedInExamples</th></tr></thead><tbody><tr><td>impacto:eu-gdpr-DPIARequiredProcess</td><td>DPIA Required Process</td><td>impacto:eu-gdpr-DPIAProcess</td><td>ex:EX1-Processing ex:EX2-Processing</td></tr><tr><td>eu-gdpr:DPIANecessityAssessment</td><td>DPIA Necessity Assessment</td><td>dpv:DPIA</td><td>ex:EX1-DPIANecessity ex:EX2-DPIANecessity</td></tr><tr><td>eu-gdpr:DPIARequired</td><td>DPIA Required</td><td>eu-gdpr:DPIANecessityStatus</td><td>ex:EX1-DPIANecessity ex:EX2-DPIANecessity</td></tr><tr><td>dpv:hasProcess</td><td>has process</td><td></td><td>ex:EX1 ex:EX2 ex:EX3</td></tr><tr><td>dpv:hasAssessment</td><td>has assessment</td><td>dpv:hasOrganisationalMeasure</td><td>ex:EX1 ex:EX2 ex:EX3</td></tr><tr><td>dpv:hasStatus</td><td>has status</td><td></td><td>ex:EX1-DPIANecessity ex:EX2-DPIANecessity ex:EX2-FRIANecessity ex:EX3-FRIANecessity</td></tr><tr><td>dpv:hasJustification</td><td>has justification</td><td></td><td>ex:EX1-DPIANecessity ex:EX2-DPIANecessity ex:EX2-FRIANecessity ex:EX3-FRIANecessity</td></tr></tbody></table></details>
+      </section>
+      <section id="cq2">
+        <h4>CQ2: What are the roles associated with a DPIA?</h4>
+        <p><b>Law:</b> <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR Art. 35(2)</a>. <b>Query:</b> <a href="sparql/cq02.rq">sparql/cq02.rq</a>. <b>Data:</b> impacto.rdf + example.ttl + DPV 2.3 (dpv, eu-gdpr, eu-aiact, tech).<br>
+          <b>Expected:</b> Every term is found. EX1 and EX2 name the controller, who is responsible for the DPIA, and its data protection officer.<br>
+          <b>Result:</b> <span class="pass">Answered</span>: all 6 terms found in IMPACTO or DPV.</p>
+        <details><summary>SPARQL query</summary><pre class="nohighlight">SELECT ?term (COALESCE(SAMPLE(?l), &quot;NOT FOUND&quot;) AS ?label)
+       (GROUP_CONCAT(DISTINCT STR(?parent); separator=&quot; &quot;) AS ?parents)
+       (GROUP_CONCAT(DISTINCT STR(?example); separator=&quot; &quot;) AS ?usedInExamples) WHERE {
+  VALUES (?order ?term) {
+    (1 dpv:DataController)
+    (2 dpv:DataProtectionOfficer)
+    (3 dpv:ConsultationWithDPO)
+    (4 dpv:hasResponsibleEntity)
+    (5 dpv:hasDataController)
+    (6 dpv:hasDataProtectionOfficer)
+  }
+  OPTIONAL { ?term skos:prefLabel ?l . FILTER(LANGMATCHES(LANG(?l), &quot;en&quot;)) }
+  OPTIONAL { ?term skos:broader|rdfs:subPropertyOf ?parent }
+  OPTIONAL {
+    { ?example ?anyProperty ?term } UNION { ?example ?term ?anyValue }
+    FILTER(STRSTARTS(STR(?example), &quot;https://tyttikatariina.github.io/IMPACTO/examples#&quot;))
+  }
+}
+GROUP BY ?order ?term
+ORDER BY ?order</pre></details>
+        <details open><summary>Results</summary><table class="res"><thead><tr><th>term</th><th>label</th><th>parents</th><th>usedInExamples</th></tr></thead><tbody><tr><td>dpv:DataController</td><td>Data Controller</td><td>dpv:LegalEntity</td><td>ex:Hospital ex:TransportAuthority</td></tr><tr><td>dpv:DataProtectionOfficer</td><td>Data Protection Officer</td><td>dpv:Representative</td><td>ex:HospitalDPO ex:TransportAuthorityDPO</td></tr><tr><td>dpv:ConsultationWithDPO</td><td>Consultation with DPO</td><td>dpv:Consultation</td><td></td></tr><tr><td>dpv:hasResponsibleEntity</td><td>has responsible entity</td><td>dpv:hasEntity</td><td>ex:EX1-DPIANecessity ex:EX2-DPIANecessity ex:EX2-FRIANecessity ex:EX3-FRIANecessity</td></tr><tr><td>dpv:hasDataController</td><td>has data controller</td><td>dpv:hasEntity</td><td>ex:EX1-Processing ex:EX2-Processing</td></tr><tr><td>dpv:hasDataProtectionOfficer</td><td>has data protection officer</td><td>dpv:hasRepresentative</td><td>ex:Hospital ex:TransportAuthority</td></tr></tbody></table></details>
+      </section>
+      <section id="cq3">
+        <h4>CQ3: How is a process that does not require a DPIA represented?</h4>
+        <p><b>Law:</b> <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR Art. 35(5)</a>. <b>Query:</b> <a href="sparql/cq03.rq">sparql/cq03.rq</a>. <b>Data:</b> impacto.rdf + example.ttl + DPV 2.3 (dpv, eu-gdpr, eu-aiact, tech).<br>
+          <b>Expected:</b> Every term is found. Answered from the ontology; none of the three examples is a DPIA not required process.<br>
+          <b>Result:</b> <span class="pass">Answered</span>: all 5 terms found in IMPACTO or DPV.</p>
+        <details><summary>SPARQL query</summary><pre class="nohighlight">SELECT ?term (COALESCE(SAMPLE(?l), &quot;NOT FOUND&quot;) AS ?label)
+       (GROUP_CONCAT(DISTINCT STR(?parent); separator=&quot; &quot;) AS ?parents)
+       (GROUP_CONCAT(DISTINCT STR(?example); separator=&quot; &quot;) AS ?usedInExamples) WHERE {
+  VALUES (?order ?term) {
+    (1 impacto:eu-gdpr-DPIANotRequiredProcess)
+    (2 eu-gdpr:DPIANecessityAssessment)
+    (3 eu-gdpr:DPIANotRequired)
+    (4 dpv:hasStatus)
+    (5 dpv:hasJustification)
+  }
+  OPTIONAL { ?term skos:prefLabel ?l . FILTER(LANGMATCHES(LANG(?l), &quot;en&quot;)) }
+  OPTIONAL { ?term skos:broader|rdfs:subPropertyOf ?parent }
+  OPTIONAL {
+    { ?example ?anyProperty ?term } UNION { ?example ?term ?anyValue }
+    FILTER(STRSTARTS(STR(?example), &quot;https://tyttikatariina.github.io/IMPACTO/examples#&quot;))
+  }
+}
+GROUP BY ?order ?term
+ORDER BY ?order</pre></details>
+        <details open><summary>Results</summary><table class="res"><thead><tr><th>term</th><th>label</th><th>parents</th><th>usedInExamples</th></tr></thead><tbody><tr><td>impacto:eu-gdpr-DPIANotRequiredProcess</td><td>DPIA Not Required Process</td><td>impacto:eu-gdpr-DPIAProcess</td><td></td></tr><tr><td>eu-gdpr:DPIANecessityAssessment</td><td>DPIA Necessity Assessment</td><td>dpv:DPIA</td><td>ex:EX1-DPIANecessity ex:EX2-DPIANecessity</td></tr><tr><td>eu-gdpr:DPIANotRequired</td><td>DPIA Not Required</td><td>eu-gdpr:DPIANecessityStatus</td><td></td></tr><tr><td>dpv:hasStatus</td><td>has status</td><td></td><td>ex:EX1-DPIANecessity ex:EX2-DPIANecessity ex:EX2-FRIANecessity ex:EX3-FRIANecessity</td></tr><tr><td>dpv:hasJustification</td><td>has justification</td><td></td><td>ex:EX1-DPIANecessity ex:EX2-DPIANecessity ex:EX2-FRIANecessity ex:EX3-FRIANecessity</td></tr></tbody></table></details>
+      </section>
+      <section id="cq4">
+        <h4>CQ4: Which jurisdictions will this process always require a DPIA?</h4>
+        <p><b>Law:</b> <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR Art. 3, 35(4), 35(5)</a>. <b>Query:</b> <a href="sparql/cq04.rq">sparql/cq04.rq</a>. <b>Data:</b> impacto.rdf + example.ttl + DPV 2.3 (dpv, eu-gdpr, eu-aiact, tech) + DPIARequiredConditions.ttl.<br>
+          <b>Expected:</b> EX1 needs a DPIA in the whole EU (eu-gdpr:C1, large-scale special category data). EX2 needs one in the whole EU (eu-gdpr:C3, large-scale processing) and is also listed by every state whose DPIA Required list includes biometric data (C11).<br>
+          <b>Result:</b> <span class="pass">Answered</span>: 29 rows from the examples.</p>
+        <details><summary>SPARQL query</summary><pre class="nohighlight">SELECT ?process ?jurisdiction (GROUP_CONCAT(DISTINCT ?conditionId; separator=&quot;, &quot;) AS ?conditions) WHERE {
+  ?assessment dpv:hasProcess ?process .
+  ?process a impacto:eu-gdpr-DPIARequiredProcess .
+  ?condition a impacto:eu-gdpr-DPIARequiredProcess .
+  FILTER(STRSTARTS(STR(?condition), &quot;https://w3id.org/dpv/legal/&quot;))
+  FILTER NOT EXISTS { ?anyAssessment dpv:hasProcess ?condition }
+  OPTIONAL { ?condition dpv:hasJurisdiction ?conditionJurisdiction }
+  BIND(COALESCE(?conditionJurisdiction, loc:EU) AS ?jurisdiction)
+  FILTER(?jurisdiction != loc:EX)
+  ?condition ?p ?o .
+  FILTER(?p NOT IN (rdf:type, dpv:hasJurisdiction, skos:definition, skos:scopeNote, skos:note, skos:editorialNote, dct:source, dct:identifier, rdfs:comment, rdfs:label))
+  FILTER NOT EXISTS {
+    ?condition ?p2 ?o2 .
+    FILTER(?p2 NOT IN (rdf:type, dpv:hasJurisdiction, skos:definition, skos:scopeNote, skos:note, skos:editorialNote, dct:source, dct:identifier, rdfs:comment, rdfs:label))
+    FILTER NOT EXISTS { ?process ?p2 ?o2 }
+    FILTER NOT EXISTS { ?process dpv:hasDataSubject ?o2 . FILTER(?p2 = dpv:hasHumanSubject) }
+  }
+  BIND(REPLACE(REPLACE(REPLACE(STR(?condition), &quot;^.*/legal/(.*)#(.*)$&quot;, &quot;$1:$2&quot;), &quot;^eu/gdpr:&quot;, &quot;eu-gdpr:&quot;), &quot;^eu/&quot;, &quot;&quot;) AS ?conditionId)
+}
+GROUP BY ?process ?jurisdiction
+ORDER BY ?process ?jurisdiction</pre></details>
+        <details open><summary>Results</summary><table class="res"><thead><tr><th style="width:16%">process</th><th style="width:8%">states</th><th>jurisdictions (conditions met in full)</th></tr></thead><tbody><tr><td style="overflow-wrap:normal">ex:EX1-Processing</td><td>1</td><td>loc:EU (eu-gdpr:C1, eu-gdpr:C3)</td></tr><tr><td style="overflow-wrap:normal">ex:EX2-Processing</td><td>28</td><td>loc:AT (at-gdpr:C11); loc:BE (be:C11); loc:BG (bg:C11); loc:CY (cy:C111); loc:CZ (cz:C11); loc:DE (de:C11); loc:DK (dk:C11); loc:EE (ee:C11); loc:ES (es:C11); loc:EU (eu-gdpr:C3); loc:FI (fi:C11); loc:FR (fr:C11); loc:GR (gr:C11); loc:HR (hr:C11); loc:HU (hu:C11); loc:IE (ie:C11); loc:IS (is:C11); loc:LI (li:C11); loc:LT (lt:C11); loc:LU (lu:C11); loc:LV (lv:C11); loc:MT (mt:C11); loc:NL (nl:C11); loc:NO (no:C11); loc:PL (pl:C11); loc:PT (pt:C11); loc:SI (si:C11); loc:SK (sk:C11)</td></tr></tbody></table></details>
+      </section>
+      <section id="cq5">
+        <h4>CQ5: How is the procedure of conducting a DPIA represented?</h4>
+        <p><b>Law:</b> <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR Art. 35(7), 35(9)</a>. <b>Query:</b> <a href="sparql/cq05.rq">sparql/cq05.rq</a>. <b>Data:</b> impacto.rdf + example.ttl + DPV 2.3 (dpv, eu-gdpr, eu-aiact, tech).<br>
+          <b>Expected:</b> Every term is found. Answered from the ontology; the examples stop at the requirement.<br>
+          <b>Result:</b> <span class="pass">Answered</span>: all 13 terms found in IMPACTO or DPV.</p>
+        <details><summary>SPARQL query</summary><pre class="nohighlight">SELECT ?term (COALESCE(SAMPLE(?l), &quot;NOT FOUND&quot;) AS ?label)
+       (GROUP_CONCAT(DISTINCT STR(?parent); separator=&quot; &quot;) AS ?parents)
+       (GROUP_CONCAT(DISTINCT STR(?example); separator=&quot; &quot;) AS ?usedInExamples) WHERE {
+  VALUES (?order ?term) {
+    (1 eu-gdpr:DPIAProcedure)
+    (2 impacto:dpv-ProcessingDescription)
+    (3 eu-gdpr:NecessityAssessment)
+    (4 eu-gdpr:ProportionalityAssessment)
+    (5 dpv:Risk)
+    (6 dpv:TechnicalMeasure)
+    (7 dpv:OrganisationalMeasure)
+    (8 eu-gdpr:DPIAOutcome)
+    (9 dpv:hasContext)
+    (10 dpv:hasRisk)
+    (11 dpv:hasTechnicalMeasure)
+    (12 dpv:hasOrganisationalMeasure)
+    (13 dpv:isBefore)
+  }
+  OPTIONAL { ?term skos:prefLabel ?l . FILTER(LANGMATCHES(LANG(?l), &quot;en&quot;)) }
+  OPTIONAL { ?term skos:broader|rdfs:subPropertyOf ?parent }
+  OPTIONAL {
+    { ?example ?anyProperty ?term } UNION { ?example ?term ?anyValue }
+    FILTER(STRSTARTS(STR(?example), &quot;https://tyttikatariina.github.io/IMPACTO/examples#&quot;))
+  }
+}
+GROUP BY ?order ?term
+ORDER BY ?order</pre></details>
+        <details open><summary>Results</summary><table class="res"><thead><tr><th>term</th><th>label</th><th>parents</th><th>usedInExamples</th></tr></thead><tbody><tr><td>eu-gdpr:DPIAProcedure</td><td>DPIA Procedure</td><td>dpv:DPIA</td><td></td></tr><tr><td>impacto:dpv-ProcessingDescription</td><td>Processing Description</td><td>dpv:Context</td><td></td></tr><tr><td>eu-gdpr:NecessityAssessment</td><td>Necessity Assessment</td><td>dpv:Assessment eu-gdpr:ProportionalityAssessment</td><td></td></tr><tr><td>eu-gdpr:ProportionalityAssessment</td><td>Proportionality Assessment</td><td>dpv:ImpactAssessment</td><td></td></tr><tr><td>dpv:Risk</td><td>Risk</td><td>dpv:RiskConcept</td><td></td></tr><tr><td>dpv:TechnicalMeasure</td><td>Technical Measure</td><td>dpv:TechnicalOrganisationalMeasure</td><td></td></tr><tr><td>dpv:OrganisationalMeasure</td><td>Organisational Measure</td><td>dpv:TechnicalOrganisationalMeasure</td><td></td></tr><tr><td>eu-gdpr:DPIAOutcome</td><td>DPIA Outcome</td><td>dpv:DPIA</td><td></td></tr><tr><td>dpv:hasContext</td><td>has context</td><td></td><td>ex:EX2-Processing ex:EX2-FRIANecessity ex:EX3-FRIANecessity</td></tr><tr><td>dpv:hasRisk</td><td>has risk</td><td></td><td></td></tr><tr><td>dpv:hasTechnicalMeasure</td><td>has technical measure</td><td>dpv:hasTechnicalOrganisationalMeasure</td><td></td></tr><tr><td>dpv:hasOrganisationalMeasure</td><td>has organisational measure</td><td>dpv:hasTechnicalOrganisationalMeasure</td><td></td></tr><tr><td>dpv:isBefore</td><td>is before</td><td></td><td></td></tr></tbody></table></details>
+      </section>
+      <section id="cq6">
+        <h4>CQ6: How can changes associated with processing operations be categorised?</h4>
+        <p><b>Law:</b> <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR Art. 35(11)</a>. <b>Query:</b> <a href="sparql/cq06.rq">sparql/cq06.rq</a>. <b>Data:</b> impacto.rdf + example.ttl + DPV 2.3 (dpv, eu-gdpr, eu-aiact, tech).<br>
+          <b>Expected:</b> Every term is found, with the two change categories under impacto:eu-gdpr-RiskChangeCategory. Answered from the ontology.<br>
+          <b>Result:</b> <span class="pass">Answered</span>: all 6 terms found in IMPACTO or DPV.</p>
+        <details><summary>SPARQL query</summary><pre class="nohighlight">SELECT ?term (COALESCE(SAMPLE(?l), &quot;NOT FOUND&quot;) AS ?label)
+       (GROUP_CONCAT(DISTINCT STR(?parent); separator=&quot; &quot;) AS ?parents)
+       (GROUP_CONCAT(DISTINCT STR(?example); separator=&quot; &quot;) AS ?usedInExamples) WHERE {
+  VALUES (?order ?term) {
+    (1 impacto:eu-gdpr-RiskChangeCategory)
+    (2 impacto:eu-gdpr-PredeterminedRiskChange)
+    (3 impacto:eu-gdpr-NonpredeterminedRiskChange)
+    (4 impacto:eu-gdpr-DPIAReviewStatus)
+    (5 impacto:eu-gdpr-hasRiskChangeCategory)
+    (6 impacto:eu-gdpr-hasChangeDescription)
+  }
+  OPTIONAL { ?term skos:prefLabel ?l . FILTER(LANGMATCHES(LANG(?l), &quot;en&quot;)) }
+  OPTIONAL { ?term skos:broader|rdfs:subPropertyOf ?parent }
+  OPTIONAL {
+    { ?example ?anyProperty ?term } UNION { ?example ?term ?anyValue }
+    FILTER(STRSTARTS(STR(?example), &quot;https://tyttikatariina.github.io/IMPACTO/examples#&quot;))
+  }
+}
+GROUP BY ?order ?term
+ORDER BY ?order</pre></details>
+        <details open><summary>Results</summary><table class="res"><thead><tr><th>term</th><th>label</th><th>parents</th><th>usedInExamples</th></tr></thead><tbody><tr><td>impacto:eu-gdpr-RiskChangeCategory</td><td>Risk Change Category</td><td>dpv:Context</td><td></td></tr><tr><td>impacto:eu-gdpr-PredeterminedRiskChange</td><td>Predetermined Risk Change</td><td>impacto:eu-gdpr-RiskChangeCategory</td><td></td></tr><tr><td>impacto:eu-gdpr-NonpredeterminedRiskChange</td><td>Non-predetermined Risk Change</td><td>impacto:eu-gdpr-RiskChangeCategory</td><td></td></tr><tr><td>impacto:eu-gdpr-DPIAReviewStatus</td><td>DPIA Review Status</td><td>dpv:AuditStatus</td><td></td></tr><tr><td>impacto:eu-gdpr-hasRiskChangeCategory</td><td>has risk change category</td><td>dpv:hasContext</td><td></td></tr><tr><td>impacto:eu-gdpr-hasChangeDescription</td><td>has change description</td><td>dpv:hasContext</td><td></td></tr></tbody></table></details>
+      </section>
+      <section id="cq7">
+        <h4>CQ7: Which authority must be consulted after the DPIA?</h4>
+        <p><b>Law:</b> <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679">GDPR Art. 36(1)</a>. <b>Query:</b> <a href="sparql/cq07.rq">sparql/cq07.rq</a>. <b>Data:</b> impacto.rdf + example.ttl + DPV 2.3 (dpv, eu-gdpr, eu-aiact, tech).<br>
+          <b>Expected:</b> Every term is found. Answered from the ontology.<br>
+          <b>Result:</b> <span class="pass">Answered</span>: all 5 terms found in IMPACTO or DPV.</p>
+        <details><summary>SPARQL query</summary><pre class="nohighlight">SELECT ?term (COALESCE(SAMPLE(?l), &quot;NOT FOUND&quot;) AS ?label)
+       (GROUP_CONCAT(DISTINCT STR(?parent); separator=&quot; &quot;) AS ?parents)
+       (GROUP_CONCAT(DISTINCT STR(?example); separator=&quot; &quot;) AS ?usedInExamples) WHERE {
+  VALUES (?order ?term) {
+    (1 eu-gdpr:DPIAOutcome)
+    (2 eu-gdpr:DPIAOutcomeDPAConsultation)
+    (3 dpv:DataProtectionAuthority)
+    (4 eu-gdpr:LeadSupervisoryAuthority)
+    (5 dpv:hasAuthority)
+  }
+  OPTIONAL { ?term skos:prefLabel ?l . FILTER(LANGMATCHES(LANG(?l), &quot;en&quot;)) }
+  OPTIONAL { ?term skos:broader|rdfs:subPropertyOf ?parent }
+  OPTIONAL {
+    { ?example ?anyProperty ?term } UNION { ?example ?term ?anyValue }
+    FILTER(STRSTARTS(STR(?example), &quot;https://tyttikatariina.github.io/IMPACTO/examples#&quot;))
+  }
+}
+GROUP BY ?order ?term
+ORDER BY ?order</pre></details>
+        <details open><summary>Results</summary><table class="res"><thead><tr><th>term</th><th>label</th><th>parents</th><th>usedInExamples</th></tr></thead><tbody><tr><td>eu-gdpr:DPIAOutcome</td><td>DPIA Outcome</td><td>dpv:DPIA</td><td></td></tr><tr><td>eu-gdpr:DPIAOutcomeDPAConsultation</td><td>DPIA Outcome DPA Consultation</td><td>eu-gdpr:DPIAOutcomeStatus</td><td></td></tr><tr><td>dpv:DataProtectionAuthority</td><td>Data Protection Authority</td><td>dpv:Authority</td><td></td></tr><tr><td>eu-gdpr:LeadSupervisoryAuthority</td><td>Lead Supervisory Authority</td><td>eu-gdpr:DataProtectionAuthority</td><td></td></tr><tr><td>dpv:hasAuthority</td><td>has authority</td><td></td><td></td></tr></tbody></table></details>
+      </section>
+      <section id="cq8">
+        <h4>CQ8: How is a process that requires a FRIA represented?</h4>
+        <p><b>Law:</b> <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(1)</a>. <b>Query:</b> <a href="sparql/cq08.rq">sparql/cq08.rq</a>. <b>Data:</b> impacto.rdf + example.ttl + DPV 2.3 (dpv, eu-gdpr, eu-aiact, tech).<br>
+          <b>Expected:</b> Every term is found. EX2 is a FRIA required process: an Annex III 1(a) system deployed by a body governed by public law.<br>
+          <b>Result:</b> <span class="pass">Answered</span>: all 9 terms found in IMPACTO or DPV.</p>
+        <details><summary>SPARQL query</summary><pre class="nohighlight">SELECT ?term (COALESCE(SAMPLE(?l), &quot;NOT FOUND&quot;) AS ?label)
+       (GROUP_CONCAT(DISTINCT STR(?parent); separator=&quot; &quot;) AS ?parents)
+       (GROUP_CONCAT(DISTINCT STR(?example); separator=&quot; &quot;) AS ?usedInExamples) WHERE {
+  VALUES (?order ?term) {
+    (1 impacto:eu-aiact-FRIARequiredProcess)
+    (2 impacto:eu-aiact-FRIANecessityAssessment)
+    (3 impacto:eu-aiact-FRIARequired)
+    (4 impacto:eu-aiact-HighRiskAISystem)
+    (5 impacto:eu-aiact-NotExempt)
+    (6 impacto:eu-aiact-PublicLawGovernedDeployer)
+    (7 eu-aiact:HighRiskAISystem)
+    (8 dpv:isImplementedUsingTechnology)
+    (9 tech:hasDeployer)
+  }
+  OPTIONAL { ?term skos:prefLabel ?l . FILTER(LANGMATCHES(LANG(?l), &quot;en&quot;)) }
+  OPTIONAL { ?term skos:broader|rdfs:subPropertyOf ?parent }
+  OPTIONAL {
+    { ?example ?anyProperty ?term } UNION { ?example ?term ?anyValue }
+    FILTER(STRSTARTS(STR(?example), &quot;https://tyttikatariina.github.io/IMPACTO/examples#&quot;))
+  }
+}
+GROUP BY ?order ?term
+ORDER BY ?order</pre></details>
+        <details open><summary>Results</summary><table class="res"><thead><tr><th>term</th><th>label</th><th>parents</th><th>usedInExamples</th></tr></thead><tbody><tr><td>impacto:eu-aiact-FRIARequiredProcess</td><td>FRIA Required Process</td><td>dpv:Process</td><td>ex:EX2-Processing</td></tr><tr><td>impacto:eu-aiact-FRIANecessityAssessment</td><td>FRIA Necessity Assessment</td><td>eu-aiact:FRIA</td><td>ex:EX2-FRIANecessity ex:EX3-FRIANecessity</td></tr><tr><td>impacto:eu-aiact-FRIARequired</td><td>FRIA Required</td><td>impacto:eu-aiact-FRIANecessityStatus</td><td>ex:EX2-FRIANecessity</td></tr><tr><td>impacto:eu-aiact-HighRiskAISystem</td><td>High Risk AI System</td><td>impacto:eu-aiact-FRIANecessityDetermination</td><td>ex:EX2-FRIANecessity ex:EX3-FRIANecessity</td></tr><tr><td>impacto:eu-aiact-NotExempt</td><td>AI System Not Exempt</td><td>impacto:eu-aiact-FRIAExemptions</td><td>ex:EX2-FRIANecessity</td></tr><tr><td>impacto:eu-aiact-PublicLawGovernedDeployer</td><td>Public Law Governed Deployer</td><td>eu-aiact:AIDeployer</td><td>ex:TransportAuthority</td></tr><tr><td>eu-aiact:HighRiskAISystem</td><td>High Risk AI System</td><td>eu-aiact:AISystem</td><td>ex:BiometricAI ex:WaterSafetyAI</td></tr><tr><td>dpv:isImplementedUsingTechnology</td><td>is implemented using technology</td><td></td><td>ex:EX2-Processing ex:EX3-Processing</td></tr><tr><td>tech:hasDeployer</td><td>has deployer</td><td>tech:hasActor</td><td>ex:BiometricAI ex:WaterSafetyAI</td></tr></tbody></table></details>
+      </section>
+      <section id="cq9">
+        <h4>CQ9: How is a process that does not require a FRIA represented?</h4>
+        <p><b>Law:</b> <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(1)</a>. <b>Query:</b> <a href="sparql/cq09.rq">sparql/cq09.rq</a>. <b>Data:</b> impacto.rdf + example.ttl + DPV 2.3 (dpv, eu-gdpr, eu-aiact, tech).<br>
+          <b>Expected:</b> Every term is found. EX3 is a FRIA not required process with status FRIA Exempt (Annex III point 2).<br>
+          <b>Result:</b> <span class="pass">Answered</span>: all 4 terms found in IMPACTO or DPV.</p>
+        <details><summary>SPARQL query</summary><pre class="nohighlight">SELECT ?term (COALESCE(SAMPLE(?l), &quot;NOT FOUND&quot;) AS ?label)
+       (GROUP_CONCAT(DISTINCT STR(?parent); separator=&quot; &quot;) AS ?parents)
+       (GROUP_CONCAT(DISTINCT STR(?example); separator=&quot; &quot;) AS ?usedInExamples) WHERE {
+  VALUES (?order ?term) {
+    (1 impacto:eu-aiact-FRIANotRequiredProcess)
+    (2 impacto:eu-aiact-FRIANotRequired)
+    (3 impacto:eu-aiact-FRIAExempt)
+    (4 impacto:eu-aiact-Exempt)
+  }
+  OPTIONAL { ?term skos:prefLabel ?l . FILTER(LANGMATCHES(LANG(?l), &quot;en&quot;)) }
+  OPTIONAL { ?term skos:broader|rdfs:subPropertyOf ?parent }
+  OPTIONAL {
+    { ?example ?anyProperty ?term } UNION { ?example ?term ?anyValue }
+    FILTER(STRSTARTS(STR(?example), &quot;https://tyttikatariina.github.io/IMPACTO/examples#&quot;))
+  }
+}
+GROUP BY ?order ?term
+ORDER BY ?order</pre></details>
+        <details open><summary>Results</summary><table class="res"><thead><tr><th>term</th><th>label</th><th>parents</th><th>usedInExamples</th></tr></thead><tbody><tr><td>impacto:eu-aiact-FRIANotRequiredProcess</td><td>FRIA Not Required Process</td><td>dpv:Process</td><td>ex:EX3-Processing</td></tr><tr><td>impacto:eu-aiact-FRIANotRequired</td><td>FRIA Not Required</td><td>impacto:eu-aiact-FRIANecessityStatus</td><td></td></tr><tr><td>impacto:eu-aiact-FRIAExempt</td><td>FRIA Exempt</td><td>impacto:eu-aiact-FRIANecessityStatus</td><td>ex:EX3-FRIANecessity</td></tr><tr><td>impacto:eu-aiact-Exempt</td><td>AI System Exempt</td><td>impacto:eu-aiact-FRIAExemptions</td><td>ex:EX3-FRIANecessity</td></tr></tbody></table></details>
+      </section>
+      <section id="cq10">
+        <h4>CQ10: Which is the applicable jurisdiction for the FRIA requirement?</h4>
+        <p><b>Law:</b> <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 2</a>. <b>Query:</b> <a href="sparql/cq10.rq">sparql/cq10.rq</a>. <b>Data:</b> impacto.rdf + example.ttl + DPV 2.3 (dpv, eu-gdpr, eu-aiact, tech).<br>
+          <b>Expected:</b> The FRIA requirement applies in the EU (loc:EU) for both EX2 (required) and EX3 (exempt), together with the Member State of the deployment.<br>
+          <b>Result:</b> <span class="pass">Answered</span>: 2 rows from the examples.</p>
+        <details><summary>SPARQL query</summary><pre class="nohighlight">SELECT ?process ?status (GROUP_CONCAT(DISTINCT STR(?jurisdiction); separator=&quot; &quot;) AS ?jurisdictions) ?justification WHERE {
+  ?assessment dpv:hasProcess ?process ; dpv:hasAssessment ?necessity .
+  ?necessity a impacto:eu-aiact-FRIANecessityAssessment ;
+             dpv:hasStatus ?status ;
+             dpv:hasJurisdiction ?jurisdiction .
+  OPTIONAL { ?necessity dpv:hasJustification ?justification }
+}
+GROUP BY ?process ?status ?justification
+ORDER BY ?process</pre></details>
+        <details open><summary>Results</summary><table class="res"><thead><tr><th>process</th><th>status</th><th>jurisdictions</th><th>justification</th></tr></thead><tbody><tr><td>ex:EX2-Processing</td><td>impacto:eu-aiact-FRIARequired</td><td>loc:EU loc:IE</td><td>annex3:C1a</td></tr><tr><td>ex:EX3-Processing</td><td>impacto:eu-aiact-FRIAExempt</td><td>loc:EU loc:AT</td><td>annex3:C2a</td></tr></tbody></table></details>
+      </section>
+      <section id="cq11">
+        <h4>CQ11: How is the procedure of conducting a FRIA represented?</h4>
+        <p><b>Law:</b> <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(1)(a)–(f)</a>. <b>Query:</b> <a href="sparql/cq11.rq">sparql/cq11.rq</a>. <b>Data:</b> impacto.rdf + example.ttl + DPV 2.3 (dpv, eu-gdpr, eu-aiact, tech).<br>
+          <b>Expected:</b> Every term is found: one for each of Art. 27(1)(a) to (f). Answered from the ontology; the examples stop at the requirement.<br>
+          <b>Result:</b> <span class="pass">Answered</span>: all 11 terms found in IMPACTO or DPV.</p>
+        <details><summary>SPARQL query</summary><pre class="nohighlight">SELECT ?term (COALESCE(SAMPLE(?l), &quot;NOT FOUND&quot;) AS ?label)
+       (GROUP_CONCAT(DISTINCT STR(?parent); separator=&quot; &quot;) AS ?parents)
+       (GROUP_CONCAT(DISTINCT STR(?example); separator=&quot; &quot;) AS ?usedInExamples) WHERE {
+  VALUES (?order ?term) {
+    (1 impacto:eu-aiact-FRIAProcedure)
+    (2 impacto:eu-aiact-ProcessDescription)
+    (3 impacto:eu-aiact-PeriodOfUse)
+    (4 impacto:eu-aiact-FrequencyOfUse)
+    (5 impacto:ai-NaturalPersonCategorySubjects)
+    (6 impacto:eu-rights-AffectedRight)
+    (7 dpv:HumanInvolvementForOversight)
+    (8 impacto:eu-aiact-InternalGovernanceMeasures)
+    (9 impacto:eu-aiact-ComplaintMeasures)
+    (10 impacto:eu-aiact-FRIAOutcome)
+    (11 dpv:hasImpact)
+  }
+  OPTIONAL { ?term skos:prefLabel ?l . FILTER(LANGMATCHES(LANG(?l), &quot;en&quot;)) }
+  OPTIONAL { ?term skos:broader|rdfs:subPropertyOf ?parent }
+  OPTIONAL {
+    { ?example ?anyProperty ?term } UNION { ?example ?term ?anyValue }
+    FILTER(STRSTARTS(STR(?example), &quot;https://tyttikatariina.github.io/IMPACTO/examples#&quot;))
+  }
+}
+GROUP BY ?order ?term
+ORDER BY ?order</pre></details>
+        <details open><summary>Results</summary><table class="res"><thead><tr><th>term</th><th>label</th><th>parents</th><th>usedInExamples</th></tr></thead><tbody><tr><td>impacto:eu-aiact-FRIAProcedure</td><td>FRIA Procedure</td><td>eu-aiact:FRIA</td><td></td></tr><tr><td>impacto:eu-aiact-ProcessDescription</td><td>Process Description</td><td>dpv:Context</td><td></td></tr><tr><td>impacto:eu-aiact-PeriodOfUse</td><td>Period Of Use</td><td>dpv:Technology</td><td></td></tr><tr><td>impacto:eu-aiact-FrequencyOfUse</td><td>Frequency Of Use</td><td>dpv:Technology</td><td></td></tr><tr><td>impacto:ai-NaturalPersonCategorySubjects</td><td>Natural Person Category Subjects</td><td>ai:AI</td><td></td></tr><tr><td>impacto:eu-rights-AffectedRight</td><td>Affected Right</td><td>https://w3id.org/dpv/rights/eu#EUFundamentalRightsImpact</td><td></td></tr><tr><td>dpv:HumanInvolvementForOversight</td><td>Human Involvement for Oversight</td><td>dpv:HumanInvolvement</td><td></td></tr><tr><td>impacto:eu-aiact-InternalGovernanceMeasures</td><td>Internal Governance Measures</td><td>dpv:AIGovernance</td><td></td></tr><tr><td>impacto:eu-aiact-ComplaintMeasures</td><td>Complaint Measures</td><td>dpv:AIGovernance</td><td></td></tr><tr><td>impacto:eu-aiact-FRIAOutcome</td><td>FRIA Outcome</td><td>eu-aiact:FRIA</td><td></td></tr><tr><td>dpv:hasImpact</td><td>has impact</td><td>dpv:hasConsequence</td><td></td></tr></tbody></table></details>
+      </section>
+      <section id="cq12">
+        <h4>CQ12: How can changes associated with processing operations be categorised?</h4>
+        <p><b>Law:</b> <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(2)</a>. <b>Query:</b> <a href="sparql/cq12.rq">sparql/cq12.rq</a>. <b>Data:</b> impacto.rdf + example.ttl + DPV 2.3 (dpv, eu-gdpr, eu-aiact, tech).<br>
+          <b>Expected:</b> Every term is found. Answered from the ontology.<br>
+          <b>Result:</b> <span class="pass">Answered</span>: all 6 terms found in IMPACTO or DPV.</p>
+        <details><summary>SPARQL query</summary><pre class="nohighlight">SELECT ?term (COALESCE(SAMPLE(?l), &quot;NOT FOUND&quot;) AS ?label)
+       (GROUP_CONCAT(DISTINCT STR(?parent); separator=&quot; &quot;) AS ?parents)
+       (GROUP_CONCAT(DISTINCT STR(?example); separator=&quot; &quot;) AS ?usedInExamples) WHERE {
+  VALUES (?order ?term) {
+    (1 eu-aiact:ChangeCategory)
+    (2 eu-aiact:PredeterminedChange)
+    (3 eu-aiact:NonpredeterminedChange)
+    (4 impacto:eu-aiact-FRIAUpdateStatus)
+    (5 eu-aiact:hasChangeCategory)
+    (6 eu-aiact:hasChangeDescription)
+  }
+  OPTIONAL { ?term skos:prefLabel ?l . FILTER(LANGMATCHES(LANG(?l), &quot;en&quot;)) }
+  OPTIONAL { ?term skos:broader|rdfs:subPropertyOf ?parent }
+  OPTIONAL {
+    { ?example ?anyProperty ?term } UNION { ?example ?term ?anyValue }
+    FILTER(STRSTARTS(STR(?example), &quot;https://tyttikatariina.github.io/IMPACTO/examples#&quot;))
+  }
+}
+GROUP BY ?order ?term
+ORDER BY ?order</pre></details>
+        <details open><summary>Results</summary><table class="res"><thead><tr><th>term</th><th>label</th><th>parents</th><th>usedInExamples</th></tr></thead><tbody><tr><td>eu-aiact:ChangeCategory</td><td>Change Category</td><td>dpv:Context</td><td></td></tr><tr><td>eu-aiact:PredeterminedChange</td><td>Predetermined Change</td><td>eu-aiact:ChangeCategory</td><td></td></tr><tr><td>eu-aiact:NonpredeterminedChange</td><td>Non-Predetermined Change</td><td>eu-aiact:ChangeCategory</td><td></td></tr><tr><td>impacto:eu-aiact-FRIAUpdateStatus</td><td>FRIA Update Status</td><td>eu-aiact:FRIA</td><td></td></tr><tr><td>eu-aiact:hasChangeCategory</td><td>has change category</td><td>dpv:hasContext</td><td></td></tr><tr><td>eu-aiact:hasChangeDescription</td><td>has change description</td><td>dpv:hasContext</td><td></td></tr></tbody></table></details>
+      </section>
+      <section id="cq13">
+        <h4>CQ13: What is the notification status of the FRIA result to the market surveillance authority?</h4>
+        <p><b>Law:</b> <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(3)</a>. <b>Query:</b> <a href="sparql/cq13.rq">sparql/cq13.rq</a>. <b>Data:</b> impacto.rdf + example.ttl + DPV 2.3 (dpv, eu-gdpr, eu-aiact, tech).<br>
+          <b>Expected:</b> Every term is found. Answered from the ontology.<br>
+          <b>Result:</b> <span class="pass">Answered</span>: all 6 terms found in IMPACTO or DPV.</p>
+        <details><summary>SPARQL query</summary><pre class="nohighlight">SELECT ?term (COALESCE(SAMPLE(?l), &quot;NOT FOUND&quot;) AS ?label)
+       (GROUP_CONCAT(DISTINCT STR(?parent); separator=&quot; &quot;) AS ?parents)
+       (GROUP_CONCAT(DISTINCT STR(?example); separator=&quot; &quot;) AS ?usedInExamples) WHERE {
+  VALUES (?order ?term) {
+    (1 impacto:eu-aiact-FRIANotification)
+    (2 impacto:eu-aiact-FRIANotificationStatus)
+    (3 impacto:eu-aiact-FRIANotificationSent)
+    (4 impacto:eu-aiact-FRIANotificationPending)
+    (5 eu-aiact:MarketSurveillanceAuthority)
+    (6 dpv:hasAuthority)
+  }
+  OPTIONAL { ?term skos:prefLabel ?l . FILTER(LANGMATCHES(LANG(?l), &quot;en&quot;)) }
+  OPTIONAL { ?term skos:broader|rdfs:subPropertyOf ?parent }
+  OPTIONAL {
+    { ?example ?anyProperty ?term } UNION { ?example ?term ?anyValue }
+    FILTER(STRSTARTS(STR(?example), &quot;https://tyttikatariina.github.io/IMPACTO/examples#&quot;))
+  }
+}
+GROUP BY ?order ?term
+ORDER BY ?order</pre></details>
+        <details open><summary>Results</summary><table class="res"><thead><tr><th>term</th><th>label</th><th>parents</th><th>usedInExamples</th></tr></thead><tbody><tr><td>impacto:eu-aiact-FRIANotification</td><td>FRIA Notification</td><td>eu-aiact:FRIA</td><td></td></tr><tr><td>impacto:eu-aiact-FRIANotificationStatus</td><td>FRIA Notification Status</td><td>impacto:eu-aiact-FRIANotification</td><td></td></tr><tr><td>impacto:eu-aiact-FRIANotificationSent</td><td>FRIA Notification Sent</td><td>impacto:eu-aiact-FRIANotificationStatus</td><td></td></tr><tr><td>impacto:eu-aiact-FRIANotificationPending</td><td>FRIA Notification Pending</td><td>impacto:eu-aiact-FRIANotificationStatus</td><td></td></tr><tr><td>eu-aiact:MarketSurveillanceAuthority</td><td>Market Surveillance Authority</td><td>eu-aiact:NationalCompetentAuthority</td><td></td></tr><tr><td>dpv:hasAuthority</td><td>has authority</td><td></td><td></td></tr></tbody></table></details>
+      </section>
+      <section id="cq14">
+        <h4>CQ14: What documentation and tools were used for the FRIA?</h4>
+        <p><b>Law:</b> <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng">AI Act Art. 27(2), 27(4), 27(5)</a>. <b>Query:</b> <a href="sparql/cq14.rq">sparql/cq14.rq</a>. <b>Data:</b> impacto.rdf + example.ttl + DPV 2.3 (dpv, eu-gdpr, eu-aiact, tech).<br>
+          <b>Expected:</b> Every term is found. Answered from the ontology.<br>
+          <b>Result:</b> <span class="pass">Answered</span>: all 7 terms found in IMPACTO or DPV.</p>
+        <details><summary>SPARQL query</summary><pre class="nohighlight">SELECT ?term (COALESCE(SAMPLE(?l), &quot;NOT FOUND&quot;) AS ?label)
+       (GROUP_CONCAT(DISTINCT STR(?parent); separator=&quot; &quot;) AS ?parents)
+       (GROUP_CONCAT(DISTINCT STR(?example); separator=&quot; &quot;) AS ?usedInExamples) WHERE {
+  VALUES (?order ?term) {
+    (1 impacto:usesDocumentation)
+    (2 impacto:eu-aiact-FRIATemplate)
+    (3 impacto:eu-aiact-RightsQuestionnaire)
+    (4 impacto:eu-aiact-AutomatedTool)
+    (5 impacto:eu-aiact-ExistingDPIAInput)
+    (6 impacto:eu-aiact-ReuseOfExistingFRIA)
+    (7 eu-aiact:InstructionForUse)
+  }
+  OPTIONAL { ?term skos:prefLabel ?l . FILTER(LANGMATCHES(LANG(?l), &quot;en&quot;)) }
+  OPTIONAL { ?term skos:broader|rdfs:subPropertyOf ?parent }
+  OPTIONAL {
+    { ?example ?anyProperty ?term } UNION { ?example ?term ?anyValue }
+    FILTER(STRSTARTS(STR(?example), &quot;https://tyttikatariina.github.io/IMPACTO/examples#&quot;))
+  }
+}
+GROUP BY ?order ?term
+ORDER BY ?order</pre></details>
+        <details open><summary>Results</summary><table class="res"><thead><tr><th>term</th><th>label</th><th>parents</th><th>usedInExamples</th></tr></thead><tbody><tr><td>impacto:usesDocumentation</td><td>uses documentation</td><td>dpv:hasContext</td><td></td></tr><tr><td>impacto:eu-aiact-FRIATemplate</td><td>FRIA Template</td><td>eu-aiact:FRIA</td><td></td></tr><tr><td>impacto:eu-aiact-RightsQuestionnaire</td><td>Rights Questionnaire</td><td>impacto:eu-aiact-FRIATemplate</td><td></td></tr><tr><td>impacto:eu-aiact-AutomatedTool</td><td>Automated Tool</td><td>impacto:eu-aiact-FRIATemplate</td><td></td></tr><tr><td>impacto:eu-aiact-ExistingDPIAInput</td><td>Existing DPIA Input</td><td>impacto:eu-aiact-ImpactAssessmentReuse</td><td></td></tr><tr><td>impacto:eu-aiact-ReuseOfExistingFRIA</td><td>Existing FRIA</td><td>impacto:eu-aiact-ImpactAssessmentReuse</td><td></td></tr><tr><td>eu-aiact:InstructionForUse</td><td>Instruction For Use</td><td>tech:Instructions</td><td></td></tr></tbody></table></details>
+      </section>
+    </section>
+
+    <section id="shacl">
+      <h3>SHACL shapes</h3>
+      <p>The shapes in <a href="impacto-shapes.ttl">impacto-shapes.ttl</a> check the ontology (Part A) and records of DPIA and FRIA
+        requirements (Part B). Each message names the competency question and the article that was not met.</p>
+      <table>
+        <thead><tr><th style="width:30%">Shape</th><th>Checks</th><th style="width:28%">Source</th></tr></thead>
+        <tbody>
+<tr><td><code>shapes:IMPACTOTermShape</code></td><td>IMPACTO term documentation</td><td>IMPACTO ontology</td></tr>
+<tr><td><code>shapes:IMPACTOTermProposalShape</code></td><td>IMPACTO term proposal note</td><td>IMPACTO ontology</td></tr>
+<tr><td><code>shapes:DPIARequiredProcessShape</code></td><td>CQ1 DPIA required process</td><td>GDPR Art. 35(1), 35(3), 35(4)</td></tr>
+<tr><td><code>shapes:DPIANotRequiredProcessShape</code></td><td>CQ3 DPIA not required process</td><td>GDPR Art. 35(5)</td></tr>
+<tr><td><code>shapes:DPIANecessityAssessmentShape</code></td><td>CQ1-CQ3 DPIA necessity assessment</td><td>GDPR Art. 35(1), 35(2), 35(4), 35(5)</td></tr>
+<tr><td><code>shapes:DPIAAdviceOfDPOShape</code></td><td>CQ2 Advice of the data protection officer</td><td>GDPR Art. 35(2)</td></tr>
+<tr><td><code>shapes:FRIARequiredProcessShape</code></td><td>CQ8 FRIA required process</td><td>AI Act Art. 27(1)</td></tr>
+<tr><td><code>shapes:FRIANotRequiredProcessShape</code></td><td>CQ9 FRIA not required process</td><td>AI Act Art. 27(1)</td></tr>
+<tr><td><code>shapes:FRIANecessityAssessmentShape</code></td><td>CQ8-CQ10 FRIA necessity assessment</td><td>AI Act Art. 2, Art. 27(1)</td></tr>
+        </tbody>
+      </table>
+      <p>The negative test file <a href="tests/example-invalid.ttl">tests/example-invalid.ttl</a> breaks each requirement on purpose.
+        The shapes report the following, which shows that each shape detects the missing or wrong information:</p>
+      <details><summary>Validation report for tests/example-invalid.ttl</summary>
+        <table class="res"><thead><tr><th>Focus node</th><th>Severity</th><th>Message</th></tr></thead><tbody>
+<tr><td>ex:P1</td><td>Violation</td><td>CQ1: the impact assessment of this process must contain a DPIA necessity assessment with status eu-gdpr:DPIARequired.</td></tr>
+<tr><td>ex:P1</td><td>Violation</td><td>CQ2: a process that requires a DPIA must have a data controller.</td></tr>
+<tr><td>ex:P1</td><td>Violation</td><td>CQ4: a process that requires a DPIA must state its jurisdiction.</td></tr>
+<tr><td>ex:P2</td><td>Violation</td><td>CQ3: the impact assessment of this process must contain a DPIA necessity assessment with status eu-gdpr:DPIANotRequired.</td></tr>
+<tr><td>ex:P2-Necessity</td><td>Violation</td><td>CQ1/CQ3: the DPIA necessity assessment must give its justification (the GDPR provision or list condition).</td></tr>
+<tr><td>ex:P2-Necessity</td><td>Violation</td><td>CQ1/CQ3: the DPIA necessity assessment must have status eu-gdpr:DPIARequired or eu-gdpr:DPIANotRequired.</td></tr>
+<tr><td>ex:P2-Necessity</td><td>Violation</td><td>CQ2: the controller is responsible for the DPIA (Art. 35(1)).</td></tr>
+<tr><td>ex:P3-Necessity</td><td>Warning</td><td>CQ2: the controller has no data protection officer; where one is designated, the controller must seek their advice (Art. 35(2)).</td></tr>
+<tr><td>ex:P4</td><td>Violation</td><td>CQ8/CQ9: Art. 27(1) excludes high-risk AI systems in the area of Annex III point 2 (critical infrastructure); this process should be a FRIA not required process with status impacto:eu-aiact-FRIAExempt.</td></tr>
+<tr><td>ex:P4</td><td>Violation</td><td>CQ8: the deployer must be a body governed by public law or a private entity providing public services, or the system must be referred to in Annex III point 5(b) or 5(c).</td></tr>
+<tr><td>ex:P4-FRIANecessity</td><td>Violation</td><td>CQ10: the FRIA requirement applies in the EU; the necessity assessment must state loc:EU.</td></tr>
+<tr><td>ex:P4-FRIANecessity</td><td>Violation</td><td>CQ8/CQ9: the FRIA necessity assessment must give its justification (e.g. the Annex III point).</td></tr>
+<tr><td>ex:P4-FRIANecessity</td><td>Violation</td><td>CQ8: the deployer is responsible for the FRIA (Art. 27(1)).</td></tr>
+<tr><td>ex:P5</td><td>Violation</td><td>CQ9: the impact assessment of this process must contain a FRIA necessity assessment with status impacto:eu-aiact-FRIANotRequired or impacto:eu-aiact-FRIAExempt.</td></tr>
+        </tbody></table>
+      </details>
+    </section>
+
+    <section id="run">
+      <h3>Running the evaluation</h3>
+      <p>With <a href="https://jena.apache.org/">Apache Jena</a> for SPARQL and <a href="https://github.com/RDFLib/pySHACL">pySHACL</a> for SHACL:</p>
+      <pre class="nohighlight">
+# answer a competency question (dpv.ttl, eu-gdpr.ttl, eu-aiact.ttl and tech.ttl are the DPV 2.3 modules from https://w3id.org/dpv)
+arq --data impacto.rdf --data example.ttl --data dpv.ttl --data eu-gdpr.ttl --data eu-aiact.ttl --data tech.ttl --query sparql/cq01.rq
+arq --data impacto.rdf --data example.ttl --data dpv.ttl --data eu-gdpr.ttl --data eu-aiact.ttl --data tech.ttl --data DPIARequiredConditions.ttl --query sparql/cq04.rq
+
+# validate the ontology, the examples, and the negative test
+pyshacl -s impacto-shapes.ttl -a impacto.rdf
+pyshacl -s impacto-shapes.ttl -a impacto.rdf example.ttl
+pyshacl -s impacto-shapes.ttl -a impacto.rdf tests/example-invalid.ttl</pre>
+    </section>
+  </section>
+
+  <section id="files">
+    <h2>Files</h2>
+    <table>
+      <thead><tr><th style="width:30%">File</th><th>Content</th></tr></thead>
+      <tbody>
+        <tr><td><a href="impacto.rdf">impacto.rdf</a></td><td>IMPACTO in RDF/XML.</td></tr>
+        <tr><td><a href="impacto.jsonld">impacto.jsonld</a></td><td>IMPACTO in JSON-LD (the same triples as the RDF/XML).</td></tr>
+        <tr><td><a href="example.ttl">example.ttl</a></td><td>The three examples (EX1–EX3).</td></tr>
+        <tr><td><a href="https://github.com/tyttikatariina/IMPACTO/tree/main/sparql">sparql/cq01.rq … cq14.rq</a></td><td>One SPARQL query per competency question.</td></tr>
+        <tr><td><a href="impacto-shapes.ttl">impacto-shapes.ttl</a></td><td>SHACL shapes for the ontology and for impact assessment records.</td></tr>
+        <tr><td><a href="tests/example-invalid.ttl">tests/example-invalid.ttl</a></td><td>Negative test data for the shapes.</td></tr>
+        <tr><td><a href="DPIARequiredConditions.ttl">DPIARequiredConditions.ttl</a></td><td>DPIA Required list conditions of the EU/EEA Member States, used by CQ4.</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+</body>
+</html>
