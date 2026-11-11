@@ -1,0 +1,1113 @@
+@prefix annex3: <https://tyttikatariina.github.io/HAPT/AnnexIII#> .
+@prefix dpv: <https://w3id.org/dpv#> .
+@prefix pd: <https://w3id.org/dpv/pd#> .
+@prefix tech: <https://w3id.org/dpv/tech#> .
+@prefix ai: <https://w3id.org/dpv/ai#> .
+@prefix risk: <https://w3id.org/dpv/risk#> .
+@prefix loc: <https://w3id.org/dpv/loc#> .
+@prefix eu-gdpr: <https://w3id.org/dpv/legal/eu/gdpr#> .
+@prefix eu-aiact: <https://w3id.org/dpv/legal/eu/aiact#> .
+@prefix sector-education: <https://w3id.org/dpv/sector/education#> .
+@prefix sector-finance: <https://w3id.org/dpv/sector/finance#> .
+@prefix sector-health: <https://w3id.org/dpv/sector/health#> .
+@prefix sector-law: <https://w3id.org/dpv/sector/law#> .
+@prefix vair: <https://w3id.org/vair#> .
+@prefix impacto: <https://tyttikatariina.github.io/IMPACTO/#> .
+@prefix hapt: <https://tyttikatariina.github.io/HAPT/#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix at: <https://w3id.org/dpv/legal/at#> .
+@prefix at-gdpr: <https://w3id.org/dpv/legal/eu/at-gdpr#> .
+@prefix be: <https://w3id.org/dpv/legal/be#> .
+@prefix bg: <https://w3id.org/dpv/legal/bg#> .
+@prefix cy: <https://w3id.org/dpv/legal/cy#> .
+@prefix cz: <https://w3id.org/dpv/legal/cz#> .
+@prefix de: <https://w3id.org/dpv/legal/de#> .
+@prefix dk: <https://w3id.org/dpv/legal/dk#> .
+@prefix ee: <https://w3id.org/dpv/legal/ee#> .
+@prefix es: <https://w3id.org/dpv/legal/es#> .
+@prefix fi: <https://w3id.org/dpv/legal/fi#> .
+@prefix fr: <https://w3id.org/dpv/legal/fr#> .
+@prefix gr: <https://w3id.org/dpv/legal/gr#> .
+@prefix hr: <https://w3id.org/dpv/legal/hr#> .
+@prefix hu: <https://w3id.org/dpv/legal/hu#> .
+@prefix ie: <https://w3id.org/dpv/legal/ie#> .
+@prefix is_: <https://w3id.org/dpv/legal/is#> .
+@prefix it: <https://w3id.org/dpv/legal/it#> .
+@prefix li: <https://w3id.org/dpv/legal/li#> .
+@prefix lt: <https://w3id.org/dpv/legal/lt#> .
+@prefix lu: <https://w3id.org/dpv/legal/lu#> .
+@prefix lv: <https://w3id.org/dpv/legal/lv#> .
+@prefix mt: <https://w3id.org/dpv/legal/mt#> .
+@prefix nl: <https://w3id.org/dpv/legal/nl#> .
+@prefix no: <https://w3id.org/dpv/legal/no#> .
+@prefix pl: <https://w3id.org/dpv/legal/pl#> .
+@prefix pt: <https://w3id.org/dpv/legal/pt#> .
+@prefix ro: <https://w3id.org/dpv/legal/ro#> .
+@prefix se: <https://w3id.org/dpv/legal/se#> .
+@prefix si: <https://w3id.org/dpv/legal/si#> .
+@prefix sk: <https://w3id.org/dpv/legal/sk#> .
+
+
+
+annex3:C1a a eu-aiact:HighRiskAISystem-AnnexIII-1-a ;
+    dct:identifier "1a" ;
+    skos:definition "1. Biometrics, insofar as their use is permitted under relevant Union or national law: (a) Remote biometric identification systems. This shall not include AI systems intended to be used for biometric verification whose sole purpose is to confirm that a specific natural person is the person he or she claims to be;"@en ;
+    dpv:hasPurpose hapt:dpv-Identification ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    ai:hasCapability ai:RemoteBiometricIdentification ;
+    dpv:hasPersonalData eu-gdpr:BiometricData ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    dpv:isNotApplicableFor eu-aiact:BiometricVerification ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, at-gdpr:C11, be:C11, bg:C11, hr:C11, cz:C11, dk:C11, ee:C11, fi:C11, fr:C11, de:C11, gr:C11, hu:C11, is_:C11, ie:C11, lv:C11, li:C11, lt:C11, lu:C11, mt:C11, nl:C11, no:C11, pl:C11, pt:C11, sk:C11, si:C11, es:C11 ;
+    skos:note "DPIA required by member states: AT BE BG HR CZ DK EE FI FR DE GR HU IS IE LV LI LT LU MT NL NO PL PT SK SI ES (Biometrics)"@en ;
+    dct:source "AI Act Annex III 1(a)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C1b a eu-aiact:HighRiskAISystem-AnnexIII-1-b ;
+    dct:identifier "1b" ;
+    skos:definition "1. Biometrics, insofar as their use is permitted under relevant Union or national law: (b) AI systems intended to be used for biometric categorisation, according to sensitive or protected attributes or characteristics based on the inference of those attributes or characteristics;"@en ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:hasProcessing dpv:Infer, eu-gdpr:Profiling ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    ai:hasCapability ai:BiometricCategorisation ;
+    dpv:hasPersonalData eu-gdpr:BiometricData, dpv:SensitivePersonalData ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, eu-gdpr:C4a, at-gdpr:C11, be:C11, bg:C11, hr:C11, cz:C11, dk:C11, ee:C11, fi:C11, fr:C11, de:C11, gr:C11, hu:C11, is_:C11, ie:C11, lv:C11, li:C11, lt:C11, lu:C11, mt:C11, nl:C11, no:C11, pl:C11, pt:C11, sk:C11, si:C11, es:C11 ;
+    skos:note "DPIA required by member states: AT BE BG HR CZ DK EE FI FR DE GR HU IS IE LV LI LT LU MT NL NO PL PT SK SI ES (Biometrics)"@en ;
+    dct:source "AI Act Annex III 1(b)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C1c a eu-aiact:HighRiskAISystem-AnnexIII-1-c ;
+    dct:identifier "1c" ;
+    skos:definition "1. Biometrics, insofar as their use is permitted under relevant Union or national law: (c) AI systems intended to be used for emotion recognition."@en ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    ai:hasCapability ai:EmotionRecognition ;
+    dpv:hasPersonalData eu-gdpr:BiometricData, pd:Emotion ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, at-gdpr:C11, be:C11, bg:C11, hr:C11, cz:C11, dk:C11, ee:C11, fi:C11, fr:C11, de:C11, gr:C11, hu:C11, is_:C11, ie:C11, lv:C11, li:C11, lt:C11, lu:C11, mt:C11, nl:C11, no:C11, pl:C11, pt:C11, sk:C11, si:C11, es:C11 ;
+    skos:note "DPIA required by member states: AT BE BG HR CZ DK EE FI FR DE GR HU IS IE LV LI LT LU MT NL NO PL PT SK SI ES (Biometrics)"@en ;
+    dct:source "AI Act Annex III 1(c)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C2a a eu-aiact:HighRiskAISystem-AnnexIII-2 ;
+    dct:identifier "2a" ;
+    skos:definition "2. Critical infrastructure: (a) AI systems intended to be used as safety components in the management and operation of critical digital infrastructure, road traffic and the supply of water, gas, heating and electricity."@en ;
+    dpv:hasSector eu-aiact:CriticalInfrastructureSector ;
+    dpv:hasPurpose hapt:dpv-CriticalDigitalInfrastructureManagement, hapt:dpv-CriticalDigitalInfrastructureOperation, hapt:dpv-RoadTrafficManagement, hapt:dpv-RoadTrafficOperation, hapt:dpv-WaterSupplyManagement, hapt:dpv-WaterSupplyOperation, hapt:dpv-GasSupplyManagement, hapt:dpv-GasSupplyOperation, hapt:dpv-HeatingSupplyManagement, hapt:dpv-HeatingSupplyOperation, hapt:dpv-ElectricitySupplyManagement, hapt:dpv-ElectricitySupplyOperation ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:isImplementedUsingTechnology ai:AISystem, eu-aiact:SafetyComponent ;
+    tech:hasDeployer hapt:dpv-CriticalInfrastructureOperator ;
+    hapt:eu-gdpr-hasDPIARequiredCondition at:C32, cz:C32, dk:C32, de:C32, gr:C32 ;
+    skos:note "DPIA required by member states: AT CZ DK DE GR (Use of AI in processing)"@en ;
+    dct:source "AI Act Annex III 2(a)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C2a-1 a eu-aiact:HighRiskAISystem-AnnexIII-2 ;
+    dct:identifier "2a.1." ;
+    skos:definition "A use case developed from AI Act Annex III point 2(a) in which the AI system involves purpose: controlling safety of critical digital infrastructure / road traffic / supply of water, gas, heating, electricity; technology: AI, smart meters; deployer: critical infrastructure operations / management."@en ;
+    skos:broader annex3:C2a ;
+    dpv:hasSector eu-aiact:CriticalInfrastructureSector ;
+    dpv:hasPurpose hapt:dpv-CriticalDigitalInfrastructureManagement, hapt:dpv-CriticalDigitalInfrastructureOperation, hapt:dpv-RoadTrafficManagement, hapt:dpv-RoadTrafficOperation, hapt:dpv-WaterSupplyManagement, hapt:dpv-WaterSupplyOperation, hapt:dpv-GasSupplyManagement, hapt:dpv-GasSupplyOperation, hapt:dpv-HeatingSupplyManagement, hapt:dpv-HeatingSupplyOperation, hapt:dpv-ElectricitySupplyManagement, hapt:dpv-ElectricitySupplyOperation ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:isImplementedUsingTechnology ai:AISystem, hapt:tech-SmartMeter, eu-aiact:SafetyComponent ;
+    tech:hasDeployer hapt:dpv-CriticalInfrastructureOperator ;
+    hapt:eu-gdpr-hasDPIARequiredCondition hu:C23, pl:C23, ro:C23, at:C32, cz:C32, dk:C32, de:C32, gr:C32 ;
+    skos:note "DPIA required by member states: HU, PL, RO (smart meters), AT CZ DK DE GR (Use of AI in processing)"@en ;
+    dct:source "AI Act Annex III 2(a)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C2a-2 a eu-aiact:HighRiskAISystem-AnnexIII-2 ;
+    dct:identifier "2a.2." ;
+    skos:definition "A use case developed from AI Act Annex III point 2(a) in which the AI system involves purpose: controlling safety of critical digital infrastructure / road traffic / supply of water, gas, heating, electricity; technology: AI, road traffic smart video analysis system; deployer: critical infrastructure operations / management."@en ;
+    skos:broader annex3:C2a ;
+    dpv:hasSector eu-aiact:CriticalInfrastructureSector ;
+    dpv:hasPurpose hapt:dpv-CriticalDigitalInfrastructureManagement, hapt:dpv-CriticalDigitalInfrastructureOperation, hapt:dpv-RoadTrafficManagement, hapt:dpv-RoadTrafficOperation, hapt:dpv-WaterSupplyManagement, hapt:dpv-WaterSupplyOperation, hapt:dpv-GasSupplyManagement, hapt:dpv-GasSupplyOperation, hapt:dpv-HeatingSupplyManagement, hapt:dpv-HeatingSupplyOperation, hapt:dpv-ElectricitySupplyManagement, hapt:dpv-ElectricitySupplyOperation ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:isImplementedUsingTechnology ai:AISystem, hapt:tech-SmartVideoAnalysisSystem, eu-aiact:SafetyComponent ;
+    tech:hasDeployer hapt:dpv-CriticalInfrastructureOperator ;
+    hapt:eu-gdpr-hasDPIARequiredCondition cy:C49, at:C43a, at:C43c, cy:C43a, cy:C43c, at:C32, cz:C32, dk:C32, de:C32, gr:C32 ;
+    skos:note "DPIA required by member states: AT CY (road traffic analysis) AT CZ DK DE GR (Use of AI in processing)"@en ;
+    dct:source "AI Act Annex III 2(a)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C2a-3 a eu-aiact:HighRiskAISystem-AnnexIII-2 ;
+    dct:identifier "2a.3." ;
+    skos:definition "A use case developed from AI Act Annex III point 2(a) in which the AI system involves purpose: controlling safety of critical digital infrastructure / road traffic / supply of water, gas, heating, electricity; technology: AI, public transport monitoring system; deployer: critical infrastructure operations / management."@en ;
+    skos:broader annex3:C2a ;
+    dpv:hasSector eu-aiact:CriticalInfrastructureSector ;
+    dpv:hasPurpose hapt:dpv-CriticalDigitalInfrastructureManagement, hapt:dpv-CriticalDigitalInfrastructureOperation, hapt:dpv-RoadTrafficManagement, hapt:dpv-RoadTrafficOperation, hapt:dpv-WaterSupplyManagement, hapt:dpv-WaterSupplyOperation, hapt:dpv-GasSupplyManagement, hapt:dpv-GasSupplyOperation, hapt:dpv-HeatingSupplyManagement, hapt:dpv-HeatingSupplyOperation, hapt:dpv-ElectricitySupplyManagement, hapt:dpv-ElectricitySupplyOperation ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:isImplementedUsingTechnology ai:AISystem, hapt:tech-PublicTransportMonitoringSystem, eu-aiact:SafetyComponent ;
+    tech:hasDeployer hapt:dpv-CriticalInfrastructureOperator ;
+    hapt:eu-gdpr-hasDPIARequiredCondition at:C32, cz:C32, dk:C32, de:C32, gr:C32 ;
+    skos:note "DPIA required by member states: AT CZ DK DE GR (Use of AI in processing) RO SK (public transport)"@en ;
+    skos:editorialNote "No condition found in DPIARequiredConditions.ttl for: Public transport (RO, SK)"@en ;
+    dct:source "AI Act Annex III 2(a)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C3a a eu-aiact:HighRiskAISystem-AnnexIII-3-a ;
+    dct:identifier "3a" ;
+    skos:definition "3. Education and vocational training: (a) AI systems intended to be used to determine access or admission or to assign natural persons to educational and vocational training institutions at all level"@en ;
+    dpv:hasSector eu-aiact:EducationSector ;
+    dpv:hasPurpose sector-education:StudentAdmissionScreening, sector-education:StudentInstituteAllocation ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:hasContext dpv:AutomatedDecisionMaking ;
+    dpv:hasProcessing eu-gdpr:Profiling ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    tech:hasDeployer dpv:EducationalOrganisation, hapt:dpv-VocationalTrainingInstitution ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, eu-gdpr:C6, eu-gdpr:C8a, eu-gdpr:C4a, at:C32, cz:C32, dk:C32, de:C32, gr:C32, at:C48a, at:C48b ;
+    skos:note "DPIA required by member states: AT CZ DK DE GR (Use of AI in processing) AT DE LV ES (Assessing or classfying of people)"@en ;
+    skos:editorialNote "No condition found in DPIARequiredConditions.ttl for: Assessing or classifying people (DE, LV, ES)"@en ;
+    dct:source "AI Act Annex III 3(a)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C3a-1 a eu-aiact:HighRiskAISystem-AnnexIII-3-a ;
+    dct:identifier "3a.1." ;
+    skos:definition "A use case developed from AI Act Annex III point 3(a) in which the AI system involves purpose: determine access/admission, assign persons (to institutions); processing context: assessing or classifying natural persons, systematic assessment of skills / competences / outcomes of tests, mental health, development; technology: AI; AI or data subjects: natural persons; deployer: educational and vocational training institutions."@en ;
+    skos:broader annex3:C3a ;
+    dpv:hasSector eu-aiact:EducationSector ;
+    dpv:hasPurpose sector-education:StudentAdmissionScreening, sector-education:StudentInstituteAllocation ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:hasContext dpv:EvaluationOfIndividuals, hapt:dpv-ClassificationOfIndividuals, hapt:eu-gdpr-Systematic ;
+    dpv:hasProcessing dpv:Assess ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasPersonalData hapt:pd-Skills, hapt:pd-Competency, hapt:pd-AssessmentOutcome, pd:MentalHealth, hapt:pd-PersonalDevelopment ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    tech:hasDeployer dpv:EducationalOrganisation, hapt:dpv-VocationalTrainingInstitution ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, eu-gdpr:C6, at:C48a, at:C48b, at:C32, cz:C32, dk:C32, de:C32, gr:C32 ;
+    skos:note "DPIA required by member states: AT DE LV ES (Assessing or classfying of people) AT CZ DK DE GR (Use of AI in processing)"@en ;
+    skos:editorialNote "No condition found in DPIARequiredConditions.ttl for: Assessing or classifying people (DE, LV, ES)"@en ;
+    dct:source "AI Act Annex III 3(a)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C3a-2 a eu-aiact:HighRiskAISystem-AnnexIII-3-a ;
+    dct:identifier "3a.2." ;
+    skos:definition "A use case developed from AI Act Annex III point 3(a) in which the AI system involves purpose: determine access/admission, assign persons (to institutions); processing context: (automated) decision making, profiling, assessing or classifying natural persons, systematic assessment of skills / competences / outcomes of tests, mental health, development; technology: AI; AI or data subjects: students, minors, vulnerable persons; deployer: educational and vocational training institutions."@en ;
+    skos:broader annex3:C3a ;
+    dpv:hasSector eu-aiact:EducationSector ;
+    dpv:hasPurpose sector-education:StudentAdmissionScreening, sector-education:StudentInstituteAllocation ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:hasContext dpv:AutomatedDecisionMaking, dpv:EvaluationOfIndividuals, hapt:dpv-ClassificationOfIndividuals, hapt:eu-gdpr-Systematic ;
+    dpv:hasProcessing eu-gdpr:Profiling, dpv:Assess ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasPersonalData hapt:pd-Skills, hapt:pd-Competency, hapt:pd-AssessmentOutcome, pd:MentalHealth, hapt:pd-PersonalDevelopment ;
+    dpv:hasHumanSubject dpv:Student, dpv:Child, dpv:VulnerableHuman ;
+    tech:hasDeployer dpv:EducationalOrganisation, hapt:dpv-VocationalTrainingInstitution ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, eu-gdpr:C6, eu-gdpr:C8a, eu-gdpr:C4c, hu:C74, at:C26, ie:C26, it:C26, lt:C26, mt:C26, lv:C57h, fi:C96 ;
+    skos:note "DPIA required by member states: student assessment for HU and NL. Minors/ vulnerable= IE, IT, LT, MT, AT"@en ;
+    skos:note "member state processing activity: AT CY CZ DE ES FI FR HU IE IT LV LI LT MT NO PT RO SK SI SE (Vulnerable)"@en ;
+    skos:editorialNote "No condition found in DPIARequiredConditions.ttl for: Student assessment (NL); Vulnerable persons (AT, CY, CZ, DE, ES, FR, HU, IE, IT, LI, LT, MT, NO, PT, RO, SK, SI, SE)"@en ;
+    dct:source "AI Act Annex III 3(a)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C3b a eu-aiact:HighRiskAISystem-AnnexIII-3-b ;
+    dct:identifier "3b" ;
+    skos:definition "3. Education and vocational training: (b) AI systems intended to be used to evaluate learning outcomes, including when those outcomes are used to steer the learning process of natural persons in educational and vocational training institutions at all levels;"@en ;
+    dpv:hasSector eu-aiact:EducationSector ;
+    dpv:hasPurpose sector-education:StudentLearningOutcomeAssessment ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:hasContext hapt:eu-gdpr-Systematic, dpv:EvaluationOfIndividuals, dpv:ScoringOfIndividuals ;
+    dpv:hasProcessing dpv:Assess ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasPersonalData hapt:pd-Skills, hapt:pd-Competency, hapt:pd-AssessmentOutcome, pd:MentalHealth, hapt:pd-PersonalDevelopment ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    tech:hasDeployer dpv:EducationalOrganisation, hapt:dpv-VocationalTrainingInstitution ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, is_:C45a, is_:C45b, is_:C45c, is_:C45d, no:C45a, no:C45b, no:C45c, no:C45d, pl:C45a, pl:C45b, pl:C45c, pl:C45d, cy:C14a, cy:C14b, cy:C14c, cy:C14d, dk:C14a, dk:C14b, dk:C14c, dk:C14d, fi:C14a, fi:C14b, fi:C14c, fi:C14d, fr:C14a, fr:C14b, fr:C14c, fr:C14d, de:C14a, de:C14b, de:C14c, de:C14d, gr:C14a, gr:C14b, gr:C14c, gr:C14d, hu:C14a, hu:C14b, hu:C14c, hu:C14d, is_:C14a, is_:C14b, is_:C14c, is_:C14d, ie:C14a, ie:C14b, ie:C14c, ie:C14d, it:C14a, it:C14b, it:C14c, it:C14d, lv:C14a, lv:C14b, lv:C14c, lv:C14d, li:C14a, li:C14b, li:C14c, li:C14d, lu:C14a, lu:C14b, lu:C14c, lu:C14d, no:C14a, no:C14b, no:C14c, no:C14d, pl:C14a, pl:C14b, pl:C14c, pl:C14d, pt:C14a, pt:C14b, pt:C14c, pt:C14d, ro:C14a, ro:C14b, ro:C14c, ro:C14d, sk:C14a, sk:C14b, sk:C14c, sk:C14d, es:C14a, es:C14b, es:C14c, es:C14d, se:C14a, se:C14b, se:C14c, se:C14d, hu:C74, at:C32, cz:C32, dk:C32, de:C32, gr:C32 ;
+    skos:note "DPIA required by member states: IS NO PL (assessment) CY DK FI FR DE GR HU IS IE IT LV LI LU NO PL PT RO SK ES SE(evaluation or scoring) HU NL (assessing students) AT CZ DK DE GR (Use of AI in Processing)"@en ;
+    skos:editorialNote "No condition found in DPIARequiredConditions.ttl for: Student assessment (NL)"@en ;
+    dct:source "AI Act Annex III 3(b)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C3b-1 a eu-aiact:HighRiskAISystem-AnnexIII-3-b ;
+    dct:identifier "3b.1." ;
+    skos:definition "A use case developed from AI Act Annex III point 3(b) in which the AI system involves purpose: evaluating learning outcomes; processing context: systematic assessment of skills / competences / outcomes of tests, mental health, development, evaluation or scoring; technology: AI; AI or data subjects: students, minors, vulnerable persons; deployer: educational and vocational training institutions."@en ;
+    skos:broader annex3:C3b ;
+    dpv:hasSector eu-aiact:EducationSector ;
+    dpv:hasPurpose sector-education:StudentLearningOutcomeAssessment ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:hasContext hapt:eu-gdpr-Systematic, dpv:EvaluationOfIndividuals, dpv:ScoringOfIndividuals ;
+    dpv:hasProcessing dpv:Assess ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasPersonalData hapt:pd-Skills, hapt:pd-Competency, hapt:pd-AssessmentOutcome, pd:MentalHealth, hapt:pd-PersonalDevelopment ;
+    dpv:hasHumanSubject dpv:Student, dpv:Child, dpv:VulnerableHuman ;
+    tech:hasDeployer dpv:EducationalOrganisation, hapt:dpv-VocationalTrainingInstitution ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, eu-gdpr:C4b, hu:C74, at:C26, ie:C26, it:C26, lt:C26, mt:C26, lv:C57h, fi:C96 ;
+    skos:note "DPIA required by member states: student assessment for HU and NL. Minors/ vulnerable= IE, IT, LT, MT, AT"@en ;
+    skos:note "member state processing activity: AT CY CZ DE ES FI FR HU IE IT LV LI LT MT NO PT RO SK SI SE (Vulnerable)"@en ;
+    skos:editorialNote "No condition found in DPIARequiredConditions.ttl for: Student assessment (NL); Vulnerable persons (AT, CY, CZ, DE, ES, FR, HU, IE, IT, LI, LT, MT, NO, PT, RO, SK, SI, SE)"@en ;
+    dct:source "AI Act Annex III 3(b)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C3c a eu-aiact:HighRiskAISystem-AnnexIII-3-c ;
+    dct:identifier "3c" ;
+    skos:definition "3. Education and vocational training:(c) AI systems intended to be used for the purpose of assessing the appropriate level of education that individual will receive or will be able to access, in the context of/within education and vocational training institution;"@en ;
+    dpv:hasSector eu-aiact:EducationSector ;
+    dpv:hasPurpose hapt:sector-education-EducationLevelAssessment, sector-education:StudentAdmissionScreening ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:hasContext dpv:AutomatedDecisionMaking, dpv:EvaluationOfIndividuals, hapt:dpv-ClassificationOfIndividuals, hapt:eu-gdpr-Systematic ;
+    dpv:hasProcessing eu-gdpr:Profiling, dpv:Assess ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasPersonalData hapt:pd-Skills, hapt:pd-Competency, hapt:pd-AssessmentOutcome, pd:MentalHealth, hapt:pd-PersonalDevelopment ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    tech:hasDeployer dpv:EducationalOrganisation, hapt:dpv-VocationalTrainingInstitution ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, eu-gdpr:C4a, at:C32, cz:C32, dk:C32, de:C32, gr:C32, at:C48a, at:C48b ;
+    skos:note "DPIA required by member states: AT CZ DK DE GR (Use of AI in processing) AT DE LV ES (Assessing or classfying of people)"@en ;
+    skos:editorialNote "No condition found in DPIARequiredConditions.ttl for: Assessing or classifying people (DE, LV, ES)"@en ;
+    dct:source "AI Act Annex III 3(c)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C3c-1 a eu-aiact:HighRiskAISystem-AnnexIII-3-c ;
+    dct:identifier "3c.1." ;
+    skos:definition "A use case developed from AI Act Annex III point 3(c) in which the AI system involves purpose: assessing appropriate level of education, determining access (to education); processing context: (automated) decision making, profiling, assessing or classifying natural persons, systematic assessment of skills / competences / outcomes of tests, mental health, development; technology: AI; AI or data subjects: students, minors, vulnerable persons; deployer: educational and vocational training institutions."@en ;
+    skos:broader annex3:C3c ;
+    dpv:hasSector eu-aiact:EducationSector ;
+    dpv:hasPurpose hapt:sector-education-EducationLevelAssessment, sector-education:StudentAdmissionScreening ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:hasContext dpv:AutomatedDecisionMaking, dpv:EvaluationOfIndividuals, hapt:dpv-ClassificationOfIndividuals, hapt:eu-gdpr-Systematic ;
+    dpv:hasProcessing eu-gdpr:Profiling, dpv:Assess ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasPersonalData hapt:pd-Skills, hapt:pd-Competency, hapt:pd-AssessmentOutcome, pd:MentalHealth, hapt:pd-PersonalDevelopment ;
+    dpv:hasHumanSubject dpv:Student, dpv:Child, dpv:VulnerableHuman ;
+    tech:hasDeployer dpv:EducationalOrganisation, hapt:dpv-VocationalTrainingInstitution ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, eu-gdpr:C4c, hu:C74, at:C26, ie:C26, it:C26, lt:C26, mt:C26, lv:C57h, fi:C96 ;
+    skos:note "DPIA required by member states: student assessment for HU and NL. Minors/ vulnerable= IE, IT, LT, MT, AT"@en ;
+    skos:note "member state processing activity: AT CY CZ DE ES FI FR HU IE IT LV LI LT MT NO PT RO SK SI SE (Vulnerable)"@en ;
+    skos:editorialNote "No condition found in DPIARequiredConditions.ttl for: Student assessment (NL); Vulnerable persons (AT, CY, CZ, DE, ES, FR, HU, IE, IT, LI, LT, MT, NO, PT, RO, SK, SI, SE)"@en ;
+    dct:source "AI Act Annex III 3(c)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C3d a eu-aiact:HighRiskAISystem-AnnexIII-3-d ;
+    dct:identifier "3d" ;
+    skos:definition "3. Education and vocational training:(d) AI systems intended to be used for monitoring and detecting prohibited behaviour of students during tests in the context of/within education and vocational training institutions."@en ;
+    dpv:hasSector eu-aiact:EducationSector ;
+    dpv:hasPurpose sector-education:StudentProctoring, sector-education:StudentCheatingAssessment, hapt:dpv-Monitoring, hapt:dpv-ControlHumanActivity ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:hasContext hapt:dpv-MonitoringIndividuals ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasPersonalData pd:Behavioural, pd:Personality ;
+    dpv:hasLocation hapt:loc-School ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    tech:hasDeployer dpv:EducationalOrganisation, hapt:dpv-VocationalTrainingInstitution ;
+    hapt:eu-gdpr-hasDPIARequiredCondition at:C41, be:C41, de:C41, be:C56, at:C32, cz:C32, dk:C32, de:C32, gr:C32 ;
+    skos:note "DPIA required by member states: BE AT CZ DE GR LT ES IS NO LV NL (Behavioural data) AT CZ DK DE GR (Use of AI in processing)"@en ;
+    skos:editorialNote "No condition found in DPIARequiredConditions.ttl for: Behavioural data (CZ, GR, LT, ES, IS, NO, LV, NL)"@en ;
+    dct:source "AI Act Annex III 3(d)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C3d-1 a eu-aiact:HighRiskAISystem-AnnexIII-3-d ;
+    dct:identifier "3d.1." ;
+    skos:definition "A use case developed from AI Act Annex III point 3(d) in which the AI system involves purpose: monitoring students during tests, detecting prohibited behaviour of students during tests; processing context: monitoring, surveillance, behavioural data, monitoring or controlling data subjects, electronic monitoring of a school, supervision of the data subject; technology: AI; special categories of personal data: behavioural data, behaviour or other personal aspects of natural persons; AI or data subjects: students, minors, vulnerable persons; deployer: educational and vocational training institutions."@en ;
+    skos:broader annex3:C3d ;
+    dpv:hasSector eu-aiact:EducationSector ;
+    dpv:hasPurpose sector-education:StudentProctoring, sector-education:StudentCheatingAssessment, hapt:dpv-Monitoring, hapt:dpv-ControlHumanActivity ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:hasContext hapt:dpv-MonitoringIndividuals ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasPersonalData pd:Behavioural, pd:Personality ;
+    dpv:hasLocation hapt:loc-School ;
+    dpv:hasHumanSubject dpv:Student, dpv:Child, dpv:VulnerableHuman ;
+    tech:hasDeployer dpv:EducationalOrganisation, hapt:dpv-VocationalTrainingInstitution ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, eu-gdpr:C4b, hu:C74, at:C26, ie:C26, it:C26, lt:C26, mt:C26, lv:C57h, fi:C96 ;
+    skos:note "DPIA required by member states: student assessment for HU and NL. Minors/ vulnerable= IE, IT, LT, MT, AT"@en ;
+    skos:note "member state processing activity: AT CY CZ DE ES FI FR HU IE IT LV LI LT MT NO PT RO SK SI SE (Vulnerable)"@en ;
+    skos:editorialNote "No condition found in DPIARequiredConditions.ttl for: Student assessment (NL); Vulnerable persons (AT, CY, CZ, DE, ES, FR, HU, IE, IT, LI, LT, MT, NO, PT, RO, SK, SI, SE)"@en ;
+    dct:source "AI Act Annex III 3(d)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C4a a eu-aiact:HighRiskAISystem-AnnexIII-4-a ;
+    dct:identifier "4a" ;
+    skos:definition "4. Employment, workers management and access to self-employment: (a) AI systems intended to be used for recruitment or selection of natural persons, notably to place targeted job advertisements, to analyse and filter job applications, and to evaluate candidates;"@en ;
+    dpv:hasSector eu-aiact:EmploymentSector ;
+    dpv:hasPurpose dpv:RecruitmentManagement, dpv:RecruitmentTargetedAdvertising ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:hasContext dpv:AutomatedDecisionMaking, dpv:EvaluationOfIndividuals, hapt:dpv-ClassificationOfIndividuals, hapt:eu-gdpr-Systematic, dpv:ScoringOfIndividuals ;
+    dpv:hasProcessing eu-gdpr:Profiling, dpv:Assess ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasPersonalData hapt:pd-Skills, hapt:pd-Competency, hapt:pd-AssessmentOutcome ;
+    dpv:hasHumanSubject dpv:NaturalPerson, dpv:JobApplicant, vair:PotentialJobApplicant ;
+    tech:hasDeployer hapt:dpv-Employer, hapt:dpv-Recruiter ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, eu-gdpr:C4a, fr:C75, at:C32, cz:C32, dk:C32, de:C32, gr:C32, ee:C105a, ee:C105b ;
+    skos:note "DPIA required by member states: FR (recruitment) AT CZ DK DE GR (Use of AI in processing) EE (Large Scale Processing that might pose a risk of discrimination with legal consequences or with similar impact (particularly in labor broking services and in assessment/evaluation services having impact on salaries and career)"@en ;
+    dct:source "AI Act Annex III 4(a)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C4b a eu-aiact:HighRiskAISystem-AnnexIII-4-b ;
+    dct:identifier "4b" ;
+    skos:definition "4. Employment, workers management and access to self-employment: (b) AI intended to be used to make decisions affecting terms of the work related relationships, promotion and termination of work-related contractual relationships, to allocate tasks based on individual behaviour or personal traits or characteristics and to monitor and evaluate performance and behaviour of persons in such relationships."@en ;
+    dpv:hasSector eu-aiact:EmploymentSector ;
+    dpv:hasPurpose vair:MakingPromotionDecision, vair:MakingContractTerminationDecision, hapt:dpv-TaskAllocation, dpv:PersonnelMonitoring, dpv:PersonnelPerformanceEvaluation, hapt:dpv-PersonnelBehaviourEvaluation, hapt:dpv-Monitoring, hapt:dpv-ControlHumanActivity, hapt:dpv-CommercialUse, dpv:ServiceProvision, hapt:dpv-ProductDevelopment ;
+    dpv:hasRisk hapt:risk-LegalEffects, hapt:dpv-ContractExclusion, hapt:dpv-ContractSuspension, dpv:ContractTerminated ;
+    dpv:hasContext dpv:AutomatedDecisionMaking, dpv:EvaluationOfIndividuals, dpv:ScoringOfIndividuals ;
+    dpv:hasProcessing eu-gdpr:Profiling, hapt:dpv-Predict ;
+    dpv:hasTechnicalMeasure dpv:ActivityMonitoring ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasPersonalData pd:Behavioural, hapt:pd-WorkingCapacity, pd:Financial, pd:MedicalHealth, pd:Preference, pd:Interest, hapt:pd-Trustworthiness, pd:Location, hapt:pd-LocationRoute ;
+    dpv:hasHumanSubject dpv:NaturalPerson, dpv:Employee ;
+    tech:hasDeployer hapt:dpv-Employer ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, eu-gdpr:C6, eu-gdpr:C8a, eu-gdpr:C4a, at:C32, cz:C32, dk:C32, de:C32, gr:C32, ee:C105a, ee:C105b ;
+    skos:note "DPIA required by member states: AT CZ DK DE GR (Use of AI in processing) EE (Large Scale Processing that might pose a risk of discrimination with legal consequences or with similar impact (particularly in labor broking services and in assessment/evaluation services having impact on salaries and career)"@en ;
+    dct:source "AI Act Annex III 4(b)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C4b-1 a eu-aiact:HighRiskAISystem-AnnexIII-4-b ;
+    dct:identifier "4b.1." ;
+    skos:definition "A use case developed from AI Act Annex III point 4(b) in which the AI system involves purpose: promotion, termination, task allocation, monitoring and evaluating (performance and behaviour); processing context: monitoring of employee activities; technology: AI; special categories of personal data: behavioural data; AI or data subjects: natural persons, employee; deployer: employer."@en ;
+    skos:broader annex3:C4b ;
+    dpv:hasSector eu-aiact:EmploymentSector ;
+    dpv:hasPurpose vair:MakingPromotionDecision, vair:MakingContractTerminationDecision, hapt:dpv-TaskAllocation, dpv:PersonnelMonitoring, dpv:PersonnelPerformanceEvaluation, hapt:dpv-PersonnelBehaviourEvaluation ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:hasTechnicalMeasure dpv:ActivityMonitoring ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasPersonalData pd:Behavioural ;
+    dpv:hasHumanSubject dpv:NaturalPerson, dpv:Employee ;
+    tech:hasDeployer hapt:dpv-Employer ;
+    hapt:eu-gdpr-hasDPIARequiredCondition hr:C16, cy:C16, cz:C16, ee:C16, de:C16, gr:C16, hu:C16, is_:C16, lv:C16, li:C16, lt:C16, lu:C16, mt:C16, nl:C16, no:C16, sk:C16, si:C16, at:C32, cz:C32, dk:C32, de:C32, gr:C32 ;
+    skos:note "DPIA required by member states: BE HR CZ EE DE GR HU IS LV LI LT LU MT NL NO SK CY IT SI ES SE AT (monitoring of employee activities) AT CZ DK DE GR (Use of AI in processing)"@en ;
+    skos:editorialNote "No condition found in DPIARequiredConditions.ttl for: Monitoring of employee activities (BE, IT, ES, SE, AT)"@en ;
+    dct:source "AI Act Annex III 4(b)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C5a a eu-aiact:HighRiskAISystem-AnnexIII-5-a ;
+    dct:identifier "5a" ;
+    skos:definition "5. Access to and enjoyment of essential private services and essential public services and benefits: (a) AI systems intended to be used by public authorities or on behalf of public authorities to evaluate the eligibility of natural persons for essential public assistance benefits and services, including healthcare services, as well as to grant, reduce, revoke, or reclaim such benefits and services;"@en ;
+    dpv:hasSector hapt:dpv-PublicServicesAndBenefits ;
+    dpv:hasPurpose hapt:sector-publicservices-PublicAssistanceEligibilityEvaluation, hapt:sector-publicservices-PublicAssistanceGranting, hapt:sector-publicservices-PublicAssistanceReduction, hapt:sector-publicservices-PublicAssistanceRevocation, hapt:sector-publicservices-PublicAssistanceReclaiming ;
+    dpv:hasRisk hapt:risk-LegalEffects, hapt:risk-ServiceAccessDenied, hapt:risk-ServiceExclusion ;
+    dpv:hasContext dpv:AutomatedDecisionMaking, dpv:EvaluationOfIndividuals, dpv:ScoringOfIndividuals ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasPersonalData eu-gdpr:HealthData ;
+    dpv:hasHumanSubject dpv:NaturalPerson, vair:PublicServicesApplicant, vair:PublicServicesRecipient ;
+    tech:hasDeployer hapt:dpv-PublicAuthority ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, eu-gdpr:C6, eu-gdpr:C8a, eu-gdpr:C2, at:C32, cz:C32, dk:C32, de:C32, gr:C32, nl:C59, pl:C59, cy:C14a, cy:C14b, cy:C14c, cy:C14d, dk:C14a, dk:C14b, dk:C14c, dk:C14d, fi:C14a, fi:C14b, fi:C14c, fi:C14d, fr:C14a, fr:C14b, fr:C14c, fr:C14d, de:C14a, de:C14b, de:C14c, de:C14d, gr:C14a, gr:C14b, gr:C14c, gr:C14d, hu:C14a, hu:C14b, hu:C14c, hu:C14d, is_:C14a, is_:C14b, is_:C14c, is_:C14d, ie:C14a, ie:C14b, ie:C14c, ie:C14d, it:C14a, it:C14b, it:C14c, it:C14d, lv:C14a, lv:C14b, lv:C14c, lv:C14d, li:C14a, li:C14b, li:C14c, li:C14d, lu:C14a, lu:C14b, lu:C14c, lu:C14d, no:C14a, no:C14b, no:C14c, no:C14d, pl:C14a, pl:C14b, pl:C14c, pl:C14d, pt:C14a, pt:C14b, pt:C14c, pt:C14d, ro:C14a, ro:C14b, ro:C14c, ro:C14d, sk:C14a, sk:C14b, sk:C14c, sk:C14d, es:C14a, es:C14b, es:C14c, es:C14d, se:C14a, se:C14b, se:C14c, se:C14d ;
+    skos:note "DPIA required by member states: AT CZ DK DE GR (Use of AI in processing) NL, PL (health data) CY DK FI FR DE GR HU IS IE IT LV LI LU NO PL PT RO SK ES SE(evaluation or scoring)"@en ;
+    dct:source "AI Act Annex III 5(a)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C5b a eu-aiact:HighRiskAISystem-AnnexIII-5-b ;
+    dct:identifier "5b" ;
+    skos:definition "5. Access to and enjoyment of essential private services and essential public services and benefits:(b) AI systems intended to be used to evaluate the creditworthiness of natural persons or establish their credit score , with the exception of AI systems used for the purpose of detecting financial fraud;"@en ;
+    dpv:hasSector hapt:dpv-PublicServicesAndBenefits, vair:PrivateService ;
+    dpv:hasPurpose vair:AssessingCreditworthiness ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:hasProcessing eu-gdpr:Profiling ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    dpv:isNotApplicableFor sector-finance:FraudManagement ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, eu-gdpr:C6, eu-gdpr:C4a, at:C32, cz:C32, dk:C32, de:C32, gr:C32 ;
+    skos:note "DPIA required by member states: AT CZ DK DE GR (Use of AI in processing)"@en ;
+    dct:source "AI Act Annex III 5(b)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C5b-1 a eu-aiact:HighRiskAISystem-AnnexIII-5-b ;
+    dct:identifier "5b.1." ;
+    skos:definition "A use case developed from AI Act Annex III point 5(b) in which the AI system involves purpose: establishing or assessing/evaluating creditworthiness; processing context: evaluation or scoring; technology: AI; AI or data subjects: natural persons."@en ;
+    skos:broader annex3:C5b ;
+    dpv:hasSector hapt:dpv-PublicServicesAndBenefits, vair:PrivateService ;
+    dpv:hasPurpose vair:AssessingCreditworthiness ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:hasContext dpv:EvaluationOfIndividuals, dpv:ScoringOfIndividuals ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition cy:C14a, cy:C14b, cy:C14c, cy:C14d, dk:C14a, dk:C14b, dk:C14c, dk:C14d, fi:C14a, fi:C14b, fi:C14c, fi:C14d, fr:C14a, fr:C14b, fr:C14c, fr:C14d, de:C14a, de:C14b, de:C14c, de:C14d, gr:C14a, gr:C14b, gr:C14c, gr:C14d, hu:C14a, hu:C14b, hu:C14c, hu:C14d, is_:C14a, is_:C14b, is_:C14c, is_:C14d, ie:C14a, ie:C14b, ie:C14c, ie:C14d, it:C14a, it:C14b, it:C14c, it:C14d, lv:C14a, lv:C14b, lv:C14c, lv:C14d, li:C14a, li:C14b, li:C14c, li:C14d, lu:C14a, lu:C14b, lu:C14c, lu:C14d, no:C14a, no:C14b, no:C14c, no:C14d, pl:C14a, pl:C14b, pl:C14c, pl:C14d, pt:C14a, pt:C14b, pt:C14c, pt:C14d, ro:C14a, ro:C14b, ro:C14c, ro:C14d, sk:C14a, sk:C14b, sk:C14c, sk:C14d, es:C14a, es:C14b, es:C14c, es:C14d, se:C14a, se:C14b, se:C14c, se:C14d, at:C32, cz:C32, dk:C32, de:C32, gr:C32 ;
+    skos:note "DPIA required by member states: CY DK FI FR DE GR HU IS IE IT LV LI LU NO PL PT RO SK ES SE(evaluation or scoring) AT CZ DK DE GR (Use of AI in processing)"@en ;
+    dct:source "AI Act Annex III 5(b)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C5b-2 a eu-aiact:HighRiskAISystem-AnnexIII-5-b ;
+    dct:identifier "5b.2." ;
+    skos:definition "A use case developed from AI Act Annex III point 5(b) in which the AI system involves purpose: establishing or assessing/evaluating creditworthiness; processing context: assessing or classifying natural persons; technology: AI; AI or data subjects: natural persons."@en ;
+    skos:broader annex3:C5b ;
+    dpv:hasSector hapt:dpv-PublicServicesAndBenefits, vair:PrivateService ;
+    dpv:hasPurpose vair:AssessingCreditworthiness ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:hasContext dpv:EvaluationOfIndividuals, hapt:dpv-ClassificationOfIndividuals ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    hapt:eu-gdpr-hasDPIARequiredCondition at:C48a, at:C48b, hu:C48a, hu:C48b, pl:C48a, pl:C48b, at:C32, cz:C32, dk:C32, de:C32, gr:C32 ;
+    skos:note "DPIA required by member states: PL AT HU (asssessing or classifying people) AT CZ DK DE GR (Use of AI in processing)"@en ;
+    dct:source "AI Act Annex III 5(b)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C5b-3 a eu-aiact:HighRiskAISystem-AnnexIII-5-b ;
+    dct:identifier "5b.3." ;
+    skos:definition "A use case developed from AI Act Annex III point 5(b) in which the AI system involves purpose: establishing or assessing/evaluating creditworthiness; processing context: profiling, assessing or classifying natural persons, evaluation or scoring, legal effects / processing resulting in legal effects, financial data, credit score; technology: AI; AI or data subjects: vulnerable persons."@en ;
+    skos:broader annex3:C5b ;
+    dpv:hasSector hapt:dpv-PublicServicesAndBenefits, vair:PrivateService ;
+    dpv:hasPurpose vair:AssessingCreditworthiness ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:hasContext dpv:EvaluationOfIndividuals, hapt:dpv-ClassificationOfIndividuals, dpv:ScoringOfIndividuals ;
+    dpv:hasProcessing eu-gdpr:Profiling ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasPersonalData pd:Financial, pd:CreditScore ;
+    dpv:hasHumanSubject dpv:VulnerableHuman ;
+    hapt:eu-gdpr-hasDPIARequiredCondition at:C32, cz:C32, dk:C32, de:C32, gr:C32, lv:C57h, fi:C96 ;
+    skos:note "DPIA required by member states: AT CZ DK DE GR (Use of AI in processing)"@en ;
+    skos:note "member state processing activity: AT CY CZ DE ES FI FR HU IE IT LV LI LT MT NO PT RO SK SI SE (Vulnerable)"@en ;
+    skos:editorialNote "No condition found in DPIARequiredConditions.ttl for: Vulnerable persons (AT, CY, CZ, DE, ES, FR, HU, IE, IT, LI, LT, MT, NO, PT, RO, SK, SI, SE)"@en ;
+    dct:source "AI Act Annex III 5(b)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C5b-4 a eu-aiact:HighRiskAISystem-AnnexIII-5-b ;
+    dct:identifier "5b.4." ;
+    skos:definition "A use case developed from AI Act Annex III point 5(b) in which the AI system involves purpose: establishing or assessing/evaluating creditworthiness; processing context: financial data; technology: AI; AI or data subjects: natural persons."@en ;
+    skos:broader annex3:C5b ;
+    dpv:hasSector hapt:dpv-PublicServicesAndBenefits, vair:PrivateService ;
+    dpv:hasPurpose vair:AssessingCreditworthiness ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasPersonalData pd:Financial ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    hapt:eu-gdpr-hasDPIARequiredCondition at:C32, cz:C32, dk:C32, de:C32, gr:C32 ;
+    skos:note "DPIA required by member states: AT CZ DK DE GR (Use of AI in processing)"@en ;
+    dct:source "AI Act Annex III 5(b)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C5b-5 a eu-aiact:HighRiskAISystem-AnnexIII-5-b ;
+    dct:identifier "5b.5." ;
+    skos:definition "A use case developed from AI Act Annex III point 5(b) in which the AI system involves purpose: establishing or assessing/evaluating creditworthiness; processing context: credit score; technology: AI; AI or data subjects: natural persons."@en ;
+    skos:broader annex3:C5b ;
+    dpv:hasSector hapt:dpv-PublicServicesAndBenefits, vair:PrivateService ;
+    dpv:hasPurpose vair:AssessingCreditworthiness ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasPersonalData pd:CreditScore ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    hapt:eu-gdpr-hasDPIARequiredCondition at:C32, cz:C32, dk:C32, de:C32, gr:C32 ;
+    skos:note "DPIA required by member states: AT CZ DK DE GR (Use of AI in processing)"@en ;
+    dct:source "AI Act Annex III 5(b)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C5c a eu-aiact:HighRiskAISystem-AnnexIII-5-c ;
+    dct:identifier "5c" ;
+    skos:definition "5. Access to and enjoyment of essential private services and essential public services and benefits:(c) AI systems intended to be used for risk assessment and pricing in relation to natural persons in the case of life and health insurance."@en ;
+    dpv:hasSector hapt:dpv-PublicServicesAndBenefits, vair:PrivateService ;
+    dpv:hasPurpose vair:LifeInsurancePricing, vair:HealthInsurancePricing, vair:LifeInsuranceRiskAssessment, vair:HealthInsuranceRiskAssessment ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:hasContext dpv:EvaluationOfIndividuals, hapt:dpv-ClassificationOfIndividuals, dpv:ScoringOfIndividuals ;
+    dpv:hasProcessing eu-gdpr:Profiling ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition pl:C31a, pl:C31b, at:C32, cz:C32, dk:C32, de:C32, gr:C32 ;
+    skos:note "DPIA required by member states: AT HU PL (insurance purposes) AT CZ DK DE GR (Use of AI in processing)"@en ;
+    skos:editorialNote "No condition found in DPIARequiredConditions.ttl for: Insurance purposes (AT, HU)"@en ;
+    dct:source "AI Act Annex III 5(c)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C5c-1 a eu-aiact:HighRiskAISystem-AnnexIII-5-c ;
+    dct:identifier "5c.1." ;
+    skos:definition "A use case developed from AI Act Annex III point 5(c) in which the AI system involves purpose: life and health insurance pricing and risk assessment; processing context: profiling, assessing or classifying natural persons, evaluation or scoring, financial data; technology: AI; AI or data subjects: vulnerable persons."@en ;
+    skos:broader annex3:C5c ;
+    dpv:hasSector hapt:dpv-PublicServicesAndBenefits, vair:PrivateService ;
+    dpv:hasPurpose vair:LifeInsurancePricing, vair:HealthInsurancePricing, vair:LifeInsuranceRiskAssessment, vair:HealthInsuranceRiskAssessment ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:hasContext dpv:EvaluationOfIndividuals, hapt:dpv-ClassificationOfIndividuals, dpv:ScoringOfIndividuals ;
+    dpv:hasProcessing eu-gdpr:Profiling ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasPersonalData pd:Financial ;
+    dpv:hasHumanSubject dpv:VulnerableHuman ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, eu-gdpr:C6, eu-gdpr:C4c, pl:C31a, pl:C31b, at:C32, cz:C32, dk:C32, de:C32, gr:C32, cy:C14a, cy:C14b, cy:C14c, cy:C14d, dk:C14a, dk:C14b, dk:C14c, dk:C14d, fi:C14a, fi:C14b, fi:C14c, fi:C14d, fr:C14a, fr:C14b, fr:C14c, fr:C14d, de:C14a, de:C14b, de:C14c, de:C14d, gr:C14a, gr:C14b, gr:C14c, gr:C14d, hu:C14a, hu:C14b, hu:C14c, hu:C14d, is_:C14a, is_:C14b, is_:C14c, is_:C14d, ie:C14a, ie:C14b, ie:C14c, ie:C14d, it:C14a, it:C14b, it:C14c, it:C14d, lv:C14a, lv:C14b, lv:C14c, lv:C14d, li:C14a, li:C14b, li:C14c, li:C14d, lu:C14a, lu:C14b, lu:C14c, lu:C14d, no:C14a, no:C14b, no:C14c, no:C14d, pl:C14a, pl:C14b, pl:C14c, pl:C14d, pt:C14a, pt:C14b, pt:C14c, pt:C14d, ro:C14a, ro:C14b, ro:C14c, ro:C14d, sk:C14a, sk:C14b, sk:C14c, sk:C14d, es:C14a, es:C14b, es:C14c, es:C14d, se:C14a, se:C14b, se:C14c, se:C14d, lv:C57h, fi:C96 ;
+    skos:note "DPIA required by member states: AT HU PL (insurance purposes) AT CZ DK DE GR (Use of AI in processing) CY DK FI FR DE GR HU IS IE IT LV LI LU NO PL PT RO SK ES SE(evaluation or scoring)"@en ;
+    skos:note "member state processing activity: AT CY CZ DE ES FI FR HU IE IT LV LI LT MT NO PT RO SK SI SE (Vulnerable)"@en ;
+    skos:editorialNote "No condition found in DPIARequiredConditions.ttl for: Insurance purposes (AT, HU); Vulnerable persons (AT, CY, CZ, DE, ES, FR, HU, IE, IT, LI, LT, MT, NO, PT, RO, SK, SI, SE)"@en ;
+    dct:source "AI Act Annex III 5(c)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C5c-2 a eu-aiact:HighRiskAISystem-AnnexIII-5-c ;
+    dct:identifier "5c.2." ;
+    skos:definition "A use case developed from AI Act Annex III point 5(c) in which the AI system involves purpose: life and health insurance pricing and risk assessment; processing context: profiling, assessing or classifying natural persons, evaluation or scoring; technology: AI; special categories of personal data: health data; AI or data subjects: natural persons."@en ;
+    skos:broader annex3:C5c ;
+    dpv:hasSector hapt:dpv-PublicServicesAndBenefits, vair:PrivateService ;
+    dpv:hasPurpose vair:LifeInsurancePricing, vair:HealthInsurancePricing, vair:LifeInsuranceRiskAssessment, vair:HealthInsuranceRiskAssessment ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:hasContext dpv:EvaluationOfIndividuals, hapt:dpv-ClassificationOfIndividuals, dpv:ScoringOfIndividuals ;
+    dpv:hasProcessing eu-gdpr:Profiling ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasPersonalData eu-gdpr:HealthData ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, eu-gdpr:C6, eu-gdpr:C2, eu-gdpr:C4a, pl:C31a, pl:C31b, at:C32, cz:C32, dk:C32, de:C32, gr:C32, nl:C59, pl:C59, cy:C14a, cy:C14b, cy:C14c, cy:C14d, dk:C14a, dk:C14b, dk:C14c, dk:C14d, fi:C14a, fi:C14b, fi:C14c, fi:C14d, fr:C14a, fr:C14b, fr:C14c, fr:C14d, de:C14a, de:C14b, de:C14c, de:C14d, gr:C14a, gr:C14b, gr:C14c, gr:C14d, hu:C14a, hu:C14b, hu:C14c, hu:C14d, is_:C14a, is_:C14b, is_:C14c, is_:C14d, ie:C14a, ie:C14b, ie:C14c, ie:C14d, it:C14a, it:C14b, it:C14c, it:C14d, lv:C14a, lv:C14b, lv:C14c, lv:C14d, li:C14a, li:C14b, li:C14c, li:C14d, lu:C14a, lu:C14b, lu:C14c, lu:C14d, no:C14a, no:C14b, no:C14c, no:C14d, pl:C14a, pl:C14b, pl:C14c, pl:C14d, pt:C14a, pt:C14b, pt:C14c, pt:C14d, ro:C14a, ro:C14b, ro:C14c, ro:C14d, sk:C14a, sk:C14b, sk:C14c, sk:C14d, es:C14a, es:C14b, es:C14c, es:C14d, se:C14a, se:C14b, se:C14c, se:C14d ;
+    skos:note "DPIA required by member states: AT HU PL (insurance purposes) AT CZ DK DE GR (Use of AI in processing) NL, PL (health data) CY DK FI FR DE GR HU IS IE IT LV LI LU NO PL PT RO SK ES SE(evaluation or scoring)"@en ;
+    skos:editorialNote "No condition found in DPIARequiredConditions.ttl for: Insurance purposes (AT, HU)"@en ;
+    dct:source "AI Act Annex III 5(c)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C5c-3 a eu-aiact:HighRiskAISystem-AnnexIII-5-c ;
+    dct:identifier "5c.3." ;
+    skos:definition "A use case developed from AI Act Annex III point 5(c) in which the AI system involves purpose: life and health insurance pricing and risk assessment; processing context: financial data; technology: AI; AI or data subjects: natural persons."@en ;
+    skos:broader annex3:C5c ;
+    dpv:hasSector hapt:dpv-PublicServicesAndBenefits, vair:PrivateService ;
+    dpv:hasPurpose vair:LifeInsurancePricing, vair:HealthInsurancePricing, vair:LifeInsuranceRiskAssessment, vair:HealthInsuranceRiskAssessment ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasPersonalData pd:Financial ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    hapt:eu-gdpr-hasDPIARequiredCondition cy:C34, cz:C34, ee:C34, nl:C34, pl:C34, at:C32, cz:C32, dk:C32, de:C32, gr:C32 ;
+    skos:note "DPIA required by member states: CY CZ EE NL PL (financial data) AT CZ DK DE GR (Use of AI in processing)"@en ;
+    dct:source "AI Act Annex III 5(c)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C5d a eu-aiact:HighRiskAISystem-AnnexIII-5-d ;
+    dct:identifier "5d" ;
+    skos:definition "5. Access to and enjoyment of essential private services and essential public services and benefits:(d) AI systems intended to evaluate and classify emergency calls by natural persons or to be used to dispatch, or to establish priority in the dispatching of emergency first response services, including by police, firefighters and medical aid, as well as of emergency healthcare patient triage systems;"@en ;
+    dpv:hasSector hapt:dpv-PublicServicesAndBenefits, vair:PrivateService ;
+    dpv:hasPurpose hapt:dpv-EmergencyCallEvaluation, hapt:dpv-EmergencyCallClassification, hapt:dpv-EmergencyServiceDispatch, hapt:dpv-EmergencyDispatchPrioritisation, sector-health:EmergencyCareTriage ;
+    dpv:hasRisk hapt:risk-LegalEffects, hapt:risk-ServiceAccessDenied, hapt:risk-ServiceExclusion ;
+    dpv:hasContext dpv:AutomatedDecisionMaking ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    tech:hasDeployer dpv:EmergencyServiceProvider, hapt:dpv-Police, hapt:dpv-Firefighters, vair:MedicalAidProvider, dpv:EmergencyHealthcareProvider ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, eu-gdpr:C6, eu-gdpr:C8a, at:C32, cz:C32, dk:C32, de:C32, gr:C32 ;
+    skos:note "DPIA required by member states: AT CZ DK DE GR (Use of AI in processing)"@en ;
+    dct:source "AI Act Annex III 5(d)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C5d-1 a eu-aiact:HighRiskAISystem-AnnexIII-5-d ;
+    dct:identifier "5d.1." ;
+    skos:definition "A use case developed from AI Act Annex III point 5(d) in which the AI system involves purpose: evaluate and classify emergency calls, dispatch or establish priority for dispatching emergency first response services; processing context: evaluation or scoring; technology: AI; AI or data subjects: natural persons; deployer: emergency services, police, firefighters, medical aid, emergency healthcare patient triage systems."@en ;
+    skos:broader annex3:C5d ;
+    dpv:hasSector hapt:dpv-PublicServicesAndBenefits, vair:PrivateService ;
+    dpv:hasPurpose hapt:dpv-EmergencyCallEvaluation, hapt:dpv-EmergencyCallClassification, hapt:dpv-EmergencyServiceDispatch, hapt:dpv-EmergencyDispatchPrioritisation, sector-health:EmergencyCareTriage ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:hasContext dpv:EvaluationOfIndividuals, dpv:ScoringOfIndividuals ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    tech:hasDeployer dpv:EmergencyServiceProvider, hapt:dpv-Police, hapt:dpv-Firefighters, vair:MedicalAidProvider, dpv:EmergencyHealthcareProvider ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition at:C32, cz:C32, dk:C32, de:C32, gr:C32 ;
+    skos:note "DPIA required by member states: AT CZ DK DE GR (Use of AI in processing)"@en ;
+    dct:source "AI Act Annex III 5(d)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C5d-2 a eu-aiact:HighRiskAISystem-AnnexIII-5-d ;
+    dct:identifier "5d.2." ;
+    skos:definition "A use case developed from AI Act Annex III point 5(d) in which the AI system involves purpose: evaluate and classify emergency calls, dispatch or establish priority for dispatching emergency first response services; processing context: (automated) decision making, evaluation or scoring, exclusion / access to services; technology: AI; AI or data subjects: vulnerable persons; deployer: emergency services, police, firefighters, medical aid, emergency healthcare patient triage systems."@en ;
+    skos:broader annex3:C5d ;
+    dpv:hasSector hapt:dpv-PublicServicesAndBenefits, vair:PrivateService ;
+    dpv:hasPurpose hapt:dpv-EmergencyCallEvaluation, hapt:dpv-EmergencyCallClassification, hapt:dpv-EmergencyServiceDispatch, hapt:dpv-EmergencyDispatchPrioritisation, sector-health:EmergencyCareTriage ;
+    dpv:hasRisk hapt:risk-LegalEffects, hapt:risk-ServiceAccessDenied, hapt:risk-ServiceExclusion ;
+    dpv:hasContext dpv:AutomatedDecisionMaking, dpv:EvaluationOfIndividuals, dpv:ScoringOfIndividuals ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasHumanSubject dpv:VulnerableHuman ;
+    tech:hasDeployer dpv:EmergencyServiceProvider, hapt:dpv-Police, hapt:dpv-Firefighters, vair:MedicalAidProvider, dpv:EmergencyHealthcareProvider ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, eu-gdpr:C6, eu-gdpr:C8a, eu-gdpr:C4b, at:C32, cz:C32, dk:C32, de:C32, gr:C32, lv:C57h, fi:C96 ;
+    skos:note "DPIA required by member states: AT CZ DK DE GR (Use of AI in processing)"@en ;
+    skos:note "member state processing activity: AT CY CZ DE ES FI FR HU IE IT LV LI LT MT NO PT RO SK SI SE (Vulnerable)"@en ;
+    skos:editorialNote "No condition found in DPIARequiredConditions.ttl for: Vulnerable persons (AT, CY, CZ, DE, ES, FR, HU, IE, IT, LI, LT, MT, NO, PT, RO, SK, SI, SE)"@en ;
+    dct:source "AI Act Annex III 5(d)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C5d-3 a eu-aiact:HighRiskAISystem-AnnexIII-5-d ;
+    dct:identifier "5d.3." ;
+    skos:definition "A use case developed from AI Act Annex III point 5(d) in which the AI system involves purpose: evaluate and classify emergency calls, dispatch or establish priority for dispatching emergency first response services; processing context: (automated) decision making, evaluation or scoring, exclusion / access to services; technology: AI; special categories of personal data: health data; AI or data subjects: natural persons; deployer: emergency services, police, firefighters, medical aid, emergency healthcare patient triage systems."@en ;
+    skos:broader annex3:C5d ;
+    dpv:hasSector hapt:dpv-PublicServicesAndBenefits, vair:PrivateService ;
+    dpv:hasPurpose hapt:dpv-EmergencyCallEvaluation, hapt:dpv-EmergencyCallClassification, hapt:dpv-EmergencyServiceDispatch, hapt:dpv-EmergencyDispatchPrioritisation, sector-health:EmergencyCareTriage ;
+    dpv:hasRisk hapt:risk-LegalEffects, hapt:risk-ServiceAccessDenied, hapt:risk-ServiceExclusion ;
+    dpv:hasContext dpv:AutomatedDecisionMaking, dpv:EvaluationOfIndividuals, dpv:ScoringOfIndividuals ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasPersonalData eu-gdpr:HealthData ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    tech:hasDeployer dpv:EmergencyServiceProvider, hapt:dpv-Police, hapt:dpv-Firefighters, vair:MedicalAidProvider, dpv:EmergencyHealthcareProvider ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, eu-gdpr:C6, eu-gdpr:C8a, eu-gdpr:C2, nl:C59, pl:C59, at:C32, cz:C32, dk:C32, de:C32, gr:C32 ;
+    skos:note "DPIA required by member states: NL, PL (health data) AT CZ DK DE GR (Use of AI in processing)"@en ;
+    dct:source "AI Act Annex III 5(d)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C6a a eu-aiact:HighRiskAISystem-AnnexIII-6-a ;
+    dct:identifier "6a" ;
+    skos:definition "6. Law enforcement, insofar as their use is permitted under relevant Union or national law: (a) AI systems intended to be used by or on behalf of law enforcement authorities, or by Union institutions, agencies, offices or bodies in support of law enforcement authorities or on their behalf to assess the risk of a natural person to become a victim of criminal offences;"@en ;
+    dpv:hasSector eu-aiact:LawEnforcementSector ;
+    dpv:hasPurpose vair:AssessingRiskOfBecomingVictimOfCrime ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:hasContext dpv:EvaluationOfIndividuals, hapt:dpv-ClassificationOfIndividuals ;
+    dpv:hasProcessing eu-gdpr:Profiling ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    tech:hasDeployer dpv:LawEnforcementOrganisation, vair:LawEnforcementAuthorityAgent ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, eu-gdpr:C6, eu-gdpr:C4a, at:C32, cz:C32, dk:C32, de:C32, gr:C32, hu:C44, li:C44, nl:C44, at:C48a, at:C48b, hu:C48a, hu:C48b, pl:C48a, pl:C48b ;
+    skos:note "DPIA required by member states: AT CZ DK DE GR (Use of AI in processing) HU LI NL (law enforcement purposes) IS NO PL AT HU (assessing or classifying people)"@en ;
+    skos:editorialNote "No condition found in DPIARequiredConditions.ttl for: Assessing or classifying people (IS, NO)"@en ;
+    dct:source "AI Act Annex III 6(a)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C6a-1 a eu-aiact:HighRiskAISystem-AnnexIII-6-a ;
+    dct:identifier "6a.1." ;
+    skos:definition "A use case developed from AI Act Annex III point 6(a) in which the AI system involves purpose: assessing risk of becoming victims of criminal offences; processing context: assessing or classifying natural persons; technology: AI; AI or data subjects: natural persons; deployer: law enforcement authorities, law enforcement authority agents."@en ;
+    skos:broader annex3:C6a ;
+    dpv:hasSector eu-aiact:LawEnforcementSector ;
+    dpv:hasPurpose vair:AssessingRiskOfBecomingVictimOfCrime ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:hasContext dpv:EvaluationOfIndividuals, hapt:dpv-ClassificationOfIndividuals ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    tech:hasDeployer dpv:LawEnforcementOrganisation, vair:LawEnforcementAuthorityAgent ;
+    hapt:eu-gdpr-hasDPIARequiredCondition at:C48a, at:C48b, hu:C48a, hu:C48b, pl:C48a, pl:C48b, at:C32, cz:C32, dk:C32, de:C32, gr:C32, hu:C44, li:C44, nl:C44 ;
+    skos:note "DPIA required by member states: IS NO PL AT HU (assessing or classifying people) AT CZ DK DE GR (Use of AI in processing) HU LI NL (law enforcement purposes)"@en ;
+    skos:editorialNote "No condition found in DPIARequiredConditions.ttl for: Assessing or classifying people (IS, NO)"@en ;
+    dct:source "AI Act Annex III 6(a)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C6a-2 a eu-aiact:HighRiskAISystem-AnnexIII-6-a ;
+    dct:identifier "6a.2." ;
+    skos:definition "A use case developed from AI Act Annex III point 6(a) in which the AI system involves purpose: assessing risk of becoming victims of criminal offences; processing context: profiling, assessing or classifying natural persons; technology: AI; AI or data subjects: vulnerable persons."@en ;
+    skos:broader annex3:C6a ;
+    dpv:hasSector eu-aiact:LawEnforcementSector ;
+    dpv:hasPurpose vair:AssessingRiskOfBecomingVictimOfCrime ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:hasContext dpv:EvaluationOfIndividuals, hapt:dpv-ClassificationOfIndividuals ;
+    dpv:hasProcessing eu-gdpr:Profiling ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasHumanSubject dpv:VulnerableHuman ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, eu-gdpr:C6, eu-gdpr:C4c, hu:C44, li:C44, nl:C44, at:C32, cz:C32, dk:C32, de:C32, gr:C32, at:C48a, at:C48b, hu:C48a, hu:C48b, pl:C48a, pl:C48b, lv:C57h, nl:C57h, fi:C96 ;
+    skos:note "DPIA required by member states: HU LI NL (law enforcement purposes) AT CZ DK DE GR (Use of AI in processing) IS NO PL AT HU (assessing or classifying people) ALL (vulnerable)"@en ;
+    skos:note "member state processing activity: AT CY CZ DE ES FI FR HU IE IT LV LI LT MT NO PT RO SK SI SE (Vulnerable)"@en ;
+    skos:editorialNote "No condition found in DPIARequiredConditions.ttl for: Assessing or classifying people (IS, NO); Vulnerable persons (AT, CY, CZ, DE, ES, FR, HU, IE, IT, LI, LT, MT, NO, PT, RO, SK, SI, SE)"@en ;
+    dct:source "AI Act Annex III 6(a)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C6a-3 a eu-aiact:HighRiskAISystem-AnnexIII-6-a ;
+    dct:identifier "6a.3." ;
+    skos:definition "A use case developed from AI Act Annex III point 6(a) in which the AI system involves purpose: assessing risk of becoming victims of criminal offences; processing context: large scale processing of personal data relating to criminal offences or unlawful or bad conduct (Art. 35(3)(b)); technology: AI; special categories of personal data: criminal offences."@en ;
+    skos:broader annex3:C6a ;
+    dpv:hasSector eu-aiact:LawEnforcementSector ;
+    dpv:hasPurpose vair:AssessingRiskOfBecomingVictimOfCrime ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:hasProcessingScale dpv:LargeScaleProcessing ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasPersonalData pd:Criminal, hapt:pd-UnlawfulActivity, hapt:pd-BadConduct, hapt:pd-CriminalOffences ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, eu-gdpr:C6, eu-gdpr:C10a, eu-gdpr:C10b, eu-gdpr:C10c, hu:C44, li:C44, nl:C44, at:C32, cz:C32, dk:C32, de:C32, gr:C32, at:C48a, at:C48b, hu:C48a, hu:C48b, pl:C48a, pl:C48b ;
+    skos:note "DPIA required by member states: HU LI NL (law enforcement purposes) AT CZ DK DE GR (Use of AI in processing) IS NO PL AT HU (assessing or classifying people)"@en ;
+    skos:editorialNote "No condition found in DPIARequiredConditions.ttl for: Assessing or classifying people (IS, NO)"@en ;
+    dct:source "AI Act Annex III 6(a)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C6b a eu-aiact:HighRiskAISystem-AnnexIII-6-b ;
+    dct:identifier "6b" ;
+    skos:definition "6. Law enforcement, insofar as their use is permitted under relevant Union or national law:(b) AI systems intended to be used by or on behalf of law enforcement authorities or by Union institutions, bodies and agencies in support of Law enforcement authorities as polygraphs and similar tools;"@en ;
+    dpv:hasSector eu-aiact:LawEnforcementSector ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:isImplementedUsingTechnology ai:AISystem, hapt:dpv-Polygraph ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    tech:hasDeployer dpv:LawEnforcementOrganisation, vair:LawEnforcementAuthorityAgent ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, eu-gdpr:C6, hu:C44, li:C44, nl:C44, at:C32, cz:C32, dk:C32, de:C32, gr:C32 ;
+    skos:note "DPIA required by member states: HU LI NL (law enforcement purposes) AT CZ DK DE GR (Use of AI in processing)"@en ;
+    skos:note "member state processing activity: AT CZ DK DE GR"@en ;
+    dct:source "AI Act Annex III 6(b)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C6b-1 a eu-aiact:HighRiskAISystem-AnnexIII-6-b ;
+    dct:identifier "6.b.1." ;
+    skos:definition "A use case developed from AI Act Annex III point 6(b) in which the AI system involves purpose: information verification in questioning; technology: AI; special categories of personal data: health data; AI or data subjects: natural persons."@en ;
+    skos:broader annex3:C6b ;
+    dpv:hasPurpose vair:DetectingLies ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:isImplementedUsingTechnology ai:AISystem, hapt:dpv-Polygraph ;
+    dpv:hasPersonalData eu-gdpr:HealthData ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, eu-gdpr:C6, eu-gdpr:C2, nl:C59, pl:C59, hu:C44, li:C44, nl:C44, at:C32, cz:C32, dk:C32, de:C32, gr:C32 ;
+    skos:note "DPIA required by member states: NL, PL (health data) HU LI NL (law enforcement purposes) AT CZ DK DE GR (Use of AI in processing)"@en ;
+    dct:source "AI Act Annex III 6(b)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C6c a eu-aiact:HighRiskAISystem-AnnexIII-6-c ;
+    dct:identifier "6c" ;
+    skos:definition "6. Law enforcement, insofar as their use is permitted under relevant Union or national law: (c) AI systems intended to be used by or on behalf of law enforcement authorities, or by Union institutions, agencies, offices or bodies in support of law enforcement authorities to evaluate the reliability of evidence in the course of investigation or prosecution of criminal offences;"@en ;
+    dpv:hasSector eu-aiact:LawEnforcementSector ;
+    dpv:hasPurpose hapt:sector-law-EvidenceReliabilityEvaluation, sector-law:LegalSuspectedOffenceInvestigation, sector-law:LegalOffenceProsecution ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:hasProcessingScale dpv:LargeScaleProcessing ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasPersonalData pd:Criminal, hapt:pd-UnlawfulActivity, hapt:pd-BadConduct, hapt:pd-CriminalOffences ;
+    tech:hasDeployer dpv:LawEnforcementOrganisation, vair:LawEnforcementAuthorityAgent ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, eu-gdpr:C6, eu-gdpr:C10a, eu-gdpr:C10b, eu-gdpr:C10c, hu:C44, li:C44, nl:C44, at:C32, cz:C32, dk:C32, de:C32, gr:C32 ;
+    skos:note "DPIA required by member states: HU LI NL (law enforcement purposes)AT CZ DK DE GR (Use of AI in processing)"@en ;
+    skos:note "member state processing activity: AT CZ DK DE GR"@en ;
+    dct:source "AI Act Annex III 6(c)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C6d a eu-aiact:HighRiskAISystem-AnnexIII-6-d ;
+    dct:identifier "6d" ;
+    skos:definition "6. Law enforcement, insofar as their use is permitted under relevant Union or national law:(d) AI systems intended to be used by law enforcement authorities or on their behalf or by Union institutions, agencies, offices or bodies in support of law enforcement authorities for assessing the risk of a natural person of offending or re-offending not solely based on profiling of natural persons as referred to in Article 3(4) of Directive (EU) 2016/680 or to assess personality traits and characteristics or past criminal behaviour of natural persons or groups;"@en ;
+    dpv:hasSector eu-aiact:LawEnforcementSector ;
+    dpv:hasPurpose vair:AssessingRiskOfOffending, vair:AssessingRiskOfReoffending, hapt:sector-law-PersonalCharacteristicsAssessment, hapt:sector-law-PastCriminalBehaviourAssessment ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:hasProcessing eu-gdpr:Profiling ;
+    dpv:hasProcessingScale dpv:LargeScaleProcessing ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    ai:hasCapability ai:PersonalityTraitAnalysis ;
+    dpv:hasPersonalData pd:Criminal, hapt:pd-UnlawfulActivity, hapt:pd-BadConduct, pd:Personality ;
+    dpv:hasHumanSubject vair:Group, dpv:NaturalPerson ;
+    tech:hasDeployer dpv:LawEnforcementOrganisation, vair:LawEnforcementAuthorityAgent ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, eu-gdpr:C6, eu-gdpr:C4a, eu-gdpr:C7, eu-gdpr:C10a, eu-gdpr:C10b, eu-gdpr:C10c, hu:C44, li:C44, nl:C44, at:C32, cz:C32, dk:C32, de:C32, gr:C32 ;
+    skos:note "DPIA required by member states: HU LI NL (law enforcement purposes)AT CZ DK DE GR (Use of AI in processing)"@en ;
+    skos:note "member state processing activity: AT CZ DK DE GR"@en ;
+    dct:source "AI Act Annex III 6(d)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C6d-1 a eu-aiact:HighRiskAISystem-AnnexIII-6-d ;
+    dct:identifier "6d.1" ;
+    skos:definition "A use case developed from AI Act Annex III point 6(d) in which the AI system involves purpose: assessing risk of offending; processing context: profiling; technology: AI; special categories of personal data: racial or ethnic origin, political opinions, religious or philosophical beliefs; AI or data subjects: natural persons; deployer: law enforcement authorities, law enforcement authority agents."@en ;
+    skos:broader annex3:C6d ;
+    dpv:hasPurpose vair:AssessingRiskOfOffending ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:hasProcessing eu-gdpr:Profiling ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasPersonalData pd:Race, pd:EthnicOrigin, pd:PoliticalOpinion, pd:Religion, pd:PhilosophicalBelief ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    tech:hasDeployer dpv:LawEnforcementOrganisation, vair:LawEnforcementAuthorityAgent ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, eu-gdpr:C6, eu-gdpr:C2, eu-gdpr:C4a, hu:C44, li:C44, nl:C44, at:C32, cz:C32, dk:C32, de:C32, gr:C32 ;
+    skos:note "DPIA required by member states: HU LI NL (law enforcement purposes)AT CZ DK DE GR (Use of AI in processing)"@en ;
+    dct:source "AI Act Annex III 6(d)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C6d-2 a eu-aiact:HighRiskAISystem-AnnexIII-6-d ;
+    dct:identifier "6d.2" ;
+    skos:definition "A use case developed from AI Act Annex III point 6(d) in which the AI system involves purpose: assessing past criminal behaviour; processing context: large scale processing of personal data relating to criminal offences or unlawful or bad conduct (Art. 35(3)(b)); technology: AI; special categories of personal data: criminal offences; AI or data subjects: natural persons; deployer: law enforcement authorities, law enforcement authority agents."@en ;
+    skos:broader annex3:C6d ;
+    dpv:hasPurpose hapt:sector-law-PastCriminalBehaviourAssessment ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:hasProcessingScale dpv:LargeScaleProcessing ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasPersonalData pd:Criminal, hapt:pd-UnlawfulActivity, hapt:pd-BadConduct, hapt:pd-CriminalOffences ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    tech:hasDeployer dpv:LawEnforcementOrganisation, vair:LawEnforcementAuthorityAgent ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, eu-gdpr:C6, eu-gdpr:C10a, eu-gdpr:C10b, eu-gdpr:C10c, hu:C44, li:C44, nl:C44, at:C32, cz:C32, dk:C32, de:C32, gr:C32 ;
+    skos:note "DPIA required by member states: HU LI NL (law enforcement purposes)AT CZ DK DE GR (Use of AI in processing)"@en ;
+    dct:source "AI Act Annex III 6(d)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C6d-3 a eu-aiact:HighRiskAISystem-AnnexIII-6-d ;
+    dct:identifier "6d.3" ;
+    skos:definition "A use case developed from AI Act Annex III point 6(d) in which the AI system involves purpose: assessing risk of offending, assessing risk of reoffending, assessing personality traits; processing context: assessing personality traits / characteristics; technology: AI; special categories of personal data: behavioural data, behaviour or other personal aspects of natural persons, criminal offences; AI or data subjects: natural persons; deployer: law enforcement authorities, law enforcement authority agents."@en ;
+    skos:broader annex3:C6d ;
+    dpv:hasPurpose vair:AssessingRiskOfOffending, vair:AssessingRiskOfReoffending, hapt:sector-law-PersonalCharacteristicsAssessment ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    ai:hasCapability ai:PersonalityTraitAnalysis ;
+    dpv:hasPersonalData pd:Personality, pd:Behavioural, hapt:pd-CriminalOffences ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    tech:hasDeployer dpv:LawEnforcementOrganisation, vair:LawEnforcementAuthorityAgent ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, eu-gdpr:C6, hu:C44, li:C44, nl:C44, at:C32, cz:C32, dk:C32, de:C32, gr:C32 ;
+    skos:note "DPIA required by member states: HU LI NL (law enforcement purposes)AT CZ DK DE GR (Use of AI in processing)"@en ;
+    dct:source "AI Act Annex III 6(d)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C6e a eu-aiact:HighRiskAISystem-AnnexIII-6-e ;
+    dct:identifier "6e" ;
+    skos:definition "6. Law enforcement, insofar as their use is permitted under relevant Union or national law:(e) AI systems intended to be used by or on behalf of law enforcement authorities or by Union agencies institutions, agencies, offices or bodies in support of law enforcement authorities for profiling of natural persons as referred to in Article 3(4) of Directive (EU) 2016/680 in the course of detection, investigation or prosecution of criminal offences;"@en ;
+    dpv:hasSector eu-aiact:LawEnforcementSector ;
+    dpv:hasPurpose sector-law:LegalOffenceDetection, sector-law:LegalSuspectedOffenceInvestigation, sector-law:LegalOffenceProsecution ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:hasProcessing eu-gdpr:Profiling ;
+    dpv:hasProcessingScale dpv:LargeScaleProcessing ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasPersonalData pd:Criminal, hapt:pd-UnlawfulActivity, hapt:pd-BadConduct, hapt:pd-CriminalOffences ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    tech:hasDeployer dpv:LawEnforcementOrganisation, vair:LawEnforcementAuthorityAgent ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, eu-gdpr:C6, eu-gdpr:C4a, eu-gdpr:C7, eu-gdpr:C10a, eu-gdpr:C10b, eu-gdpr:C10c, hu:C44, li:C44, nl:C44, at:C32, cz:C32, dk:C32, de:C32, gr:C32 ;
+    skos:note "DPIA required by member states: HU LI NL (law enforcement purposes)AT CZ DK DE GR (Use of AI in processing)"@en ;
+    skos:note "member state processing activity: AT CZ DK DE GR"@en ;
+    dct:source "AI Act Annex III 6(e)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C7a a eu-aiact:HighRiskAISystem-AnnexIII-7-a ;
+    dct:identifier "7a" ;
+    skos:definition "7. Migration, asylum and border control management, insofar as their use is permitted under relevant Union or national law: (a) AI systems intended to be used by competent public authorities as polygraphs and similar tools;"@en ;
+    dpv:hasSector eu-aiact:MigrationSector, eu-aiact:AsylumSector, eu-aiact:BorderControlSector ;
+    dpv:hasPurpose vair:DetectingLies ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:isImplementedUsingTechnology ai:AISystem, hapt:dpv-Polygraph ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    tech:hasDeployer hapt:dpv-PublicAuthority ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, at:C21, cy:C21, ie:C21, it:C21, lv:C21, mt:C21, si:C21, se:C21, at:C32, cz:C32, dk:C32, de:C32, gr:C32 ;
+    skos:note "DPIA required by member states: SE, AT, CY, IE, IT LV, MT SI (Asylum seekers) AT CZ DK DE GR (Use of AI in processing)"@en ;
+    skos:note "member state processing activity: AT CZ DK DE GR"@en ;
+    skos:note "Asylum seekers (unlabelled column): Asylum seekers: SE, AT, CY, IE, IT LV, MT SI"@en ;
+    dct:source "AI Act Annex III 7(a)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C7a-1 a eu-aiact:HighRiskAISystem-AnnexIII-7-a ;
+    dct:identifier "7a.1." ;
+    skos:definition "A use case developed from AI Act Annex III point 7(a) in which the AI system involves purpose: information verification in questioning; technology: AI; special categories of personal data: health data; AI or data subjects: natural persons; deployer: public authorities / competent public authorities."@en ;
+    skos:broader annex3:C7a ;
+    dpv:hasPurpose vair:DetectingLies ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:isImplementedUsingTechnology ai:AISystem, hapt:dpv-Polygraph ;
+    dpv:hasPersonalData eu-gdpr:HealthData ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    tech:hasDeployer hapt:dpv-PublicAuthority ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, nl:C59, pl:C59, at:C21, cy:C21, ie:C21, it:C21, lv:C21, mt:C21, si:C21, se:C21, at:C32, cz:C32, dk:C32, de:C32, gr:C32 ;
+    skos:note "DPIA required by member states: NL PL (health data) SE, AT, CY, IE, IT LV, MT SI (Asylum seekers) AT CZ DK DE GR (Use of AI in processing)"@en ;
+    skos:note "Asylum seekers (unlabelled column): Asylum seekers: SE, AT, CY, IE, IT LV, MT SI"@en ;
+    dct:source "AI Act Annex III 7(a)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C7b a eu-aiact:HighRiskAISystem-AnnexIII-7-b ;
+    dct:identifier "7b" ;
+    skos:definition "7. Migration, asylum and border control management, insofar as their use is permitted under relevant Union or national law:(b) AI systems intended to be used by or on behalf of competent public authorities or by Union agencies, offices or bodies to assess a risk, including a security risk, a risk of irregular migration, or a health risk, posed by a natural person who intends to enter or has entered into the territory of a Member State;"@en ;
+    dpv:hasSector eu-aiact:MigrationSector, eu-aiact:AsylumSector, eu-aiact:BorderControlSector ;
+    dpv:hasPurpose vair:AssessingPeopleRelatedRisk, vair:AssessingSecurityRisk, vair:AssessingRiskOfIrregularImmigration, vair:AssessingHealthRisk ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:hasContext dpv:EvaluationOfIndividuals, hapt:dpv-ClassificationOfIndividuals ;
+    dpv:hasProcessing eu-gdpr:Profiling ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    tech:hasDeployer hapt:dpv-PublicAuthority, vair:PublicAuthorityAgent, vair:EUAgency, vair:EUOffice, vair:EUBody ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, eu-gdpr:C6, eu-gdpr:C4a, at:C48a, at:C48b, hu:C48a, hu:C48b, pl:C48a, pl:C48b, at:C21, cy:C21, ie:C21, it:C21, lv:C21, mt:C21, si:C21, se:C21, at:C32, cz:C32, dk:C32, de:C32, gr:C32 ;
+    skos:note "DPIA required by member states: AT HU PL NL IS NO (assessing or classifying people) SE, AT, CY, IE, IT LV, MT SI (Asylum seekers)"@en ;
+    skos:note "member state processing activity: AT CZ DK DE GR"@en ;
+    skos:note "Asylum seekers (unlabelled column): Asylum seekers: SE, AT, CY, IE, IT LV, MT SI"@en ;
+    skos:editorialNote "No condition found in DPIARequiredConditions.ttl for: Assessing or classifying people (NL, IS, NO)"@en ;
+    dct:source "AI Act Annex III 7(b)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C7b-1 a eu-aiact:HighRiskAISystem-AnnexIII-7-b ;
+    dct:identifier "7b.1" ;
+    skos:definition "A use case developed from AI Act Annex III point 7(b) in which the AI system involves purpose: health risk; processing context: profiling, assessing or classifying natural persons; technology: AI; special categories of personal data: health data; AI or data subjects: natural persons; deployer: public authorities / competent public authorities, public authority agent, Union agencies, Union offices, Union bodies."@en ;
+    skos:broader annex3:C7b ;
+    dpv:hasSector eu-aiact:MigrationSector, eu-aiact:AsylumSector, eu-aiact:BorderControlSector ;
+    dpv:hasPurpose vair:AssessingHealthRisk ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:hasContext dpv:EvaluationOfIndividuals, hapt:dpv-ClassificationOfIndividuals ;
+    dpv:hasProcessing eu-gdpr:Profiling ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasPersonalData eu-gdpr:HealthData ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    tech:hasDeployer hapt:dpv-PublicAuthority, vair:PublicAuthorityAgent, vair:EUAgency, vair:EUOffice, vair:EUBody ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, eu-gdpr:C4a, nl:C59, pl:C59, at:C48a, at:C48b, hu:C48a, hu:C48b, pl:C48a, pl:C48b, at:C21, cy:C21, ie:C21, it:C21, lv:C21, mt:C21, si:C21, se:C21 ;
+    skos:note "DPIA required by member states: NL PL (health data) AT HU PL NL IS NO (assessing or classifying people) SE, AT, CY, IE, IT LV, MT SI (Asylum seekers)"@en ;
+    skos:note "Asylum seekers (unlabelled column): Asylum seekers: SE, AT, CY, IE, IT LV, MT SI"@en ;
+    skos:editorialNote "No condition found in DPIARequiredConditions.ttl for: Assessing or classifying people (NL, IS, NO)"@en ;
+    dct:source "AI Act Annex III 7(b)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C7c a eu-aiact:HighRiskAISystem-AnnexIII-7-c ;
+    dct:identifier "7c" ;
+    skos:definition "7. Migration, asylum and border control management, insofar as their use is permitted under relevant Union or national law: (c) AI systems intended to be used by or on behalf of competent public authorities or by Union agencies, offices or bodies to assist competent public authorities for the examination of applications for asylum, visa and residence permits and associated complaints with regard to the eligibility of the natural persons applying for a status, including related assessment of the reliability of evidence;"@en ;
+    dpv:hasSector eu-aiact:MigrationSector, eu-aiact:AsylumSector, eu-aiact:BorderControlSector ;
+    dpv:hasPurpose vair:ExaminingAsylumApplication, vair:ExaminingVisaApplication, vair:ExaminingResidencePermitsApplication ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:hasContext dpv:AutomatedDecisionMaking, dpv:EvaluationOfIndividuals, hapt:dpv-ClassificationOfIndividuals, dpv:ScoringOfIndividuals ;
+    dpv:hasProcessing eu-gdpr:Profiling ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    tech:hasDeployer hapt:dpv-PublicAuthority, vair:PublicAuthorityAgent, vair:EUAgency, vair:EUOffice, vair:EUBody ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, eu-gdpr:C6, eu-gdpr:C8a, eu-gdpr:C4a, at:C21, cy:C21, ie:C21, it:C21, lv:C21, mt:C21, si:C21, se:C21, at:C32, cz:C32, dk:C32, de:C32, gr:C32, cy:C14a, cy:C14b, cy:C14c, cy:C14d, dk:C14a, dk:C14b, dk:C14c, dk:C14d, fi:C14a, fi:C14b, fi:C14c, fi:C14d, fr:C14a, fr:C14b, fr:C14c, fr:C14d, de:C14a, de:C14b, de:C14c, de:C14d, gr:C14a, gr:C14b, gr:C14c, gr:C14d, hu:C14a, hu:C14b, hu:C14c, hu:C14d, is_:C14a, is_:C14b, is_:C14c, is_:C14d, ie:C14a, ie:C14b, ie:C14c, ie:C14d, it:C14a, it:C14b, it:C14c, it:C14d, lv:C14a, lv:C14b, lv:C14c, lv:C14d, li:C14a, li:C14b, li:C14c, li:C14d, lu:C14a, lu:C14b, lu:C14c, lu:C14d, no:C14a, no:C14b, no:C14c, no:C14d, pl:C14a, pl:C14b, pl:C14c, pl:C14d, pt:C14a, pt:C14b, pt:C14c, pt:C14d, ro:C14a, ro:C14b, ro:C14c, ro:C14d, sk:C14a, sk:C14b, sk:C14c, sk:C14d, es:C14a, es:C14b, es:C14c, es:C14d, se:C14a, se:C14b, se:C14c, se:C14d ;
+    skos:note "DPIA required by member states: SE, AT, CY, IE, IT LV, MT SI (Asylum seekers) AT CZ DK DE GR (Use of AI in processing) CY DK FI FR DE GR HU IS IE IT LV LI LU NO PL PT RO SK ES SE(evaluation or scoring)"@en ;
+    skos:note "member state processing activity: AT CZ DK DE GR"@en ;
+    skos:note "Asylum seekers (unlabelled column): Asylum seekers: SE, AT, CY, IE, IT LV, MT SI"@en ;
+    dct:source "AI Act Annex III 7(c)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C7c-1 a eu-aiact:HighRiskAISystem-AnnexIII-7-c ;
+    dct:identifier "7c.1." ;
+    skos:definition "A use case developed from AI Act Annex III point 7(c) in which the AI system involves purpose: examining complaints related to asylum, visa and residence permit applications; technology: AI; AI or data subjects: natural persons; deployer: public authorities / competent public authorities, public authority agent, Union agencies, Union offices, Union bodies."@en ;
+    skos:broader annex3:C7c ;
+    dpv:hasPurpose vair:ExaminingMigrationRelatedComplaints ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    tech:hasDeployer hapt:dpv-PublicAuthority, vair:PublicAuthorityAgent, vair:EUAgency, vair:EUOffice, vair:EUBody ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, eu-gdpr:C6, at:C21, cy:C21, ie:C21, it:C21, lv:C21, mt:C21, si:C21, se:C21, at:C32, cz:C32, dk:C32, de:C32, gr:C32 ;
+    skos:note "DPIA required by member states: SE, AT, CY, IE, IT LV, MT SI (Asylum seekers) AT CZ DK DE GR (Use of AI in processing)"@en ;
+    skos:note "Asylum seekers (unlabelled column): Asylum seekers: SE, AT, CY, IE, IT LV, MT SI"@en ;
+    dct:source "AI Act Annex III 7(c)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C7c-2 a eu-aiact:HighRiskAISystem-AnnexIII-7-c ;
+    dct:identifier "7c.2." ;
+    skos:definition "A use case developed from AI Act Annex III point 7(c) in which the AI system involves purpose: evaluating the reliability of evidence; technology: AI; AI or data subjects: natural persons; deployer: public authorities / competent public authorities, public authority agent, Union agencies, Union offices, Union bodies."@en ;
+    skos:broader annex3:C7c ;
+    dpv:hasPurpose hapt:sector-law-EvidenceReliabilityEvaluation ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    tech:hasDeployer hapt:dpv-PublicAuthority, vair:PublicAuthorityAgent, vair:EUAgency, vair:EUOffice, vair:EUBody ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, at:C21, cy:C21, ie:C21, it:C21, lv:C21, mt:C21, si:C21, se:C21, at:C32, cz:C32, dk:C32, de:C32, gr:C32 ;
+    skos:note "DPIA required by member states: SE, AT, CY, IE, IT LV, MT SI (Asylum seekers) AT CZ DK DE GR (Use of AI in processing)"@en ;
+    skos:note "Asylum seekers (unlabelled column): Asylum seekers: SE, AT, CY, IE, IT LV, MT SI"@en ;
+    dct:source "AI Act Annex III 7(c)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C7c-3 a eu-aiact:HighRiskAISystem-AnnexIII-7-c ;
+    dct:identifier "7c.3." ;
+    skos:definition "A use case developed from AI Act Annex III point 7(c) in which the AI system involves purpose: examining asylum applications, visa and residence permits; technology: AI; special categories of personal data: health data, political opinions, sexual orientation, sensitive data; AI or data subjects: natural persons; deployer: public authorities / competent public authorities, public authority agent, Union agencies, Union offices, Union bodies."@en ;
+    skos:broader annex3:C7c ;
+    dpv:hasPurpose vair:ExaminingAsylumApplication, vair:ExaminingVisaApplication, vair:ExaminingResidencePermitsApplication ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasPersonalData eu-gdpr:HealthData, pd:PoliticalOpinion, pd:Sexual, dpv:SpecialCategoryPersonalData ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    tech:hasDeployer hapt:dpv-PublicAuthority, vair:PublicAuthorityAgent, vair:EUAgency, vair:EUOffice, vair:EUBody ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, eu-gdpr:C6, eu-gdpr:C2, at:C21, cy:C21, ie:C21, it:C21, lv:C21, mt:C21, si:C21, se:C21, at:C32, cz:C32, dk:C32, de:C32, gr:C32 ;
+    skos:note "DPIA required by member states: SE, AT, CY, IE, IT LV, MT SI (Asylum seekers) AT CZ DK DE GR (Use of AI in processing)"@en ;
+    skos:note "Asylum seekers (unlabelled column): Asylum seekers: SE, AT, CY, IE, IT LV, MT SI"@en ;
+    dct:source "AI Act Annex III 7(c)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C7d a eu-aiact:HighRiskAISystem-AnnexIII-7-d ;
+    dct:identifier "7d" ;
+    skos:definition "7. Migration, asylum and border control management, insofar as their use is permitted under relevant Union or national law:(d) AI systems intended to be used by or on behalf of competent public authorities, including Union agencies, offices or bodies, in the context of migration, asylum and border control management, for the purpose of detecting, recognising or identifying natural persons with the exception of verification of travel documents."@en ;
+    dpv:hasSector eu-aiact:MigrationSector, eu-aiact:AsylumSector, eu-aiact:BorderControlSector ;
+    dpv:hasPurpose hapt:dpv-Identification ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:hasProcessing eu-gdpr:Profiling ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    ai:hasCapability hapt:ai-NaturalPersonDetection, hapt:ai-NaturalPersonRecognition ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    tech:hasDeployer hapt:dpv-PublicAuthority, vair:PublicAuthorityAgent, vair:EUAgency, vair:EUOffice, vair:EUBody ;
+    dpv:isNotApplicableFor sector-law:ImmigrationBorderDocumentVerification ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, eu-gdpr:C6, eu-gdpr:C4a, at:C21, cy:C21, ie:C21, it:C21, lv:C21, mt:C21, si:C21, se:C21, at:C32, cz:C32, dk:C32, de:C32, gr:C32 ;
+    skos:note "DPIA required by member states: SE, AT, CY, IE, IT LV, MT SI (Asylum seekers) AT CZ DK DE GR (Use of AI in processing)"@en ;
+    skos:note "member state processing activity: AT CZ DK DE GR"@en ;
+    skos:note "Asylum seekers (unlabelled column): Asylum seekers: SE, AT, CY, IE, IT LV, MT SI"@en ;
+    dct:source "AI Act Annex III 7(d)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C7d-1 a eu-aiact:HighRiskAISystem-AnnexIII-7-d ;
+    dct:identifier "7d.1." ;
+    skos:definition "A use case developed from AI Act Annex III point 7(d) in which the AI system involves purpose: detecting, recognising or identifying natural persons; processing context: profiling; technology: AI; special categories of personal data: biometrics* / biometric data; AI or data subjects: natural persons; deployer: public authorities / competent public authorities, public authority agent, Union agencies, Union offices, Union bodies."@en ;
+    skos:broader annex3:C7d ;
+    dpv:hasSector eu-aiact:MigrationSector, eu-aiact:AsylumSector, eu-aiact:BorderControlSector ;
+    dpv:hasPurpose hapt:dpv-Identification ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:hasProcessing eu-gdpr:Profiling ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    ai:hasCapability hapt:ai-NaturalPersonDetection, hapt:ai-NaturalPersonRecognition ;
+    dpv:hasPersonalData eu-gdpr:BiometricData ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    tech:hasDeployer hapt:dpv-PublicAuthority, vair:PublicAuthorityAgent, vair:EUAgency, vair:EUOffice, vair:EUBody ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, eu-gdpr:C6, eu-gdpr:C2, eu-gdpr:C4a, at:C21, cy:C21, ie:C21, it:C21, lv:C21, mt:C21, si:C21, se:C21, at:C32, cz:C32, dk:C32, de:C32, gr:C32, at-gdpr:C11, be:C11, bg:C11, hr:C11, cz:C11, dk:C11, ee:C11, fr:C11, de:C11, gr:C11, hu:C11, is_:C11, ie:C11, lv:C11, li:C11, lt:C11, lu:C11, mt:C11, nl:C11, no:C11, pl:C11, pt:C11, sk:C11, si:C11, es:C11 ;
+    skos:note "DPIA required by member states: SE, AT, CY, IE, IT LV, MT SI (Asylum seekers) AT CZ DK DE GR (Use of AI in processing) AT BE BG HR CZ DK EE FR DE GR HU IS IE LV LI LT LU MT NL NO PL PT SK SI ES (Biometrics)"@en ;
+    skos:note "Asylum seekers (unlabelled column): Asylum seekers: SE, AT, CY, IE, IT LV, MT SI"@en ;
+    dct:source "AI Act Annex III 7(d)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C8a a eu-aiact:HighRiskAISystem-AnnexIII-8-a ;
+    dct:identifier "8a" ;
+    skos:definition "8. Administration of justice and democratic processes: (a) AI systems intended to be used by a judicial authority or on their behalf to assist a judicial authority in researching and interpreting facts and the law and in applying the law to a concrete set of facts or used in a similar way in alternative dispute resolution;"@en ;
+    dpv:hasSector eu-aiact:JusticeSector ;
+    dpv:hasPurpose hapt:sector-law-JudicialFactResearch, sector-law:JudicialLegalInterpretation, hapt:sector-law-LawApplicationToFacts, hapt:dpv-AlternativeDisputeResolution ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    tech:hasDeployer dpv:JudicialOrganisation, vair:JudicialAuthorityAgent ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, eu-gdpr:C6, at:C32, cz:C32, dk:C32, de:C32, gr:C32 ;
+    skos:note "DPIA required by member states: AT CZ DK DE GR (Use of AI in processing)"@en ;
+    skos:note "member state processing activity: AT CZ DK DE GR"@en ;
+    dct:source "AI Act Annex III 8(a)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C8a-1 a eu-aiact:HighRiskAISystem-AnnexIII-8-a ;
+    dct:identifier "8a.1" ;
+    skos:definition "A use case developed from AI Act Annex III point 8(a) in which the AI system involves purpose: researching and interpreting facts and the law, applying the law to facts, applying facts for dispute resolution; processing context: (automated) decision making, profiling, evaluation or scoring, legal effects / processing resulting in legal effects; technology: AI; AI or data subjects: natural persons; deployer: judicial authority, judicial authority agent."@en ;
+    skos:broader annex3:C8a ;
+    dpv:hasSector eu-aiact:JusticeSector ;
+    dpv:hasPurpose hapt:sector-law-JudicialFactResearch, sector-law:JudicialLegalInterpretation, hapt:sector-law-LawApplicationToFacts, hapt:dpv-AlternativeDisputeResolution ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:hasContext dpv:AutomatedDecisionMaking, dpv:EvaluationOfIndividuals, dpv:ScoringOfIndividuals ;
+    dpv:hasProcessing eu-gdpr:Profiling ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    tech:hasDeployer dpv:JudicialOrganisation, vair:JudicialAuthorityAgent ;
+    hapt:eu-gdpr-hasDPIARequiredCondition at:C32, cz:C32, dk:C32, de:C32, gr:C32, cy:C14a, cy:C14b, cy:C14c, cy:C14d, dk:C14a, dk:C14b, dk:C14c, dk:C14d, fi:C14a, fi:C14b, fi:C14c, fi:C14d, fr:C14a, fr:C14b, fr:C14c, fr:C14d, de:C14a, de:C14b, de:C14c, de:C14d, gr:C14a, gr:C14b, gr:C14c, gr:C14d, hu:C14a, hu:C14b, hu:C14c, hu:C14d, is_:C14a, is_:C14b, is_:C14c, is_:C14d, ie:C14a, ie:C14b, ie:C14c, ie:C14d, it:C14a, it:C14b, it:C14c, it:C14d, lv:C14a, lv:C14b, lv:C14c, lv:C14d, li:C14a, li:C14b, li:C14c, li:C14d, lu:C14a, lu:C14b, lu:C14c, lu:C14d, no:C14a, no:C14b, no:C14c, no:C14d, pl:C14a, pl:C14b, pl:C14c, pl:C14d, pt:C14a, pt:C14b, pt:C14c, pt:C14d, ro:C14a, ro:C14b, ro:C14c, ro:C14d, sk:C14a, sk:C14b, sk:C14c, sk:C14d, es:C14a, es:C14b, es:C14c, es:C14d, se:C14a, se:C14b, se:C14c, se:C14d ;
+    skos:note "DPIA required by member states: AT CZ DK DE GR (Use of AI in processing) CY DK FI FR DE GR HU IS IE IT LV LI LU NO PL PT RO SK ES SE(evaluation or scoring)"@en ;
+    dct:source "AI Act Annex III 8(a)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C8a-2 a eu-aiact:HighRiskAISystem-AnnexIII-8-a ;
+    dct:identifier "8a.2" ;
+    skos:definition "A use case developed from AI Act Annex III point 8(a) in which the AI system involves purpose: researching and interpreting facts and the law, applying the law to facts, applying facts for dispute resolution; processing context: criminal offences; technology: AI; special categories of personal data: criminal offences; AI or data subjects: natural persons; deployer: judicial authority, judicial authority agent."@en ;
+    skos:broader annex3:C8a ;
+    dpv:hasSector eu-aiact:JusticeSector ;
+    dpv:hasPurpose hapt:sector-law-JudicialFactResearch, sector-law:JudicialLegalInterpretation, hapt:sector-law-LawApplicationToFacts, hapt:dpv-AlternativeDisputeResolution ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasPersonalData hapt:pd-CriminalOffences ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    tech:hasDeployer dpv:JudicialOrganisation, vair:JudicialAuthorityAgent ;
+    hapt:eu-gdpr-hasDPIARequiredCondition at:C32, cz:C32, dk:C32, de:C32, gr:C32, eu-gdpr:C10a, eu-gdpr:C10b, eu-gdpr:C10c ;
+    skos:note "DPIA required by member states: AT CZ DK DE GR (Use of AI in processing) ALL (criminal offences)"@en ;
+    dct:source "AI Act Annex III 8(a)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C8b a eu-aiact:HighRiskAISystem-AnnexIII-8-b ;
+    dct:identifier "8b" ;
+    skos:definition "8. Administration of justice and democratic processes:(b) AI systems intended to be used for influencing the outcome of an election or referendum or the voting behaviour of natural persons in the exercise of their vote in elections or referenda. This does not include AI systems whose output natural persons are not directly exposed to, such as tools used to organise, optimise and structure political campaigns from an administrative and logistic point of view."@en ;
+    dpv:hasSector eu-aiact:JusticeSector ;
+    dpv:hasPurpose hapt:dpv-ElectionOutcomeInfluencing, hapt:dpv-ReferendumOutcomeInfluencing, hapt:dpv-VotingBehaviourInfluencing ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasPersonalData pd:Behavioural ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    tech:hasDeployer dpv:JudicialOrganisation, vair:JudicialAuthorityAgent ;
+    dpv:isNotApplicableFor hapt:eu-aiact-NoDirectExposureToOutput ;
+    hapt:eu-gdpr-hasDPIARequiredCondition pl:C22, at:C32, cz:C32, dk:C32, de:C32, gr:C32 ;
+    skos:note "DPIA required by member states: PL (Processing by public authorities or private parties of personal data relating to party affiliation and/or electoral preferences)"@en ;
+    skos:note "member state processing activity: AT CZ DK DE GR"@en ;
+    dct:source "AI Act Annex III 8(b)" ;
+    dpv:hasJurisdiction loc:EU .
+
+annex3:C8b-1 a eu-aiact:HighRiskAISystem-AnnexIII-8-b ;
+    dct:identifier "8b.1." ;
+    skos:definition "A use case developed from AI Act Annex III point 8(b) in which the AI system involves purpose: influencing the outcome of an election or referendum, influencing voting behaviour; technology: AI; special categories of personal data: political opinions; AI or data subjects: natural persons; deployer: judicial authority, judicial authority agent."@en ;
+    skos:broader annex3:C8b ;
+    dpv:hasSector eu-aiact:JusticeSector ;
+    dpv:hasPurpose hapt:dpv-ElectionOutcomeInfluencing, hapt:dpv-ReferendumOutcomeInfluencing, hapt:dpv-VotingBehaviourInfluencing ;
+    dpv:hasRisk hapt:risk-LegalEffects ;
+    dpv:isImplementedUsingTechnology ai:AISystem ;
+    dpv:hasPersonalData pd:PoliticalOpinion ;
+    dpv:hasHumanSubject dpv:NaturalPerson ;
+    tech:hasDeployer dpv:JudicialOrganisation, vair:JudicialAuthorityAgent ;
+    dpv:hasStatus eu-gdpr:DPIARequired ;
+    hapt:eu-gdpr-hasDPIARequiredCondition eu-gdpr:C9, eu-gdpr:C6, eu-gdpr:C2, cy:C22, cz:C22, fi:C22, it:C22, lv:C22, pl:C22, ro:C22 ;
+    skos:note "DPIA required by member states: political opinions: PL (Processing by public authorities or private parties of personal data relating to party affiliation and/or electoral preferences) , RO, CY, CZ, FI, IT, LV. influence behaviour: BE, NL"@en ;
+    skos:editorialNote "No condition found in DPIARequiredConditions.ttl for: Influencing behaviour (BE, NL)"@en ;
+    dct:source "AI Act Annex III 8(b)" ;
+    dpv:hasJurisdiction loc:EU .
